@@ -85,7 +85,9 @@ were completely new to me. I am writing these personal notes just to keep my hea
 
 @bystro-ribbon[]
 
-@hyperlink["bv.cpio.lzma"]{download compressed HTML + source} for reading off-line
+@hyperlink["bv.cpio.lzma"]{download compressed HTML} for reading off-line
+
+@hyperlink["https://github.com/amkhlv/BV"]{source code}
 
 @; ---------------------------------------------------------------------------------------------------
 @(bystro-close-connection bystro-conf)

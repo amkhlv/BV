@@ -75,31 +75,21 @@ Functions on @f{\Pi TH\times X\over H} satisfy:
 }
 
 @section[#:tag "sec:integration-measure"]{Integration measure}
-We assume that @f{X} comes with some integration measure:
+We assume that @f{X/H} comes with some integration measure:
 @align[r.l.n @list[
   @f{\mu \;=\;} @v+[7 @f|{e^{S_{\rm cl}(x)}}|] ""
 ]
 ]
 This should be understood as an integration measure, @italic{i.e.} a density of weight @f{1} (rather than a function of @f{x}).
-
-Let us choose some measure on @f{T_eH} (the fiber over unit of @f{H}) and translate it to all other fibers by
-the @bold{left} translation. Notice that the resulting measure on fibers of @f{TH} is @bold{not} right-invariant,
-unless if we require @f{f^A_{AB}=0}. However, let us assume that the measure on @f{X} satisfies:
-@equation[#:label "Lie-derivative-of-measure-on-X"]{
-{\cal L}_{v_A}\mu = f^B_{BA}\mu
+The product of this measure with the canonical measure on @f{\Pi TH} gives us a measure on @f{\Pi TH\times X\over H}
+which we will call @f{\mu_{\rm BRST}}. Notice that @f{Q_{\rm BRST}} preserves this measure.
+This can be proven as follows. Indeed, for any function @f{f\in\mbox{Fun}\left({\Pi TH\times X\over H}\right)}:
+@equation{
+\int_{\Pi TH\times X\over H}\mu_{\rm BRST}\; Q_{\rm BRST}f \;=\;0
 }
-Under this condition, the product of @f{\mu} with our left-invariant measure on fibers of @f{\Pi TH} 
-provides a well-defined measure on @f{\Pi TH\times X\over H}.
+because @f{Q_{\rm BRST}} comes from the canonical odd vector field on @f{\Pi TH}.
 
-Moreover, the cohomological vector field preserves this measure:
-@align[r.l.n @list[
-  @f{\mbox{div}\left(v_A^i{\partial\over\partial x^i} + {1\over 2}f^A_{BC}c^Bc^C{\partial\over\partial c^A}\right)\;=\;}
-  @f{0}
-  ""
-]
-]
-as a consequence of Eq. (@ref{Lie-derivative-of-measure-on-X}). 
-@spn[attn]{TODO:} chech signs and coeffecients 1/2.
+
 
 @section[#:tag "sec:lift-of-symmetry-to-BRST"]{Lift of symmetries to BRST configuration space}
 They correspond to the @bold{left shifts} on @f{H}
@@ -112,7 +102,7 @@ Notice the following properties of left shifts:
 @item{They commute with @f{Q_{\rm BRST}}}
 @item{Infinitesimal symmetries of the form Eq. (@ref{lift-of-symmetry}) are actually @f{Q_{\rm BRST}}-exact. 
 Indeed, they come from infinitesimal left shifts on @f{H}, and @f{Q_{\rm BRST}} comes from the de Rham differential.}
-@item{The measure on @f{\Pi TH\times X\over H} is invariant, because @seclink["sec:integration-measure"]{we defined it} by @bold{left} shifts.}
+@item{The measure on @f{\Pi TH\times X\over H} is invariant.}
 ]
 }
 
