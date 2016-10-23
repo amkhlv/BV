@@ -196,7 +196,7 @@ of @f{\left.\rho_{1\over 2}\right|_L} under this field redefinition.
 @subsection{Old form @f{\Omega}}
 Now we are ready to prove Eq. (@ref{DOmegaPsi}). Let us first study the usual ``old'' (not equivariant) form @f{\Omega} with the boundary.
 The derivation parallels the 
-@hyperlink["../omega/Definition.html"]{case with no boundary}:
+@hyperlink["../omega/Definition.html"]{case with no boundary}; we denote @f{{\cal H} = d\widehat{g}\widehat{g}^{-1}}:
 @align[r.l.n @list[
   "" 
   @f{d\int_{gL} {\cal M}(d\widehat{g}\widehat{g}^{-1})\;\rho_{1\over 2} \; = \;} 
@@ -211,7 +211,7 @@ The derivation parallels the
 ]@list[
   @f{\;=\;}
   @f{\int_{gL}\left(
-                       {1\over 2} \{{\cal M}({\cal H}),{\cal M}({\cal H})\}\,\rho_{1\over 2} \;+\;
+                       - {1\over 2} \{{\cal H},{\cal H}\}\,{\cal M}'({\cal H})\rho_{1\over 2} \;+\;
                        {\cal L}_{d\widehat{g}\widehat{g}^{-1}}\left({\cal M}(d\widehat{g}\widehat{g}^{-1})\rho_{1\over 2}\right)
                  \right) \; =}
   ""

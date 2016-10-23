@@ -83,7 +83,7 @@ We assume that @f{X/H} comes with some integration measure:
 This should be understood as an integration measure, @italic{i.e.} a density of weight @f{1} (rather than a function of @f{x}).
 The product of this measure with the canonical measure on @f{\Pi TH} gives us a measure on @f{\Pi TH\times X\over H}
 which we will call @f{\mu_{\rm BRST}}. Notice that @f{Q_{\rm BRST}} preserves this measure.
-This can be proven as follows. Indeed, for any function @f{f\in\mbox{Fun}\left({\Pi TH\times X\over H}\right)}:
+This can be proven as follows. For any function @f{f\in\mbox{Fun}\left({\Pi TH\times X\over H}\right)}:
 @equation{
 \int_{\Pi TH\times X\over H}\mu_{\rm BRST}\; Q_{\rm BRST}f \;=\;0
 }
@@ -92,7 +92,7 @@ because @f{Q_{\rm BRST}} comes from the canonical odd vector field on @f{\Pi TH}
 
 
 @section[#:tag "sec:lift-of-symmetry-to-BRST"]{Lift of symmetries to BRST configuration space}
-They correspond to the @bold{left shifts} on @f{H}
+Original gauge symmetries can be lifted to the BRST field space as @bold{left shifts} on @f{H}:
 @align[r.l.n @list[
   @f{h_0.(dh,h,x) \;=\;} @f{(h_0dh,\, h_0h,\, x)} @label{lift-of-symmetry}
 ]

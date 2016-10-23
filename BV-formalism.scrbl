@@ -172,17 +172,18 @@ Then, by definition:
 @equation{
 \sigma_{1\over 2}[L,\rho_{1\over 2}] (x,\,e_1,\ldots,f^1,\ldots) \;=\; \mu_L[\rho_{1\over 2}](x)(e_1,\ldots)
 }
-Eq. (@ref{EquivarianceOfMu}) implies, that for any @f{g\in G} such that @f{g(x)=x}, and @f{g^*\rho_{1\over 2} = 0} we have:
-@equation{
+Eq. (@ref{EquivarianceOfMu}) implies, that for any @f{g\in G} such that @f{g(x)=x}, and @f{g^*\rho_{1\over 2} = \rho_{1\over 2}} we have:
+@equation[#:label "SigmaRotated"]{
 \sigma_{1\over 2}[gL,\rho_{1\over 2}](x,\, g_*e_1,\ldots, g_*f^1,\ldots)\;=\;
 \sigma_{1\over 2}[L,\rho_{1\over 2}](x,\,e_1,\ldots, f^1,\ldots)
 }
-This implies:
+Since @f{g} preserves @f{\rho_{1\over 2}} and the point, @f{x}, the linear transformation @f{g_*} of the tangent space
+to @f{x} has unit superdeterminant; therefore Eq. (@ref{SigmaRotated}) implies:
 @equation[#:label "sigma-is-L-independent"]{
 \sigma_{1\over 2}[gL,\rho_{1\over 2}](x,\, e_1,\ldots, f^1,\ldots)\;=\;
 \sigma_{1\over 2}[L,\rho_{1\over 2}](x,\,e_1,\ldots, f^1,\ldots)
 }
-It turns out that the group of special canonical transformations preserving the point @f{x} acts
+The group of special canonical transformations preserving the point @f{x} acts
 locally transitively on Lagrangian submanifolds passing through the point @f{x}.
 Therefore Eq. (@ref{sigma-is-L-independent}) implies that @f{\sigma_{1\over 2}} does not depend on @f{L}.
 
