@@ -597,17 +597,10 @@ We can check it directly, using the formula:
    {\cal L}_{\{H,\_\}}(\iota_{\{F,\_\}}\alpha) - {\cal L}_{\{F,\_\}}(\iota_{\{H,\_\}}\alpha)
    + 2\{H,F\}
 \right)\partial_{\vartheta}}
-]]
-and considering the exterior derivative of the coefficient in front of @f{\partial_{\theta}}: 
-@align[r.l @list[
-@f{}@f{d\left(
-   {\cal L}_{\{H,\_\}}(\iota_{\{F,\_\}}\alpha) - {\cal L}_{\{F,\_\}}(\iota_{\{H,\_\}}\alpha)
-   + 2\{H,F\}
-\right)\;=\;
-{\cal L}_{\{\{H,F\},\_\}}\alpha \;=\;}
 ]@list[
-@f{\;=\;}@f{d(\iota_{\{\{H,F\},\_\}}\alpha + \{H,F\})}
-]]
+@f{\;=\;}@f{\{\{H,F\}\,,\,\_\}\;+\; \left(\iota_{\{\{H,F\},\_\}}\alpha + \{H,F\}\right)\partial_{\theta}}
+]
+]
 As a Lie algebra
 this is @f{\Pi\mbox{Fun}(M)}. It integrates to the group of automorphisms of the fiber bundle @f{\hat{M}\to M}
 which preserve the connection defined in Eq. (@ref{ConnectionAsLift}). 
