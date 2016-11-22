@@ -199,11 +199,12 @@ Consider the following chain of equalities, containing a constant odd parameter 
     \Big)\;=\; \delta_{\{X,\_\}} \int\epsilon Y\rho_{1\over 2} \;=\; -\int \{X,Y\,\}\epsilon\rho_{1\over 2}}
  @label{DerivingLeibnitzForDelta}
 ]]
-We will define the operator @f{\Delta_{\rho_{1\over 2}}} as follows:
+We will define the operator @f{\Delta_{\rho_{1\over 2}}} on functions as follows:
 @equation[#:label "OperatorDelta"]{
-   \Delta_{\rho_{1\over 2}} F = \rho_{1\over 2}^{-1}\Delta_{\rm can}(\rho_{1\over 2} F\,)
+   (\Delta_{\rho_{1\over 2}} F\,) \rho_{1\over 2} \;=\; \Delta_{\rm can}(F\,\rho_{1\over 2} )- (-)^{\bar{F}}F\Delta_{\rm can}\rho_{1\over 2} \;=\;
+(-)^{\bar{F}}{\cal L}_{\{F,\_\}}\rho_{1/2}
 }
-and abbreviate:
+Usually there is some obvious implicit half-density; then we will abbreviate:
 @equation{
 \Delta = \Delta_{\rho_{1\over 2}}
 }

@@ -103,6 +103,8 @@
      "Witten:2012bh"     (hyperlink "http://arxiv.org/abs/1209.5461" "PerturbativeSuperstringTheoryRevisited")
      "Sen:2014pia"       (hyperlink "http://arxiv.org/abs/1408.0571" "OffShellAmplitudes")
      "Craps:2005wk"      (hyperlink "http://arxiv.org/abs/hep-th/0503038" "CrapsSkenderis")
+     "Cattaneo:2012qu"   (hyperlink "https://arxiv.org/abs/1201.0290" "CattaneoMnevReshetikhinClassical")
+     "Cattaneo:2015vsa"  (hyperlink "https://arxiv.org/abs/1507.01221" "CattaneoMnevReshetikhinQuantum")
      ))
   (provide cite)
   (define (cite x)
