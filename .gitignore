@@ -1,0 +1,7 @@
+**/*.html
+**/[0-9]*.svg
+**/formulas.sqlite
+**/*_formulas.sqlite
+**/*.css
+**/*.js
+**/*~
