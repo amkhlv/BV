@@ -104,6 +104,10 @@ defines the following vector field on @f{{\cal V}_{\rm ach}}:
    \left(\xi^-(z_{\rm ach}) + \theta^-u^-_-(z_{\rm ach})\right)
    {\partial\over\partial\theta^-}
 }
+where @f{u^-_-} is defined as follows:
+@equation[#:label "u-vs-v"]{
+u^+_+ + u^-_- + \partial v = 0
+}
 
 @bold{Proof:}
 @equation{
