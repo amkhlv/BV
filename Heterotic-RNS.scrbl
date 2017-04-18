@@ -5,23 +5,23 @@
 @; User definitions:
 @(bystro-set-css-dir (build-path (find-system-path 'home-dir) "a" "git" "amkhlv" "profiles" "writeup"))
 @(define bystro-conf   
-   (bystro (bystro-connect-to-server (string->path "/var/www/bystroConf.xml"))
+   (bystro (bystro-connect-to-server (build-path (find-system-path 'home-dir) ".config" "amkhlv" "latex2svg.xml"))
            "Heterotic-RNS/formulas.sqlite"  ; name for the database
-           "Heterotic-RNS" ; directory where to store .png files of formulas
+           "Heterotic-RNS" ; directory where to store image files of formulas
            25  ; formula size
            (list 255 255 255) ; formula background color
            (list 0 0 0) ; formula foreground color
            2   ; automatic alignment adjustment
            0   ; manual alignment adjustment
            ))
-@(set-bystro-extension! bystro-conf "svg")
-@; This controls the single page mode:
 @(define singlepage-mode #f)
 @(bystro-def-formula "formula-enormula-humongula!")
 
 @(bystro-dump-LaTeX #f)
 
 @title[#:style '(no-toc no-sidebar)]{Heterotic RNS superstring}
+
+
 
 @bystro-ribbon[]
 
@@ -770,6 +770,6 @@ because it guarantees the action of the  mapping class group on our cycle.
 
 @; ---------------------------------------------------------------------------------------------------
 @(bystro-close-connection bystro-conf)
-@disconnect[formula-database]
 
-  
+@(bystro-close-connection bystro-conf)
+@disconnect[formula-database]

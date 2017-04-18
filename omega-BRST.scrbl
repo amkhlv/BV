@@ -5,7 +5,7 @@
 @; User definitions:
 @(bystro-set-css-dir (build-path (find-system-path 'home-dir) "a" "git" "amkhlv" "profiles" "writeup"))
 @(define bystro-conf   
-   (bystro (bystro-connect-to-server (string->path "/var/www/bystroConf.xml"))
+   (bystro (bystro-connect-to-server (build-path (find-system-path 'home-dir) ".config" "amkhlv" "latex2svg.xml"))
            "omega-BRST/formulas.sqlite"  ; name for the database
            "omega-BRST" ; directory where to store .png files of formulas
            25  ; formula size
