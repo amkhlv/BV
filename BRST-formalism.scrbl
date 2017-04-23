@@ -143,6 +143,104 @@ Notice that in the BRST case @f{\Delta} coincides with @f{\{S_{\rm BV},\_\}}.
 }
 
 
+@slide["Family of Lagrangian submanifolds" #:tag "Family of Lagrangian submanifolds" #:showtitle #t]{
+@short-intro{
+Here we will describe a family of Lagrangian submanifolds which is a generalization of
+the construction used in @hyperlink["../bosonic-string/index.html"]{bosonic string theory}
+}
+Let @f{\cal Y} be some family of submanifolds @f{Y\subset X} closed under the action of the gauge symmetry
+@comment{
+``closed under the action'' means that if @f{Y_1\in {\cal Y}} then for any gauge 
+transformation @f{h}, @f{hY_1\in {\cal Y}} 
+}
+For each @f{Y \in {\cal Y}}, the @bold{odd conormal bundle} of @f{Y} is a subbundle 
+of the odd cotangent bundle @f{\Pi T^* X|_Y} which consists of those covectors which evaluate to zero 
+on vectors tangent to @f{Y}. For each @f{Y\subset X}, the corresponding odd conormal bundle is a  
+Lagrangian submanifold. Given such a family @f{\cal Y}, let us define a family of Lagrangian 
+submanifolds in the BV phase space in the following way: for every @f{Y}, the corresponding 
+Lagrangian submanifold is the odd conormal bundle of @f{Y}, times the space of @f{c}-ghosts:
+@equation{
+L(Y\,) \;=\; \Pi(TY\,)^{\perp}\times \mbox{[$c$-ghosts]}\;=\; \Pi(TY\,)^{\perp}\times \Pi {\bf h}
+}
+Let us ask the following question: under what conditions 
+the restriction of @f{S_{\rm BV}} to each @f{L(Y\,)} is non-degenerate? 
+Or, in case if it is degenerate, how can we characterize the degeneracy? We have:
+@equation{
+\left. S_{\rm BV} \right|_{L(Y\,)} \;=\; \left.S_{\rm cl}(\varphi)\;\right|_{\varphi\in Y} \;+\; T_A^ic^A\varphi^{\star}_i\;|_{\varphi^{\star}\in \Pi(TY\,)^{\perp}}
+}
+@comment{
+The second term @f{T_A^ic^A\varphi^{\star}_i} is the evaluation of the covector @f{\varphi^{\star}} on the tangent vector 
+@f{Q\varphi\in TX}.
+}
+Let us assume that the restriction of @f{S_{\rm BV}} to any @f{L(Y\,)}  has a critical 
+point, and study the @bold{quadratic terms} in the expansion of @f{\left. S_{\rm BV} \right|_L} around a critical point.
+@comment{
+To define the perturbation theory,
+we need already the quadratic terms to be non-degenerate.
+}
+Assuming that the critical point is at @f{\varphi=0}: 
+@equation{
+S_{\rm cl}(\varphi) = k_{ij}\varphi^i\varphi^j + o(\varphi^2)
+}
+Suppose that all degeneracies of @f{S_{\rm cl}} and of @f{k} are due to symmetries. In other words:
+@align[r.l @list[
+@f{\mbox{ker}\;k\;=\;}@f{\mbox{im}\;\tau}
+]@list[
+@f{\mbox{\tt\small where } \tau}@f{\;:\; {\bf h} \rightarrow TX}
+]@list[
+@f{\tau^i(\xi)}@f{\;= \; T^i_A\xi^A}
+]]
+Let @f{s} be the quadratic part of @f{\left. S_{\rm BV} \right|_L}: 
+@equation{
+s\;=\; \left. k_{ij}\varphi^i\varphi^j \right|_{\varphi\in TY} \;+\; 
+\left. \tau^i(c)\varphi^{\star}_i\;\right|_{\varphi^{\star}\in T^{\perp}Y}
+}
+The degeneracy is characterized by the isotropic subspace of @f{s} which we denote @f{\mbox{ker}\;s}: 
+@equation{
+\mbox{ker}\;s\;=\; 
+(\mbox{im}\,\tau \;\cap TY\,)\oplus \Pi\left((\mbox{im}\,\tau \cap TY\,)\oplus \mbox{ker}\,\tau\;\;\;
+\oplus \;\;(\mbox{im}\,\tau\;+TY\,)^{\perp}\right)
+}
+Let us make the following assumptions:
+@itemlist[#:style 'ordered 
+@item{The term @f{(\mbox{im}\,\tau \;\cap TY\,)\oplus \Pi\left(\mbox{im}\,\tau \cap TY\right)} is zero.
+In cases when it is nonzero, it should be removed by a small deformation of Lagrangian submanifolds}
+@item{The next term, @f{\mbox{ker}\,\tau}, is also zero. This kernel being nonzero corresponds to ``reducible'' gauge
+symmetries.}
+]
+But the last term @f{\Pi \left(\mbox{im}\,\tau\;+T\,Y\,\right)^{\perp}} is essentially nonzero. 
+It can be identified with the cotangent space
+to our family:
+@equation{
+\left(\mbox{im}\,\tau\;+T\,Y\,\right)^{\perp} \;=\; T^*_Y\left({\cal Y}/H\right) 
+}
+where @f{\cal Y} is the moduli space of submanifolds @f{Y\subset X}. Therefore the quadratic part of @f{S_{\rm BV}}
+@bold{is} degenerate. However this degeneration is removed by 
+@hyperlink["../omega/Definition.html"]{the factor @f{e^{d\widehat{g}\widehat{g}^{-1}}}} 
+Indeed, in this case:
+@equation{
+d\widehat{g}\widehat{g}^{-1} \;=\; \varphi^{\star}_i dy^i
+}
+When we integrate over @f{{\cal Y}/H}, the differentials @f{dy^i} span the complement of @f{\mbox{im}\tau} in 
+@f{TX/TY}. 
+@comment{In 
+@hyperlink["../bosonic-string/IntegrationOverFamily.html"]{the case of bosonic string} @f{e^{d\widehat{g}\widehat{g}^{-1}}} contributes
+@f{\prod_{i=1}^{3g-3} b^{\alpha\beta}\delta g_{\alpha\beta}^{(0)}}
+}  
+To perturbatively define the path integral, we want @f{\left(\mbox{im}\,\tau\;+TY\right)^{\perp}} to be @bold{finite-dimensional}. 
+This requirement can be reformulated as follows. Since we require that the family @f{\cal Y} be closed under the gauge 
+transformations, @f{\tau} defines a map @f{{\bf h} \rightarrow TX/TY} which  we denote @f{[\tau]}.  With this notation, 
+we must require 
+that the cokernel of @f{[\tau]} is finite-dimensional. Indeed, @f{\left(\mbox{im}\,\tau\;+TY\right)^{\perp} = (\mbox{coker}\,[\tau])^*}. 
+In the case of bosonic string at genus @f{g} the requirement of finite-dimensionality is satisfied:
+@equation{
+\mbox{dim} \;\mbox{coker}\,[\tau] \;=\; 3g-3
+}
+
+
+
+}
+
 
 @; ---------------------------------------------------------------------------------------------------
 @(bystro-close-connection bystro-conf)
