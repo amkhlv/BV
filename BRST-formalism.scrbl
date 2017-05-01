@@ -76,10 +76,7 @@ Functions on @f{\Pi TH\times X\over H} satisfy:
 
 @section[#:tag "sec:integration-measure"]{Integration measure}
 We assume that @f{X/H} comes with some integration measure:
-@align[r.l.n @list[
-  @f{\mu \;=\;} @v+[7 @f|{e^{S_{\rm cl}(x)}}|] ""
-]
-]
+@equation{\mu = e^{S_{\rm cl}(x)}}
 This should be understood as an integration measure, @italic{i.e.} a density of weight @f{1} (rather than a function of @f{x}).
 The product of this measure with the canonical measure on @f{\Pi TH} gives us a measure on @f{\Pi TH\times X\over H}
 which we will call @f{\mu_{\rm BRST}}. Notice that @f{Q_{\rm BRST}} preserves this measure.
@@ -109,7 +106,7 @@ Indeed, they come from infinitesimal left shifts on @f{H}, and @f{Q_{\rm BRST}} 
 @slide["BV from BRST" #:tag "BV from BRST" #:showtitle #t]{
 @table-of-contents[]
 
-@section{Definition of the BV phase space}
+@section[#:tag "sec:bv-phase-space"]{Definition of the BV phase space}
 The BV phase space is:
 @equation{
 M = \Pi T^* \left({\Pi TH\times X\over H}\right)
@@ -148,25 +145,33 @@ Notice that in the BRST case @f{\Delta} coincides with @f{\{S_{\rm BV},\_\}}.
 Here we will describe a family of Lagrangian submanifolds which is a generalization of
 the construction used in @hyperlink["../bosonic-string/index.html"]{bosonic string theory}
 }
+
+@table-of-contents[]
+
+@section{Conormal bundle}
+
 Let @f{\cal Y} be some family of submanifolds @f{Y\subset X} closed under the action of the gauge symmetry
 @comment{
 ``closed under the action'' means that if @f{Y_1\in {\cal Y}} then for any gauge 
 transformation @f{h}, @f{hY_1\in {\cal Y}} 
 }
-For each @f{Y \in {\cal Y}}, the @bold{odd conormal bundle} of @f{Y} is a subbundle 
+For each @f{Y \in {\cal Y}}, the @bold{odd conormal bundle} of @f{Y} (denoted @f{\Pi(T\,Y\,)^{\perp}}) is a subbundle 
 of the odd cotangent bundle @f{\Pi T^* X|_Y} which consists of those covectors which evaluate to zero 
 on vectors tangent to @f{Y}. For each @f{Y\subset X}, the corresponding odd conormal bundle is a  
 Lagrangian submanifold. Given such a family @f{\cal Y}, let us define a family of Lagrangian 
 submanifolds in the BV phase space in the following way: for every @f{Y}, the corresponding 
 Lagrangian submanifold is the odd conormal bundle of @f{Y}, times the space of @f{c}-ghosts:
-@equation{
-L(Y\,) \;=\; \Pi(TY\,)^{\perp}\times \mbox{[$c$-ghosts]}\;=\; \Pi(TY\,)^{\perp}\times \Pi {\bf h}
+@equation[#:label "rotated-lag"]{
+L(Y\,) \;=\; \Pi(T\,Y\,)^{\perp}\times \mbox{[$c$-ghosts]}\;=\; \Pi(T\,Y\,)^{\perp}\times \Pi {\bf h}
 }
+
+@section{Non-degeneracy}
+
 Let us ask the following question: under what conditions 
 the restriction of @f{S_{\rm BV}} to each @f{L(Y\,)} is non-degenerate? 
 Or, in case if it is degenerate, how can we characterize the degeneracy? We have:
 @equation{
-\left. S_{\rm BV} \right|_{L(Y\,)} \;=\; \left.S_{\rm cl}(\varphi)\;\right|_{\varphi\in Y} \;+\; T_A^ic^A\varphi^{\star}_i\;|_{\varphi^{\star}\in \Pi(TY\,)^{\perp}}
+\left. S_{\rm BV} \right|_{L(Y\,)} \;=\; \left.S_{\rm cl}(\varphi)\;\right|_{\varphi\in Y} \;+\; T_A^ic^A\varphi^{\star}_i\;|_{\varphi^{\star}\in \Pi(T\,Y\,)^{\perp}}
 }
 @comment{
 The second term @f{T_A^ic^A\varphi^{\star}_i} is the evaluation of the covector @f{\varphi^{\star}} on the tangent vector 
@@ -192,25 +197,24 @@ Suppose that all degeneracies of @f{S_{\rm cl}} and of @f{k} are due to symmetri
 ]]
 Let @f{s} be the quadratic part of @f{\left. S_{\rm BV} \right|_L}: 
 @equation{
-s\;=\; \left. k_{ij}\varphi^i\varphi^j \right|_{\varphi\in TY} \;+\; 
-\left. \tau^i(c)\varphi^{\star}_i\;\right|_{\varphi^{\star}\in T^{\perp}Y}
+s\;=\; \left. k_{ij}\varphi^i\varphi^j \right|_{\varphi\in T\,Y} \;+\; 
+\left. \tau^i(c)\varphi^{\star}_i\;\right|_{\varphi^{\star}\in (T\,Y\,)^{\perp}}
 }
 The degeneracy is characterized by the isotropic subspace of @f{s} which we denote @f{\mbox{ker}\;s}: 
 @equation{
 \mbox{ker}\;s\;=\; 
-(\mbox{im}\,\tau \;\cap TY\,)\oplus \Pi\left((\mbox{im}\,\tau \cap TY\,)\oplus \mbox{ker}\,\tau\;\;\;
-\oplus \;\;(\mbox{im}\,\tau\;+TY\,)^{\perp}\right)
+(\mbox{im}\,\tau \cap T\,Y\,)\oplus \Pi\left((\mbox{im}\,\tau \cap T\,Y\,)\oplus \mbox{ker}\,\tau\;\;\;
+\oplus \;\;(\mbox{im}\,\tau\;+T\,Y\,)^{\perp}\right)
 }
 Let us make the following assumptions:
 @itemlist[#:style 'ordered 
-@item{The term @f{(\mbox{im}\,\tau \;\cap TY\,)\oplus \Pi\left(\mbox{im}\,\tau \cap TY\right)} is zero.
-In cases when it is nonzero, it should be removed by a small deformation of Lagrangian submanifolds}
+@item{The space @f{\mbox{im}\,\tau \cap T\,Y\,} is zero, in other words @f{Y} is transverse to the orbits of @f{H}. 
+This is a constraint on the choice of @f{Y}}
 @item{The next term, @f{\mbox{ker}\,\tau}, is also zero. This kernel being nonzero corresponds to ``reducible'' gauge
 symmetries.}
 ]
 But the last term @f{\Pi \left(\mbox{im}\,\tau\;+T\,Y\,\right)^{\perp}} is essentially nonzero. 
-It can be identified with the cotangent space
-to our family:
+It can be identified with the cotangent space to our family:
 @equation{
 \left(\mbox{im}\,\tau\;+T\,Y\,\right)^{\perp} \;=\; T^*_Y\left({\cal Y}/H\right) 
 }
@@ -222,28 +226,116 @@ Indeed, in this case:
 d\widehat{g}\widehat{g}^{-1} \;=\; \varphi^{\star}_i dy^i
 }
 When we integrate over @f{{\cal Y}/H}, the differentials @f{dy^i} span the complement of @f{\mbox{im}\tau} in 
-@f{TX/TY}. 
-@comment{In 
-@hyperlink["../bosonic-string/IntegrationOverFamily.html"]{the case of bosonic string} @f{e^{d\widehat{g}\widehat{g}^{-1}}} contributes
+@f{TX/T\,Y}. Since we require that the family @f{\cal Y} be @f{H}-closed, @f{\tau} defines a map 
+@f{{\bf h} \rightarrow TX/T\,Y} which  we denote @f{[\tau]}. With these notations:
+@equation[#:label "factor-tau"]{
+\left(\mbox{im}\,\tau\;+T\,Y\,\right)^{\perp} = (\mbox{coker}\,[\tau])^*
+}
+In 
+@hyperlink["../bosonic-string/IntegrationOverFamily.html"]{the case of bosonic string} @f{\mbox{dim} \;\mbox{coker}\,[\tau] \;=\; 3g-3}
+and @f{e^{d\widehat{g}\widehat{g}^{-1}}} contributes
 @f{\prod_{i=1}^{3g-3} b^{\alpha\beta}\delta g_{\alpha\beta}^{(0)}}
-}  
-To perturbatively define the path integral, we want @f{\left(\mbox{im}\,\tau\;+TY\right)^{\perp}} to be @bold{finite-dimensional}. 
-This requirement can be reformulated as follows. Since we require that the family @f{\cal Y} be closed under the gauge 
-transformations, @f{\tau} defines a map @f{{\bf h} \rightarrow TX/TY} which  we denote @f{[\tau]}.  With this notation, 
-we must require 
-that the cokernel of @f{[\tau]} is finite-dimensional. Indeed, @f{\left(\mbox{im}\,\tau\;+TY\right)^{\perp} = (\mbox{coker}\,[\tau])^*}. 
-In the case of bosonic string at genus @f{g} the requirement of finite-dimensionality is satisfied:
+
+}
+
+@slide["Faddeev-Popov integration" #:tag "Faddeev-Popov integration" #:showtitle #t]{
+@short-intro{
+Now we will consider a special case when tangent vectors to orbits of @f{H} generate
+the entire @f{TX/T\,Y}, or, @hyperlink["Family_of_Lagrangian_submanifolds.html#(elem._factor-tau)"]{with our notations},
+@f{\mbox{coker}[\tau] = 0}. We will show that in this case the integration over
+the ``rotated'' Lagrangian submanifold of Eq. (@ref{rotated-lag}) is equivalent to integration
+over some family of Lagrangian submanifolds, more precisely over a family of sections of
+@f{\Pi T^*X\rightarrow X}. We reproduce the Faddeev-Popov integration formula, Eq. (@ref{FaddeevPopovIntegration})
+}
+
+Suppose that @f{Y\subset X} is specified by the equation:
+@align[r.l.n @list[
+ @f{F(x) \;=\;} @f{0} ""
+]@list[
+ @f{F\;:\;} @f{X\rightarrow V} ""
+]]
+where @f{V} is some vector space. Consider the following family of Lagrangian submanifolds of @f{\Pi T^* X} parametrized by
+@f{\bar{c}\in \Pi V^*}. For every @f{\bar{c}\in \Pi V^*}, the corresponding Lagrangian submanifold is given by
+the following section of @f{\Pi T^*X \rightarrow X} naturally associated to any @f{F\;:\;X\rightarrow V}:
+@align[r.l.n @list[
+ @f{L(\bar{c}) = }
+ @f{\left\{ (x,x^{\star})\in \Pi T^*X\;|\; x^{\star} = (F_*(x))^*\bar{c}\right\}}
+ ""
+]@list[
+ @elem[#:style 'no-break]{where @f{F_*(x):}} 
+ @elem[#:style 'no-break]{@f{T_xX\rightarrow V} is a derivative map}
+ ""
+]
+]
+@comment{
+We use @f{\bar{c}} to denote elements of @f{\Pi V^*} in order to agree with the standard notations in BRST formalism.
+At this point it has nothing to do with the complex conjugate of the Faddeev-Popov ghost @f{c}.
+}
+We therefore have a family of Lagrangian submanifolds parametrized by elements of the vector space @f{\Pi V^*}.
+The generating function of the infinitesimal variation of the Lagrangian submanifold from @f{L(\bar{c})} to
+@f{L(\bar{c} + \delta\bar{c})} is  @f{\langle \delta\bar{c},F\,\rangle}.
+@comment{
+Indeed: @f{
+d_M\langle \delta\bar{c},F\,\rangle
+\;=\; \langle \delta\bar{c},d_XF\,\rangle 
+\;=\; \langle \delta\bar{c}, F_* dx\rangle 
+\;=\; \langle (F_*)^*\delta\bar{c}, dx\rangle
+\;=\; \iota_{(F_*)^*\delta\bar{c}} \langle dx^{\star},dx\rangle
+\;=\; \iota_{(F_*)^*\delta\bar{c}} \,\omega
+}
+}
+@hyperlink["../omega/index.html"]{Therefore the form @f{\Omega}} is given by:
 @equation{
-\mbox{dim} \;\mbox{coker}\,[\tau] \;=\; 3g-3
+\Omega(\bar{c},d\bar{c}) = \int_{L(\bar{c})} \exp\left(S_{\rm BV} + \langle d\bar{c},F\,\rangle\right)
+}
+The corresponding integral form is obtained by the Baranov-Schwarz transform:
+@equation{
+I(\bar{c}) = \int_{L(\bar{c})} \delta(F\,)\,e^{S_{\rm BV}}
+}
+Let us integrate @f{\Omega} over the whole @f{\Pi V^*}:
+@equation[#:label "integrate-over-pi-v-dual"]{
+\int_{\Pi V^*} [d\bar{c}] \int_{L(\bar{c})} \delta(F\,)\,e^{S_{\rm BV}}
+}
+This result coincides with the @seclink["Family of Lagrangian submanifolds"]{integration over the conormal bundle of @f{F=0}}.
+
+Given the @seclink["sec:bv-phase-space"]{explicit form of @f{S_{\rm BV}}}, its restriction to @f{L(\bar{c})} is:
+@equation[#:label "FaddeevPopovIntegration"]{
+\left.S_{\rm BV}\right|_{L(\bar{c})} \;=\; S_{\rm cl}(x) + \langle Q_{\rm BRST} x , (F_*(x))^*\bar{c} \rangle\;=\;
+S_{\rm cl} +  c^A T^i_A\partial_iF^a\bar{c}_a
 }
 
 
+This integral is @italic{a priori} divergent, because we integrate over the noncompact space @f{\Pi V^*}.
+Sometimes, it can be made convergent by a special choice of the integration contour --- see 
+@seclink["Yang-Mills"]{the example of the Yang-Mills theory}.
+}
+
+@slide["Yang-Mills theory" #:tag "Yang-Mills" #:showtitle #t]{
+@align[r.l.n @list[
+ @f{S_{\rm cl} \;=\;} @f{\int d^4x\,\mbox{tr}\, (\partial_{\mu}A_{\nu} - \partial_{\nu}A_{\mu} + [A_{\mu},A_{\nu}])^2} ""
+]@list[
+ @f{Q_{\rm BRST} A_{\mu} \;=\;} @f{D_{\mu}c} ""
+]@list[
+ @f{Q_{\rm BRST} c \;=\;} @f{{1\over 2}[c,c]} "" 
+]
+]
+The Landau gauge corresponds to the following @seclink["Faddeev-Popov integration"]{function @f{F\;:\;X\rightarrow V}}, 
+where @f{V} is the space of functions on the four-dimensional spacetime:
+@equation{
+F(A) = \partial^{\mu}A_{\mu}
+}
+In this case @f{(F_*)^*\bar{c}} is @f{A^{\star\mu} = \partial^{\mu}\bar{c}} and Eq. (@ref{FaddeevPopovIntegration}) becomes:
+@equation{
+\left.S_{\rm BV}\right|_{L(\bar{c})} \;=\; S_{\rm cl}(x) + D_{\mu}c\,\partial^{\mu}\bar{c}
+}
+The integration contour is @f{\bar{c}} complex conjugate to @f{c}. 
+Don't forget to insert @f{\delta(F\,)} --- see Eq. (@ref{integrate-over-pi-v-dual}) !
+(This is usually done by means of a Lagrange multiplier.)
 
 }
 
 
 @; ---------------------------------------------------------------------------------------------------
-@(bystro-close-connection bystro-conf)
 
 @(bystro-close-connection bystro-conf)
 @disconnect[formula-database]
