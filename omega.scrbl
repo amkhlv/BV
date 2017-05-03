@@ -1457,7 +1457,7 @@ in this formula we identify @f{L_{\Lambda}}, as a manifold, with @f{M\times \Pi 
 }
 Let @f{\ell} be a vector field on @f{\Lambda}. By @hyperlink["../BV-formalism/MomentMap.html"]{our definition of the moment map}, 
 it generates the vector field @f{\{(\ell.\widehat{g})\widehat{g}^{-1}\,,\,\_\}} on @f{\widehat{G}}. 
-Let @f{v} be a vector in @f{T_mM} tangent to @f{L(\lambda)}. Then, using @hyperlink["BV-formalism/Odd_symplectic_manifolds.html"]{general formulas}:
+Let @f{v} be a vector in @f{T_mM} tangent to @f{L(\lambda)}. Then, using @hyperlink["../BV-formalism/Odd_symplectic_manifolds.html"]{general formulas}:
 @align[r.l.n @list[
  @f{\phantom{(-)^{\bar{\ell}}}
     \iota_v\iota_{\ell}\omega \;=\;} 
