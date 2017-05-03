@@ -155,14 +155,14 @@ Let @f{\cal Y} be some family of submanifolds @f{Y\subset X} closed under the ac
 ``closed under the action'' means that if @f{Y_1\in {\cal Y}} then for any gauge 
 transformation @f{h}, @f{hY_1\in {\cal Y}} 
 }
-For each @f{Y \in {\cal Y}}, the @bold{odd conormal bundle} of @f{Y} (denoted @f{\Pi(T\,Y\,)^{\perp}}) is a subbundle 
+For each @f{Y \in {\cal Y}}, the @bold{odd conormal bundle} of @f{Y} (denoted @f{\Pi(TY)^{\perp}}) is a subbundle 
 of the odd cotangent bundle @f{\Pi T^* X|_Y} which consists of those covectors which evaluate to zero 
 on vectors tangent to @f{Y}. For each @f{Y\subset X}, the corresponding odd conormal bundle is a  
 Lagrangian submanifold. Given such a family @f{\cal Y}, let us define a family of Lagrangian 
 submanifolds in the BV phase space in the following way: for every @f{Y}, the corresponding 
 Lagrangian submanifold is the odd conormal bundle of @f{Y}, times the space of @f{c}-ghosts:
 @equation[#:label "rotated-lag"]{
-L(Y\,) \;=\; \Pi(T\,Y\,)^{\perp}\times \mbox{[$c$-ghosts]}\;=\; \Pi(T\,Y\,)^{\perp}\times \Pi {\bf h}
+L(Y) \;=\; \Pi(TY)^{\perp}\times \mbox{[$c$-ghosts]}\;=\; \Pi(TY)^{\perp}\times \Pi {\bf h}
 }
 
 @section{Non-degeneracy}

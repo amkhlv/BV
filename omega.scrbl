@@ -1356,6 +1356,155 @@ meaningful, without imposing the ugly constraint (@ref{BsCommute}).
 
 }
 
+@;(define (bxd x) (string-append "{［\\!" x "\\!\\!］}"))
+@(define (bxd x) (string-append "{〔" x "\\!〕}"))
+
+@slide["Reduction to integration over single Lagrangian submanifold" #:tag "As integration over single L" #:showtitle #t]{
+@short-intro{
+Here we will explain that integration over a family of Lagrangian submanifolds can be reduced to 
+integration over a single Lagrangian submanifold in a larger phase space.
+}
+
+
+@section{Definition of  @f{L_{\Lambda}} }
+A family of Lagrangian submanifolds @f{\{L(\lambda)\subset M|\lambda\in\Lambda\}} defines a single
+Lagrangian submanifold in @f{L_{\Lambda} \;\subset\; M\times \Pi T^*(\Pi T\Lambda)}. We will now
+describe the construction of @f{L_{\Lambda}}. 
+
+As a first step, let us consider a submanifold @f{L''\subset M\times \Lambda} which is defined as follows:
+@equation{
+L'' = \{ (m,\lambda) \;|\; \lambda\in\Lambda\;,\;m\in L(\lambda) \}
+}
+This can be promoted to a subspace @f{L'\subset M\times \Pi T\Lambda} quite trivially:
+@equation{
+L' = \{ (m,\lambda,@bxd{d\lambda}) \;|\; (\lambda,@bxd{d\lambda})\in \Pi T\Lambda\;,\;m\in L(\lambda) \}
+}
+Finally, we will construct @f{L_{\Lambda}} as some section of the vector bundle
+@f{M\times \Pi T^*(\Pi T\Lambda) \longrightarrow M\times \Pi T\Lambda}
+restricted to @f{L'\subset M\times \Pi T\Lambda}. Which section?
+
+The simplest guess would be the zero section. However 
+@bold{that} would @bold{not} be a Lagrangian submanifold, so zero section is a wrong guess.
+There @bold{is}, however, a natural @bold{nonzero section}. It is constructed as follows:
+@; Let us choose for every point @f{(\lambda,@bxd{d\lambda})\in T\Lambda} a generating function
+@; @f{\sigma_{@bxd{d\lambda}}} 
+@; a normal vector field: 
+@; @align[l.n @list[
+@;  @f{v_{@bxd{d\lambda}}\;\in\; \Gamma(NL(\lambda))} 
+@;  ""
+@; ]@list[
+@;  @elem[#:style 'no-break]{where @f{NL(\lambda)\;=\;TM|_{L(\lambda)}/TL(\lambda)} is a normal bundle of @f{L(\lambda)\subset M}}
+@;  ""
+@; ]
+@; ]
+@; which describes the infinitesimal variation @f{@bxd{d\lambda}} of @f{L(\lambda)}. 
+@; With these notations, our nonzero section is given by the following formula:
+@align[l.l.n @list[
+ @f{s\;:\;L' \rightarrow M\times \Pi T^*(\Pi T\Lambda)}
+ ""
+ ""
+]@list[
+ @f{s\,(m,\lambda,@bxd{d\lambda})\;=\;(m,\lambda,@bxd{d\lambda}\;,\;\;} 
+ @f{\sigma(m) \;,\; 0)}
+ @label{nonzero-section}
+]@list[
+ ""
+ @f{\;\;∥\quad\quad ∥}
+ ""
+]@list[
+ ""
+ @f{\;\lambda^{\star} \;\;\;\; @bxd{d\lambda}^{\star}}
+ ""
+]
+]
+where @f{\sigma(m)} computes for every tangent vector to @f{\Lambda} the value of its corresponding generating function on @f{m\in L(\lambda)}.
+This section defines our big Lagrangian submanifold:
+@equation{
+L_{\Lambda} = s(L')
+}
+
+@section{Integration}
+There is a natural BV Hamiltonian @f{\widehat{d}} on @f{\Pi T^*(\Pi T\Lambda)}. It descirbes
+the lift to @f{\Pi T^*} of the natural nilpotent vector field @f{d} on @f{\Pi T \Lambda}.
+We have:
+@align[l.n @list[
+ @f{\int_{\Lambda}\Omega \;=\;\int_{L_{\Lambda}} \exp\left(S_{\rm BV} + \widehat{d}\right)} 
+ ""
+]@list[
+ @elem[#:style 'no-break]{where @hspace[1] @f{\widehat{d} = @bxd{d\lambda}\lambda^{\star}}}
+ ""
+]
+]
+@hyperlink["../BRST-formalism/Yang-Mills.html"]{In the case of Yang-Mills theory}, the commonly accepted notations for fields are:
+@tbl[#:orient 'vert @list[
+ @list[
+  @f{\lambda} @f{@bxd{d\lambda}} @f{\lambda^{\star}} @f{@bxd{d\lambda}^{\star}}
+]@list[
+  @f{\bar{c}} @f{\pi}            @f{\bar{c}^{\star}} @f{\pi^{\star}}
+]
+]]
+
+@section{Proof that @f{L_Λ} is Lagrangian}
+First of all, we have to eliminate the ambiguity in the definition of @f{\sigma}. We do this by lifting
+@f{\Lambda} to a subset of @f{\widehat{G}}. Now to every point @f{\lambda\in\Lambda} corresponds @f{\widehat{g}(\lambda)\in\widehat{G}}.
+The restriction of the symplectic form of @f{M\times \Pi T^*(\Pi T\Lambda)} to @f{L_{\Lambda}} is:
+@align[c.n @list[
+@elem[#:style 'no-break]{@f{\omega + d(d_{\Lambda}\widehat{g}\widehat{g}^{-1})} where @f{\omega} is the odd symplectic form on @f{M} and @f{d = d_M + d_{\Lambda} }}
+@label{restriction-of-symplectic-form}
+]]
+@comment{
+in this formula we identify @f{L_{\Lambda}}, as a manifold, with @f{M\times \Pi T\Lambda}, by the projection
+}
+Let @f{\ell} be a vector field on @f{\Lambda}. By @hyperlink["../BV-formalism/MomentMap.html"]{our definition of the moment map}, 
+it generates the vector field @f{\{(\ell.\widehat{g})\widehat{g}^{-1}\,,\,\_\}} on @f{\widehat{G}}. 
+Let @f{v} be a vector in @f{T_mM} tangent to @f{L(\lambda)}. Then, using @hyperlink["BV-formalism/Odd_symplectic_manifolds.html"]{general formulas}:
+@align[r.l.n @list[
+ @f{\phantom{(-)^{\bar{\ell}}}
+    \iota_v\iota_{\ell}\omega \;=\;} 
+ @f{(-)^{\bar{\ell}}{\cal L}_v\left((\ell.\widehat{g})\widehat{g}^{-1}\right)}
+ ""
+]@list[
+ @f{\phantom{(-)^{\bar{\ell}}}
+    \iota_v\iota_{\ell} d(d_{\Lambda}\widehat{g}\widehat{g}^{-1})\;=\;}
+ @f{(-)^{\bar{\ell}+1}{\cal L}_v\left((\ell.\widehat{g})\widehat{g}^{-1}\right)}
+ ""
+]
+]
+Therefore @f{\omega + d(d_{\Lambda}\widehat{g}\widehat{g}^{-1})} vanishes on any pair of vectors
+when one of them is tangent to @f{L}.
+
+Now let us consider a pair of vector fields @f{\ell_1} and @f{\ell_2} on @f{\Lambda}. We have:
+@align[r.l.n @list[
+ @f{\phantom{(-)^{\bar{\ell}}}
+    \iota_{\{(\ell_1 .\widehat{g})\widehat{g}^{-1}\,,\,\_\}}
+    \iota_{\{(\ell_2 .\widehat{g})\widehat{g}^{-1}\,,\,\_\}}
+    \omega\;=\;}
+ @f{(-)^{\bar{\ell}_2}\{(\ell_1  .\widehat{g})\widehat{g}^{-1}\,,\,(\ell_2  .\widehat{g})\widehat{g}^{-1}\}}
+ @label{iota-m-iota-m-omega}
+]@list[
+ @f{\iota_{\ell_1 + \{(\ell_1 .\widehat{g})\widehat{g}^{-1}\,,\,\_\}}
+    \iota_{\ell_2 + \{(\ell_2 .\widehat{g})\widehat{g}^{-1}\,,\,\_\}}
+    d(d_{\Lambda}\widehat{g}\widehat{g}^{-1})\;=\;}
+ @f{-{1\over 2}\iota_{\ell_1}\iota_{\ell_2}\{d_{\Lambda}\widehat{g}\widehat{g}^{-1}\,,\,d_{\Lambda}\widehat{g}\widehat{g}^{-1}\} \;+}
+ ""
+]@list[
+ ""
+ @f{+ \Big( \iota_{\ell_1}\iota_{\{(\ell_2 .\widehat{g})\widehat{g}^{-1}\,,\,\_\}} - (1\leftrightarrow 2) \Big)d_M(d_{\Lambda}\widehat{g}\widehat{g}^{-1})\;=}
+ ""
+]@list[
+ @f{=}
+ @f{(-)^{\bar{\ell}_2}\{(\ell_1  .\widehat{g})\widehat{g}^{-1}\,,\,(\ell_2  .\widehat{g})\widehat{g}^{-1}\} \;+}
+ @label{iota-iota-dgg}
+]@list[
+ ""
+ @f{+ \Big((-)^{(\bar{\ell}_1+1)(\bar{\ell}_2+1) + \bar{\ell}_1+1} \{(\ell_2  .\widehat{g})\widehat{g}^{-1}\,,\,(\ell_1  .\widehat{g})\widehat{g}^{-1}\} - (1\leftrightarrow 2)\Big)}
+ ""
+]
+]
+The sum of Eq. (@ref{iota-m-iota-m-omega}) and (@ref{iota-iota-dgg}) is zero, showing that @f{\omega + d(d_{\Lambda}\widehat{g}\widehat{g}^{-1})}
+vanishes when one vector is tangent to @f{L} and another is transverse. 
+}
+
 
 @; ---------------------------------------------------------------------------------------------------
 
