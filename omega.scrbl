@@ -1372,11 +1372,11 @@ Lagrangian submanifold in @f{L_{\Lambda} \;\subset\; M\times \Pi T^*(\Pi T\Lambd
 describe the construction of @f{L_{\Lambda}}. 
 
 As a first step, let us consider a submanifold @f{L''\subset M\times \Lambda} which is defined as follows:
-@equation{
+@equation[#:label "l-prime-prime"]{
 L'' = \{ (m,\lambda) \;|\; \lambda\in\Lambda\;,\;m\in L(\lambda) \}
 }
 This can be promoted to a subspace @f{L'\subset M\times \Pi T\Lambda} quite trivially:
-@equation{
+@equation[#:label "l-prime"]{
 L' = \{ (m,\lambda,@bxd{d\lambda}) \;|\; (\lambda,@bxd{d\lambda})\in \Pi T\Lambda\;,\;m\in L(\lambda) \}
 }
 Finally, we will construct @f{L_{\Lambda}} as some section of the vector bundle
@@ -1386,19 +1386,6 @@ restricted to @f{L'\subset M\times \Pi T\Lambda}. Which section?
 The simplest guess would be the zero section. However 
 @bold{that} would @bold{not} be a Lagrangian submanifold, so zero section is a wrong guess.
 There @bold{is}, however, a natural @bold{nonzero section}. It is constructed as follows:
-@; Let us choose for every point @f{(\lambda,@bxd{d\lambda})\in T\Lambda} a generating function
-@; @f{\sigma_{@bxd{d\lambda}}} 
-@; a normal vector field: 
-@; @align[l.n @list[
-@;  @f{v_{@bxd{d\lambda}}\;\in\; \Gamma(NL(\lambda))} 
-@;  ""
-@; ]@list[
-@;  @elem[#:style 'no-break]{where @f{NL(\lambda)\;=\;TM|_{L(\lambda)}/TL(\lambda)} is a normal bundle of @f{L(\lambda)\subset M}}
-@;  ""
-@; ]
-@; ]
-@; which describes the infinitesimal variation @f{@bxd{d\lambda}} of @f{L(\lambda)}. 
-@; With these notations, our nonzero section is given by the following formula:
 @align[l.l.n @list[
  @f{s\;:\;L' \rightarrow M\times \Pi T^*(\Pi T\Lambda)}
  ""
@@ -1446,15 +1433,46 @@ We have:
 
 @section{Proof that @f{L_Λ} is Lagrangian}
 First of all, we have to eliminate the ambiguity in the definition of @f{\sigma}. We do this by lifting
-@f{\Lambda} to a subset of @f{\widehat{G}}. Now to every point @f{\lambda\in\Lambda} corresponds @f{\widehat{g}(\lambda)\in\widehat{G}}.
-The restriction of the symplectic form of @f{M\times \Pi T^*(\Pi T\Lambda)} to @f{L_{\Lambda}} is:
-@align[c.n @list[
-@elem[#:style 'no-break]{@f{\omega + d(d_{\Lambda}\widehat{g}\widehat{g}^{-1})} where @f{\omega} is the odd symplectic form on @f{M} and @f{d = d_M + d_{\Lambda} }}
-@label{restriction-of-symplectic-form}
-]]
-@comment{
-in this formula we identify @f{L_{\Lambda}}, as a manifold, with @f{M\times \Pi T\Lambda}, by the projection
+@f{\Lambda} to a subset of @f{\widehat{G}}. Now to every point @f{\lambda\in\Lambda} corresponds @f{\widehat{g}(\lambda)\in\widehat{G}}, and:
+@equation{
+\sigma(m) = (d\widehat{g}\widehat{g}^{-1})(m)
 }
+@comment{
+The way we defined @hyperlink["../BV-formalism/MomentMap.html#%28part._.Moment_map%29"]{the moment map}, 
+@f{(d\widehat{g}\widehat{g}^{-1})(m)} is a function on @f{\Pi T\widehat{G}}. But since we lifted @f{\Lambda} to @f{\widehat{G}}, it defines
+for us a function on @f{\Pi T\Lambda}, which is the same as a section of @f{\Pi T^{\star}\Lambda \rightarrow \Lambda}.
+On the other hand, from any section: 
+ @equation{s_0\;:\;\Lambda\rightarrow \Pi T^{\star}\Lambda} 
+we can  naturally construct a section @f{s}
+of @f{\Pi T^{\star}(\Pi T\Lambda) \rightarrow \Lambda} in the following way: first construct
+@align[l.n @list[
+ @f{\hat{s}_0\;:\;\Pi T\Lambda \rightarrow (\Pi T^* \otimes \Pi T)\Lambda} ""
+]@list[
+ @elem[#:style 'no-break]{
+   @f{\hat{s}_0\;=\;(s_0\circ\pi)\otimes \mbox{id}} 
+   where 
+   @f{\pi\,:\,\Pi T\Lambda\rightarrow\Lambda} 
+   and
+   @f{\mbox{id}\,:\,\Pi T\Lambda\rightarrow\Pi T\Lambda} 
+  } ""
+]
+]
+and then compose it with the natural embedding @f{(\Pi T^* \otimes \Pi T)\Lambda\subset \Pi T^{\star}(\Pi T\Lambda)}.
+This is what Eq. (@ref{nonzero-section}) does.
+}
+We have to prove that the restriction of the symplectic form of @f{M\times \Pi T^*(\Pi T\Lambda)} to @f{L_{\Lambda}} is zero.
+We notice that it is equal to the pullback under the natural projection @f{L_{\Lambda}\;\rightarrow\; L''}
+(see Eq. (@ref{l-prime-prime})) of the following 2-form on @f{L''}:
+@align[l.n @list[
+ @f{\omega + d(d_{\Lambda}\widehat{g}\widehat{g}^{-1})}
+ @label{restriction-of-symplectic-form}
+]@list[
+ @elem[#:style 'no-break]{ where  @f{d = d_M + d_{\Lambda}} and @f{\omega} is the odd symplectic form on @f{M} } 
+ ""
+]
+]
+Therefore we need to prove that @f{\omega + d(d_{\Lambda}\widehat{g}\widehat{g}^{-1})} is zero.
+
 Let @f{\ell} be a vector field on @f{\Lambda}. By @hyperlink["../BV-formalism/MomentMap.html"]{our definition of the moment map}, 
 it generates the vector field @f{\{(\ell.\widehat{g})\widehat{g}^{-1}\,,\,\_\}} on @f{\widehat{G}}. 
 Let @f{v} be a vector in @f{T_mM} tangent to @f{L(\lambda)}. Then, using @hyperlink["../BV-formalism/Odd_symplectic_manifolds.html"]{general formulas}:
@@ -1473,7 +1491,8 @@ Let @f{v} be a vector in @f{T_mM} tangent to @f{L(\lambda)}. Then, using @hyperl
 Therefore @f{\omega + d(d_{\Lambda}\widehat{g}\widehat{g}^{-1})} vanishes on any pair of vectors
 when one of them is tangent to @f{L}.
 
-Now let us consider a pair of vector fields @f{\ell_1} and @f{\ell_2} on @f{\Lambda}. We have:
+Now let us consider a pair of vector fields @f{\ell_1} and @f{\ell_2} on @f{\Lambda}. 
+Using the @hyperlink["../omega/Definition.html#(elem._.Maurer.Cartan.Equation)"]{Maurer-Cartan equation}:
 @align[r.l.n @list[
  @f{\phantom{(-)^{\bar{\ell}}}
     \iota_{\{(\ell_1 .\widehat{g})\widehat{g}^{-1}\,,\,\_\}}
@@ -1502,7 +1521,9 @@ Now let us consider a pair of vector fields @f{\ell_1} and @f{\ell_2} on @f{\Lam
 ]
 ]
 The sum of Eq. (@ref{iota-m-iota-m-omega}) and (@ref{iota-iota-dgg}) is zero, showing that @f{\omega + d(d_{\Lambda}\widehat{g}\widehat{g}^{-1})}
-vanishes when one vector is tangent to @f{L} and another is transverse. 
+vanishes when both vectors are transverse to @f{L}.
+
+Since @f{L(\lambda)} is a Lagrangian submanifold, this completes the proof that @f{\omega + d(d_{\Lambda}\widehat{g}\widehat{g}^{-1})} is zero.
 }
 
 
