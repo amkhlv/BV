@@ -791,25 +791,20 @@ every order in @f{\Phi}. This can be proven in the following way:
 \Delta \{a,a\} = 2\{\Delta a,a\} = -\{\{a,a\},a\} + 2\{\Delta\Phi,a\}
 }
 The first term @f{-\{\{a,a\},a\}} is automatically zero because of the Jacobi identity.
-The vanishing of @f{2\{\Delta\Phi,a\}} requires the following additional assumption.
-We @spn[attn]{assume} that @f{a}, as a function of @f{\Phi}, is @f{\bf h}-invariant.
-In particular, this implies:
+The vanishing of @f{2\{\Delta\Phi,a\}} follows from Eq. (@ref{EquivarianceOfA}):
 @equation{
 \{\Delta \Phi, a(\Phi)\} = a(\{\Delta\Phi,\Phi\}) = a (0) = 0
 }
 Now we have @f{\{a,a\}} is @f{\Delta}-closed order by order in @f{\Phi}. Let us @spn[attn]{assume} that
-it is actually @f{\Delta}-exact order by order in @f{\Phi}
+it is actually @f{\Delta}-exact order by order in @f{\Phi}:
 @equation{
 \{a,a\} = -2\Delta a'
 }
-Then we define @f{a'} to be the next term of the @f{\Phi}-expansion of @f{a}.
-
-@comment{
-We feel that our additional assumptions are rather mild. In this sense, the only thing
-we really need for our construction to work is @f{\{\Delta\Phi,\Phi\}=0} which we postulate 
-as (stronger) Eq. (@ref{DefQ}). The higher order consistency conditions are, roughly speaking,
-automatic.
+and, moreover, exact in a way compatible with Eq. (@ref{EquivarianceOfA}), @italic{i.e.}:
+@equation{
+\{\Delta\Phi\langle\xi\rangle, a'(\eta)\}\;=\;\left.{d\over dt}\right|_{t=0}a'\left(e^{t\,{\rm ad}_{\xi}}\eta\right)
 }
+Then we define @f{a'} to be the next term of the @f{\Phi}-expansion of @f{a}.
 For example, up to the fourth order in @f{\Phi}:
 @align[r.c.c.c.l.n @list[
  @f|{a\;=\;\Phi - {1\over 2}\Delta^{-1}\{}|
