@@ -32,6 +32,14 @@
 
 @bystro-ribbon[]
 
+@slide["Introduction"  #:tag "Introduction" #:showtitle #t]{
+From mathematical point of view the BV formalism studies odd symplectic supermanifolds.
+
+Consider a supermanifold @f{M} with an odd 2-form @f{\omega} satisfying @f{d\omega=0}.
+
+
+}
+
 @slide["Odd symplectic manifolds" #:tag "Odd symplectic manifolds" #:showtitle #t]{
 @table-of-contents[]
 
