@@ -20,6 +20,11 @@
 @(bystro-def-formula "formula-enormula-humongula!")
 
 @(bystro-dump-LaTeX #f)
+
+@;(define (bxd x) (string-append "{［\\!" x "\\!\\!］}"))
+@(define (bxd x) (string-append "{〔" x "\\!〕}"))
+
+
 @title[#:style '(no-toc no-sidebar)]{Form @f{\Omega}}
 
 @bystro-ribbon[]
@@ -1351,20 +1356,44 @@ meaningful, without imposing the ugly constraint (@ref{BsCommute}).
 
 }
 
-@;(define (bxd x) (string-append "{［\\!" x "\\!\\!］}"))
-@(define (bxd x) (string-append "{〔" x "\\!〕}"))
 
 @slide["Reduction to integration over single Lagrangian submanifold" #:tag "As integration over single L" #:showtitle #t]{
 @short-intro{
 Here we will explain that integration over a family of Lagrangian submanifolds can be reduced to 
 integration over a single Lagrangian submanifold in a larger phase space.
 }
-
-
-@section{Definition of  @f{L_{\Lambda}} }
 A family of Lagrangian submanifolds @f{\{L(\lambda)\subset M|\lambda\in\Lambda\}} defines a single
-Lagrangian submanifold in @f{L_{\Lambda} \;\subset\; M\times \Pi T^*(\Pi T\Lambda)}. We will now
-describe the construction of @f{L_{\Lambda}}. 
+Lagrangian submanifold in @f{L_{\Lambda} \;\subset\; M\times \Pi T^*(\Pi T\Lambda)}. We will 
+describe the construction of @f{L_{\Lambda}} in two steps: first locally in a vicinity of some point
+of @f{\Lambda}, and then globally.
+
+@table-of-contents[]
+
+@section{Local construction}
+Let us pick some fixed Lagrangian submanifold @f{L_0} from our family @f{\Lambda}:
+@equation{
+L_0 = L(\lambda_0)
+}
+Let us define a ``first try'' Lagrangial submanifold @f{\widetilde{L}\subset M\times \Pi T^*(\Pi T\Lambda)} as follows:
+@equation{
+\widetilde{L} = L_0\times \Pi T\Lambda
+}
+@comment{
+this is a direct product of two Lagrangian submanifolds, @f{L(\lambda_0)\subset M} and the zero section @f{\Pi T\Lambda\subset \Pi T^*(\Pi T\Lambda)}
+}
+Locally, in the vicinity of @f{L_0}, we can present @f{\Lambda} as a family of gauge fermions @f{\Psi_{\lambda}\in\mbox{Fun}(L(\lambda_0))}
+(for each @f{\lambda\in \Lambda}, sufficiently close to @f{\lambda_0}, the @f{L(\lambda)} is obtained from @f{L(\lambda_0)} as a deformation
+corresponding to the gauge fermion @f{\Psi_{\lambda}}). Let us  consider the following function:
+@align[r.l.n @list[
+ @f{\phantom{\int}\widetilde{\Psi}\;\in\;} @f{\mbox{Fun}(\widetilde{L})\phantom{\int}} ""
+]@list[
+ @f{\phantom{\int}\widetilde{\Psi}(\phi,\lambda,\! @bxd{d\lambda}) \;=\;} @f{\Psi_{\lambda}(\phi)\phantom{\int}} ""
+]
+]
+We consider it as a gauge fermion deforming @f{\widetilde{L}} to some new Lagrangian submanifold.
+@bold{This new Lagrangian submanifold} is what we need; we call it @f{L_{\Lambda}}.
+
+@section{Global definition of  @f{L_{\Lambda}} }
 
 As a first step, let us consider a submanifold @f{L''\subset M\times \Lambda} which is defined as follows:
 @equation[#:label "l-prime-prime"]{
@@ -1519,6 +1548,9 @@ The sum of Eq. (@ref{iota-m-iota-m-omega}) and (@ref{iota-iota-dgg}) is zero, sh
 vanishes when both vectors are transverse to @f{L}.
 
 Since @f{L(\lambda)} is a Lagrangian submanifold, this completes the proof that @f{\omega + d(d_{\Lambda}\widehat{g}\widehat{g}^{-1})} is zero.
+
+
+
 }
 
 
