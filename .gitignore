@@ -1,3 +1,4 @@
+copy-to-saudade-folder.sh
 **/*.html
 **/[0-9]*.svg
 **/formulas.sqlite
