@@ -21,9 +21,12 @@
 @title[#:style '(no-toc no-sidebar)]{Odd contact manifolds}
 
 @bystro-ribbon[]
+
+@hyperlink["../index.html"]{Return to index}
+
 @table-of-contents[]
 
-
+@hyperlink["../index.html"]{Return to index}
 
 @bystro-ribbon[]
 

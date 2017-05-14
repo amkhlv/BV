@@ -391,6 +391,11 @@ We will now outline some possible ways of resolving this problem:
 
 @table-of-contents[]
 
+@section{Use @f{\rm LEG} instead of @f{\rm LAG}}
+@f{\Omega} is naturally well-defined on the space of 
+@hyperlink["../contact-structure/Quantomorphisms.html"]{Legendrian submanifolds in some contact submanifold @f{\widehat{M}} which is a 
+bundle over @f{M}}
+
 @section[#:tag "GhostNumberInvariance"]{Use ghost number symmetry}
 There is usually a @f{U(1)} symmetry called @italic{ghost number}. Let us do the following:
 @itemlist[#:style 'ordered
