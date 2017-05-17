@@ -42,7 +42,7 @@ were completely new to me. I am writing these personal notes just to keep my hea
 
 @hyperlink["BV-formalism/index.html"]{BV formalism}
 
-@hyperlink["BRST-formalism/index.html"]{BRST formalism} @hspace[1]@smaller-2{(unfinished)}
+@hyperlink["BRST-formalism/index.html"]{BRST formalism}
 
 @hyperlink["equivariant-cohomology/index.html"]{Equivariant cohomology}
 
@@ -55,6 +55,8 @@ were completely new to me. I am writing these personal notes just to keep my hea
 @hyperlink["omega/index.html"]{Form @f{\Omega} in BV formalism}
 
 @hyperlink["omega-BRST/index.html"]{Form @f{\Omega} in BRST formalism}
+
+@hyperlink["contact-structure/index.html"]{Quantomorphisms}
 
 @section{Applications to string theory}
 

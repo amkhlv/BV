@@ -387,7 +387,8 @@ implies that @f{({\rm Ad}(\widehat{g})\xi)|_{\widehat{g}L}} is a constant (but n
 
 
 This is potentially a problem (we certainly @bold{do} want @f{\Omega} to descend on @f{\rm LAG}).
-We will now outline some possible ways of resolving this problem:
+
+We will now outline  @bold{possible ways of resolving this problem:}
 
 @table-of-contents[]
 
@@ -620,9 +621,11 @@ the Lie algebra @f{\bf h} of @f{H} consists of vector fields of the form @f{\{F,
 Hamiltonians of elements of @f{\bf h}.}
 @item{A map
 @align[r.l @list[
-@f{{\bf h} \to}@f{\mbox{ \tt\small half-densities on }M}
+ @f{{\bf h} \to}
+ @f{\mbox{ \tt\small half-densities on }M}
 ]@list[
-@f{\xi \mapsto}@f{\; \rho^{\tt C}_{1\over 2}(\xi)}
+ @f{\xi \mapsto}
+ @elem[#:style 'no-break]{@f{\; \rho^{\tt C}_{1\over 2}(\xi)} @smaller{(index @tt{C} is for ``@bold{C}artan model'')}}
 ]]
 such that:
 @align[r.l.n @list[
@@ -706,7 +709,7 @@ which satisfies @f{\Delta [x,y] = \{\Delta x,\Delta y\}}.
 Because of Eq. (@ref{EquivarianceOfPhi}), we will impose the following additional
 requirement:
 @align[r.c.l.c.n @list[
-@f{} "" @f{\forall x\in F:\forall y\in {\cal F}:} "" ""
+@f{} "" @f{\forall x\in {\cal F}:\forall y\in {\cal F}:} "" ""
 ]@list[
 @f{}
 @bystro-bg[255 255 230]
