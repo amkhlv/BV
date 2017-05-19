@@ -973,16 +973,16 @@ Let @f{\pi} denote the Poisson bivector of @f{X}. It defines the following solut
  @f{\rho_{1\over 2}(x,x^{\star},{\bf B}) \;=\; \exp(\pi^{ij}(x)x^{\star}_ix^{\star}_j) }
  ""
 ]@list[
- @elem[#:style 'no-break]{where @f{{\bf B}\;=\;\{e_1,\ldots,e_n,f_1,\ldots,f_n,\,\epsilon^{\vee 1},\ldots,\epsilon^{\vee n}, \eta^{\vee 1},\ldots, \eta^{\vee n}\}}}
+ @elem[#:style 'no-break]{where @f{{\bf B}\;=\;\{e_1,\ldots,e_n,f^1,\ldots,f^n,\,\epsilon^{\vee 1},\ldots,\epsilon^{\vee n}, \eta_{\vee 1},\ldots, \eta_{\vee n}\}}}
  ""
 ]@list[
- @elem[#:style 'no-break]{where @f{\{e_1,\ldots,e_n,f_1,\ldots,f_n\}} is a Darboux basis in @f{T_x X} 
-       and @f{\{\epsilon^{\vee 1},\ldots,\epsilon^{\vee n}, \eta^{\vee 1},\ldots, \eta^{\vee n}\}} its dual}
+ @elem[#:style 'no-break]{where @f{\{e_1,\ldots,e_n,f^1,\ldots,f^n\}} is a Darboux basis in @f{T_x X} 
+       and @f{\{\epsilon^{\vee 1},\ldots,\epsilon^{\vee n}, \eta_{\vee 1},\ldots, \eta_{\vee n}\}} its dual}
  ""
 ]
 ]
 @comment{
-In this formula we define a half-density at @f{m=(x,x^{\star})\in M} as function on the space of bases (``tetrads'') in 
+In this formula we define a half-density at @f{m=(x,x^{\star})\in M} as a function on the space of bases (``tetrads'') in 
 @f{T_m M \simeq T_x X\oplus \Pi T^*_xX}, such that the value on two different bases differs by a multiplication
 by the super-determinant.
 }
@@ -1026,7 +1026,7 @@ The odd tangent bundle @f{\Pi T X} has a natural volume form. This induces a hal
 ]
 It satisfies the Quantum Master Equation.
 
-Let us consider also consider a different half-density, which also satisfies the Quantum Master Equation:
+Now consider a different half-density, which also satisfies the Quantum Master Equation:
 @equation{
 \rho_{1\over 2}\;=\; e^{\widehat{d}} \rho^{(0)}_{1\over 2}
 }
@@ -1054,7 +1054,7 @@ It satisfies Eq. (@ref{RhoEquivariantlyClosed}):
 }
 This formula can be generalized as follows. Suppose that @f{\alpha} is a function on @f{{\bf h}\times \Pi TX}.
 For any @f{\xi\in {\bf h}}, we think of @f{\alpha(\xi)} as a function on @f{\Pi TX}, @italic{i.e.} a
-differential form on @f{X}. With a slight abuse of notaions, @f{\alpha(\xi)} will also denote
+pseudo-differential form on @f{X}. With a slight abuse of notaions, @f{\alpha(\xi)} will also denote
 the pullback of @f{\alpha(\xi)} along the projection, from @f{\Pi TX} to @f{\Pi T^*(\Pi TX)}. Then we have:
 @align[r.l.n @list[
  @f{\Delta \left(\alpha(\xi) e^{\widehat{d} + \widehat{\iota_{\xi}}} \rho^{(0)}_{1\over 2}\right) \;=\;}

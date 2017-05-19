@@ -37,7 +37,15 @@ From mathematical point of view the BV formalism studies odd symplectic superman
 
 Consider a supermanifold @f{M} with an odd 2-form @f{\omega} satisfying @f{d\omega=0}.
 
+It is @bold{not true} that @f{\omega^{-1}} defines an antisymmetric bivector. 
+(The symmetry properties @seclink["sec:symplectic-and-Poisson"]{are not} of a bivector.)
 
+Instead, it defines 
+@seclink["OddLaplace"]{a second order differential operator @f{\Delta} on half-densities}.
+
+A half-density defines a measure on every Lagrangian submanifold @f{L\subset M}.
+The volume of the Lagrangian submanifold with respect to this measure is a mathematical
+model for the path integral in a gauge theory.
 }
 
 @slide["Odd symplectic manifolds" #:tag "Odd symplectic manifolds" #:showtitle #t]{
@@ -61,7 +69,7 @@ The relation to Lie derivative:
 [\iota_V,d] = {\cal L}_V
 }
 
-@section{Symplectic structure and Poisson structure}
+@section[#:tag "sec:symplectic-and-Poisson"]{Symplectic structure and Poisson structure}
 
 Consider a supermanifold @f{M}, with local coordinates @f{Z^A}, equipped with an @bold{odd} Poisson bracket 
 of the form:
@@ -386,18 +394,6 @@ The Lie derivative defined @f{{\cal L}_{\{H,\,\_\}}\rho_{1\over 2}} defined in E
 is safe as a function of @f{\rho_{1\over 2}}, but unsafe in @f{H}.
 
 We will give an @hyperlink["../omega/Unsafe_operations.html"]{example of a computation where this is important}.
-
-@section{How to be safe}
-@div[redbox]{
-The Lie derivative @f{{\cal L}_{\{H,\,\_\}}\rho_{1\over 2}} is completely safe if @f{H} depends only on
-fields, but not on antifields (or @italic{vice versa}).
-}
-Obviously, @bold{all such @f{H} are in involution with one another}.
-
-There could be other methods of safe restriction. 
-
-Notice that both @f{\int \phi_1(x)\phi_2^{\star}(x)} and @f{\int \phi_2(x)\phi_1^{\star}(x)} in Eq. (@ref{DeltaOnProductOfLocal}) 
-appear safe, and the product of them safe, but their antibracket is unsafe.
 
 }
 

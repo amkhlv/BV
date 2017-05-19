@@ -58,6 +58,8 @@ were completely new to me. I am writing these personal notes just to keep my hea
 
 @hyperlink["contact-structure/index.html"]{Quantomorphisms}
 
+@hyperlink["transfer/index.html"]{Homotopy transfer}
+
 @section{Applications to string theory}
 
 @hyperlink["bosonic-string/index.html"]{Bosonic string}
