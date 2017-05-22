@@ -1,3 +1,4 @@
+server_bv.cpio.lzma
 copy-to-saudade-folder.sh
 **/*.html
 **/[0-9]*.svg
