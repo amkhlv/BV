@@ -153,7 +153,56 @@ vector field @f{\xi_H = \{H,\,\_\}}:
    H\Delta_{\rm can}\rho_{1\over 2}
 }
 
-@bold{Lemma} 
+We will now prove @th-ref{th:ExistsDeltaCanonical}.
+
+@bold{Lemma @th-num{th:infinitesimal-neighborhood}} Our @f{\mu_L[\rho_{1\over 2}]} 
+(which is a density on @f{L} which we constructed from @f{\rho_{1\over 2}})
+only depends on @f{\rho_{1\over 2}} through restriction to the first infinitesimal neighborhood of @f{L}. In
+other words, if we replace @f{\rho_{1\over 2}} with @f{e^f\rho_{1\over 2}} where @f{f} is a function on @f{M}
+having second order zero on @f{L\subset M}, then @f{\mu_L} will not change. 
+
+@comment{
+This is slightly counterintuitive, because @f{\Delta_{\rm can}} is actually a second order differential operator.
+It is important that @f{L} is Lagrangian.
+}
+
+@bold{Proof} The definition of @f{\mu} is given by Eq. (@ref{MeasureMu}); @f{\rho_{1\over 2}} only enters the light hand side of
+Eq. (@ref{MeasureMu}) through the first infinitesimal neighborhood of @f{L}.
+
+@bold{Lemma @th-num{th:transitivity}} For any fixed positive integer @f{n},  any smooth function @f{\Psi} on @f{L} can be extended to a function
+@f{\widetilde{\Psi}} on @f{M} such that the derivative of @f{\rho_{1\over 2}} along the flux of @f{\{\widetilde{\Psi},\_\}}
+has zero of the order @f{n} on @f{L}:
+@align[l.n @list[
+ @f{{\cal L}_{\{\widetilde{\Psi},\_\}} \rho_{1\over 2} \;=\;f\rho_{1\over 2}}
+ ""
+]@list[
+ @elem[#:style 'no-break]{where @f{f\in \mbox{Fun}(M)} vanishes in the @f{n}-the infinitesimal neighborhood of @f{L\subset M}}
+ ""
+]
+]
+@bold{Proof} Direct computation in coordinates. Let us choose some Darboux coordinates @f{\phi^i,\phi_i^{\star}}, so that @f{L} is at @f{\phi^{\star}=0}.
+Let us use these coordinates to identify half-densities with functions. Without loss of generality, we
+can assume that in the vicinity of @f{m}:
+@align[l.n @list[
+ @f{\rho_{1\over 2} = e^{S}} ""
+]@list[
+ @elem[#:style 'no-break]{where @f{S=s(\phi) + Q^i\phi^{\star}_i + \ldots}} ""
+]
+]
+where @f{\ldots} stand for terms of the higher order in @f{\phi^{\star}}. Then our problem is to find @f{\widetilde{\Psi}(\phi,\phi^{\star})}
+solving:
+@align[l.n @list[
+ @f{{\partial\over\partial\phi^i}{\partial\over\partial\phi^{\star}_i}\widetilde{\Psi} + \{S, \widetilde{\Psi}\} = 0} 
+ ""
+]@list[
+ @f{\widetilde{\Psi}(\phi,0) = \Psi(\phi)}
+ ""
+]
+]
+Solutions can always be found, order by order in @f{\phi^{\star}}, to any order @f{n}.
+
+
+@bold{Lemma @th-num{th:equivariance-of-mu}} 
 @equation[#:label "EquivarianceOfMu"]{g^* \mu_{gL}[\rho_{1\over 2}] = \mu_L[g^* \rho_{1\over 2}]}
 @bold{Proof}
 For any @f{H\in {\rm Fun}(M)}:
@@ -176,32 +225,36 @@ For any @f{H\in {\rm Fun}(M)}:
 ""
 ]]
 
-@bold{Proof of Theorem.} 
+@bold{Proof of @th-ref{th:ExistsDeltaCanonical}} 
 We can in any case @bold{define} @f{\sigma_{1\over 2}[L,\rho_{1\over 2}]} by the formula:
-@equation{
+@equation[#:label "def-sigma-L"]{
 \left.\sigma_{1\over 2}[L,\rho_{1\over 2}] \right|_L \;=\; \mu_L[\rho_{1\over 2}]
 }
-What we have to prove is that so defined @f{\sigma_{1\over 2}[L,\rho_{1\over 2}]} does not depend on @f{L}.
-In other words, consider any @f{x\in M} and a Lagrangian submanifold @f{L\subset M} such that @f{x\in L} and
+What we have to prove is that:
+@align[l.n @list[
+ @elem[#:style 'no-break]{so defined @f{\sigma_{1\over 2}[L,\rho_{1\over 2}]} does not depend on @f{L}}
+ @label{sigma-is-L-independent-in-words}
+]
+]
+Consider any @f{x\in M} and a Lagrangian submanifold @f{L\subset M} such that @f{x\in L} and
 @f{e_1,\ldots,f^1,\ldots} in @f{T_xM} such that @f{e_1,\ldots } are tangent to @f{L} and @f{\omega(f_i,e^j) = \delta_i^j}.
-Then, by definition:
-@equation{
-\sigma_{1\over 2}[L,\rho_{1\over 2}] (x,\,e_1,\ldots,f^1,\ldots) \;=\; \mu_L[\rho_{1\over 2}](x)(e_1,\ldots)
-}
-Eq. (@ref{EquivarianceOfMu}) implies, that for any @f{g\in G} such that @f{g(x)=x}, and @f{g^*\rho_{1\over 2} = \rho_{1\over 2}} we have:
+Then, Eq. (@ref{def-sigma-L}) says:
+@align[l.n @list[
+ @elem[#:style 'no-break]{by definition @f{\sigma_{1\over 2}[L,\rho_{1\over 2}] (x,\,e_1,\ldots,f^1,\ldots) \;=\; \mu_L[\rho_{1\over 2}](x)(e_1,\ldots)}}
+ ""
+]
+]
+Let us consider Eq. (@ref{EquivarianceOfMu}) in the special case when @f{g\in G} is such that @f{g(x)=x}.
+We get:
 @equation[#:label "SigmaRotated"]{
 \sigma_{1\over 2}[gL,\rho_{1\over 2}](x,\, g_*e_1,\ldots, g_*f^1,\ldots)\;=\;
-\sigma_{1\over 2}[L,\rho_{1\over 2}](x,\,e_1,\ldots, f^1,\ldots)
+\sigma_{1\over 2}[L,g^*\rho_{1\over 2}](x,\,e_1,\ldots, f^1,\ldots)
 }
-Since @f{g} preserves @f{\rho_{1\over 2}} and the point, @f{x}, the linear transformation @f{g_*} of the tangent space
-to @f{x} has unit superdeterminant; therefore Eq. (@ref{SigmaRotated}) implies:
-@equation[#:label "sigma-is-L-independent"]{
-\sigma_{1\over 2}[gL,\rho_{1\over 2}](x,\, e_1,\ldots, f^1,\ldots)\;=\;
-\sigma_{1\over 2}[L,\rho_{1\over 2}](x,\,e_1,\ldots, f^1,\ldots)
-}
-The group of special canonical transformations preserving the point @f{x} acts
-locally transitively on Lagrangian submanifolds passing through the point @f{x}.
-Therefore Eq. (@ref{sigma-is-L-independent}) implies that @f{\sigma_{1\over 2}} does not depend on @f{L}.
+Consider an infinitesimal variation of @f{L} specified by some ``gauge fermion'' @f{\Psi\in\mbox{Fun}(L)}.
+Let us use @lemma-ref{th:transitivity} to extend it to @f{\widetilde{\Psi}}, and put @f{g = \exp\left(t\{\widetilde{\Psi},\_\}\right)}.
+@lemma-ref{th:infinitesimal-neighborhood} implies that @f{\left.{d\over dt}\right|_{t=0}} of the RHS of Eq. (@ref{SigmaRotated})
+vanishes. This proves that the variation with respect to @f{L} of the LHS of Eq. (@ref{SigmaRotated}) vanishes, and
+therefore @f{\sigma_{1\over 2}[L,\rho_{1\over 2}]} does not depend on @f{L}.
 
 @section{Relation to odd Poisson bracket}
 Let @f{X} and @f{Y} be two @bold{odd} Hamiltonians (so that the corresponding Hamiltonian
