@@ -107,21 +107,64 @@ In Darboux coordinates:
 
 @slide["Odd Laplace operator" #:tag "OddLaplace" #:showtitle #t]{
 
+@short-intro{
+Here we will give a brief self-contained presentation of the ``canonical'' odd Laplace operator @f{\Delta_{\rm can}}.
+}
+
 @table-of-contents[]
 
-@section{Definition}
+@section{Properties of Lie derivative of half-density}
+Consider a vector field @f{v} on @f{M}, and the corresponding 1-parameter group of diffeomorphisms @f{g^t}. 
+
+Let us think of a half-density @f{\rho_{1\over 2}} as a function of @f{x} and @f{\bf E}, where @f{x} is a point of
+@f{M} and @f{\bf E} a basis in @f{T_xM}, depending on @f{\bf E} in the following way:
+@equation{
+\rho_{1\over 2}(x,A{\bf E}) = \left(\mbox{SDet}A\right)^{1/2}\rho_{1\over 2}(x,{\bf E})
+}
+By definition, the Lie derivative of @f{\rho_{1\over 2}} along @f{v\in \mbox{Vect}(M)} is:
+@equation{
+\left({\cal L}_v \rho_{1\over 2}\right)(x,{\bf E}) = \left.{d\over dt}\right|_{t=0} \rho(g^tx, g^t_*{\bf E})
+}
+Let us multiply @f{v} by a function @f{f\in\mbox{Fun}(M)} such that @f{f(x)=0}. The flux of @f{fv} preserves the point @f{x},
+and we have:
+@align[r.l.n @list[
+ @f{\phantom{\left.{d\over dt}\right|_{t=0}}
+    \left({\cal L}_{fv} \rho_{1\over 2}\right)(x,{\bf E}) 
+    \;=\;} 
+ @f{(-)^{\bar{f}\bar{v}}\left.{d\over dt}\right|_{t=0} \rho\left(x, \exp(t v\otimes df){\bf E}\right) 
+    = (-)^{\bar{f}\bar{v}} {1\over 2}({\cal L}_vf)\rho_{1\over 2}(x,{\bf E})}
+ ""
+]
+]
+This implies that for any @f{f\in \mbox{Fun}(M)} and @f{v\in \mbox{Vect}(M)}:
+@equation{
+{\cal L}_{fv} \rho_{1\over 2} = f{\cal L}_v \rho_{1\over 2} + (-)^{\bar{f}\bar{v}} {1\over 2} ({\cal L}_vf)\rho_{1\over 2}
+} 
+In particular:
+@align[l.n @list[
+ @f{{\cal L}_{\{FH,\_\}}\rho_{1\over 2}\;=\;
+    {\cal L}_{F\{H,\_\}}\rho_{1\over 2} + (-)^{\bar{F}\bar{H}}{\cal L}_{H\{F,\_\}}\rho_{1\over 2}
+    \;=\;F{\cal L}_{\{H,\_\}}\rho_{1\over 2} 
+    + (-)^{\bar{F}\bar{H}}H{\cal L}_{\{F,\_\}}\rho_{1\over 2} 
+    + (-)^{(\bar{H}+1)\bar{F}} \{H,F\}\rho_{1\over 2}}
+ @label{Lie-derivative-along-FH}
+]
+]
+
+
+@section{Definition of @f{\Delta_{\rm can}}}
 Let @f{M} denote the BV phase space.
 A @f{P}-structure (@italic{i.e.} an odd Poisson bracket on @f{M})  defines a canonical 
 second order differential operator on @bold{half-densities}, which we will call 
 @f{\Delta_{\rm can}}. 
 It is defined in the following way. Any half-density @f{\rho_{1\over 2}} 
 defines a measure on a Lagrangian submanifold @f{L} @cite{Schwarz:1992nx,Schwarz:1992gs}, which we will  
-denote @f{\left.\rho_{1\over 2}\right|_L}, or some times simply just @f{\rho_{1\over 2}}. 
+denote @f{\left.\rho_{1\over 2}\right|_L}, or sometimes simply just @f{\rho_{1\over 2}}. 
 Given a smooth function @f{H}, let us consider the variation of @f{\int_L\rho_{1\over 2}}
 under the variation of @f{L} specified by the Hamiltonian vector field @f{\xi_H} 
 corresponding to @f{H}. It can only depend on the restriction of @f{H} on @f{L} (this 
 restriction may be called the ``infinitesimal generating function'' of the
-variation of @f{L}). Therefore it should be of the form:
+variation of @f{L}, or the ``infinitesimal @bold{gauge fermion}''). Therefore, this variation should be of the form:
 @equation[#:label "MeasureMu"]{
    \delta_{\{H,\_\}} \int_L\left.\rho_{1\over 2}\right|_L \; = \,\int_L H\; \mu_L[\rho_{1\over 2}]
 }
@@ -143,20 +186,11 @@ given a half-density @f{\rho_{1\over 2}}, exists another half-density
 Eq. (@ref{DeltaCanonical}) is the definition of @f{\Delta_{\rm can}} 
 (as was discovered in @cite{Khudaverdian:1999}).
 
-An equivalent definition is through the Lie derivative along the Hamiltonian
-vector field @f{\xi_H = \{H,\,\_\}}:
-@equation[#:label "ViaLieDerivative"]{
-   {\cal L}_{\{H,\,\_\}}\rho_{1\over 2} = 
-   (-)^{\bar{H}}\Delta_{\rm can}\left(
-      H\rho_{1\over 2}
-   \right) -
-   H\Delta_{\rm can}\rho_{1\over 2}
-}
 
 We will now prove @th-ref{th:ExistsDeltaCanonical}.
 
 @bold{Lemma @th-num{th:infinitesimal-neighborhood}} Our @f{\mu_L[\rho_{1\over 2}]} 
-(which is a density on @f{L} which we constructed from @f{\rho_{1\over 2}})
+(which is a density on @f{L} defined, given @f{\rho_{1\over 2}}, by Eq. (@ref{MeasureMu}))
 only depends on @f{\rho_{1\over 2}} through restriction to the first infinitesimal neighborhood of @f{L}. In
 other words, if we replace @f{\rho_{1\over 2}} with @f{e^f\rho_{1\over 2}} where @f{f} is a function on @f{M}
 having second order zero on @f{L\subset M}, then @f{\mu_L} will not change. 
@@ -256,19 +290,51 @@ Let us use @lemma-ref{th:transitivity} to extend it to @f{\widetilde{\Psi}}, and
 vanishes. This proves that the variation with respect to @f{L} of the LHS of Eq. (@ref{SigmaRotated}) vanishes, and
 therefore @f{\sigma_{1\over 2}[L,\rho_{1\over 2}]} does not depend on @f{L}.
 
-@section{Relation to odd Poisson bracket}
-Let @f{X} and @f{Y} be two @bold{odd} Hamiltonians (so that the corresponding Hamiltonian
-vector fields @f{\xi_X = \{X,\_\}} and @f{\xi_Y = \{Y,\_\}} are both @bold{even}).
-Also suppose that the restriction of @f{Y} on @f{L} is zero:
-@equation{Y|_L=0}
-Consider the following chain of equalities, containing a constant odd parameter @f{\epsilon}:
-@align[r.l.n @list[
+
+@section{Lie derivative in terms of @f{\Delta_{\rm can}}}
+Let us fix two functions @f{F\in \mbox{Fun}(M)} and @f{H\in \mbox{Fun}(M)}. We will assume them to be @bold{even}. In this case:
+@equation{
+\{F,H\} = \{H,F\}
+}
+For any Lagrangian submanifold @f{L\subset M}, let us consider:
+@align[l.n @list[
+ @f{\phantom{=\;} 
+    \int_L \left(H{\cal L}_{\{F,\_\}}\rho_{1\over 2} - F{\cal L}_{\{H,\_\}}\rho_{1\over 2}\right) \;=\;
+    \int_L \left({\cal L}_{\{F,\_\}}(H\rho_{1\over 2}) - {\cal L}_{\{H,\_\}}(F\rho_{1\over 2})\right)\;=\;}
  ""
- @f{\int_L \Big(- \epsilon \Delta_{\rm can} (XY\rho_{1\over 2}) - \epsilon X\Delta_{\rm can}(Y\rho_{1\over 2}) 
-    \Big)\;=\; \delta_{\{X,\_\}} \int\epsilon Y\rho_{1\over 2} \;=\; -\int \{X,Y\,\}\epsilon\rho_{1\over 2}}
- @label{DerivingLeibnitzForDelta}
-]]
-We will define the operator @f{\Delta_{\rho_{1\over 2}}} on functions as follows:
+]@list[
+ @f{\;=\;
+    \delta_{\{F,\_\}}\int_L H\rho_{1\over 2} -  \delta_{\{H,\_\}}\int_L F\rho_{1\over 2} \;=\;
+    -\int_L F\Delta_{\rm can}(H\rho_{1\over 2}) + \int_L H\Delta_{\rm can}(F\rho_{1\over 2})}
+ @label{f-h-minus-h-f}
+]
+]
+Suppose that @f{H} is zero at some point @f{m\in M}: @f{H(m)=0}. Pick a Lagrangian submanifold
+@f{L} passing through @f{m}, such that the restriction of @f{H} on @f{L} is zero.  Eq. (@ref{f-h-minus-h-f})
+holds for arbitrary @f{F}, therefore @f{{\cal L}_{\{H,\_\}}\rho_{1\over 2} = \Delta_{\rm can}(H\rho_{1\over 2})}.
+We can always achieve @f{H(m)=0} for @bold{any} point @f{m\in M}, by adding an appropriate constant to @f{H},
+@italic{i.e.} replacing @f{H} with @f{H - H(m)}. Therefore:
+@equation[#:label "ViaLieDerivative"]{
+   {\cal L}_{\{H,\,\_\}}\rho_{1\over 2} = 
+   (-)^{\bar{H}}\Delta_{\rm can}\left(
+      H\rho_{1\over 2}
+   \right) -
+   H\Delta_{\rm can}\rho_{1\over 2}
+}
+
+@section{The canonical operator is nilpotent}
+Indeed, since the definition of @f{\Delta_{\rm can}} is geometrically natural, it automatically commutes with canonical
+transformations and therefore for any @f{H\in \mbox{Fun}(M)}:
+@equation{
+[\Delta_{\rm can}, {\cal L}_{\rm can}]\rho_{1\over 2} \;=\;0
+}
+Comparing this with Eq. (@ref{ViaLieDerivative}) we derive:
+@equation{
+\Delta_{\rm can}^2 = 0
+}
+    
+@section{Relation to odd Poisson bracket}
+We will define the operator @f{\Delta_{\rho_{1\over 2}}} @bold{on functions} as follows:
 @equation[#:label "OperatorDelta"]{
    (\Delta_{\rho_{1\over 2}} F\,) \rho_{1\over 2} \;=\; \Delta_{\rm can}(F\,\rho_{1\over 2} )- (-)^{\bar{F}}F\Delta_{\rm can}\rho_{1\over 2} \;=\;
 (-)^{\bar{F}}{\cal L}_{\{F,\_\}}\rho_{1/2}
@@ -277,10 +343,11 @@ Usually there is some obvious implicit half-density; then we will abbreviate:
 @equation{
 \Delta = \Delta_{\rho_{1\over 2}}
 }
-Eq. (@ref{DerivingLeibnitzForDelta}) implies:
+Eqs. (@ref{ViaLieDerivative}) and (@ref{Lie-derivative-along-FH}) imply:
 @equation[#:label "BVStructure"]{
 \Delta(XY\,) = (\Delta X)Y + (-)^{\overline{X}}X\Delta Y + (-)^{\overline{X}}\{X,Y\,\}
 }
+
 
 @section{In coordinates}
 @subsection{Leading symbol}
