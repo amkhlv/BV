@@ -199,7 +199,7 @@ The leading term of the @f{b}-ghost is:
 @slide[@elem{Structure of the @f{b}-ghost in @f{AdS_5\times S^5}} #:tag "B Ghost AdS" #:showtitle #t]{
 From @cite{Berkovits:2010zz}:
 @equation{
-b_{++} = {\mbox{Str}\left(\lambda_R [J_2(\partial_+),J_1(\partial_+)]\right)\over 2\,\mbox{Str}(\lambda_R\lambda_L)} - 
+b_{++} = {\mbox{Tr}\left(\{J_1(\partial_+),\lambda_R\}J_2(\partial_+)\right)\over 2\,\mbox{Str}(\lambda_R\lambda_L)} - 
 \mbox{Str}(w_1(\partial_+)(1-K)J_3(\partial_+))
 }
 The notations @f{\omega(\partial_+)} are @hyperlink["../worldsheet-complex-structure/worldsheet-complex-structure.html"]{explained here},
