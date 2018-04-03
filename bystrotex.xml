@@ -13,6 +13,10 @@
       <dest>notations</dest>
     </scribbling>
     <scribbling>
+      <name>supergeometry</name>
+      <multipage/>
+    </scribbling>
+    <scribbling>
       <name>BV-formalism</name>
       <multipage/>
     </scribbling>

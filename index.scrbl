@@ -40,6 +40,8 @@ were completely new to me. I am writing these personal notes just to keep my hea
 
 @section{Brief reviews}
 
+@hyperlink["supergeometry/index.html"]{Supergeometry}
+
 @hyperlink["BV-formalism/index.html"]{BV formalism}
 
 @hyperlink["BRST-formalism/index.html"]{BRST formalism}

@@ -33,7 +33,7 @@
 @bystro-ribbon[]
 
 @slide["Introduction"  #:tag "Introduction" #:showtitle #t]{
-From mathematical point of view the BV formalism studies odd symplectic supermanifolds.
+From mathematical point of view the BV formalism may be defined as the theory of odd symplectic supermanifolds.
 
 Consider a supermanifold @f{M} with an odd 2-form @f{\omega} satisfying @f{d\omega=0}.
 
@@ -112,6 +112,9 @@ Here we will give a brief self-contained presentation of the ``canonical'' odd L
 }
 
 @table-of-contents[]
+
+Odd Laplace operator is closely related to the notion of Lie derivative; we will start by
+discussing some properties of Lie derivative. 
 
 @section{Properties of Lie derivative of half-density}
 Consider a vector field @f{v} on @f{M}, and the corresponding 1-parameter group of diffeomorphisms @f{g^t}. 
@@ -326,7 +329,7 @@ We can always achieve @f{H(m)=0} for @bold{any} point @f{m\in M}, by adding an a
 Indeed, since the definition of @f{\Delta_{\rm can}} is geometrically natural, it automatically commutes with canonical
 transformations and therefore for any @f{H\in \mbox{Fun}(M)}:
 @equation{
-[\Delta_{\rm can}, {\cal L}_{\rm can}]\rho_{1\over 2} \;=\;0
+[\Delta_{\rm can}, {\cal L}_{\{H,\_\}}]\rho_{1\over 2} \;=\;0
 }
 Comparing this with Eq. (@ref{ViaLieDerivative}) we derive:
 @equation{
