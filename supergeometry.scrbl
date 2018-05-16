@@ -134,6 +134,99 @@ on a superdomain @f{\cal V} of dimension @f{m|n}.
 
 @; }
 
+@slide["Functor of points" #:tag "Functor of points" #:showtitle #t]{
+@table-of-contents[]
+@section{Definition}
+A supermanifold @f{M} can be characterized by the following contravariant functor:
+@equation[#:label "functor-of-points"]{
+{\cal F}_M(S) \;=\; \mbox{Mor}(S,M)
+}
+
+@section{Examples}
+
+@subsection{Supervector space as a supermanifold}
+For any supervector space @f{V = V_{\bar 0} \oplus V_{\bar 1}} we define:
+@equation{
+{\cal F}_V(S) = (C^{\infty}(S))_{\bar 0} \otimes V_{\bar 0} \;\;\oplus\;\; (C^{\infty}(S))_{\bar 1} \otimes V_{\bar 1}
+}
+
+@subsection{Odd tangent bundle}
+Suppose that @f{M} is a supermanifold. Then @f{\Pi TM} can be defined as follows:
+@equation[#:label "odd-tangent-bundle-functor-of-points"]{
+{\cal F}_{\Pi TM}(S) = {\cal F}_M ({\bf R}^{0|1}\times S)
+}
+
+}
+
+@slide["Properties of odd tangent bundle" #:tag "Odd tangent bundle" #:showtitle #t]{
+@table-of-contents[]
+
+@section{Canonical odd vector field}
+@subsection{General definition of @f{{\bf R}^{0|1}}-parameter families of diffeomorphisms}
+In the language of functors of points, a @f{0|1}-parameter group of diffeomorphisms of a supermanifold @f{X} is
+defined as a map, for any supermanifold @f{S}:
+@align[c.c.l.n @list[
+ @f{\phantom{\int}  {\cal F}_{{\bf R}^{0|1}}(S)}
+ @f{\phantom{\int}  \times}
+ @f{\phantom{\int}  {\cal F}_X(S) \quad \rightarrow \quad {\cal F}_X(S)}
+ ""
+]@list[
+ @f{ || } "" "" ""
+]@list[
+ @f{\phantom{\int}  \mbox{Mor}(S,{\bf R}^{0|1})} "" "" ""
+]@list[
+ @f{ || } "" "" ""
+]@list[
+ @f{\phantom{\int}  (C^{\infty}(S))_{\bar 1}} "" "" ""
+]
+]
+consistent with morphisms between different @f{S}'s.
+
+@subsection{Case of odd tangent bundle}
+For any supermanifold @f{M}, the @f{\Pi TM} has a canonically defined @f{{\bf R}^{0|1}}-parameter group of
+diffeomorphisms. It is defined as follows. For any @f{\psi \in (C^{\infty}(S))_{\bar 1}} define a ``shift'':
+@align[r.l.l.n @list[
+ @f{\phantom{\int}  T_{\psi}\;:\;}
+ @f{\phantom{\int}  S\times {\bf R}^{0|1}}
+ @elem[#:style 'no-break]{@larger-2{→}@f{\phantom{\int}S\times {\bf R}^{0|1}}}
+ ""
+]@list[
+ ""
+ @elem[#:style 'no-break]{@hspace[4]@larger-2{↓}@f+0-2{({\rm id},\psi)\times {\rm id}}}
+ @elem[#:style 'no-break]{@hspace[2]@larger-2{↗}@f+0-2{{\rm id}\times (\_ + \_)}}
+ ""
+]@list[
+ ""
+ @f{\phantom{\int} S\times {\bf R}^{0|1}\times {\bf R}^{0|1}}
+ ""
+ ""
+]
+]
+Then define the map:
+@align[c.c.c.n @list[
+ @f{\phantom{\int} {\cal F}_{{\bf R}^{0|1}}(S)\times {\cal F}_M({\bf R}^{0|1}\times S)}
+ @elem[#:style 'no-break]{@larger-2{→}}
+ @f{\phantom{\int} {\cal F}_M({\bf R}^{0|1}\times S)}
+ ""
+]@list[
+ @f+0+2{\psi,f}
+ @f+0+2{\mapsto}
+ @f+0+2{f\circ T_{\psi}}
+ ""
+]
+]
+
+@section{Odd tangent bundle of a group}
+If @f{G} is a supergroup, then @f{\Pi TG} is again a supergroup. 
+
+
+}
+
+
+@slide["Berezinian of a vector space" #:tag "Berezinian of a vector space" #:showtitle #t]{
+
+
+}
 
 
 @; ---------------------------------------------------------------------------------------------------

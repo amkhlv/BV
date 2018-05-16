@@ -26,8 +26,8 @@
 
 
 
-@short-intro{I recently wrote @hyperlink["https://arxiv.org/abs/1610.02996"]{a paper} with Albert Schwarz about the BV formalism. Many things
-were completely new to me. I am writing these personal notes just to keep my head from exploding @larger-2{😃}.
+@short-intro{
+My notes on BV formalism
 }
 
 
