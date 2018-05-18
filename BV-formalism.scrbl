@@ -206,37 +206,56 @@ It is important that @f{L} is Lagrangian.
 @bold{Proof} The definition of @f{\mu} is given by Eq. (@ref{MeasureMu}); @f{\rho_{1\over 2}} only enters the light hand side of
 Eq. (@ref{MeasureMu}) through the first infinitesimal neighborhood of @f{L}.
 
-@bold{Lemma @th-num{th:transitivity}} For any fixed positive integer @f{n},  any smooth function @f{\Psi} on @f{L} can be extended to a function
-@f{\widetilde{\Psi}} on @f{M} such that the derivative of @f{\rho_{1\over 2}} along the flux of @f{\{\widetilde{\Psi},\_\}}
-has zero of the order @f{n} on @f{L}:
-@align[l.n @list[
- @f{{\cal L}_{\{\widetilde{\Psi},\_\}} \rho_{1\over 2} \;=\;f\rho_{1\over 2}}
+
+
+
+
+We will now prove that a function @f{\Psi \in  C^{\infty }(L)} can @spn[attn]{ locally} be extended from a Lagrangian
+submanifold @f{L} into the BV phase space @f{M} so that the Hamiltonian vector field of the
+extended @f{\Psi } preserves @f{\rho_{1\over  2}}. (This is only true locally.)
+
+@bold{Lemma @th-num{th:transitivity}}
+For any point @f{x\in  L}, a fixed positive integer @f{n}, and a smooth
+function @f{\Psi } on @f{L}, exists an open neighborhood @f{U\subset  M} of @f{x}, such that @f{\Psi } can be extended
+from @f{U\cap  L} to a function @f{\widetilde{\Psi } } on @f{U} such that the derivative of @f{\rho_{1\over  2}} along the flux of @f{\{ \widetilde{\Psi } ,\_\} }
+has zero of the order @f{n} on @f{U\cap  L}.
+
+@bold{Proof} Direct computation in coordinates. Let us choose some Darboux coordinates 
+@f{\phi ^i,\phi_i^{\star }}, so that @f{L} is at @f{\phi ^{\star }=0}. Let us use these coordinates to identify half-densities with 
+functions. Without loss of generality, we can assume that in the vicinity of @f{m}:
+@align[r.l.n @list[@;────────────────────────────────
+ @f{}
+ @f{\rho_{1\over  2} = e^{S}} 
  ""
-]@list[
- @elem[#:style 'no-break]{where @f{f\in \mbox{Fun}(M)} vanishes in the @f{n}-the infinitesimal neighborhood of @f{L\subset M}}
+]@list[@;────────────────────────────────
+ @f{}
+ @f{\mbox{\tt \small  where $S=s(\phi ) + Q^i\phi ^{\star }_i + \ldots $} } 
  ""
 ]
 ]
-@bold{Proof} Direct computation in coordinates. Let us choose some Darboux coordinates @f{\phi^i,\phi_i^{\star}}, so that @f{L} is at @f{\phi^{\star}=0}.
-Let us use these coordinates to identify half-densities with functions. Without loss of generality, we
-can assume that in the vicinity of @f{m}:
-@align[l.n @list[
- @f{\rho_{1\over 2} = e^{S}} ""
-]@list[
- @elem[#:style 'no-break]{where @f{S=s(\phi) + Q^i\phi^{\star}_i + \ldots}} ""
-]
-]
-where @f{\ldots} stand for terms of the higher order in @f{\phi^{\star}}. Then our problem is to find @f{\widetilde{\Psi}(\phi,\phi^{\star})}
+where @f{\ldots } stand for terms of the higher order in @f{\phi ^{\star }}. Then our problem is to find @f{\widetilde{\Psi } (\phi ,\phi ^{\star })} 
 solving:
-@align[l.n @list[
- @f{{\partial\over\partial\phi^i}{\partial\over\partial\phi^{\star}_i}\widetilde{\Psi} + \{S, \widetilde{\Psi}\} = 0} 
+@align[r.l.n @list[@;────────────────────────────────
+ @f{}
+ @f{(-1)^{\bar{i}}{\partial \over \partial \phi ^i}{\partial \over \partial \phi ^{\star }_i}\widetilde{\Psi }  + \{ S, \widetilde{\Psi } \}  = 0} 
  ""
-]@list[
- @f{\widetilde{\Psi}(\phi,0) = \Psi(\phi)}
+]@list[@;────────────────────────────────
+ @f{}
+ @f{\widetilde{\Psi } (\phi ,0) = \Psi (\phi )} 
  ""
 ]
 ]
-Solutions can always be found, order by order in @f{\phi^{\star}}, to any order @f{n}.
+Solutions can always be found, order by order in @f{\phi ^{\star }}, to any order @f{n}.
+For example, when @f{n=1}:
+@equation{
+\widetilde{\Psi } (\phi ,\phi ^{\star }) = \Psi (\phi ) + (-1)^{\bar{i}}\chi ^i(\phi )\phi ^{\star }_i
+}
+where @f{\chi ^i(\phi )} should satisfy:
+@equation{
+\partial_i((-1)^{\bar{i}}e^s\chi ^i) = - e^s Q\Psi 
+}
+This equation always has a solution in a  sufficiently small neighborhood @f{U} of @f{x}.
+
 
 
 @bold{Lemma @th-num{th:equivariance-of-mu}} 
