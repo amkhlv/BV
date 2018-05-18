@@ -295,35 +295,85 @@ therefore @f{\sigma_{1\over 2}[L,\rho_{1\over 2}]} does not depend on @f{L}.
 
 
 @section{Lie derivative in terms of @f{\Delta_{\rm can}}}
-Let us fix two functions @f{F\in \mbox{Fun}(M)} and @f{H\in \mbox{Fun}(M)}. We will assume them to be @bold{even}. In this case:
-@equation{
-\{F,H\} = \{H,F\}
+@short-intro{
+The purpose of this Section is to prove Eq. (@ref{ViaLieDerivative}) ``geometrically''. (In fact Eq. (@ref{ViaLieDerivative})
+can be proven by a direct local computation in coordinates.)
 }
-For any Lagrangian submanifold @f{L\subset M}, let us consider:
-@align[l.n @list[
- @f{\phantom{=\;} 
-    \int_L \left(H{\cal L}_{\{F,\_\}}\rho_{1\over 2} - F{\cal L}_{\{H,\_\}}\rho_{1\over 2}\right) \;=\;
-    \int_L \left({\cal L}_{\{F,\_\}}(H\rho_{1\over 2}) - {\cal L}_{\{H,\_\}}(F\rho_{1\over 2})\right)\;=\;}
+
+Let us fix two functions @f{F\in  \mbox{Fun} (M)} and @f{\Psi \in  \mbox{Fun} (M)}.
+Let us suppose that @f{\Psi } is odd. Then:
+@equation{ \{ F,\Psi \}  = - \{ \Psi ,F\}  }
+For any Lagrangian submanifold @f{L\subset  M}, let us consider:
+@align[r.l.n @list[@;────────────────────────────────
+ @f{
+  \phantom{=\; }  }
+ @f{\int_L \left (\Psi{\cal  L}_{\{ F,\_\} }\rho_{1\over  2} + F{\cal  L}_{\{ \Psi ,\_\} }\rho_{1\over  2}\right ) \; =\; 
+  \int_L \left ({\cal  L}_{\{ F,\_\} }(\Psi \rho_{1\over  2}) + {\cal
+ L}_{\{ \Psi ,\_\} }(F\rho_{1\over  2})\right )\; =\; } 
  ""
-]@list[
- @f{\;=\;
-    \delta_{\{F,\_\}}\int_L H\rho_{1\over 2} -  \delta_{\{H,\_\}}\int_L F\rho_{1\over 2} \;=\;
-    -\int_L F\Delta_{\rm can}(H\rho_{1\over 2}) + \int_L H\Delta_{\rm can}(F\rho_{1\over 2})}
+]@list[@;────────────────────────────────
+ @f{
+\; =\;  }
+ @f{\delta_{\{ F,\_\} }\int_L \Psi \rho_{1\over  2} + \delta_{\{ \Psi ,\_\} }\int_L F\rho_{1\over  2} \; =\;  -\int_L F\Delta_{\rm  can}(\Psi \rho_{1\over  2}) - \int_L \Psi \Delta_{\rm
+ can}(F\rho_{1\over  2})}
  @label{f-h-minus-h-f}
 ]
 ]
-Suppose that @f{H} is zero at some point @f{m\in M}: @f{H(m)=0}. Pick a Lagrangian submanifold
-@f{L} passing through @f{m}, such that the restriction of @f{H} on @f{L} is zero.  Eq. (@ref{f-h-minus-h-f})
-holds for arbitrary @f{F}, therefore @f{{\cal L}_{\{H,\_\}}\rho_{1\over 2} = \Delta_{\rm can}(H\rho_{1\over 2})}.
-We can always achieve @f{H(m)=0} for @bold{any} point @f{m\in M}, by adding an appropriate constant to @f{H},
-@italic{i.e.} replacing @f{H} with @f{H - H(m)}. Therefore:
-@equation[#:label "ViaLieDerivative"]{
-   {\cal L}_{\{H,\,\_\}}\rho_{1\over 2} = 
-   (-)^{\bar{H}}\Delta_{\rm can}\left(
-      H\rho_{1\over 2}
-   \right) -
-   H\Delta_{\rm can}\rho_{1\over 2}
+Consider the case when the restriction of @f{\Psi } to @f{L} is zero. Then Eq. (@ref{f-h-minus-h-f}) implies that the
+restriction of @f{{\cal  L}_{\{ \Psi ,\_\} }\rho_{1\over  2}} on such @f{L} is equal to @f{-\Delta_{\rm  can} (\Psi \rho_{1\over  2})}. We will use @f{F} as a ``test
+function'' and assume that @f{F} has  compact support, contained in a sufficiently small
+@hyperlink["../supergeometry/Superdomain.html"]{open superdomain} @f{U\subset  M}.
+
+@; @comment{
+@;   A superdomain @f{U} of dimension @f{m|n} is defined @cite{BernsteinLecture1} through its algebra of functions:
+@;   @f{C^{\infty }(U) = C^{\infty }(U_{\rm  rd})\otimes  \Lambda ^{\bullet }{\bf  R}^n} where @f{U_{\rm  rd}\subset  {\bf  R}^{m}} is an open set and
+@;   @f{\Lambda ^{\bullet }{\bf  R}^n = {\bf  R}[\theta ^1,\ldots ,\theta ^n]} is the Grassmann algebra built on fermionic variables @f{\theta ^1,\ldots ,\theta ^n}.
+@;   Both @f{F} and @f{\Psi } are functions of @f{x^1,\ldots ,x^m,\theta ^1,\ldots ,\theta ^n}.
+@;   }
+
+The submanifold @f{U_0\subset  U} given by the equation @f{\Psi =0} contains sufficiently many Lagrangian
+submanifolds, in the following sense: if the restriction of a density on any Lagrangian
+submanifold contained in @f{U_0} is zero, then the density is zero everywhere on @f{U_0}.
+(If we were working with ordinary (not super) manifolds, we would say that through
+every pointof @f{U} passes at least one Lagrangian submanifold fully contained in @f{U_0}.)
+
+@comment{
+  Indeed, when @f{U} is small enough, we can consider the space of trajectories of @f{\{ \Psi ,\_\} } on @f{U_0}.
+  It is an odd symplectic manifold (the odd analogue of the Hamiltonian reduction). It has
+  sufficiently many Lagrangian submanifolds, in the above sense. They lift to
+  Lagrangian submanifolds in @f{U}.
+  }
+
+Therefore Eq. (@ref{f-h-minus-h-f}) implies that on @f{U_0}: @f{{\cal  L}_{\{ \Psi ,\_\} }\rho_{1\over  2} = -\Delta_{\rm  can} (\Psi \rho_{1\over  2})}.
+To extend this formula
+from @f{U_0} to the whole @f{U}, let us consider the superdomain @f{\hat{U}  = {\bf  R}^{0|1}\times  U}; the fermionic
+coordinate of @f{{\bf  R}^{0|1}} will be denoted @f{\zeta }. Consider the subspace of @f{\hat{U}_0\subset  \hat{U} } given by the equation
+@f{\zeta  - \Psi (x,\theta ) = 0}. It has sufficiently many maximally isotropic submanifolds. Then the same
+computation as in Eq. (@ref{f-h-minus-h-f}) gives:
+@equation{
+   {\cal  L}_{\{ \Psi ,\_\} } \rho_{1\over  2} = - \Delta_{\rm  can}( (\Psi -\zeta )\rho_{1\over  2} ) + (\Psi  - \zeta )X =
+   - \Delta_{\rm  can}(\Psi \rho_{1\over  2}) - \zeta  \Delta_{\rm
+ can} \rho_{1\over  2} + (\Psi  - \zeta )X
 }
+where @f{X} is some funcion on @f{\hat{U} }. But @f{{\cal  L}_{\{ \Psi ,\_\} } \rho_{1\over  2}} by definition does not depend on @f{\zeta }. Therefore
+@f{X=-\Delta_{\rm  can}\rho_{1\over  2}}. This implies, for odd @f{\Psi }:
+@equation{
+{\cal  L}_{\{ \Psi ,\_\} } \rho_{1\over  2} = - \Delta_{\rm  can}( \Psi \rho_{1\over  2} ) - \Psi \Delta_{\rm  can}\rho_{1\over  2}
+}
+If instead of odd @f{\Psi } we consider some even @f{H}, then this argument does not work,
+because when @f{\{ H,H\} \neq  0} there are no Lagrangian submanifolds
+contained in level sets of @f{H}. But, given some odd @f{\Psi } and a constant Grassmann parameter @f{\varepsilon }, we can apply
+the argument to the odd Hamiltonian @f{\Psi  + \varepsilon  H}. Considering the coefficient of @f{\varepsilon } proves that for
+even @f{H}:
+@equation{
+{\cal  L}_{\{ H,\, \_\} }\rho_{1\over  2} = \Delta_{\rm  can}\left ( H\rho_{1\over  2} \right ) - H\Delta_{\rm  can}\rho_{1\over  2}
+\quad\quad (\mbox{\tt even } H \;)
+}
+The formula which works for both even and odd @f{H} is:
+@equation[#:label "ViaLieDerivative"]{
+{\cal  L}_{\{ H,\, \_\} }\rho_{1\over  2} = (-)^{\bar{H} }\Delta_{\rm  can}\left ( H\rho_{1\over  2} \right ) - H\Delta_{\rm  can}\rho_{1\over  2} 
+}
+
 
 @section{The canonical operator is nilpotent}
 Indeed, since the definition of @f{\Delta_{\rm can}} is geometrically natural, it automatically commutes with canonical
