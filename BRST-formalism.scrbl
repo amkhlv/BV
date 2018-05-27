@@ -201,11 +201,28 @@ s\;=\; \left. k_{ij}\varphi^i\varphi^j \right|_{\varphi\in T\,Y} \;+\;
 \left. \tau^i(c)\varphi^{\star}_i\;\right|_{\varphi^{\star}\in (T\,Y\,)^{\perp}}
 }
 The degeneracy is characterized by the isotropic subspace of @f{s} which we denote @f{\mbox{ker}\;s}: 
-@equation{
-\mbox{ker}\;s\;=\; 
-(\mbox{im}\,\tau \cap T\,Y\,)\oplus \Pi\left((\mbox{im}\,\tau \cap T\,Y\,)\oplus \mbox{ker}\,\tau\;\;\;
-\oplus \;\;(\mbox{im}\,\tau\;+T\,Y\,)^{\perp}\right)
-}
+@align[r.c.c.c.c.c.c.c.n @list[
+ @f{\mbox{ker}\;s\;=\;}
+ @f{(\mbox{im}\,\tau \cap T\,Y\,)}
+ @f{\oplus \;\Pi\Big(}
+ @f{(\mbox{im}\,\tau \cap T\,Y\,)}
+ @f{\oplus\;}
+ @f{\mbox{ker}\,\tau}
+ @f{\;\oplus \;\;}
+ @f{(\mbox{im}\,\tau\;+T\,Y\,)^{\perp}\Big)}
+ ""
+]@list[
+ @elem[#:style 'no-break]{from@hspace[1]}
+ @f{\phi}
+ ""
+ @f{c}
+ ""
+ @f{c}
+ ""
+ @f{\phi^{\star}}
+ ""
+]
+]
 Let us make the following assumptions:
 @itemlist[#:style 'ordered 
 @item{The space @f{\mbox{im}\,\tau \cap T\,Y\,} is zero, in other words @f{Y} is transverse to the orbits of @f{H}. 
