@@ -39,7 +39,7 @@ The fundamental fields of the worldsheet theory are: matter fields @f{x^m},
 and the diffeomorphism ghosts @f{c^{\alpha}}.
 The matter part of the action depends on matter fields and complex structure:
 @equation{
-    S_{\rm mat}[I,x] = {1\over 2}\int \partial_+ x^m \wedge \partial_- x^m
+    S_{\rm mat}[I,x] = {1\over 2}\int dx^m\wedge * dx^m
 }
 Following the @hyperlink["../omega/Case_Of_Standard_BRST.html#(part._.Brief.Review.Of.Standard.B.R.S.T)"]{general scheme}, we find the solution of the Master Equation:
 @equation[#:label "BosonicMasterAction"]{
