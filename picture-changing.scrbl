@@ -62,7 +62,7 @@ This is a topologically nontrivial change, essentially a change in polarization.
 @slide[@elem{Partial Baranov-Schwarz transform of @f{\Omega}} #:tag "Baranov-Schwarz" #:showtitle #t]{
 As usual, let @f{G} be the group of canonical transformations. Consider a submanifold @f{U\subset G}
 satisfying the following condition: 
-@equation[#:label "ConditionOnU"]{
+@e[#:label "ConditionOnU"]{
 \mbox{\tt\small for any }\;g\in U\;:\; (R_{g^{-1}})_*(T_g U) \;\mbox{ \tt\small is a closed subalgebra in } {\bf g}
 }
 Here @f{(R_{g^{-1}})_*\;:\;T_gG\to T_eG} means the derivative of the right shift.
@@ -72,16 +72,16 @@ For example, this is satisfied when @f{U} is one dimensional, or when @f{U} is a
 
 
 Pick a Lagrangian submanifold @f{L_0\subset M} and consider the family of Lagrangian submanifolds:
-@equation{
+@e{
 UL_0 = \{gL_0\;|\;g\in U\}
 }
 For every @f{L(u) = uL_0\in UL_0} consider a submanifold @f{K(u)\subset L(u)} which is the common zero set of all 
 Hamiltonians of elements of @f{T_uU} restricted on @f{L(u)}. It turns out that the union:
-@equation{
+@e{
 \widetilde{L} = \bigcup\limits_{u\in U} K(u)
 }
 is a Lagrangian submanifold in @f{M}. Moreover:
-@equation{
+@e{
 \int_{\Pi T(UL_0)}\Omega = \int_{\widetilde{L}}\rho_{1\over 2}
 }
 Notice that any family of Lagrangian submanifolds can locally be considered as an orbit of some Lagrangian
@@ -94,7 +94,7 @@ Let us consider the @f{k}-form component of @f{\Omega}. We have to integrate it 
 @f{k}-dimensional family of Lagrangian submanifolds. We 
 parametrize the family by @f{s^1,\ldots,s^k}. Let us 
 perform the Baranov-Schwarz transform by integrating over @f{d[ds]}. This turns @f{\Omega} into an integral form.  We get:
-@equation[#:label "InsertDeltaFunctions"]{
+@e[#:label "InsertDeltaFunctions"]{
    \int \prod_I ds^I \;d[ds^I]\; \int_{gL} \rho_{1\over 2} \exp\left(\sum_I ds^I{\partial g\over\partial s^I}g^{-1} \right) =
    \int \prod_I ds^I \;\int_{gL} \rho_{1\over 2} \;\prod_{I=1}^k\delta\left(
       {\partial g\over\partial s^I}g^{-1} 
@@ -107,7 +107,7 @@ and in particular a function on @f{L}.)
 This means that actually we are integrating not over the whole Lagrangian
 submanifold @f{L}, but over a submanifold @f{K\subset L} of the codimension @f{k}, which
 is defined by the system of equations:
-@equation{
+@e{
    {\partial g\over\partial s^I}g^{-1} = 0\;,
    \quad I\in \{1,\ldots,k\}
 }
@@ -136,7 +136,7 @@ Then:
 ]
 ]
 We therefore lowered the dimension of the moduli space of the integration cycle:
-@equation{
+@e{
 \mbox{dim}\,\{\widetilde{L}(x)|x\in X\} = \mbox{dim}\,\{gL_0\;|\;g\in U\} - \mbox{dim}\,U
 }
 This means that our procedure should be identified as a @bold{reverse picture changing operator}.

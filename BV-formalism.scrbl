@@ -54,7 +54,7 @@ model for the path integral in a gauge theory.
 @section[#:tag "sec:contraction-and-Lie-derivative"]{Contraction and Lie derivative}
 We define @f{\iota_V} for a vector field @f{V} as follows. If @f{V} is even, we pick
 a Grassmann odd parameter @f{\epsilon} and define:
-@equation{
+@e{
 (\iota_V\, \omega)(Z,dZ) = {\partial\over\partial\epsilon} \omega(Z, dZ +\epsilon V\,)
 }
 @comment{
@@ -63,9 +63,9 @@ Then @f{dZ + \epsilon  V} is a new point in the same fiber, linearly depending o
 }
 If @f{V} is odd, we define @f{\iota_V} as follows: @f{\iota_V\,\omega = {\partial\over\partial \epsilon}\iota_{\epsilon V}\,\omega}.
 In coordinates: 
-@equation{\iota_V = V^A{\partial\over\partial dZ^A}}
+@e{\iota_V = V^A{\partial\over\partial dZ^A}}
 The relation to Lie derivative:
-@equation{
+@e{
 [\iota_V,d] = {\cal L}_V
 }
 
@@ -73,16 +73,16 @@ The relation to Lie derivative:
 
 Consider a supermanifold @f{M}, with local coordinates @f{Z^A}, equipped with an @bold{odd} Poisson bracket 
 of the form:
-@equation{
+@e{
 \{F,G\}\;=\; 
 F\stackrel{\leftarrow}{\partial\over\partial Z^A} ^A\pi^B {\partial\over\partial Z^B} G
 }
 The Poisson bivector @f{^A\pi^B} should be symmetric in the following sense:
-@equation{
+@e{
 ^A\pi^B = (-)^{\bar{A}\bar{B} + \bar{A} + \bar{B}} \;^B\pi^A
 }
 The odd symplectic form @f{\omega} can be @bold{defined} from the following equation:
-@equation{
+@e{
 dF = (-)^{\bar{F} + 1}\iota_{\{F,\_\}} \omega
 }
 
@@ -121,11 +121,11 @@ Consider a vector field @f{v} on @f{M}, and the corresponding 1-parameter group 
 
 Let us think of a half-density @f{\rho_{1\over 2}} as a function of @f{x} and @f{\bf E}, where @f{x} is a point of
 @f{M} and @f{\bf E} a basis in @f{T_xM}, depending on @f{\bf E} in the following way:
-@equation{
+@e{
 \rho_{1\over 2}(x,A{\bf E}) = \left(\mbox{SDet}A\right)^{1/2}\rho_{1\over 2}(x,{\bf E})
 }
 By definition, the Lie derivative of @f{\rho_{1\over 2}} along @f{v\in \mbox{Vect}(M)} is:
-@equation{
+@e{
 \left({\cal L}_v \rho_{1\over 2}\right)(x,{\bf E}) = \left.{d\over dt}\right|_{t=0} \rho(g^tx, g^t_*{\bf E})
 }
 Let us multiply @f{v} by a function @f{f\in\mbox{Fun}(M)} such that @f{f(x)=0}. The flux of @f{fv} preserves the point @f{x},
@@ -140,7 +140,7 @@ and we have:
 ]
 ]
 This implies that for any @f{f\in \mbox{Fun}(M)} and @f{v\in \mbox{Vect}(M)}:
-@equation{
+@e{
 {\cal L}_{fv} \rho_{1\over 2} = f{\cal L}_v \rho_{1\over 2} + (-)^{\bar{f}\bar{v}} {1\over 2} ({\cal L}_vf)\rho_{1\over 2}
 } 
 In particular:
@@ -168,13 +168,13 @@ under the variation of @f{L} specified by the Hamiltonian vector field @f{\xi_H}
 corresponding to @f{H}. It can only depend on the restriction of @f{H} on @f{L} (this 
 restriction may be called the ``infinitesimal generating function'' of the
 variation of @f{L}, or the ``infinitesimal @bold{gauge fermion}''). Therefore, this variation should be of the form:
-@equation[#:label "MeasureMu"]{
+@e[#:label "MeasureMu"]{
    \delta_{\{H,\_\}} \int_L\left.\rho_{1\over 2}\right|_L \; = \,\int_L H\; \mu_L[\rho_{1\over 2}]
 }
 where @f{\mu_L[\rho_{1\over 2}]} is @bold{some integral form} on @f{L} (which of course depends on @f{\rho_{1\over 2}}). 
 We will now argue that @bold{exists some half-density on} @f{M},
 which we will denote @f{\Delta_{\rm can}\rho_{1\over 2}}, such that:
-@equation{
+@e{
 \mu_L[\rho_{1\over 2}] = - \left.\left(\Delta_{\rm can}\rho_{1\over 2}\right)\right|_L
 }
 In other words: 
@@ -182,7 +182,7 @@ In other words:
 @bold{Theorem @th-num{th:ExistsDeltaCanonical}:}
 given a half-density @f{\rho_{1\over 2}}, exists another half-density 
 @f{\Delta_{\rm can}\rho_{1\over 2}}, such that for any @f{H\in\mbox{Fun}(M)} and any Lagrangian @f{L\subset M}:
-@equation[#:label "DeltaCanonical"]{
+@e[#:label "DeltaCanonical"]{
    \delta_{\{H,\_\}} \int_L\left.\rho_{1\over 2}\right|_L \; = \,
    - \int_L H\; \left.\left(\Delta_{\rm can}\rho_{1\over 2}\right)\right|_L
 }
@@ -247,11 +247,11 @@ solving:
 ]
 Solutions can always be found, order by order in @f{\phi ^{\star }}, to any order @f{n}.
 For example, when @f{n=1}:
-@equation{
+@e{
 \widetilde{\Psi } (\phi ,\phi ^{\star }) = \Psi (\phi ) + (-1)^{\bar{i}}\chi ^i(\phi )\phi ^{\star }_i
 }
 where @f{\chi ^i(\phi )} should satisfy:
-@equation{
+@e{
 \partial_i((-1)^{\bar{i}}e^s\chi ^i) = - e^s Q\Psi 
 }
 This equation always has a solution in a  sufficiently small neighborhood @f{U} of @f{x}.
@@ -259,7 +259,7 @@ This equation always has a solution in a  sufficiently small neighborhood @f{U} 
 
 
 @bold{Lemma @th-num{th:equivariance-of-mu}} 
-@equation[#:label "EquivarianceOfMu"]{g^* \mu_{gL}[\rho_{1\over 2}] = \mu_L[g^* \rho_{1\over 2}]}
+@e[#:label "EquivarianceOfMu"]{g^* \mu_{gL}[\rho_{1\over 2}] = \mu_L[g^* \rho_{1\over 2}]}
 @bold{Proof}
 For any @f{H\in {\rm Fun}(M)}:
 @align[r.l.n @list[
@@ -283,7 +283,7 @@ For any @f{H\in {\rm Fun}(M)}:
 
 @bold{Proof of @th-ref{th:ExistsDeltaCanonical}} 
 We can in any case @bold{define} @f{\sigma_{1\over 2}[L,\rho_{1\over 2}]} by the formula:
-@equation[#:label "def-sigma-L"]{
+@e[#:label "def-sigma-L"]{
 \left.\sigma_{1\over 2}[L,\rho_{1\over 2}] \right|_L \;=\; \mu_L[\rho_{1\over 2}]
 }
 What we have to prove is that:
@@ -302,7 +302,7 @@ Then, Eq. (@ref{def-sigma-L}) says:
 ]
 Let us consider Eq. (@ref{EquivarianceOfMu}) in the special case when @f{g\in G} is such that @f{g(x)=x}.
 We get:
-@equation[#:label "SigmaRotated"]{
+@e[#:label "SigmaRotated"]{
 \sigma_{1\over 2}[gL,\rho_{1\over 2}](x,\, g_*e_1,\ldots, g_*f^1,\ldots)\;=\;
 \sigma_{1\over 2}[L,g^*\rho_{1\over 2}](x,\,e_1,\ldots, f^1,\ldots)
 }
@@ -321,7 +321,7 @@ can be proven by a direct local computation in coordinates.)
 
 Let us fix two functions @f{F\in  \mbox{Fun} (M)} and @f{\Psi \in  \mbox{Fun} (M)}.
 Let us suppose that @f{\Psi } is odd. Then:
-@equation{ \{ F,\Psi \}  = - \{ \Psi ,F\}  }
+@e{ \{ F,\Psi \}  = - \{ \Psi ,F\}  }
 For any Lagrangian submanifold @f{L\subset  M}, let us consider:
 @align[r.l.n @list[@;────────────────────────────────
  @f{
@@ -369,14 +369,14 @@ from @f{U_0} to the whole @f{U}, let us consider the superdomain @f{\hat{U}  = {
 coordinate of @f{{\bf  R}^{0|1}} will be denoted @f{\zeta }. Consider the subspace of @f{\hat{U}_0\subset  \hat{U} } given by the equation
 @f{\zeta  - \Psi (x,\theta ) = 0}. It has sufficiently many maximally isotropic submanifolds. Then the same
 computation as in Eq. (@ref{f-h-minus-h-f}) gives:
-@equation{
+@e{
    {\cal  L}_{\{ \Psi ,\_\} } \rho_{1\over  2} = - \Delta_{\rm  can}( (\Psi -\zeta )\rho_{1\over  2} ) + (\Psi  - \zeta )X =
    - \Delta_{\rm  can}(\Psi \rho_{1\over  2}) - \zeta  \Delta_{\rm
  can} \rho_{1\over  2} + (\Psi  - \zeta )X
 }
 where @f{X} is some funcion on @f{\hat{U} }. But @f{{\cal  L}_{\{ \Psi ,\_\} } \rho_{1\over  2}} by definition does not depend on @f{\zeta }. Therefore
 @f{X=-\Delta_{\rm  can}\rho_{1\over  2}}. This implies, for odd @f{\Psi }:
-@equation{
+@e{
 {\cal  L}_{\{ \Psi ,\_\} } \rho_{1\over  2} = - \Delta_{\rm  can}( \Psi \rho_{1\over  2} ) - \Psi \Delta_{\rm  can}\rho_{1\over  2}
 }
 If instead of odd @f{\Psi } we consider some even @f{H}, then this argument does not work,
@@ -384,12 +384,12 @@ because when @f{\{ H,H\} \neq  0} there are no Lagrangian submanifolds
 contained in level sets of @f{H}. But, given some odd @f{\Psi } and a constant Grassmann parameter @f{\varepsilon }, we can apply
 the argument to the odd Hamiltonian @f{\Psi  + \varepsilon  H}. Considering the coefficient of @f{\varepsilon } proves that for
 even @f{H}:
-@equation{
+@e{
 {\cal  L}_{\{ H,\, \_\} }\rho_{1\over  2} = \Delta_{\rm  can}\left ( H\rho_{1\over  2} \right ) - H\Delta_{\rm  can}\rho_{1\over  2}
 \quad\quad (\mbox{\tt even } H \;)
 }
 The formula which works for both even and odd @f{H} is:
-@equation[#:label "ViaLieDerivative"]{
+@e[#:label "ViaLieDerivative"]{
 {\cal  L}_{\{ H,\, \_\} }\rho_{1\over  2} = (-)^{\bar{H} }\Delta_{\rm  can}\left ( H\rho_{1\over  2} \right ) - H\Delta_{\rm  can}\rho_{1\over  2} 
 }
 
@@ -397,26 +397,26 @@ The formula which works for both even and odd @f{H} is:
 @section{The canonical operator is nilpotent}
 Indeed, since the definition of @f{\Delta_{\rm can}} is geometrically natural, it automatically commutes with canonical
 transformations and therefore for any @f{H\in \mbox{Fun}(M)}:
-@equation{
+@e{
 [\Delta_{\rm can}, {\cal L}_{\{H,\_\}}]\rho_{1\over 2} \;=\;0
 }
 Comparing this with Eq. (@ref{ViaLieDerivative}) we derive:
-@equation{
+@e{
 \Delta_{\rm can}^2 = 0
 }
     
 @section{Relation to odd Poisson bracket}
 We will define the operator @f{\Delta_{\rho_{1\over 2}}} @bold{on functions} as follows:
-@equation[#:label "OperatorDelta"]{
+@e[#:label "OperatorDelta"]{
    (\Delta_{\rho_{1\over 2}} F\,) \rho_{1\over 2} \;=\; \Delta_{\rm can}(F\,\rho_{1\over 2} )- (-)^{\bar{F}}F\Delta_{\rm can}\rho_{1\over 2} \;=\;
 (-)^{\bar{F}}{\cal L}_{\{F,\_\}}\rho_{1/2}
 }
 Usually there is some obvious implicit half-density; then we will abbreviate:
-@equation{
+@e{
 \Delta = \Delta_{\rho_{1\over 2}}
 }
 Eqs. (@ref{ViaLieDerivative}) and (@ref{Lie-derivative-along-FH}) imply:
-@equation[#:label "BVStructure"]{
+@e[#:label "BVStructure"]{
 \Delta(XY\,) = (\Delta X)Y + (-)^{\overline{X}}X\Delta Y + (-)^{\overline{X}}\{X,Y\,\}
 }
 
@@ -424,11 +424,11 @@ Eqs. (@ref{ViaLieDerivative}) and (@ref{Lie-derivative-along-FH}) imply:
 @section{In coordinates}
 @subsection{Leading symbol}
 The @bold{leading symbol} of @f{\Delta} does not depend on @f{\rho_{1\over 2}}:
-@equation{
+@e{
 \Delta =\;(-)^A{\;}  {1\over 2}{\partial\over\partial Z^A}\;^A\pi^B {\partial\over\partial Z^B} +\ldots
 }
 In Darboux coordinates (defined by Eq. (@ref{DarbouxCoordinates})):
-@equation{
+@e{
 \Delta\;=\;
 (-1)^{\bar{A}+1}{\partial\over\partial\phi^{\star}_A}{\partial\over\partial\phi^A}
 }
@@ -446,14 +446,14 @@ An infinitesimal change of Darboux coordinates is generated by a Hamiltonian flu
 ]
 ]
 Let us assume that @f{\Psi} is odd. We have:
-@equation[#:label "difference-of-deltas"]{
+@e[#:label "difference-of-deltas"]{
 (-1)^{\bar{A}+1}\left(
   {\partial\over\partial\tilde{\phi}^{\star}_A}{\partial\over\partial\tilde{\phi}^A}\;-\;
   {\partial\over\partial\phi^{\star}_A}{\partial\over\partial\phi^A}
 \right)\;=\;\{\Delta\Psi,\_\}
 }
 On the other hand, the additional term which comes from @f{\rho_{1\over 2}} varying as a density is:
-@equation{
+@e{
 \Delta((\Delta \Psi)\rho_{1\over 2})\;=\;\{\Delta\Psi\,,\,\rho_{1\over 2}\}
 }
 This cancels with Eq. (@ref{difference-of-deltas})  @spn[attn]{TODO:} check sign
@@ -465,7 +465,7 @@ Consider the case when @f{M} is an odd cotangent bundle: @f{M=\Pi T^*N}. Let us 
 the coordinates @f{(x^1,\ldots,\theta^1,\ldots)} on @f{N}. Let @f{x_1^{\star},\ldots,\theta_1^{\star},\ldots}
 be the corresponding dual coordinates in the fiber of @f{\Pi T^*N\longrightarrow N}.
 The odd Poisson bracket is:
-@equation{
+@e{
 \{H,F\,\} =
 H\left(
   \stackrel{\longleftarrow}{\partial\over\partial x^{\star}_a}
@@ -483,17 +483,17 @@ H\left(
 \right)F 
 }
 With respect to these coordinates, we can define the ``constant'' volume element:
-@equation{
+@e{
 \mbox{vol}^{(0)} = (dx^1\wedge\cdots)\wedge(d\theta^{\star}_1\wedge\cdots)\;
 \left({\partial\over\partial x^{\star}_1}\cdots\right)
 \left({\partial\over\partial\theta^1}\cdots\right)
 }
 and the constant half-density:
-@equation{
+@e{
 \rho_{1\over 2}^{(0)} = \sqrt{\mbox{vol}^{(0)}}
 }
 We will introduce the following notation:
-@equation[#:label "DeltaZero"]{
+@e[#:label "DeltaZero"]{
 \Delta^{(0)} = \Delta_{\rho^{(0)}_{1\over 2}}
 }
 Obviously, this notation only makes sense with a choice of coordinates.
@@ -502,12 +502,12 @@ Obviously, this notation only makes sense with a choice of coordinates.
 @section{Example: purely even @f{N}}
 As an example, consider the case when @f{N} has dimension @f{1|0}. A sufficiently generic 
 Lagrangian submanifold is given by the equation:
-@equation[#:label "ExampleOfLagrangianSubmanifoldCaseEvenN"]{
+@e[#:label "ExampleOfLagrangianSubmanifoldCaseEvenN"]{
 x^{\star} = \psi(x)
 }
 The integral of a half-density @f{\rho_{1\over 2} = w(x,x^{\star})\rho^{(0)}} over this
 Lagrangian submanifold is:
-@equation{
+@e{
 \int_{-\infty}^{+\infty} dx\; w(x,\psi(x))
 }
 To compute the variation of this integral under the Hamiltonian vector field @f{\{H,\,\_\} \,=\, H\left(
@@ -519,18 +519,18 @@ To compute the variation of this integral under the Hamiltonian vector field @f{
   \stackrel{\longrightarrow}{\partial\over\partial x^{\star}}
 \right)}, we just have to take into account the variation of the Lagrangian submanifold (@ref{ExampleOfLagrangianSubmanifoldCaseEvenN}), 
 which is encoded in the following variation of @f{\psi(x)}:
-@equation[#:label "VariationOfPsi"]{
+@e[#:label "VariationOfPsi"]{
 \delta \psi(x) = \left.\left(
  {\partial H(x,x^{\star})\over\partial x} + \left(H(x,x^{\star})\stackrel{\leftarrow}{\partial\over\partial x^{\star}}\right){\partial\psi\over\partial x}
 \right)\right|_{x^{\star}=\psi(x)} =\;  {d\over dx} H(x,\psi(x))
 }
 After integration by parts, we get:
-@equation{
+@e{
 \delta \int_{-\infty}^{+\infty} dx\; w(x,\psi(x)) = 
 - \int_{-\infty}^{+\infty} dx\;H{\partial\over \partial x}\left.{\partial\over\partial x^{\star}}\right|_{x^{\star}=\psi(x)} w(x,\psi(x))
 }
 Therefore, we have:
-@equation{
+@e{
 \Delta_{\rm can} \left(w(x,x^{\star})\rho^{(0)}\right) = - \left({\partial^2\over\partial x \partial x^{\star}} w(x,x^{\star})\right)\rho^{(0)}
 }
 This is in agreement with Eqs. (@ref{DeltaCanonical}) and (@ref{BVStructure}). (Remember that in this case @f{(-)^{\overline{H}} = -1} , see Eq. (@ref{VariationOfPsi}).)
@@ -540,11 +540,11 @@ This is in agreement with Eqs. (@ref{DeltaCanonical}) and (@ref{BVStructure}). (
 
 @slide["Master Equation" #:tag "MasterEquation" #:showtitle #t]{
 We will always assume that @f{\rho_{1\over 2}} satisfies the Master Equation:
-@equation{
+@e{
    \Delta_{\rm can}\rho_{1\over 2} = 0
 }
 Under this assumption, the operator @f{\Delta} defined in Eq. (@ref{OperatorDelta}) is nilpotent:
-@equation{
+@e{
    \Delta^2 = 0
 }
 while @f{\Delta_{\rm can}} is always nilpotent.
@@ -559,12 +559,12 @@ We want to apply the BV formalism for a field-theoretic system (the string world
 Unfortunately, we do not know how to rigorously define @f{\Delta_{\rm can}} in this case.
 The main problem is the appearence of ill-defined expressions when acting by the ``quantum part'' @f{\Delta^{(0)}}
 @bold{on local functionals}:
-@equation[#:label "DeltaIsUndefined"]{
+@e[#:label "DeltaIsUndefined"]{
 \Delta^{(0)} \int \phi(x)\phi^{\star}(x) = \int \delta(0)
 }
 Sometimes the result of application of @f{\Delta^{(0)}} is ``obviously zero'', for example with two flavours of
 scalar fields:
-@equation[#:label "DeltaIsZero"]{
+@e[#:label "DeltaIsZero"]{
 \Delta^{(0)} \int \phi_1(x)\phi_2^{\star}(x) = 0
 }
 We feel that in such cases it is justified to assume that @f{\Delta^{(0)}} acts as zero.
@@ -574,7 +574,7 @@ result other than zero.
 
 At the same time, the application @f{\Delta^{(0)}} to @bold{multilocal} functionals, generally speaking, does lead to meaningful
 nonzero results, for example:
-@equation[#:label "DeltaOnProductOfLocal"]{
+@e[#:label "DeltaOnProductOfLocal"]{
 \Delta^{(0)}\left(\int \phi_1(x)\phi_2^{\star}(x) \int \phi_2(y)\phi_1^{\star}(y) \right) \;=\; \int \phi_1(x)\phi_1^{\star}(x) + (-)^{\bar{\phi_1} + \bar{\phi_2} + 1} \phi_2(x)\phi_2^{\star}(x)
 }
 
@@ -598,23 +598,23 @@ We will give an @hyperlink["../omega/Unsafe_operations.html"]{example of a compu
 @section{Expansion in Planck constant}
 
 Let us substitute the following ansatz for @f{\rho_{1\over 2}}:
-@equation{
+@e{
 \rho_{1\over 2} \;=\; \exp\left({1\over\hbar} S_{\rm BV}\right)\rho_{1\over 2}^{(0)}
 }
 where @f{\rho_{1\over 2}^{(0)}} was @seclink["sec:QuantumPartOfDelta"]{defined previously}.
 In this case:
-@equation{
+@e{
 \hbar\Delta  = \hbar\Delta^{(0)}  + \{S_{\rm BV}\,,\,\_\,\}
 }
 In the ``classical'' BV formalism, we want to just drop the first term @f{\Delta^{(0)}}, but we have to
 be careful. Notice that we are dealing with multilocal expressions, basically products
 of integrals. By definition, we will consider such expression to be @bold{classical},
 if the power of @f{\hbar^{-1}} is equal to the number of integrals:
-@equation[#:label "ClassicalExpression"]{
+@e[#:label "ClassicalExpression"]{
 {1\over\hbar^n}\int F_1\cdots\int F_n
 }
 where each @f{F_j} is a local expression of the form:
-@equation{
+@e{
 F_j = f_j(z,\bar{z}) {\cal O}_j\quad\mbox{\small\tt where } {\cal O}_j \mbox{ \tt\small is a local operator composed from } \phi \mbox{ \tt\small and } \phi^{\star}
 }
 On such expressions, we define the @bold{classical} action of @f{\hbar \Delta} as follows:
@@ -639,7 +639,7 @@ when acting on expressions with single integration. When acting on the multiloca
 
 @section{Generalization and algebraic interpretation}
 We might need a small generalization (basically, a completion) of the space of expressions of the form (@ref{ClassicalExpression}):
-@equation{
+@e{
 {1\over\hbar^n}\int d^2z_1\cdots \int d^2z_n\;G(z_1,\bar{z}_1,\ldots,z_n,\bar{z}_n)\;{\cal O}_1(z_1,\bar{z}_1)\cdots {\cal O}_n(z_n,\bar{z}_n)
 }
 The generalization of Eq. (@ref{classical-delta}) is straightforward:
@@ -698,7 +698,7 @@ naturally isomorphic to @f{G}). Both left and right shifts naturally lift to
 @section[#:tag "CentralExtension"]{Central extension}
 Let @f{C^{\infty}M} denote the space of functions on @f{M}. Notice that @f{\Pi C^{\infty}M} is a 
 Lie superalgebra under the Poisson bracket. It is a central extension of @f{\bf g}:
-@equation[#:label "DefHatG"]{
+@e[#:label "DefHatG"]{
    \widehat{\bf g} = \Pi C^{\infty}M
 }
 Let @f{\widehat{G}} denote the corresponding Lie group. 
@@ -729,11 +729,11 @@ where:
 @itemlist[
 @item{the action of @f{\widehat{G}_L\times \widehat{G}_R} on @f{\Pi T\widehat{G}} is induced from the
       following action on @f{\widehat{G}}:
-      @equation{
+      @e{
          (g_L,g_R) \; g \;= g_Lgg^{-1}_R
       }}
 @item{the action of @f{\widehat{G}_L\times \widehat{G}_R} on @f{M} is:
-      @equation{
+      @e{
          (g_L,g_R) \; m \;= g_Lm
       }}
 ]
@@ -744,11 +744,11 @@ where:
 @slide["Quantomorphisms" #:tag "Quantomorphisms" #:showtitle #t]{
 Let us promote the BV phase space @f{M}
 to the @f{{\bf R}^{0|1}}-bundle over @f{M}, which we will call @f{\widehat{M}}:
-@equation{
+@e{
 \widehat{M} \stackrel{\widehat{\pi}}{\longrightarrow} M
 }
 We have the exact sequence:
-@equation{
+@e{
    0\rightarrow \mbox{Inv}_{{\bf R}^{0|1}}(\Gamma(T\widehat{M}/M\,)) \rightarrow 
    \mbox{Inv}_{{\bf R}^{0|1}}(\mbox{Vect}(\widehat{M}\,)) \xrightarrow{\widehat{\pi}_*}
    \mbox{Vect}(M\,)\rightarrow 0
@@ -757,29 +757,29 @@ which can be thought of as an exact sequence of algebroids over @f{M},
 or just of Lie superalgebras. 
 It involves the Atiyah algebroid @f{\mbox{Inv}_{{\bf R}^{0|1}}(\mbox{Vect}(\widehat{M}))} whose anchor is  @f{\widehat{\pi}_*}. The kernel of @f{\widehat{\pi}_*}
 is the @f{0|1}-dimensional space @f{\mbox{Inv}_{{\bf R}^{0|1}}(\Gamma(T\widehat{M}/M\,))}. A connection is a split:
-@equation{
+@e{
 \underline{\rm lift}\;:\; \mbox{Vect}(M)\rightarrow \mbox{Inv}_{{\bf R}^{0|1}}(\mbox{Vect}(\widehat{M}))
 }
 Suppose that we can find a ``symplectic potential'' @f{\alpha} such that @f{\omega = d\alpha}. Then we can use it 
 to construct the connections satisfying:
-@equation{
+@e{
 [\underline{\rm lift}(v_1),\underline{\rm lift}(v_2)]\;=\;
 \underline{\rm lift}([v_1,v_2]) + \omega(v_1,v_2) \partial_{\vartheta}
 }
 where @f{\partial_{\vartheta}} is the vector field arizing from the action of @f{{\bf R}^{0|1}} on @f{\widehat{M}}.  (We can think of @f{\vartheta} as 
 a coordinate in the fiber; it is only defined locally, but @f{\partial_{\vartheta}} is globally well-defined.) 
 Explicitly:
-@equation[#:label "ConnectionAsLift"]{
+@e[#:label "ConnectionAsLift"]{
 \underline{\rm lift}(v) = v + (\iota_v\alpha)\partial_{\vartheta}
 }
 Let us consider the subalgebra @f{{\bf g}\subset \mbox{Vect}(M)} consisting of Hamiltonian vector fields. 
 For every even (we will restrict to even vector fields for simplicity) @f{\{H,\_\}\in {\bf g}} consider the following vector field on @f{\widehat{M}}:
-@equation[#:label "DefHHat"]{
+@e[#:label "DefHHat"]{
 \hat{\xi}_H \;=\; \{H,\_\} + (\iota_{\{H,\_\}}\alpha + H) \partial_{\vartheta}
 }
 It is defined to preserve the connection. An explicit calculation shows that the
 @seclink["sec:contraction-and-Lie-derivative"]{Lie derivative} vanishes:
-@equation{
+@e{
 {\cal L}_{\hat{\xi}_H} (d\theta - \alpha) = 0
 }
 By construction, the space of vector fields of this form is closed under commutator. 

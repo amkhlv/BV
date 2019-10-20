@@ -47,7 +47,7 @@ Then we should introduce ghost fields, geometrically:
 ]
 ]
 where the action of @f{h_0\in H} is via @bold{right shift} on @f{H}:
-@equation{
+@e{
 h_0 (dh,h,x) = (dhh_{0}^{-1}, hh_0^{-1}, h_0.x)
 }
 @comment{
@@ -56,7 +56,7 @@ We use the coordinates @f{dh,h} on @f{\Pi TH} (denoting ``@f{dh}'' the coordinat
 Notice that this commutes with @f{Q_{\rm BRST} = dh {\partial\over\partial h}}. 
 We can always find a representative with @f{h=1} (@italic{i.e.} choose @f{h_0 = h^{-1}}).
 Then, with the standard notation @f{c = dh}:
-@equation[#:label "standard-BRST-operator"]{
+@e[#:label "standard-BRST-operator"]{
 Q_{\rm BRST} = {1\over 2}f_{AB}{}^Cc^A c^B{\partial\over\partial c^C} + c^A v_A^i{\partial\over\partial x^i}
 }
 @comment{
@@ -76,12 +76,12 @@ Functions on @f{\Pi TH\times X\over H} satisfy:
 
 @section[#:tag "sec:integration-measure"]{Integration measure}
 We assume that @f{X/H} comes with some integration measure:
-@equation{\mu = e^{S_{\rm cl}(x)}}
+@e{\mu = e^{S_{\rm cl}(x)}}
 This should be understood as an integration measure, @italic{i.e.} a density of weight @f{1} (rather than a function of @f{x}).
 The product of this measure with the canonical measure on @f{\Pi TH} gives us a measure on @f{\Pi TH\times X\over H}
 which we will call @f{\mu_{\rm BRST}}. Notice that @f{Q_{\rm BRST}} preserves this measure.
 This can be proven as follows. For any function @f{f\in\mbox{Fun}\left({\Pi TH\times X\over H}\right)}:
-@equation{
+@e{
 \int_{\Pi TH\times X\over H}\mu_{\rm BRST}\; Q_{\rm BRST}f \;=\;0
 }
 because @f{Q_{\rm BRST}} comes from the canonical odd vector field on @f{\Pi TH}.
@@ -108,12 +108,12 @@ Indeed, they come from infinitesimal left shifts on @f{H}, and @f{Q_{\rm BRST}} 
 
 @section[#:tag "sec:bv-phase-space"]{Definition of the BV phase space}
 The BV phase space is:
-@equation{
+@e{
 M = \Pi T^* \left({\Pi TH\times X\over H}\right)
 }
 The zero section @f{\Pi TH\times X\over H} is a Lagrangian submanifold. It comes with @seclink["sec:integration-measure"]{the integration measure},
 which lifts to a half-density on @f{M} of the form @f{e^{S_{\rm BV}}}, where:
-@equation{
+@e{
 S_{\rm BV} = 
 S_{\rm cl}(x) + (Q_{\rm BRST}c^A)c^{\star}_A + (Q_{\rm BRST}x^i)x_i^{\star}
 } 
@@ -161,7 +161,7 @@ on vectors tangent to @f{Y}. For each @f{Y\subset X}, the corresponding odd cono
 Lagrangian submanifold. Given such a family @f{\cal Y}, let us define a family of Lagrangian 
 submanifolds in the BV phase space in the following way: for every @f{Y}, the corresponding 
 Lagrangian submanifold is the odd conormal bundle of @f{Y}, times the space of @f{c}-ghosts:
-@equation[#:label "rotated-lag"]{
+@e[#:label "rotated-lag"]{
 L(Y) \;=\; \Pi(TY)^{\perp}\times \mbox{[$c$-ghosts]}\;=\; \Pi(TY)^{\perp}\times \Pi {\bf h}
 }
 
@@ -170,7 +170,7 @@ L(Y) \;=\; \Pi(TY)^{\perp}\times \mbox{[$c$-ghosts]}\;=\; \Pi(TY)^{\perp}\times 
 Let us ask the following question: under what conditions 
 the restriction of @f{S_{\rm BV}} to each @f{L(Y\,)} is non-degenerate? 
 Or, in case if it is degenerate, how can we characterize the degeneracy? We have:
-@equation{
+@e{
 \left. S_{\rm BV} \right|_{L(Y\,)} \;=\; \left.S_{\rm cl}(\varphi)\;\right|_{\varphi\in Y} \;+\; T_A^ic^A\varphi^{\star}_i\;|_{\varphi^{\star}\in \Pi(T\,Y\,)^{\perp}}
 }
 @comment{
@@ -184,7 +184,7 @@ To define the perturbation theory,
 we need already the quadratic terms to be non-degenerate.
 }
 Assuming that the critical point is at @f{\varphi=0}: 
-@equation{
+@e{
 S_{\rm cl}(\varphi) = k_{ij}\varphi^i\varphi^j + o(\varphi^2)
 }
 Suppose that all degeneracies of @f{S_{\rm cl}} and of @f{k} are due to symmetries. In other words:
@@ -196,7 +196,7 @@ Suppose that all degeneracies of @f{S_{\rm cl}} and of @f{k} are due to symmetri
 @f{\tau^i(\xi)}@f{\;= \; T^i_A\xi^A}
 ]]
 Let @f{s} be the quadratic part of @f{\left. S_{\rm BV} \right|_L}: 
-@equation{
+@e{
 s\;=\; \left. k_{ij}\varphi^i\varphi^j \right|_{\varphi\in T\,Y} \;+\; 
 \left. \tau^i(c)\varphi^{\star}_i\;\right|_{\varphi^{\star}\in (T\,Y\,)^{\perp}}
 }
@@ -232,20 +232,20 @@ symmetries.}
 ]
 But the last term @f{\Pi \left(\mbox{im}\,\tau\;+T\,Y\,\right)^{\perp}} is essentially nonzero. 
 It can be identified with the cotangent space to our family:
-@equation{
+@e{
 \left(\mbox{im}\,\tau\;+T\,Y\,\right)^{\perp} \;=\; T^*_Y\left({\cal Y}/H\right) 
 }
 where @f{\cal Y} is the moduli space of submanifolds @f{Y\subset X}. Therefore the quadratic part of @f{S_{\rm BV}}
 @bold{is} degenerate. However this degeneration is removed by 
 @hyperlink["../omega/Definition.html"]{the factor @f{e^{d\widehat{g}\widehat{g}^{-1}}}} 
 Indeed, in this case:
-@equation{
+@e{
 d\widehat{g}\widehat{g}^{-1} \;=\; \varphi^{\star}_i dy^i
 }
 When we integrate over @f{{\cal Y}/H}, the differentials @f{dy^i} span the complement of @f{\mbox{im}\tau} in 
 @f{TX/T\,Y}. Since we require that the family @f{\cal Y} be @f{H}-closed, @f{\tau} defines a map 
 @f{{\bf h} \rightarrow TX/T\,Y} which  we denote @f{[\tau]}. With these notations:
-@equation[#:label "factor-tau"]{
+@e[#:label "factor-tau"]{
 \left(\mbox{im}\,\tau\;+T\,Y\,\right)^{\perp} = (\mbox{coker}\,[\tau])^*
 }
 In 
@@ -302,21 +302,21 @@ d_M\langle \delta\bar{c},F\,\rangle
 }
 }
 @hyperlink["../omega/index.html"]{Therefore the form @f{\Omega}} is given by:
-@equation{
+@e{
 \Omega(\bar{c},d\bar{c}) = \int_{L(\bar{c})} \exp\left(S_{\rm BV} + \langle d\bar{c},F\,\rangle\right)
 }
 The corresponding integral form is obtained by the Baranov-Schwarz transform:
-@equation{
+@e{
 I(\bar{c}) = \int_{L(\bar{c})} \delta(F\,)\,e^{S_{\rm BV}}
 }
 Let us integrate @f{\Omega} over the whole @f{\Pi V^*}:
-@equation[#:label "integrate-over-pi-v-dual"]{
+@e[#:label "integrate-over-pi-v-dual"]{
 \int_{\Pi V^*} [d\bar{c}] \int_{L(\bar{c})} \delta(F\,)\,e^{S_{\rm BV}}
 }
 This result coincides with the @seclink["Family of Lagrangian submanifolds"]{integration over the conormal bundle of @f{F=0}}.
 
 Given the @seclink["sec:bv-phase-space"]{explicit form of @f{S_{\rm BV}}}, its restriction to @f{L(\bar{c})} is:
-@equation[#:label "FaddeevPopovIntegration"]{
+@e[#:label "FaddeevPopovIntegration"]{
 \left.S_{\rm BV}\right|_{L(\bar{c})} \;=\; S_{\rm cl}(x) + \langle Q_{\rm BRST} x , (F_*(x))^*\bar{c} \rangle\;=\;
 S_{\rm cl} +  c^A T^i_A\partial_iF^a\bar{c}_a
 }
@@ -338,11 +338,11 @@ Sometimes, it can be made convergent by a special choice of the integration cont
 ]
 The Landau gauge corresponds to the following @seclink["Faddeev-Popov integration"]{function @f{F\;:\;X\rightarrow V}}, 
 where @f{V} is the space of functions on the four-dimensional spacetime:
-@equation{
+@e{
 F(A) = \partial^{\mu}A_{\mu}
 }
 In this case @f{(F_*)^*\bar{c}} is @f{A^{\star\mu} = \partial^{\mu}\bar{c}} and Eq. (@ref{FaddeevPopovIntegration}) becomes:
-@equation{
+@e{
 \left.S_{\rm BV}\right|_{L(\bar{c})} \;=\; S_{\rm cl}(x) + D_{\mu}c\,\partial^{\mu}\bar{c}
 }
 The integration contour is @f{\bar{c}} complex conjugate to @f{c}. 

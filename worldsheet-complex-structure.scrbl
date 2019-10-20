@@ -51,7 +51,7 @@ On functions only:
 We will sometimes write @f{\partial^{[\mu]}_+} and @f{\partial^{[\mu]}_-} instead of @f{\partial^{[\mu]}} and @f{\bar{\partial}^{[\mu]}}.
 @comment{Such notations may be useful because they provide a natural shortcut @f{\partial_{\alpha}}, @f{\alpha = \pm}}
 For a one-form @f{\omega}, we will introduce the following notations. Let @f{\omega(\partial_+)} denote the following one-form:
-@equation{
+@e{
 \omega(\partial^{[\mu]}_+) = {dz - \mu^z_{\bar{z}} d\bar{z}\over 1-\mu^z_{\bar{z}}\mu^{\bar{z}}_z}(\omega_z + \mu^{\bar{z}}_z\omega_{\bar{z}})
 }
 The definition of @f{\omega(\partial^{[\mu]}_+)} is completely analogous.

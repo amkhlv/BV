@@ -62,7 +62,7 @@ fixed points on the worldsheet.
 We can then @bold{restrict the group of diffeomorphisms} to a subgroup which preserves those points.
 
 Let @f{{\bf h}_U} be the subalgebra of @f{\bf h} which preserves the points of insertions; then:
-@equation{
+@e{
 \forall \Phi\in {\cal F}_U\;:\;\{\Delta \Phi, U\} = 0
 }
 We will also impose on @f{U} all the @hyperlink["../integrated-vertex/Deformation_Of_F.html"]{same restrictions as on the integrated vertex}
@@ -103,7 +103,7 @@ This implies that the integration measure can be transformed to a @bold{fixed} L
 @section[#:tag "TwistedDeRham"]{Modified de Rham complex of @f{H}}
 @subsection{Definition}
 We define the ``modified de Rham complex'' of @f{H} as the space of @f{H}-invariants:
-@equation{
+@e{
 \left(\mbox{Fun}(M \times \Pi T H)\right)^{H}
 }
 where the action of @f{h_0\in H} is induced by the right shift on @f{H} and the action of @f{H\subset G} on @f{M};
@@ -112,7 +112,7 @@ comes from the canonical odd vector field on @f{\Pi TH}; we will denote it @f{d_
 
 
 @bold{The integrand} in Eq. (@ref{IntegratedOverFixedL}) @bold{belongs to this space}:
-@equation{
+@e{
 \exp\left((dh h^{-1})\circ h\right) \; U\circ h \;\; \in\;\; \left(\mbox{Fun}(M \times \Pi T H)\right)^{H}
 }
 
@@ -173,14 +173,14 @@ bracket, or applying @f{\Delta}.
 
 @section{Intertwiner between @f{-d_{(h)} + \Delta} and @f{\Delta}}
 Consider any function  @f{f\in \mbox{Fun}\left(M\times \Pi TH\right)} (not necesserily @f{H}-invariant). We have:
-@equation{
+@e{
 (\Delta - d_{(h)})\left(e^{\Delta \Psi\circ h} f\circ h\right) = e^{\Delta \Psi\circ h} \left((\Delta - d_{(h)})f\right)\circ h
 }
 @comment{@f{e^{\Delta \Psi\circ h} f\circ h} is just the product of two functions, @f{e^{\Delta \Psi\circ h}}
 and @f{f\circ h}}
 In particular, when @f{f(x,h)} only depends on @f{x} and does not depend neither on @f{h} nor on @f{dh}.
 (@italic{i.e.} when @f{f\in \mbox{Fun}(M)}):
-@equation[#:label "DeltaPsiIsIntertwiner"]{
+@e[#:label "DeltaPsiIsIntertwiner"]{
 (\Delta - d_{(h)})e^{\Delta \widetilde{\Psi}}\widetilde{f} = 
 e^{\Delta \widetilde{\Psi}} \Delta \tilde{f} 
 }
@@ -191,7 +191,7 @@ After we integrate over the Lagrangian submanifold, @f{\Delta - d_{(h)}} becomes
 
 @section[#:tag "sec:Integration"]{Integration}
 @subsection{The one-form component}
-@equation{
+@e{
 \int_L\rho_{1\over 2}\;\Delta\widetilde{\Psi}\; \widetilde{U}\;=\;
 \int_L\rho_{1\over 2}\;\{\widetilde{\Psi}\,,\,\widetilde{U}\}\;=\;\int_L\rho_{1\over 2}\;\{\Psi,U\}\circ h
 }
@@ -261,11 +261,11 @@ is the same as the Lie algebra cohomology complex of @f{\bf h} with coefficients
 The space @f{\mbox{Fun}(M)} is a representation of @f{\bf h}; the action of @f{\bf h} is slightly easier 
 to write down at the level of the corresponding action of the Lie group @f{H};
 @f{h\in H} acts on @f{f\in\mbox{Fun}(M)} as follows:
-@equation{
+@e{
 (h.f)(x) = f(h^{-1}x)\,,\;\mbox{\tt\small in other words: }\; h.f = f\circ h^{-1}
 }
 Therefore:
-@equation[#:label "DLieOnFunctions"]{
+@e[#:label "DLieOnFunctions"]{
 d_{\rm Lie} f = - \{d h h^{-1}\,,\,f\} = - \{\Delta\Psi\,,\, f\}
 }
 where @f{\Psi} is defined as in Eq. (@ref{ExpandDHHInverse}). We define @f{d_{\rm Lie}\Psi} to coincide with 
@@ -290,7 +290,7 @@ To follow the Faddeev-Popov notations, we introduce
 @comment{Beware that @f{\Psi} is @bold{not} just the Faddeev-Popov ghost; 
 it is the product of the Faddeev-Popov ghost @f{{\bf c}^A} with  @f{\Delta^{-1}{\cal H}\in \mbox{Fun}(M)}.}
 Eqs. (@ref{DLiePsi}) and (@ref{DLieDeltaPsi}) are equivalent to saying:
-@equation{
+@e{
 d_{\rm Lie} {\bf c}^C = {1\over 2} (-)^{\bar{A}(\bar{B}+1)}{\bf c}^A {\bf c}^B\;f_{AB}{}^C
 }
 where @f{f_{AB}{}^C} is the structure constants of @f{\bf h}: 
@@ -305,23 +305,23 @@ where @f{f_{AB}{}^C} is the structure constants of @f{\bf h}:
 ]
 ]
 It is straightforward to verify using Eqs. (@ref{DLieOnFunctions}) and (@ref{dPsiAgain}) that:
-@equation{d_{\rm Lie}^2 f = 0}
+@e{d_{\rm Lie}^2 f = 0}
 The subgroup @f{H\subset G} preserves @f{\rho_{1\over 2}} and therefore @f{\Delta}:
-@equation{
+@e{
 \Delta (h.f) = h.\Delta f
 }
 This implies:
-@equation{\Delta d_{\rm Lie} + d_{\rm Lie}\Delta = 0}
+@e{\Delta d_{\rm Lie} + d_{\rm Lie}\Delta = 0}
 
 
 @section{Proof that @f{d_{(h)}} is the same as @f{d_{\rm Lie}}}
 This is similar to the statement that for any Lie group @f{G}, the de Rham subcomplex of right-invariant forms on @f{G}
 is the same as the Lie cohomology complex of @f{\bf g} with coefficients in the trivial representation:
-@equation{
+@e{
 \left(\mbox{Fun}(\Pi TG) \right)^G = C^{\bullet}({\bf g},{\bf C})
 }
 Our case is a variation on this theme:
-@equation{
+@e{
 \left(\mbox{Fun}(M\times \Pi TH)\right)^H = C^{\bullet}({\bf h},\mbox{Fun}(M))
 }
 As @seclink["NotationsAndUsefulIdentities"]{we explained}, @f{\left(\mbox{Fun}(M\times \Pi TH)\right)^H} 
@@ -340,7 +340,7 @@ Motivated by the results of @secref{sec:Integration}, we will now construct anot
 
 @spn[attn]{Let us assume} that elements of @hyperlink["../omega/Subalgebra_F.html"]{subspace @f{\cal F}} are all in involution,
 @italic{i.e.} @f{q(x,y)=0}. In this case:
-@equation[#:label "PsiPsiDeltaPsi"]{
+@e[#:label "PsiPsiDeltaPsi"]{
 \{\Psi, \{\Psi,\Delta\Psi\}\} = 0
 }
 We denote @f{e^{\{\Psi,\_\}}} the following operation:
@@ -352,7 +352,7 @@ We denote @f{e^{\{\Psi,\_\}}} the following operation:
  @f{U \quad\mapsto\quad} @f{U + \{\Psi,U\} + {1\over 2}\{\Psi,\{\Psi,U\}\} + {1\over 6} \{\Psi,\{\Psi,\{\Psi,U\}\}\} + \ldots} ""
 ]]
 This operation has the following property:
-@equation[#:label "ConjugationWithPsi"]{
+@e[#:label "ConjugationWithPsi"]{
 (d_{\rm Lie} + \Delta) e^{\{\Psi,\_\}} = e^{\{\Psi,\_\}} \Delta
 }
 The action of @f{\Delta} on the left hand side is only on @f{\mbox{Fun}(M)} (it does not touch the @f{\bf c}-ghosts)
@@ -369,14 +369,14 @@ the generalization of the string theory descent procedure, which relates uninteg
 @section{Interpretation as a descent procedure}
 Consider an unintegrated vertex opearator @f{U}.
 We interpret it as an element of the cohomology of @f{\Delta} with some ghost number @f{n}:
-@equation{
+@e{
 U\in H^n(\Delta)
 }
 @comment{usually @f{n=2} in closed string theory and @f{n=1} in open string theory}
 Eq. (@ref{ConjugationWithPsi}) allows us to construct from @f{U} a cohomology class of @f{\Delta + d_{\rm Lie}},
 where @f{d_{\rm Lie}} is the Lie algebra cohomology differential of our Lie algebra @f{\Pi\Delta{\cal F}} with coefficients
 in @f{\mbox{Fun}(M)}, as follows:
-@equation{
+@e{
 e^{\{\Psi,\_\}} U\;\in\;H(\Delta + d_{\rm Lie})
 }
 This expression is ``inhomogeneous'', in the sense that different components have different ghost
@@ -399,7 +399,7 @@ We have shown that the cohomology of @f{\Delta} is the same as the cohomology of
 The cohomology of @f{\Delta + d_{\rm Lie}} can be computed using the spectral sequence, corresponding
 to the filtration by the ghost number. Let @f{F^p \subset \mbox{Fun}(M)} consist of the functions with
 the ghost number @f{\geq p}. At the first page, we have:
-@equation{
+@e{
 E_1^{p,q} = {\mbox{ker } d_{\rm Lie}\;:\; F^pC^q \to F^p C^{q+1}\over \mbox{im } d_{\rm Lie}\;:\; F^p C^{q-1} \to F^p C^q}
 }
 Therefore, if @f{E_1=E_{\infty}}, then the cohomology of @f{\Delta} is equivalent to the
@@ -414,11 +414,11 @@ We have two operators satisfying the identical intertwining relations:
 ]
 ]
 This suggests the existence of some operator @f{A} such that:
-@equation{
+@e{
 e^{\Delta\Psi} = e^{\{\Psi,\_\}} + d_{\rm Lie} A + [\Delta, A]
 }
 This @f{A} is an inhomogeneous operator-form:
-@equation{
+@e{
 AU = \Psi U \;+\; {1\over 2} \Psi\Delta\Psi U + {1\over 2}\Psi\{\Psi,U\} \;+\; \ldots
 }
 @spn[attn]{TODO}: write the full formula.
@@ -430,12 +430,12 @@ Consider the special case of @bold{flat worldsheet}. There is a subalgebra @f{{\
 consisting of translations (@f{\partial\over\partial z} and @f{\partial\over\partial \overline{z}}).
 Let us restrict @f{h} to this subalgebra. This simplifies the computation because:
 @f{H^{n>2}({\bf R}^2,\mbox{Fun}(M))=0}. This is true even at the level of cochains. Therefore we have:
-@equation{
+@e{
 e^{\{\Psi,\_\}} U = U + \{\Psi,U\} + {1\over 2} \{\Psi,\{\Psi,U\}\}
 }
 Going back from the Faddeev-Popov notations to the form notations: @f{{\bf c}^A\mapsto (dh h^{-1})^A}
 we obtain:
-@equation[#:label "UsualIntegrated"]{
+@e[#:label "UsualIntegrated"]{
 \{\Psi,\{\Psi,U\}\} = dz\wedge d\overline{z}\; b_{-1}\overline{b}_{-1} U
 }
 (here @f{dz} and @f{d\overline{z}} is what remains of @f{dh h^{-1}}).
@@ -495,7 +495,7 @@ Eq. (@ref{condition-on-vertex-with-xi})
 is equivalent to satisfying the following two requirements:
 @itemlist[#:style 'ordered
 @item{ @f{V_i(\xi_i)} is diffeomorphism-invariant in the following sense:
-@equation{
+@e{
 {\cal L}_c V_i(\xi_i) = c^{\alpha}(\xi_i){\partial\over\partial\xi_i^{\alpha}} V_i(\xi_i)
 }}
 @item{ @f{\sqrt{g(\xi_i)} V_i(\xi_i)} is Weyl-invariant}
@@ -507,7 +507,7 @@ classical Master Equation, but takes into account the ``finite-dimensional'' @f{
 }
 
 @bold{Proof} The terms in @f{S_{\rm BV}} relevant for computing @f{\{S_{\rm BV}\,,\,\_\}} in this context are:
-@equation[#:label "relevant-terms-in-sbv"]{
+@e[#:label "relevant-terms-in-sbv"]{
 S_{\rm BV} = (c^{\alpha}\partial_{\alpha} x)x^{\star} + 
 {1\over 2} [c,c]c^{\star} + ({\cal L}_c g_{\alpha\beta})g^{\star\alpha\beta} + \zeta g_{\alpha\beta}g^{\star\alpha\beta} + \ldots
 }
@@ -531,7 +531,7 @@ This implies:
 @section{Geometrical interpretation}
 @subsection{Cartan formula for de Rham differential}
 The nilpotent operator:
-@equation[#:label "algebroid-cohomology"]{
+@e[#:label "algebroid-cohomology"]{
 (Q\psi)(\xi,c(\xi)) \;=\; 
 \left\{ \left(\int_{\Sigma} \left(c^{\beta}(\eta){\partial\over\partial \eta^{\beta}} c^{\alpha}(\eta)\right)c_{\alpha}^{\star}(\eta)\right) 
 \;-\; c^{\alpha}(\xi)\xi_{\alpha}^{\star} \;\;,\;\;\psi(\xi,c(\xi))\right\}
@@ -562,7 +562,7 @@ In other words, instead of acting on functions we consider vector fields acting 
 
 @section{String amplitudes}
 We consider a family of Lagrangian submanifolds parameterized by @f{ g_{\alpha\beta}^{(0)} \;,\xi^{(0)}_i\;} taking
-@equation{
+@e{
  g_{\alpha\beta}\;=\;  g_{\alpha\beta}^{(0)} \;,\xi_i=\xi^{(0)}_i\; , x^{\star} = c^{\star}=\zeta^{\star} = 0
 }
 The form @f{\Omega} looks as follows: 

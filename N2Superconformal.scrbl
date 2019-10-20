@@ -41,18 +41,18 @@ the ``usual'' @f{N=1} worldsheet, which we will denote just @f{\Sigma^{1|1}}.
 @slide["Duality Functor" #:tag "Duality Functor" #:showtitle #t]{
 Consider the @f{1|1} dimensional supermanifold @f{\Sigma^{1|1}}. We will slightly change the notations
 and instead of @f{z,\theta} denote the coordinates as follows:
-@equation{
+@e{
 z_{\rm ch} \,,\; \theta^+
 }
 Moreover, once we changed the notations for coordinates, we will also rename the supermanifold itself:
-@equation{
+@e{
 \mbox{\small\tt rename }\; \Sigma^{1|1} \mbox{ \tt\small to } \Sigma^{1|1}_{\rm ch}
 }
 The @spn[attn]{duality functor} @f{\tt Dual} is an autofunctor on the category of @f{1|1}-dimensional 
 supermanifolds. To every supermanifold @f{\Sigma^{1|1}} it associates a dual supermanifold
 @f{{\tt Dual}\,\Sigma^{1|1}} which is the moduli space of @f{0|1}-dimensional submanifolds in 
 @f{\Sigma^{1|1}}. We will denote it @f{\Sigma^{1|1}_{\rm ach}}:
-@equation{
+@e{
 \Sigma^{1|1}_{\rm ach} \;=\; {\tt Dual}\, \Sigma^{1|1}_{\rm ch}
 }
 
@@ -62,12 +62,12 @@ supermanifolds. To every supermanifold @f{\Sigma^{1|1}} it associates a dual sup
 The @f{N=2} superspace @f{\Sigma^{1|2}_{N=2}} is somewhat similar to the Flag manifold in twistor theory.
 It is the moduli space of all @f{0|1}-dimensional submanifolds in 
 @f{\Sigma^{1|1}_{\rm ch}} with a marked point. Therefore there are projections:
-@equation[#:label "DoubleFibration"]{
+@e[#:label "DoubleFibration"]{
 \Sigma^{1|1}_{\rm ch} \;\xleftarrow{\pi_{\rm ch}}\; \Sigma^{1|2}_{N=2} \;\xrightarrow{\pi_{\rm ach}}\; \Sigma^{1|1}_{\rm ach}
 }
 @bold{Theorem @th-num{th:BerN2}:}  @f{\mbox{Ber}\,\Sigma^{1|2}_{N=2}} is
 trivial:
-@equation{
+@e{
 \mbox{Ber}\,\Sigma^{1|2}_{N=2} \;=\; {\bf C}
 }
 
@@ -80,7 +80,7 @@ Let us introduce some coordinates @f{z_{\rm ch}, \theta^+} on @f{\Sigma_{\rm ch}
 
 A generic @f{0|1}-dimensional submanifold can be defined by the following equation,
 depending on an odd parameter @f{\theta^-} and an even parameter @f{z_{\rm ach}}:
-@equation{
+@e{
 z_{\rm ch} = z_{\rm ach} + \theta^+\theta^-
 }
 We conclude that @f{\Sigma^{1|1}_{\rm ach} \;=\; {\tt Dual}\, \Sigma^{1|1}_{\rm ch}} may be 
@@ -89,7 +89,7 @@ coordinatized with @f{z_{\rm ach}} and @f{\theta^-}.
 Since @f{\tt Dual} is a functor, a vector field on @f{\Sigma_{\rm ch}} should automatically define
 some vector field on  @f{\Sigma_{\rm ach}}.
 @bold{Theorem @th-num{th:DualVectorField}:} The following vector field @f{{\cal V}_{\rm ch}}  on @f{\Sigma_{\rm ch}}:
-@equation[#:label "ChiralN2"]{
+@e[#:label "ChiralN2"]{
 {\cal V}_{\rm ch} = 
 \left(v(z_{\rm ch}) + \theta^+\xi^-(z_{\rm ch})\right)
 {\partial\over\partial z_{\rm ch}} +
@@ -97,7 +97,7 @@ some vector field on  @f{\Sigma_{\rm ach}}.
 {\partial\over\partial \theta^+}
 }
 defines the following vector field on @f{{\cal V}_{\rm ach}}:
-@equation[#:label "AntiChiralN2"]{
+@e[#:label "AntiChiralN2"]{
 {\cal V}_{\rm ach} = 
    \left(v(z_{\rm ach}) + \theta^-\xi^+(z_{\rm ach})\right)
    {\partial\over\partial z_{\rm ach}} +
@@ -105,12 +105,12 @@ defines the following vector field on @f{{\cal V}_{\rm ach}}:
    {\partial\over\partial\theta^-}
 }
 where @f{u^-_-} is defined as follows:
-@equation[#:label "u-vs-v"]{
+@e[#:label "u-vs-v"]{
 u^+_+ + u^-_- + \partial v = 0
 }
 
 @bold{Proof:}
-@equation{
+@e{
    \left.
       \left(
          ({\cal V}_{\rm ch} + {\cal V}_{\rm ach})(z_{\rm ch} - z_{\rm ach} - \theta^+\theta^-)
@@ -143,7 +143,7 @@ Here the index @f{a} runs in @f{\{1,2,3,4,5\}}; we assume that the target space 
 Let us concentrate on the heterotic case. In this case, we have to remember about the right
 (``antiholomorphic'') coordinate @f{\tilde{z}}. @th-ref{th:BerN2} tells us that the holomorphic
 part of the Berezinian is trivial; therefore we can just integrate @f{\overline{X^a}\partial_{\tilde{z}}X^a}:
-@equation[#:label "MatterActionN2Superspace"]{
+@e[#:label "MatterActionN2Superspace"]{
 S_{\rm mat}  \;=\; \int_{\Sigma_{N=2}} \overline{X^a}\,\partial_{\tilde{z}} X^a d\tilde{z}
 }
 
@@ -185,11 +185,11 @@ and for antichirals:
 @section{Definition}
 In the @f{N=2} language, we will define the @f{N=1} superconformal structure as a 
 distribution @f{{\cal D}_{\rm ch}\subset T\Sigma_{\rm ch}}. Such a distribution defines a map:
-@equation[#:label "MapFromSigmaToSigmaDualType"]{
+@e[#:label "MapFromSigmaToSigmaDualType"]{
    F^{\{{\cal D}_{\rm ch}\}}\;:\; \Sigma_{\rm ch} \rightarrow \Sigma_{\rm ach}
 }
 We can always choose coordinates on @f{\Sigma_{\rm ch}} so that @f{{\cal D}_{\rm ch}} is denerated by @f{D_{\rm ch}} given by:
-@equation[#:label "DefDch"]{
+@e[#:label "DefDch"]{
    D_{\rm ch} = {\partial\over\partial\theta^+} + \theta^+{\partial\over\partial z_{\rm ch}}
 }
 The map @f{F^{\{{\cal D}_{\rm ch}\}}} is defined as follows: it brings a point @f{(z_{\rm ch},\theta^+)\in \Sigma_{\rm ch}} to
@@ -248,15 +248,15 @@ they commute with the standard action of the Lorentz group on @f{{\bf X}^{\mu}}.
 @slide[@elem{Moduli space of @f{N=2} structures} #:tag "Moduli Space Of N=2" #:showtitle #t]{
 The tangent space to the moduli space of @f{N=2} superconformal structures is the first cohomology
 of the tangent sheaf @f{\cal T} (= the sheaf of holomorphic vector fields):
-@equation{
+@e{
 T{\cal M}_{N=2} = H^1(\Sigma_{\rm ch},\,{\cal T}\;)
 }
 Remember that @f{N=1} superconformal vector fields are sections of @f{{\cal D}_{\rm ch}^2}. We have:
-@equation{
+@e{
 0 \rightarrow {\cal D}_{\rm ch}^2 \rightarrow {\cal T} \rightarrow {\cal T}/{\cal D}_{\rm ch}^2 \rightarrow 0
 }
 and therefore:
-@equation{
+@e{
 0 \rightarrow H^0({\cal D}_{\rm ch}^2) \rightarrow H^0({\cal T}\;) \rightarrow H^0({\cal T}/{\cal D}_{\rm ch}^2) 
   \rightarrow H^1({\cal D}_{\rm ch}^2) \rightarrow H^1({\cal T}\;) \rightarrow H^1({\cal T}/{\cal D}_{\rm ch}^2) \rightarrow \ldots
 }

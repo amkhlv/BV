@@ -54,7 +54,7 @@ plus ghosts @f{c}, plus BRST quartets.
 Symmetries correspond to those @f{\Psi} which are BRST exact plus equations of motion.
 In other words, for any vector field @f{\zeta} on the field space and any functional
 @f{F} the following @f{\delta\Psi} should correspond to a symmetry:
-@equation[#:label "symmetries"]{
+@e[#:label "symmetries"]{
 \delta_{F,\zeta}\Psi \quad = \quad Q_{\rm BRST}F \quad +\quad {\cal L}_{\zeta}S_{\rm cl} + [{\cal L}_{\zeta},Q_{\rm BRST}]\Psi
 }
 @comment{
@@ -84,7 +84,7 @@ Let us @spn[attn]{assume} that the symmetries defined in Eq. (@ref{symmetries}) 
 It is parametrized by @f{F} and @f{\zeta}.
 
 We have the following Cartan form:
-@equation[#:label "equivariant-omega-in-BRST-formalism"]{
+@e[#:label "equivariant-omega-in-BRST-formalism"]{
 \Omega^{\tt C}(\Psi,d\Psi,F,\zeta)\;=\;
 \int [d\phi] \exp\left(\; S_{\rm cl}(\varphi) \;+\; (Q_{\rm BRST} + d + {\cal L}_{\zeta})\Psi \; + \; F \;\right)
 }
@@ -97,7 +97,7 @@ This is always true to the first order in @f{F} and @f{\zeta}. For this to be tr
 ]
 @comment{
 Let us summarize the derivation. We have:
-@equation{
+@e{
 (Q_{\rm BRST} + d + {\cal L}_{\zeta})^2 \;=\; [Q_{\rm BRST}\,,\,{\cal L}_{\zeta}]
 }
 Therefore:

@@ -45,7 +45,7 @@ This is mostly analogous to the @hyperlink["Heterotic-RNS/Heterotic_Structure.ht
 ]
 So, the @bold{Type II structure} consists of two odd distributions @f{\cal D} and @f{\overline{\cal D}}
 on @f{\Sigma^{2|2}}, which must satisfy:
-@equation[#:label "ZeroCommutator"]{
+@e[#:label "ZeroCommutator"]{
 [{\cal D},\overline{\cal D}] \subset {\cal D} + \overline{\cal D}
 }
 We will for now assume that both @f{\cal D} and @f{\overline{\cal D}} are everywhere nondegenerate. 
@@ -63,7 +63,7 @@ The proof is similar to
 
 @section{Worldsheet action}
 This is, again, analogous to @hyperlink["../Heterotic-RNS/Heterotic_Structure.html#(part._section.Worldsheet.Action.S.Mat)"]{heterotic}:
-@equation{
+@e{
    S_{\rm mat}[D,\overline{D},X] = \int \mbox{vol}^{D,\overline{D}}_{\Sigma^{2|2}}\; 
    (DX^m) (\overline{D} X_m)
 }

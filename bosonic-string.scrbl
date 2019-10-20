@@ -38,11 +38,11 @@ The fundamental fields of the worldsheet theory are: matter fields @f{x^m},
 @hyperlink["../worldsheet-complex-structure/worldsheet-complex-structure.html"]{complex structure} @f{I^{\alpha}_{\beta}}
 and the diffeomorphism ghosts @f{c^{\alpha}}.
 The matter part of the action depends on matter fields and complex structure:
-@equation{
+@e{
     S_{\rm mat}[I,x] = {1\over 2}\int dx^m\wedge * dx^m
 }
 Following the @hyperlink["../omega/Case_Of_Standard_BRST.html#(part._.Brief.Review.Of.Standard.B.R.S.T)"]{general scheme}, we find the solution of the Master Equation:
-@equation[#:label "BosonicMasterAction"]{
+@e[#:label "BosonicMasterAction"]{
     S_{\rm BV} = S_{\rm mat} \;+\; \int \;
            \langle {\cal L}_c I , I^{\star}\rangle + \langle {\cal L}_c x , x^{\star}\rangle + {1\over 2}\langle [c,c],c^{\star}\rangle
 }
@@ -50,7 +50,7 @@ Remember that there is a constraint on @f{I^2 = -1}. In components @f{I^{\alpha}
 The antifield @f{I^{\star}} can be identified with a symmetric tensor @f{I^{\star}_{\alpha\beta} = I^{\star}_{\beta\alpha}} with
 only nonzero components @f{I^{\star}_{++}} and @f{I^{\star}_{--}} (which are also denoted @f{I^{\star}_{zz}} and @f{I^{\star}_{\bar{z}\bar{z}}}.)
 The coupling to @f{\delta I} is defined as follows:
-@equation[#:label "PairingI"]{
+@e[#:label "PairingI"]{
     \int \langle I^{\star}, \delta I\,\rangle \;=\; \int \, dz^{\alpha}\wedge dz^{\beta}\;I^{\star}_{\alpha\gamma}\delta I^{\gamma}_{\beta}
 }
 
@@ -96,11 +96,11 @@ To summarize:
 ]
 ]
 The other components are:
-@equation{
+@e{
 I^{\bar{z}}_{\bar{z}} = \overline{I^z_z}\;,\quad I^{\bar{z}}_z = \overline{I^z_{\bar{z}}}
 }
 And we rename @f{I^{\star}} as @f{b}:
-@equation{
+@e{
 b_{\alpha\beta} \;=\; I^{\star}_{\alpha\beta}
 }
 We have just @spn[attn]{changed the polarization}; @f{I^{\star}} is now a field (called @f{b}) and @f{I} an antifield (called @f{b^{\star}}).
@@ -120,7 +120,7 @@ We now choose the Lagrangian submanifold in the following way:
 ]]
 On this Lagrangian submanifold the action is quadratic. 
 In particular:
-@equation{\int \langle b,{\cal L}_c(I(b^{\star}))\rangle\quad\mbox{\tt\small becomes}\quad \int (b_{++}\partial_-c^+ + c.c)}
+@e{\int \langle b,{\cal L}_c(I(b^{\star}))\rangle\quad\mbox{\tt\small becomes}\quad \int (b_{++}\partial_-c^+ + c.c)}
 
 @section{BRST structure}
 The BRST operator @f{Q_{\rm BRST}} of the bosonic string can be understood as follows.
@@ -169,14 +169,14 @@ We will here make use of @hyperlink["../omega/Case_Of_Standard_BRST.html"]{the s
 
 We will choose @f{\cal F} so that @f{\Pi\Delta {\cal F}} is 
 @bold{the algebra of diffeomorphisms of the worldsheet}:
-@equation[#:label "DefPhi"]{
+@e[#:label "DefPhi"]{
    \Phi = \int c^*_{\alpha} \xi^{\alpha}
 }
 where @f{\xi^{\alpha} = \xi^{\alpha}(z,\bar{z})} is a vector field on the worldsheet.
 
 @section{Equivariant form @f{\Omega^{\cal C}_{{\rm Vect}(\Sigma)\oplus{\rm Weyl}}}}
 The resulting equivariant form is:
-@equation{
+@e{
    \Omega^{\tt C}_{{\rm Vect}(\Sigma)\oplus {\rm Weyl}}({\bf t}) = 
    \int_{gL} \exp\left(
       S_{\rm BV} + \int \langle dI\,,\, b\rangle  + \int c^{\star}_{\alpha} {\bf t}^{\alpha}
@@ -198,7 +198,7 @@ Lagrangian submanifolds is such that:
 ]
 ]
 In this case the construction simplifies:
-@equation{
+@e{
 \Omega_{{\rm Vect}(\Sigma)} = \Omega
 }
 We can now use the @hyperlink["../picture-changing/Baranov-Schwarz.html"]{Baranov-Schwarz transform} 
@@ -207,11 +207,11 @@ submanifold, which can be described as follows.
 
 Consider {\em any} @f{3g-3}-dimensional surface in the space of metrics @f{g_{\cdot\cdot}} 
 parametrized by @f{(s_1,\ldots,s_{3g-3})}:
-@equation{
+@e{
    S\subset {\rm MET}\;,\quad \mbox{dim}S = 3g-3
 }
 (no need to require any holomorphicity). Let us consider a submanifold 
-@equation{
+@e{
 {\cal N}_S\subset \Pi T^*{\rm MET}
 }
 defined as follows: it is the bundle over @f{S} whose fiber at a point @f{s\in S} 
@@ -219,7 +219,7 @@ consists of the subspace of @f{\Pi T^*_s{\rm MET}} orthogonal to the tangent spa
 that point. Notice that this submanifold is Lagrangian. We will promote @f{{\cal N}_S} to
 a Lagrangian submanifold @f{\widehat{\cal N}_S} in the BV phase space of the bosonic string by 
 adding @f{x} and @f{c^{\cdot}} (and keeping @f{x^{\star}=0} and @f{c^{\star}_{\cdot}=0}). We have:
-@equation[#:label "BosonicStringSingleLagrangian"]{
+@e[#:label "BosonicStringSingleLagrangian"]{
    \int_S\Omega = \int_{\widehat{\cal N}_S} e^{S_{\rm BV}}
 }
 Notice that we can use @f{\Omega} instead of @f{\Omega_{\cal B}} because Eq. (@ref{PhiIsZero}) 
@@ -262,7 +262,7 @@ This requires Weyl invariance. We will just list the formulas here.
 
 @section{Solution of Master Equation}
 
-@equation{
+@e{
    S_{\rm mat}[g,x] = {1\over 2}\int 
    \sqrt{g}g^{\alpha\beta}\;\partial_{\alpha}x^m \partial_{\beta}x^m
 }
@@ -320,7 +320,7 @@ Then in the last line of Eq. (@ref{BVBosonicUsingMetric})
 only the first term survives and becomes @f{\int (b_{++}\partial_-c^+ + c.c)}
 
 @section{Singularities of correlation functions}
-@equation{
+@e{
 \langle \partial X(z) \;X(0) \rangle =  {1\over 2z} + \mbox{\tt\small regular }
 }
 @comment{
@@ -360,11 +360,11 @@ by their momenta @f{k^{(i)}} and polarizations @f{E^{(i)}_{\mu\nu}}. The corresp
 ]
 ]
 Eq. (@ref{conditions-for-massless-vertex}) implies that there are no divergencies. Straightforward calculations gives:
-@equation{
+@e{
 \{S_{\rm BV},U\} \;=\; Q_{\rm BRST} U \;=\; 0
 }
 in ether classical or quantum theory. The matter part of the path integral:
-@equation{
+@e{
 {\int [dX] e^{-\int_{\Sigma}\partial X\wedge \bar{\partial} X}U\over \int [dX] e^{-\int_{\Sigma}\partial X\wedge \bar{\partial} X}}
 }
 can be computed exactly using Wick theorem (as the theory is free), and the result is a finite expression. The computation is
@@ -435,7 +435,7 @@ Consider the following expression:
 ]
 It depens on the metric @f{g} through explicit factors @f{\sqrt{g}} and also because the distances @f{{\rm dist}(u,z)} and @f{{\rm dist}(v,z)}
 are measured using @f{g}. Notice that:
-@equation{
+@e{
 \lim_{\epsilon\to 0} \left(f[e^{\varphi}g] - f[g]\right) = \varphi
 }
 
@@ -451,18 +451,18 @@ Let us return to our solution of Master Equation given by Eq. (@ref{BosonicMaste
 Let us add the ``BRST quartet'' @f{\bar{c}^{\alpha}_{\beta},\pi^{\alpha}_{\beta},\bar{c}^{\star}_{\alpha}^{\beta}\pi^{\star}_{\alpha}^{\beta}}
 and modify  Eq. (@ref{BosonicMasterAction}) by adding @f{\int \pi^{\alpha}_{\beta}\bar{c}^{\star}_{\alpha}^{\beta}}:
 
-@equation[#:label "BosonicMasterActionWithQuartet"]{
+@e[#:label "BosonicMasterActionWithQuartet"]{
     S_{\rm BV} = S_{\rm mat} \;+\; \int \;
            \langle {\cal L}_c I , I^{\star}\rangle + \langle {\cal L}_c x , x^{\star}\rangle + {1\over 2}\langle [c,c],c^{\star}\rangle
            \;+\;\langle \pi,\bar{c}^{\star} \rangle
 }
 The standard choice of Lagrangian submanifold:
-@equation{
+@e{
 x^{\star} = c^{\star} = I^{\star} = \bar{c}^{\star} = \pi^{\star} = 0
 }
 leads to degenerate action funcional. 
 Now let us shift it using the gauge fermion: 
-@equation[#:label "gauge-fermion-for-string-quartet"]{\Psi = \bar{c}^{\alpha}_{\beta}(I^{\beta}_{\alpha} - I^{(0)}{}^{\beta}_{\alpha})}
+@e[#:label "gauge-fermion-for-string-quartet"]{\Psi = \bar{c}^{\alpha}_{\beta}(I^{\beta}_{\alpha} - I^{(0)}{}^{\beta}_{\alpha})}
 This gives the family of Lagrangian submanifolds:
 @align[r.l.n @list[
   @f{x^{\star} = c^{\star} = \pi^{\star} \;=\;} @f{0} ""
@@ -524,7 +524,7 @@ Since @f{Q_{\rm BRST}} is nilpotent off-shell, we can use @hyperlink["../omega-B
 @subsection{For standard family of Lagrangian submanifolds}
 For the standard family, generated by the family of gauge fermions @f{\Psi} parametrized by @f{I^{(0)}} as in Eq. (@ref{gauge-fermion-for-string-quartet}),
 @hyperlink["../omega-BRST/Form__.html#(elem._def-omega)"]{our formula} gives:
-@equation[#:label "quartet-omega-for-standard-family"]{
+@e[#:label "quartet-omega-for-standard-family"]{
 \Omega(I^{(0)},dI^{(0)}) \;=\; \int [dx\,dc\,d\bar{c}\,dI\,d\pi] \exp\left(\; S_{\rm cl}^{\{I^{(0)}\}}(x,c,\bar{c},I,\pi) \quad + \quad \bar{c}dI^{(0)}\;\right)
 }
 where @f{S_{\rm cl}^{\{I^{(0)}\}}} is the first line of Eq. (@ref{master-action-shifted}).
@@ -535,7 +535,7 @@ there is no further simplification.
 
 @subsection{Equivariant @f{\Omega}}
 We will define diffeomorphisms in the usual way:
-@equation{
+@e{
 {\cal D}_{\xi} = \left[Q_{\rm BRST}\,,\,\xi^{\alpha}{\partial\over\partial c^{\alpha}}\right]
 }
 

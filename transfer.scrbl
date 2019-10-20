@@ -35,7 +35,7 @@ Suppose that we are given a submanifold @f{E\subset M} which happens to be a fib
 with fibers isotropic submanifolds over some base  @f{B}. This can be thought of as a family
 of isotropic submanifolds. For every @f{b\in B} we have the corresponding fiber, an isotropic
 submanifold which we denote @f{I(b)}. Moreover, we require:
-@equation{
+@e{
 \mbox{ker} \,\omega|_{E} = TI
 }
 (@italic{i.e.} the degenerate subspace of the restriction of @f{\omega} to @f{E} is the tangent space of the 
@@ -50,17 +50,17 @@ Finally, we require certain @bold{maximality} property:
 ]
 Let @f{L\subset B} be a Lagrangian submanifold of @f{B}. Under the above conditions, it can be lifted 
 to a Lagrangian submanifold in @f{M} as @f{\pi^{-1} L}, where @f{\pi} is a natural projection:
-@equation{
+@e{
 \pi\;:\; E\to B
 }
 We then @bold{define} a half-density @f{\pi_*\rho_{1\over 2}} on @f{B} so that for every Lagrangian submanifold @f{L\subset B}
 and every function @f{f\in \mbox{Fun}(B)}:
-@equation{
+@e{
 \int_Lf\pi_*\rho_{1\over 2} = \int_{\pi^{-1}(L)} (f\circ \pi)\rho_{1\over 2}
 }
 Suppose that we are given a function @f{\Psi} on @f{M} whose restriction on @f{E} is constant along @f{I}.
 Then it @bold{defines} a function on @f{B} which we denote @f{\pi_*\Psi}:
-@equation{
+@e{
 (\pi_*\Psi)\circ \pi = \Psi|_E
 }
 Notice that in this case the flux @f{\{\Psi,\_\}} is tangent to @f{E}. 
@@ -70,12 +70,12 @@ From the maximality of @f{B}, as defined in Eq. (@ref{maximality-requirement}), 
 tangent to @f{I}. Since @f{\Psi} is constant along @f{I}, it follows that indeed @f{\{\Psi,\,\phi\,\} = 0}.
 }
 We have:
-@equation[#:label "flow-commutes-with-projection"]{
+@e[#:label "flow-commutes-with-projection"]{
 \forall m\in E\;:\; \pi(m)_* \left(\{\Psi,\,\_\,\}(m)\right) \;=\;
 \{\pi_*\Psi,\,\_\,\}(\pi(m))
 }
 Equivalently, for two functions @f{\Psi_1} and @f{\Psi_2} on @f{M} both constant along @f{I}:
-@equation{
+@e{
 \{\Psi_1,\Psi_2\}  = \{\pi_*\Psi_1,\pi_*\Psi_2\}\circ\pi
 }
 @comment{
@@ -86,7 +86,7 @@ again tangent to @f{I}.
 This means that the flow of @f{\Psi} brings fibers to fibers, which is equivalent to Eq. (@ref{flow-commutes-with-projection}).
 }
 We will now prove that for any @f{\Psi\in \mbox{Fun}(M)} whose restriction on @f{E} is constant along @f{I}:
-@equation[#:label "push-forward-of-Lie-derivative"]{
+@e[#:label "push-forward-of-Lie-derivative"]{
 \pi_*\left({\cal L}_{\{\Psi,\_\}}\rho_{1\over 2}\right) \;=\;
 {\cal L}_{\{\pi_*\Psi,\_\}}\pi_*\rho_{1\over 2}
 }
@@ -118,7 +118,7 @@ satisfies the Quantum Master Equation on @f{B}
 } 
 Indeed,  @f{\rho_{1\over 2}} satisfying the Quantum Master Equation is 
 @hyperlink["../BV-formalism/OddLaplace.html#(elem._.Via.Lie.Derivative)"]{equivalent to the statement} that for any functions  @f{\Psi} and @f{F}:
-@equation[#:label "QME-via-Lie-derivative"]{
+@e[#:label "QME-via-Lie-derivative"]{
 \delta_{\{\Psi,\_\}}\int_L F\rho_{1\over 2} = (-)^{\bar{F}+1} \int_L \Psi {\cal L}_{\{F,\_\}}\rho_{1\over 2}
 }
 When @f{\rho_{1\over 2}} satisfies the QME on @f{M}, considering Eq. (@ref{QME-via-Lie-derivative}) with both
@@ -135,7 +135,7 @@ We show that the resulting effective theory still satisfies the equivariant Mast
 }
 Suppose that a Lie group @f{H} acts on @f{M} by canonical transformations, and moreover
 that every Hamiltonian @f{\xi\in {\bf h}} is constant on the fibers of @f{E\stackrel{\pi}\rightarrow B}:
-@equation{
+@e{
 \forall \xi\in{\bf h} \; \exists \,\pi_*\xi\in \mbox{Fun}(B)\;:\; \xi|_E = 
 (\pi_*\xi)\circ\pi
 }
@@ -164,7 +164,7 @@ Then the result of the partial integration is an equivariant half-density on @f{
 ]
 ]
 Indeed, Eq. (@ref{equivariant-QME}) is equivalent to the statement that for any two functions  @f{\Psi} and @f{F}:
-@equation[#:label "equivariant-QME-via-Lie-derivative"]{
+@e[#:label "equivariant-QME-via-Lie-derivative"]{
 \delta_{\{\Psi,\_\}}\int_L F\rho_{1\over 2}(\xi) = (-)^{\bar{F}+1} \int_L \left( \Psi {\cal L}_{\{F,\_\}}\rho_{1\over 2}(\xi)  + \Psi F \xi \rho_{1\over 2}(\xi)\right)
 }
 Eq. (@ref{equivariant-QME-on-base}) follows from  Eqs. (@ref{push-forward-of-Lie-derivative}) 

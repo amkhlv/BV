@@ -36,7 +36,7 @@
 @slide["Expansion around Lagrangian submanifold" #:tag "Expansion in antifields" #:showtitle #t]{
 For a given Lagrangian submanifold @f{L}, let us choose the Darboux coordinates so that
 @f{L} is given by the equations @f{x^{\star}_a=0}. We use the ansatz for @f{\rho_{1\over 2}}:
-@equation{
+@e{
    \rho_{1\over 2} = \exp\left( {1\over \hbar} S_{\rm BV}\right)
 }
 The constructio of @f{S_{\rm BV}} involves @f{x^{\star}}-expansion and @f{\hbar}-expansion:
@@ -55,7 +55,7 @@ Let @f{SG\subset G} be the subgroup  preserving a fixed @f{\rho_{1\over 2}}.
 Given a fixed Lagrangian submanifold @f{L\subset M}, we can also consider
 its stabilizer @f{\mbox{St}(L)\subset M}. We expect the moduli space of BRST structures
 to be given by the double coset:
-@equation[#:label "MBRSTisDoubleCoset"]{
+@e[#:label "MBRSTisDoubleCoset"]{
    {\cal M}_{\rm BRST} = SG\backslash G/\mbox{St}(L)
 }
 A point of @f{{\cal M}_{\rm BRST}} could be denoted @f{[L]} 
@@ -73,7 +73,7 @@ The tangent space to @f{T_{[L]}{\cal M}_{\rm BRST}} at the point @f{[L]\in {\cal
 identified as the space of all functions @f{h_{\rm cl}} on @f{L} modulo those functions 
 which can be extended to the first infinitesimal  neighborhood of @f{L} 
 as a function @f{h} satisfying:
-@equation[#:label "ExtensionOfH"]{
+@e[#:label "ExtensionOfH"]{
    \rho_{1\over 2}^{-1}\Delta_{\rm can}\left(\rho_{1\over 2} h\right) = 0
 }
 It turns out that this space very much depends on @f{[L]} and on @f{\rho_{1\over 2}}. Let us 
@@ -84,27 +84,27 @@ the problem is parametrized just by @f{\rho_{1\over 2}}.
 
 @section{Quantum limit}
 Let us choose the half-density: 
-@equation[#:label "RhoIsOne"]{
+@e[#:label "RhoIsOne"]{
 \rho_{1\over 2} = 1
 }
 Let us choose @f{L} to be @f{x^{\star}=0}. In this case the problem (@ref{ExtensionOfH}) has solution 
 for any @f{h_{\rm cl}(x)}. Indeed, we can simply choose @f{\hat{h}} to be independent of @f{x^{\star}}:
-@equation{
+@e{
    h(x,x^{\star}) = h_{\rm cl}(x)
 }
 
 @section{Classical limit}
 In the classical limit we have:
-@equation{
+@e{
    \rho_{1\over 2} = \exp\left({1\over \hbar}S_{\rm BV}\right),\quad\hbar\to 0
 }
 (notice that the @f{\rho_{1\over 2}} of Eq. (@ref{RhoIsOne}) can be considered the opposite limit). 
 In this case, the equation (@ref{ExtensionOfH}) reads:
-@equation[#:label "ShZero"]{
+@e[#:label "ShZero"]{
    \{S_{\rm BV}\,,\,h\} = 0
 }
 At the zeroth order in the @f{x^{\star}}-expansion, Eq. (@ref{ShZero}) implies:
-@equation{
+@e{
    Qh_{\rm cl}(x) = \chi^a\partial_a S_{\rm cl}
 }
 Therefore, the necessary condition for the continuation to exist is that @f{h_{\rm cl}} 

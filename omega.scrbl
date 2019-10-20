@@ -58,7 +58,7 @@ for now let us assume that we are working in the vicinity of the unit element of
 We will @seclink["Definition"]{start by constructing this version of @f{\Omega}}. The definition actually
 @bold{depends on the choice} of a fixed Lagrangian submanifold @f{L\subset M}. Strictly speaking, we
 can characterize @f{\Omega} as a map of the following type:
-@equation[#:label "TypeOfOmegaOnGHat"]{
+@e[#:label "TypeOfOmegaOnGHat"]{
 \Omega\;:\;{\rm LAG} \rightarrow \mbox{Fun}(\Pi T\widehat{G})
 }
 (which associates a PDF on @f{\widehat{G}} to every Lagrangian submanifold).
@@ -66,7 +66,7 @@ can characterize @f{\Omega} as a map of the following type:
 
 @section{PDF on the space of Lagrangian submanifolds}
 There is a natural map:
-@equation{
+@e{
 \widehat{G}\times {\rm LAG}\;\rightarrow\;{\rm LAG}
 }
 coming from the action of @f{G} on @f{M}. A natural question is, does @f{\Omega} descend to a PDF on @f{\rm LAG}?
@@ -113,7 +113,7 @@ For any function @f{E\;:\;{\bf C}\to {\bf C}}, consider the following pseudo-dif
 ]]
 where @f{d\widehat{g}\widehat{g}^{-1}} is the @hyperlink["../BV-formalism/MomentMap.html#(elem._moment-map-type)"]{moment map};
 its main property is that for any function @f{F\in \mbox{Fun}(M)}: 
-@equation{
+@e{
 d_{(g)}(F\circ g) = \{d\widehat{g}\widehat{g}^{-1},F\,\}\circ  g
 }
 @centered{@spn[redbox]{we will actually use just @f{E(z) = e^z}}}
@@ -139,7 +139,7 @@ Notice that for any @bold{even} @f{{\cal H}\in C^{\infty}(M)}:
 ]
 We can interpret this formula using the notion of 
 @hyperlink["../BV-formalism/OddLaplace.html#(elem._.Via.Lie.Derivative)"]{Lie derivative of half-density} as follows:
-@equation[#:label "InterpretationUsingLieDerivative"]{
+@e[#:label "InterpretationUsingLieDerivative"]{
 {\cal L}_{\{f({\cal H}),\,\_\}} \rho_{1\over 2} = 
 {\cal L}_{\{{\cal H},\,\_\}} \left(f'({\cal H})\rho_{1\over 2}\right) - {1\over 2} \{{\cal H},{\cal H}\}f''({\cal H})\rho_{1\over 2}
 }
@@ -195,7 +195,7 @@ and the fact that @f{\int_{gL}\Delta_{\rm can}(\ldots)=0}.
 @subsection{Maurer-Cartan equation}
 
 We used the equation:
-@equation[#:label "MaurerCartanEquation"]{d(d\widehat{g}\widehat{g}^{-1}) = - {1\over 2}\{d\widehat{g}\widehat{g}^{-1},d\widehat{g}\widehat{g}^{-1}\}}
+@e[#:label "MaurerCartanEquation"]{d(d\widehat{g}\widehat{g}^{-1}) = - {1\over 2}\{d\widehat{g}\widehat{g}^{-1},d\widehat{g}\widehat{g}^{-1}\}}
 The strange minus sign can be explained as follows. The Lie algebra of the group @f{G} of canonical transformations
 is actually the opposite with the Lie algebra of Hamiltonian vector fields.
 
@@ -233,7 +233,7 @@ With such assumptions:
 @spn[redbox]{it is OK to act with @f{\Delta} on @f{e^{S_{\rm BV}}}}
 ]
 But this is not enough, because in our derivation we also act by @f{\Delta} on functions of @f{\cal H}. Therefore we also need:
-@equation[#:label "delta-zero-vanishes-on-moment-map"]{
+@e[#:label "delta-zero-vanishes-on-moment-map"]{
 \Delta^{(0)} (d\widehat{g}\widehat{g}^{-1}) = 0
 }
 We will now argue that we can always choose @f{\widehat{g}}, at least locally, so that Eq. (@ref{delta-zero-vanishes-on-moment-map})
@@ -248,7 +248,7 @@ but do not depend on @f{\phi^{\star}}.
 @spn[redbox]{In the vicinity of @f{L_0} it is possible to choose @f{g_{\lambda}} so that @f{g_{\lambda}\in {\bf S}}}
 ]
 In this case Eq. (@ref{delta-zero-vanishes-on-moment-map}) is automatically satisfied. We also have:
-@equation[#:label "momentum-maps-in-involution"]{
+@e[#:label "momentum-maps-in-involution"]{
 \{\,d\widehat{g}\widehat{g}^{-1}\,,\,d\widehat{g}\widehat{g}^{-1}\,\}\;=\;0
 }
 This equation substantially simplifies many formulas. However, we will @bold{not} assume Eq. (@ref{momentum-maps-in-involution})
@@ -282,11 +282,11 @@ Then Eq. (@ref{GenericM}) implies:
 ]]
 Using @hyperlink["../BV-formalism/OddLaplace.html#(elem._.Operator.Delta)"]{the definition of @f{\Delta}},  
 Eq. (@ref{Intertwiner}) can be rewritten in the following way:
-@equation[#:label "OmegaIsIntertwiner"]{
+@e[#:label "OmegaIsIntertwiner"]{
    d\Omega\langle F\,\rangle = - \Omega\langle \Delta F\,\rangle  
 }
 Also note the following equation for @f{H\in \widehat{\bf g}}:
-@equation[#:label "IotaOnOmega"]{
+@e[#:label "IotaOnOmega"]{
    \iota_{\{H,\_\}}\Omega\langle F\,\rangle = \Omega\langle  HF\,\rangle
 }
 }
@@ -318,7 +318,7 @@ The following formulas define the representation of @f{\widetilde{\bf g}'} on @f
 ]]
 @comment{
 We have to check that:
-@equation{
+@e{
 [\rho((b,0)),\rho((0,c))]a  = \rho((b,0))\rho((0,c))a - (-)^{|c|(|b|+1)}\rho((0,c))\rho((b,0))a = \rho((0,\{b,c\}))a
 }
 Indeed, we have:
@@ -348,7 +348,7 @@ for each @f{a\in{\cal G}}, this map computes @f{\Omega\langle a\rangle} --- the 
 form. Eqs. (@ref{OmegaIsIntertwiner}) and (@ref{IotaOnOmega}) can be interpreted as saying that @f{\Omega\langle\_\,\rangle} is an 
 intertwiner: 
 @bystro-bg[255 255 230]
-@equation{
+@e{
    x\Omega\langle a\rangle = \Omega\langle \rho(x)a \rangle
 }
 @bystro-bg[255 255 255]
@@ -362,11 +362,11 @@ Here we will explain how to push  @f{\Omega} from @f{\widehat{G}} down to @f{\rm
 }
 
 Let us interpret @f{\Omega} as a PDF on @f{\rm LAG} using the formula:
-@equation{
+@e{
    \Pi T{\rm LAG} = (\Pi T \widehat{G})\times_{\widehat{G}}{\rm LAG}
 }
 where @f{\times_{\widehat{G}}} means factor over the symmetry:
-@equation[#:label "GtimesLAGSymmetry"]{
+@e[#:label "GtimesLAGSymmetry"]{
    (\widehat{g},L)\mapsto (\widehat{g}\widehat{f},\widehat{f}^{-1}L)
 }
 For the descend to work, @f{\Omega} should be base, @italic{i.e.} both invariant and 
@@ -377,7 +377,7 @@ instead of ``horizonthal''. Let @f{\xi \in \widehat{\bf g}} denote a Hamiltonian
 whose flux preserves the Lagrangian submanifold @f{L}. The horizonthality would
 be equivalent to the statement that @f{\iota_{{\rm Ad}(\widehat{g})\xi}\Omega} is zero. But in fact, 
 Eq. (@ref{IotaOnOmega}) implies:
-@equation{
+@e{
    \iota_{{\rm Ad}(\widehat{g})\xi}\Omega = \int_{\widehat{g}L}({\rm Ad}(\widehat{g})\xi)
    e^{d\widehat{g}\widehat{g}^{-1}}\rho_{1\over 2}
 }
@@ -462,7 +462,7 @@ Let us assume that we can choose:
 ]
 ]
 Then we just have to change:
-@equation{
+@e{
 \widehat{g} \mapsto \widehat{g} \widehat{f}
 }
 As @f{\Omega} is invariant, this would not change the result of the integration.
@@ -471,7 +471,7 @@ As @f{\Omega} is invariant, this would not change the result of the integration.
 The most elegant solution is to use, instead of the space of Lagrangian submanifolds @f{\rm LAG},
 the space @f{{\rm LAG}_+} of Lagrangian submanifolds with marked point. A point of @f{\rm LAG_+} 
 is a pair @f{(L,p)} where @f{L\in \rm LAG} and @f{p\in L}. This defines the double fibration:
-@equation{
+@e{
    M \stackrel{p}{\longleftarrow} {\rm LAG}_+ \stackrel{\pi}{\longrightarrow} {\rm LAG}
 }
 Given  @f{v\in \Pi T_{(L,p)}{\rm LAG}_+}, we can consider two projections @f{\pi_*v\in \Pi T_L{\rm LAG}}
@@ -489,16 +489,16 @@ follows:
 In order to make sense of @f{\iota_{\pi_*v}\omega} we must think of @f{\pi_*v} as a section of @f{\Pi TM}; the fact 
 that it is only defined up to tangent to @f{TL} does not matter because @f{L} is isotropic. Eq. (@ref{SigmaVanishiesAtMarkedPoint}) 
 eliminates the ambiguity, and we can now @bold{safely define} @f{\Omega}:
-@equation{
+@e{
 \Omega \;=\; \int_L e^{S_{\rm BV} + \sigma}
 }
 For every function @f{F} on @f{M} and for any PDF @f{\nu} on @f{M}, consider
 the product @f{(p^*\nu)\Omega\langle F\,\rangle} where:
-@equation{
+@e{
    \Omega\langle F\,\rangle(L,\sigma)\;=\;\int_L F\,e^{S_{\rm BV}+\sigma}
 }
 We will now prove the following formula:
-@equation[#:label "SeveraDifferential"]{
+@e[#:label "SeveraDifferential"]{
 d\left(p^*\nu\;\Omega \langle F\,\rangle\right) \;=\; 
 (-)^{|\nu|+1} p^*\nu\;\Omega \langle \Delta  F\,\rangle 
 \;+\;p^*\left(d\nu + \omega\nu\right)\;\Omega\left\langle F\,\right\rangle
@@ -515,7 +515,7 @@ We can now use the
 @hyperlink["../BV-formalism/MomentMap.html#(elem._moment-map-type)"]{moment map} 
 @f{{\cal H} = d\hat{g}\hat{g}^{-1}}.
 We observe that: 
-@equation{
+@e{
 \sigma(gp) \;=\; {\cal H}(gp) - {\cal H}(gp_0)
 }
 --- the subtruction of @f{{\cal H}(gp_0)} is needed to satisfy Eq. (@ref{SigmaVanishiesAtMarkedPoint}).
@@ -593,7 +593,7 @@ canonical transformation, @italic{i.e.} @f{\hat{h}\in S\widehat{G}}. It follows 
 that @f{\Omega = \int_{gL} e^{d\widehat{g} \widehat{g}^{-1}}} is @bold{invariant} under 
 the left shift @f{\widehat{g}\mapsto \widehat{h}\widehat{g}}. But
 @f{\Omega} is @bold{not horizonthal}; for @f{\xi\in {\bf s\widehat{g}}} we have:
-@equation{
+@e{
  \iota_{\xi}\Omega = \int_{gL} \;\xi   \;e^{ d\widehat{g}\widehat{g}^{-1}}\rho_{1\over 2} \neq 0
 }
 Therefore:
@@ -635,7 +635,7 @@ such that:
 ]]}
 ]
 Then the following equation is a cocycle of the @f{H}-equivariant Cartan complex on @f{\rm LAG}:
-@equation{
+@e{
 \Omega(L,dL,\xi)  = \int_L e^{d\widehat{g}\widehat{g}^{-1}} \rho^{\tt C}_{1\over 2}(\xi)
 }
 This is proven using 
@@ -672,26 +672,26 @@ linear function of @f{\xi \in {\bf h}}
 
 Eq. (@ref{RhoEquivariantlyClosed}) implies that @f{\rho^{(0)}_{1\over 2}} satisfies the Master Equation. 
 In this Section we will use @f{\rho^{(0)}_{1\over 2}} to define the odd Laplace operator on functions:
-@equation{
+@e{
 \Delta = \Delta_{\rho^{(0)}_{1\over 2}}
 }
 Eq. (@ref{RhoEquivariant}) implies that @f{\rho^{(0)}_{1\over 2}} is @f{H}-invariant; 
 using @hyperlink["../BV-formalism/OddLaplace.html"]{the relation between @f{\Delta_{\rm can}} and Lie derivative} we derive:
-@equation{
+@e{
 {\cal L}_{\{F,\_\}}\rho^{(0)}_{1\over 2}\;=\; 
 (-)^{\overline{F}}\Delta_{\rm can}\left(F\rho_{1\over 2}\right)\;=\;0
 }
 Therefore the Hamiltonians generating @f{\bf h} should be all @f{\Delta}-closed. Moreover, Eq. (@ref{RhoEquivariantlyClosed}) implies:
-@equation{
+@e{
 \Delta \Phi\langle\xi\rangle = \xi
 }
 so they are actually all @f{\Delta}-exact. Eq. (@ref{RhoEquivariant}) implies:
-@equation[#:label "EquivarianceOfPhi"]{
+@e[#:label "EquivarianceOfPhi"]{
 \{\Delta\Phi\langle\xi\rangle \,,\,\Phi\langle\eta\rangle\}\;=\; \Phi\langle[\xi,\eta]\rangle
 }
 The image of @f{\Phi}, as a linear statistics-reversing map @f{{\bf h}\to \mbox{Fun}(M)}, will be called @f{\cal F}.
 Notice that the inverse map to @f{\Phi\;:\;{\bf h}\rightarrow {\cal F}} is @f{\Delta\;:\;{\cal F}\rightarrow {\bf h}}. To summarize:
-@equation{ 
+@e{ 
 {\bf h} \;=\; \Pi\Delta{\cal F} 
 }
 
@@ -702,7 +702,7 @@ Notice that the inverse map to @f{\Phi\;:\;{\bf h}\rightarrow {\cal F}} is @f{\D
 We will now study the necessary properties of the @seclink["sec:expansion-of-omega"]{previously defined} space @f{\cal F}.
 
 Let us define the bracket:
-@equation[#:label "DefLieAlgeraOfDiffeomorphisms"]{
+@e[#:label "DefLieAlgeraOfDiffeomorphisms"]{
    [x,y] = \{x,\Delta y\}
 }
 which satisfies @f{\Delta [x,y] = \{\Delta x,\Delta y\}}. 
@@ -720,12 +720,12 @@ requirement:
 
 
 Moreover, Eq. (@ref{RhoEquivariantlyClosed}) implies the existence of a map
-@equation{
+@e{
    q\;:\;{\cal F}\otimes {\cal F}\to \mbox{Fun}(M)
 }
 such that:
 @bystro-bg[255 255 230]
-@equation[#:label "DefQ"]{
+@e[#:label "DefQ"]{
    \{x,y\} = \Delta q(x,y)
 }
 @bystro-bg[255 255 255]
@@ -753,7 +753,7 @@ the Jacobi identity), the antisymmetry of @f{[\_\,,\_]} already implies that
 Therefore @f{\cal F} is a  Lie algebra.  There is a map @f{\Delta\;:\;{\cal F}\to \Pi \mbox{Fun}(M)}.
 The image of this map, with flipped Grassmann parity, 
 naturally denoted @f{\Pi\Delta {\cal F}}, is a Lie subalgebra of @f{{\bf s\widehat{g}} = \Pi \mbox{Fun}(M)}:
-@equation{
+@e{
 {\bf h}  \;=\; \Pi\Delta{\cal F}
 }
 We will also request that:
@@ -761,7 +761,7 @@ We will also request that:
 the map @f{\Delta\;:\;{\cal F}\to \mbox{Fun}(M)} is @bold{injective}
 }]
 In other words:
-@equation{
+@e{
 {\cal F} \simeq \Pi\Delta{\cal F}
 }
 
@@ -777,7 +777,7 @@ In other words:
 Remember that we required @f{\mbox{ker}\,\Delta|_{\cal F} = 0}. This means that
 for every @f{\xi\in {\bf h}} we can unambiguously find the corresponding
 element of @f{\cal F}, which we will denote @f{\Phi\langle \xi\rangle} such that:
-@equation[#:label "PhiXi"]{
+@e[#:label "PhiXi"]{
 \xi = \Delta \Phi\langle \xi \rangle
 }
 We can always write, without any further assumptions:
@@ -791,7 +791,7 @@ So defined @f{a(\xi)} should satisfy (we abbreviate @f{\Phi\langle\xi\rangle} to
 @f{\{\Delta \Phi\langle\eta\rangle \,,\,a(\xi)\}\;=\;}@f{\left.{d\over dt}\right|_{t=0} a(e^{t\,{\rm ad}_{\eta}}\xi)}@label{EquivarianceOfA}
 ]]
 The first two terms in the @f{\xi}-expansion (which is the same as @f{\Phi}-expansion) are:
-@equation{ 
+@e{ 
 a = \Phi - {1\over 2} q(\Phi,\Phi) + \ldots 
 }
 
@@ -800,21 +800,21 @@ a = \Phi - {1\over 2} q(\Phi,\Phi) + \ldots
 
 The @bold{consistency} of Eq. (@ref{EquationForLogForEquivariant}) requires that  @f{\Delta \{a,a\} =0} at
 every order in @f{\Phi}. This can be proven in the following way:
-@equation{
+@e{
 \Delta \{a,a\} = 2\{\Delta a,a\} = -\{\{a,a\},a\} + 2\{\Delta\Phi,a\}
 }
 The first term @f{-\{\{a,a\},a\}} is automatically zero because of the Jacobi identity.
 The vanishing of @f{2\{\Delta\Phi,a\}} follows from Eq. (@ref{EquivarianceOfA}):
-@equation{
+@e{
 \{\Delta \Phi, a(\Phi)\} = a(\{\Delta\Phi,\Phi\}) = a (0) = 0
 }
 Now we have @f{\{a,a\}} is @f{\Delta}-closed order by order in @f{\Phi}. Let us @spn[attn]{assume} that
 it is actually @f{\Delta}-exact order by order in @f{\Phi}:
-@equation{
+@e{
 \{a,a\} = -2\Delta a'
 }
 and, moreover, exact in a way compatible with Eq. (@ref{EquivarianceOfA}), @italic{i.e.}:
-@equation{
+@e{
 \{\Delta\Phi\langle\xi\rangle, a'(\eta)\}\;=\;\left.{d\over dt}\right|_{t=0}a'\left(e^{t\,{\rm ad}_{\xi}}\eta\right)
 }
 Then we define @f{a'} to be the next term of the @f{\Phi}-expansion of @f{a}.
@@ -852,7 +852,7 @@ For example, up to the fourth order in @f{\Phi}:
 @comment{
 @fsize+[(- 3)]
 The terms of the order @f{\Phi^3} are:
-@equation|{
+@e|{
 {1\over 2}\Delta^{-1}\{\Phi,\Delta^{-1}\{\Phi,\Phi\}\} \;=\;
 {1\over 2}\Delta^{-1}\{\Phi,q(\Phi,\Phi)\}
 }|
@@ -916,7 +916,7 @@ should assume the same about @f{a'}. (Just because @f{a'} is a deformation of @f
 This imlies Eq. (@ref{DeltaPhiWithAprime}), because @f{\{\Delta\Phi,\Phi\}=0}.
 
 The term of the zeroth order in @f{\Phi} in  @f{a'} can be interpreted as the deformation of the solution of Master Equation:
-@equation{
+@e{
 \rho_{1\over 2}\mapsto e^{\varepsilon a'}\rho_{1\over 2}
 }
 (where @f{\varepsilon} is the infinitesimal deformation parameter).
@@ -924,11 +924,11 @@ The term of the zeroth order in @f{\Phi} in  @f{a'} can be interpreted as the de
 Suppose that @f{a'} @bold{starts with the term linear} in @f{\Phi}, or, equivalently, with the term linear in @f{\xi}.
 Let @f{a'\langle\xi\rangle} denote this leading linear term.
 The @f{\bf h}-invariance of the map @f{\xi \mapsto a'_{\xi}} implies for the linear term:
-@equation[#:label "EquivarianceOfLinearTermInDeformation"]{
+@e[#:label "EquivarianceOfLinearTermInDeformation"]{
 \{\Delta\Phi\langle\xi\rangle\,,\,a'\langle \eta\rangle\} = a'\langle [\xi,\eta] \rangle
 }
 Moreover, since @f{a} starts with the term linear in @f{\Phi}, Eq. (@ref{APrimeCovClosed}) implies:
-@equation{
+@e{
 \Delta a'\langle \xi\rangle = 0
 }
 Therefore:
@@ -964,7 +964,7 @@ The validity of this assumption is model-dependent; it is probably stronger than
 
 @slide["Example: Duistermaat-Heckman integration" #:tag "Duistermaat-Heckman formula" #:showtitle #t]{
 Consider the case when our odd symplectic submanifold is the odd cotangent bundle of some @bold{symplectic} supermanifold @f{X}:
-@equation{
+@e{
 M = \Pi T^*X
 }
 Let @f{p\;:\; M\to X} be the  projection.
@@ -989,7 +989,7 @@ by the super-determinant.
 
 Let @f{H} be a subgroup of the group of canonical transformations
 of @f{X}. A canonical transformation @f{h} of @f{X} can be lifted to a BV-canonical transformation @f{\Pi T^* h} of @f{\Pi T^* X} as follows:
-@equation[#:label "lift-of-canonical-transformation"]{
+@e[#:label "lift-of-canonical-transformation"]{
 (\Pi T^* h)(\xi,x) = ((h^{-1}(x)_*)^*\xi,h(x))
 }
 An infinitesimal canonical transformation of @f{X} generated by a Hamiltonian @f{F} lifts to an infinitesimal 
@@ -1015,7 +1015,7 @@ where @f{\varpi = \pi^{-1}}.
 
 @slide["Example: interpretation of Cartan complex" #:tag "Interpretation of Cartan complex" #:showtitle #t]{
 Let us consider the case:
-@equation{
+@e{
 M = \Pi T^* (\Pi T X)
 }
 The odd tangent bundle @f{\Pi T X} has a natural volume form. This induces a half-density on @f{M}:
@@ -1027,7 +1027,7 @@ The odd tangent bundle @f{\Pi T X} has a natural volume form. This induces a hal
 It satisfies the Quantum Master Equation.
 
 Now consider a different half-density, which also satisfies the Quantum Master Equation:
-@equation{
+@e{
 \rho_{1\over 2}\;=\; e^{\widehat{d}} \rho^{(0)}_{1\over 2}
 }
 where @f{\widehat{d}} is the BV Hamiltonian generating the lift to @f{\Pi T^*(\Pi TX)} of the canonical odd vector
@@ -1037,7 +1037,7 @@ We can replace @f{e^{\widehat{d}}} with an arbitrary function of @f{\widehat{d}}
 }
 Suppose that a Lie group @f{H} acts on @f{X}. This action can be lifted to @f{\Pi TX} and @f{\Pi T^*(\Pi TX)}.
 An infinitesimal action of @f{\xi \in {\bf h} = \mbox{Lie}(H)} on @f{M} is generated by the BV Hamiltonian:
-@equation{
+@e{
 \widehat{{\cal L}_{\xi}} = \{\widehat{d},\widehat{\iota_{\xi}}\}
 }
 Therefore, in this case:
@@ -1048,7 +1048,7 @@ Therefore, in this case:
 ]
 ]
 It satisfies Eq. (@ref{RhoEquivariantlyClosed}):
-@equation{
+@e{
 \Delta \left(e^{\widehat{d} + \widehat{\iota_{\xi}}} \rho^{(0)}_{1\over 2}\right) \;=\; 
 \widehat{{\cal L}_{\xi}}e^{\widehat{d} + \widehat{\iota_{\xi}}} \rho^{(0)}_{1\over 2}
 }
@@ -1077,7 +1077,7 @@ Cartan complex to the complex of equivariant half-densities on @f{\Pi T^*(\Pi TX
 Let @f{\Omega_{\bf h}^{\tt C}} denote the @bold{equivariant} form, given
 by Eq. (@ref{OmegaCartanCalF}). We will denote the
 corresponding base form @f{\Omega^{\tt base}_{\bf h}}:
-@equation{
+@e{
    \Omega^{\tt base}_{\bf h} \in \Omega^{\bullet}({\rm LAG})\quad\mbox{ \tt\small base for } 
    \begin{array}{c}{\rm LAG}\cr \cr \downarrow\cr \cr H \backslash {\rm LAG}\end{array}
 }
@@ -1102,7 +1102,7 @@ on @f{\rm LAG} computing the ``vertical component'' of a vector.) Then we apply
 
 Finally, we replace @f{\Phi} with
 the curvature @f{d{\cal A} + {\cal A}^2} of the connection @f{\cal A}; we get:
-@equation{
+@e{
    \Omega_{\bf h} = 
    \int_{gL} e^{d\widehat{g} \widehat{g}^{-1} - {\cal A}}
    \Gamma( d{\cal A} + {\cal A}^2 )\rho_{1\over 2}
@@ -1130,18 +1130,18 @@ The result, generally speaking, does depend on the choice of @f{\cal F}.
 We can construct such subalgebras in the following way. 
 @itemlist[#:style 'ordered
 @item{Start with some  subspace @f{F_1\subset {\cal G}} satisfying the property:
-@equation{
+@e{
    \forall x\in F_1:\;\forall y \in F_1:\;\{x,y\} = \Delta q_1(x,y)
 }
 with some @f{q_1\;:\; F_1\otimes F_1\to \mbox{Fun}(M)}; this implies that @f{[x,y]=-[y,x]}.
 }
 @item{Verify the existence of @f{q_2\;:\;F_1\otimes (F_1\wedge F_1)\to \mbox{Fun}(M)} such that:
-   @equation[#:label "XwithYZ"]{
+   @e[#:label "XwithYZ"]{
       \forall x\in F_1:\;\forall y \in F_1:\;\forall z\in F_1:\; \{x,[y,z]\} = \Delta q_2(x\otimes y\wedge z)
    }
    If this is not the case, then we must declare failure (the original space @f{F_1} 
    was a bad choice). But if Eq. (@ref{XwithYZ}) is satisfied, then we define:
-   @equation{
+   @e{
       F_2 = F_1 + [F_1,F_1]
    }
 It is useful to identify the subspace in the tensor algebra of @f{F_1} consisting of tensors with the symmetries of the free Lie algebra. 
@@ -1156,7 +1156,7 @@ at the degree two the only relation in the free Lie algebra is antisymmetry:
    We observe that under the condition (@ref{XwithYZ}) the ``nested commutator'' @f{[[x,y],z]} 
    (with @f{x}, @f{y} and @f{z} being any three elements of @f{F_1}) satisfies the Jacobi
    identity:
-   @equation{
+   @e{
       [[x,y],z] + [[y,z],x] + [[z,x],y]  = 0
    }
 }
@@ -1168,19 +1168,19 @@ at the degree two the only relation in the free Lie algebra is antisymmetry:
 ]]
    where @f{[\_\,,\_]^{\rm F}} is the commutator in the free Lie algebra.
    If this is true, define:
-   @equation{
+   @e{
       F_3 = F_2 + [F_1,F_2]
    }
    Otherwize, say that the original space @f{F_1} was a bad choice.
 }
 @item{Continue recursively. For any Lie algebra, let us denote the ``nested commutator'' 
    @f{[x_1,\ldots,x_N]} as follows:
-   @equation[#:label "DefNestedCommutator"]{
+   @e[#:label "DefNestedCommutator"]{
       [x_1,\ldots,x_N] = [[x_1,\ldots,x_{N-1}],x_N]
    }
    At each step, the only thing that we have to verify the existence of
    @f{q_N\;:\;F_1\otimes \mbox{\tt\small FreeLie}^NF_1\to \mbox{Fun}(M)} such that:
-   @equation[#:label "XwithNested"]{
+   @e[#:label "XwithNested"]{
       \{x,[x_1,\ldots,x_N]\} = \Delta q_N(x,[x_1,\ldots,x_N]^{\rm F})
    }
    This automatically implies, that any expression composed of @f{N+1} letters @f{x} 
@@ -1211,7 +1211,7 @@ at the degree two the only relation in the free Lie algebra is antisymmetry:
 @item{We define @f{F_{N+1}} as the space of expressions composed from @f{N+1} elements 
    of @f{F_1} using @f{[\_\,,\_]}.}
 @item{Finally:
-   @equation{
+   @e{
       F = F_{\infty}
    }
 }
@@ -1237,7 +1237,7 @@ There are generally speaking other relations between them, and therefore they ar
 not a free Lie algebra. But they are @bold{a Lie algebra}. We will denote this Lie algebra @f{\cal F}.
 
 @comment{Let us look at our nested commutators:
-@equation{
+@e{
    \{\Delta x_1,\{\Delta x_2,\ldots,\{\Delta x_N ,y\}\ldots\}\}
 }
 We are simpy acting on @f{y} by all the possible symmetries 
@@ -1264,7 +1264,7 @@ choice for @f{\cal F}.
 @section[#:tag "BriefReviewOfStandardBRST"]{Brief review of the ``standard'' BRST formalism}
 
 @hyperlink["../BRST-formalism/index.html"]{The usual translation of the BRST formalism into the BV language} leads to the following Master Action:
-@equation{
+@e{
 S_{\rm BV} = S_{\rm cl}(\phi) + (Q_{\rm BRST}c^A)c_A^{\star} + (Q_{\rm BRST}\phi^i)\phi_i^{\star}
 } 
 where @f{\phi^i} are collective notation for the ``classical fields'' (in the case
@@ -1273,7 +1273,7 @@ of Yang-Mills theory they would be the gauge fields @f{A_{\mu}(x)}).
 
 @section{Standard choice of @f{\cal F}}
 In this case we can choose @f{\cal F} to be the space of expressions:
-@equation[#:label "StandardChoiceOfF"]{
+@e[#:label "StandardChoiceOfF"]{
 \int  \xi^A \, c^{\star}_A
 }
 where @f{\xi^A} is the parameter of the gauge symmetry.
@@ -1281,7 +1281,7 @@ where @f{\xi^A} is the parameter of the gauge symmetry.
 The resulting algebra @f{\Pi\Delta{\cal F}} is the algebra of gauge symmetries of the original
 which we started with. Indeed, @f{\{\,S_{\rm BV}\,,\,\int  \xi^Ac^{\star}_A\,\}} is just the odd Hamiltonian of
 the gauge symmetries:
-@equation{
+@e{
 \{\,S_{\rm BV}\,,\,\int  \xi^Ac^{\star}_A\,\} = (\delta_{\xi}\phi^i) \phi_i^{\star} + [\xi,c]c^{\star}
 }
 
@@ -1314,7 +1314,7 @@ Usually @f{\Psi = \int b\mu}.
 On this page we will investigate the structure of @f{\cal F} from the point of view of the
 antifield expansion. Suppose that we have the solution of the Master Equation in the form of the
 series in the antifields:
-@equation{
+@e{
 S_{\rm BV} = S_{\rm cl}(\phi) + (Q_{\rm BRST} \phi^i)\phi_i^{\star} + \ldots
 }
 
@@ -1324,19 +1324,19 @@ S_{\rm BV} = S_{\rm cl}(\phi) + (Q_{\rm BRST} \phi^i)\phi_i^{\star} + \ldots
 
 Suppose that the leading term is invariant under some Lie algebra @f{\bf h} of infinitesimal transformations,
 parametrized by @f{\xi}:
-@equation[#:label "DefV"]{
+@e[#:label "DefV"]{
 \delta_{\xi} S_{\rm cl} \;=\; Q_{\rm BRST} \, v_{\xi}
 }
 Moreover, we assume:
-@equation{
+@e{
 [\delta_{\xi},\delta_{\eta}] = \delta_{[\xi,\eta]}
 }
 Eq. (@ref{DefV}) implies:
-@equation{
+@e{
 \delta_{\xi}v_{\eta} - \delta_{\eta}v_{\xi} - v_{[\xi,\eta]} \;\in\; \mbox{ker}(Q_{\rm BRST})
 }
 This defines the cohomology class:
-@equation[#:label "ClassH2Lie"]{
+@e[#:label "ClassH2Lie"]{
 [\xi,\eta\;\mapsto\;\delta_{\xi}v_{\eta} - \delta_{\eta}v_{\xi} - v_{[\xi,\eta]}] \;\in\; H^2_{\rm Lie}({\bf h},H^{-1}_{\rm BRST})
 }
 Let us @spn[attn]{assume} that we can construct the full expansion for a ghost number @f{-1} object:
@@ -1351,13 +1351,13 @@ Let us @spn[attn]{assume} that we can construct the full expansion for a ghost n
 ]
 ]
 The class (@ref{ClassH2Lie}) is an obstacle to choosing @f{{\cal V}_{\xi}} in such a way that:
-@equation{
+@e{
 \{{\cal V}_{\xi}\,,\,{\cal V}_{\eta}\} \;=\; {\cal V}_{[\xi,\eta]}
 }
 
 @section[#:tag "EntersF"]{Enters @f{\cal F}}
 For our applications, we need a special case when @f{{\cal V}_{\xi}} is BRST-exact:
-@equation{
+@e{
 {\cal V}_{\xi} = \{S_{\rm BV},\Phi_{\xi}\}
 }
 Moreover, there is a @bold{special case} when the expansion of @f{\Phi_{\xi}} starts at the linear
@@ -1379,12 +1379,12 @@ In this case, all we can say about @f{v_{\xi}} is:
 
 @section{Particular cases}
 @subsection{Standard BRST, standard polarization, off-shell symmetry}
-@equation{
+@e{
 {\cal V}_{\xi} = \delta_{\xi}\phi^i \phi^{\star}_i
 }
 @italic{Apriori} @f{\bf h} may be unrelated to the gauge group. However, if @f{\bf h} is the gauge group,
 then we have:
-@equation{
+@e{
 {\cal V}_{\xi} = \{S_{\rm BV},\Phi_{\xi}\}
 }
 --- see Eq. (@ref{StandardChoiceOfF}).
@@ -1392,14 +1392,14 @@ then we have:
 @subsection{Bosonic string, @f{h} being diffeomorphisms}
 This is @seclink["BriefReviewOfStandardBRST"]{standard BRST}, but with 
 @hyperlink["../bosonic-string/LagrangianSubmanifold.html"]{rotated polarization}:
-@equation{
+@e{
 {\cal V}_{\xi} = \int b^{\alpha\beta} (\nabla_{\alpha}\xi_{\beta})\;+\; (\delta_{\xi}\phi^i)\phi^{\star}_i
 }
 Notice that the term @f{\int b^{\alpha\beta} (\nabla_{\alpha}\xi_{\beta})} (constant in the antifields)
 is the effect of rotated (with respect to standard) polarization. (In the standard approach @f{b^{\alpha\beta}} would
 be counted as an antifield.)
 Moreover, we have:
-@equation{
+@e{
 {\cal V}_{\xi} = \{S_{\rm BV},\Phi_{\xi}\}
 }
 where @f{\Phi_{\xi} = \int \xi c^{\star}}.
@@ -1425,7 +1425,7 @@ Now we will show how this can lead to @f{\Omega} not being actually closed due t
 
 We have to prove that @f{d\omega_1 = 0} where @f{\omega_1(\widehat{V}\,) = \int {\cal H}e^S} where @f{{\cal H} = d\widehat{g}\widehat{g}^{-1}}.
 The computation goes as follows. Consider the evaluation of @f{\cal H} on a vector @f{V}; the antifield expansion in the vicinity of @f{L_0} is:
-@equation{
+@e{
    {\cal H}(\phi)\langle V\,\rangle = b(\phi)\langle V\,\rangle + v^i(\phi)\langle V\,\rangle\phi_i^{\star} + \ldots
 }
 Terms @f{\ldots} of the higher order in @f{\phi^{\star}} do not matter.
@@ -1461,11 +1461,11 @@ In passing from Line (@ref{LineA}) to Line (@ref{LineB}) we used the fact that @
 in the sense that @f{{\partial v^i\over\partial \phi^i} = 0}. The assumption that @f{Q} is non-anomalous is quite reasonable, in fact
 necessary for the consistency of the theory. But @spn[attn]{the ground for assuming} @f{{\partial v^i\over\partial \phi^i} = 0}
 @spn[attn]{is much less solid}. One possibility is to require:
-@equation{
+@e{
   v^i = 0
 }
 which is more or less equivalent to:
-@equation[#:label "BsCommute"]{
+@e[#:label "BsCommute"]{
    \{B(V_1),B(V_2)\}=0
 }
 It is quite possible that there are other possible ways to make calculations 
@@ -1489,11 +1489,11 @@ of @f{\Lambda}, and then globally.
 
 @section{Local construction}
 Let us pick some fixed Lagrangian submanifold @f{L_0} from our family @f{\Lambda}:
-@equation{
+@e{
 L_0 = L(\lambda_0)
 }
 Let us define a ``first try'' Lagrangial submanifold @f{\widetilde{L}\subset M\times \Pi T^*(\Pi T\Lambda)} as follows:
-@equation{
+@e{
 \widetilde{L} = L_0\times \Pi T\Lambda
 }
 @comment{
@@ -1514,11 +1514,11 @@ We consider it as a gauge fermion deforming @f{\widetilde{L}} to some new Lagran
 @section{Global definition of  @f{L_{\Lambda}} }
 
 As a first step, let us consider a submanifold @f{L''\subset M\times \Lambda} which is defined as follows:
-@equation[#:label "l-prime-prime"]{
+@e[#:label "l-prime-prime"]{
 L'' = \{ (m,\lambda) \;|\; \lambda\in\Lambda\;,\;m\in L(\lambda) \}
 }
 This can be promoted to a subspace @f{L'\subset M\times \Pi T\Lambda} quite trivially:
-@equation[#:label "l-prime"]{
+@e[#:label "l-prime"]{
 L' = \{ (m,\lambda,@bxd{d\lambda}) \;|\; (\lambda,@bxd{d\lambda})\in \Pi T\Lambda\;,\;m\in L(\lambda) \}
 }
 Finally, we will construct @f{L_{\Lambda}} as some section of the vector bundle
@@ -1548,7 +1548,7 @@ There @bold{is}, however, a natural @bold{nonzero section}. It is constructed as
 ]
 where @f{\sigma(m)} computes for every tangent vector to @f{\Lambda} the value of its corresponding generating function on @f{m\in L(\lambda)}.
 This section defines our big Lagrangian submanifold:
-@equation{
+@e{
 L_{\Lambda} = s(L')
 }
 
@@ -1576,7 +1576,7 @@ We have:
 @section{Proof that @f{L_Λ} is Lagrangian}
 First of all, we have to eliminate the ambiguity in the definition of @f{\sigma}. We do this by lifting
 @f{\Lambda} to a subset of @f{\widehat{G}}. Now to every point @f{\lambda\in\Lambda} corresponds @f{\widehat{g}(\lambda)\in\widehat{G}}, and:
-@equation{
+@e{
 \sigma(m) = (d\widehat{g}\widehat{g}^{-1})(m)
 }
 @comment{
@@ -1584,7 +1584,7 @@ The way we defined @hyperlink["../BV-formalism/MomentMap.html#%28part._.Moment_m
 @f{(d\widehat{g}\widehat{g}^{-1})(m)} is a function on @f{\Pi T\widehat{G}}. But since we lifted @f{\Lambda} to @f{\widehat{G}}, it defines
 for us a function on @f{\Pi T\Lambda}, which is the same as a section of @f{\Pi T^{\star}\Lambda \rightarrow \Lambda}.
 On the other hand, from any section: 
- @equation{s_0\;:\;\Lambda\rightarrow \Pi T^{\star}\Lambda} 
+ @e{s_0\;:\;\Lambda\rightarrow \Pi T^{\star}\Lambda} 
 we can  naturally construct a section @f{s}
 of @f{\Pi T^{\star}(\Pi T\Lambda) \rightarrow \Lambda} in the following way: first construct
 @align[l.n @list[

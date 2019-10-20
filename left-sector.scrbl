@@ -40,7 +40,7 @@ We want to define some class of BRST-exact deformations of the theory, which may
 considered ``purely left''. We will show that this class is preserved by a subalgebra
 in the algebra of vector fields which we call @seclink["sec:left-deforming-vector-fields"]{``left-deforming''}.
 We will also consider some naturally defined subalgebras:
-@equation{
+@e{
 \mbox{\tt\small conformal}\;\subset \mbox{\tt\small left}\; \subset \mbox{\tt\small left-deforming}\; \subset \mbox{Vect}(\Sigma)
 }
 }
@@ -76,12 +76,12 @@ Let us consider some deformed metric.
 @bold{Definition @defn-num{LeftDeformations}:}
 a deformation of the metric is called @bold{``left deformation''} if it has the same left-moving characteristics
 as the original metric. In coordinates, left deformations of @f{2\,d\tau^+d\tau^-} are of the form:
-@equation{
+@e{
 2\,d\tau^+ d\tau^- + g_{--}(\tau^+,\tau^-) (d\tau^-)^2
 }
 The left-moving characteristics remain undeformed; they are tangent to @f{\partial\over\partial \tau^+}.
 The corresponding deformed action for the bosonic string would be:
-@equation[#:label "BosonicStringLeftDeformation"]{
+@e[#:label "BosonicStringLeftDeformation"]{
 \int d\tau^+ d\tau^- \; \left[
 {\partial x\over\partial \tau^+}{\partial x\over\partial \tau^-} -
 {1\over 2}g_{--}(\tau^+,\tau^-) \left({\partial x\over \partial \tau^+}\right)^2
@@ -100,7 +100,7 @@ In other words:
 @item{left-deforming vector fields preserve the distribution @f{\partial\over\partial \tau^+}}
 ]
 In coordinates they are of the form:
-@equation{
+@e{
 \xi = \xi^+(\tau^+,\tau^-) {\partial\over\partial\tau^+} + \xi^-(\tau^-){\partial\over\partial\tau^-}
 }
 @comment{
@@ -136,7 +136,7 @@ on the RHS, the expression in front of @f{(d\tau^-)^2} defines the variation of 
 
 @subsection[#:tag "sec:when-left-deforming-is-conformal"]{When left-deforming is conformal?}
 Eq. (@ref{LieDerivativeModWeyl}) implies the following condition for a left-deforming vector field @f{\xi} to be conformal:
-@equation{
+@e{
 \xi \mbox{ \small\tt is conformal: }
 2\partial_-\xi^+ \;=\; g_{--}(\partial_+\xi^+ - \partial_-\xi^-) - (\xi^+\partial_+ + \xi^-\partial_-)g_{--}
 }
@@ -158,7 +158,7 @@ We will call them @bold{``left vector fields''}.
 
 @bold{Definition @defn-num{LeftVectorField}:} the vector field is called @bold{``left vector field''} if it is 
 parallel to the left-moving characteristic. In coordinates they are of the form:
-@equation{
+@e{
 \xi^+(\tau^+,\tau^-){\partial\over\partial\tau^+}
 }
 Left vector fields are automatically left-deforming. They are conformal when @f{\xi^+} only depends on @f{\tau^+} (and not on @f{\tau^-}).
@@ -171,7 +171,7 @@ Left vector fields are automatically left-deforming. They are conformal when @f{
 
 @section{Problem}
 Let us consider the left deformation of the pure spinor action, analogous to Eq. (@ref{BosonicStringLeftDeformation}):
-@equation[#:label "left-deformation-of-pure-spinor-string"]{
+@e[#:label "left-deformation-of-pure-spinor-string"]{
 S_{\rm cl} \;\mapsto\; S_{\rm cl} + \int d^2 \tau \; g_{--}(\tau^+,\tau^-)Q b_{++}
 }
 The problem is:

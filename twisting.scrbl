@@ -67,11 +67,11 @@ In order to discuss twisting, we have to consider the full sigma-model, with lef
 ]
 ]
 The action @bold{in flat space} is:
-@equation{
+@e{
 S = \int_{\Sigma_{N=2}^{2|4}} \pi_@(ach)^* \overline{X^a}\;\; \pi_@(ch)^* X^a
 }
 In components, after excluding the auxiliary fields @f{F} and @f{\overline{F}}:
-@equation{
+@e{
 S \;=\; \int d z^@(L) dz^@(R)\left(
   \partial_@(L) \overline{x^a} \partial_@(R) x^a 
 - \overline{\psi_@(L)^a} \partial_@(R) \psi_@(L)^a
@@ -135,29 +135,29 @@ these formulas are zero.
 
 @section{Definitions}
 We declare that @f{\overline{\psi_@(L)^a}} and @f{\overline{\psi_@(R)^a}} be scalars:
-@equation{
+@e{
 \overline{\psi_@(L)^a} + \overline{\psi_@(R)^a} = \overline{\eta^{a}}\;,\quad
 \overline{\psi_@(L)^a} - \overline{\psi_@(R)^a} = \vartheta_a
 }
 while @f{\psi_@(L)^a} and @f{\psi_@(R)^a} be components of a 1-form:
-@equation{
+@e{
 \rho^a = \psi_@(L)^a dz^@(L) + \psi_@(R)^a dz^@(R)
 }
 The action is:
-@equation[#:label "ActionBModel"]{
+@e[#:label "ActionBModel"]{
  S_{\rm cl} \;=\; \int_{\Sigma}-{1\over 2} \,
   d\overline{x^a}\wedge *d x^a 
 -\rho^a\wedge (*d\overline{\eta^a} + d\vartheta_a)
 }
 The BV action is:
-@equation[#:label "BVActionBModel"]{
+@e[#:label "BVActionBModel"]{
 S_{\rm BV} \;=\; S_{\rm cl} \,+\,\int_{\Sigma}\; \overline{\eta^a}\overline{x}_{\overline{a}}^{\star} \,-\,{1\over 2} \langle dx^a,\rho^{\star}_a\rangle
 }
 
 @section{Action of diffeomorphisms}
 
 Let us consider the infinitesimal diffeomorphism (= vector field) of the worldsheet:
-@equation{
+@e{
 v^@(L)(z^@(L),z^@(R)){\partial\over\partial z^@(L)} + v^@(R)(z^@(L),z^@(R)){\partial\over\partial z^@(R)}
 }
 The corresponding BV generation function is @f{{\cal V}\langle v\rangle\;=\;\{S_{\rm BV}\,,\,\Phi\langle v\rangle\}} where:
@@ -261,7 +261,7 @@ Explicitly:
 
 @section{Closedness of @f{\Pi\Delta{\cal F}}}
 We need to prove:
-@equation{
+@e{
 \{\{S_{\rm BV},\Phi\langle w\rangle\},\Phi\langle v\rangle\} = \Phi\langle [w,v]\rangle
 }
 The only nontrivial computation is the bracket of the last term in Eq. (@ref{Phi}) with the last line of (@ref{GeneratorOfDiffeomorphisms}):

@@ -43,7 +43,7 @@ The worldsheet theory of the pure spinor superstring does not contain the
 worldsheet metric. This means that the action of the sigma-model is @bold{not invariant}
 under diffeomorphisms. However, it is 
 @hyperlink["../omega/Expansion_In_Antifields.html#(part._.Symmetry.Modulo.B.R.S.T)"]{invariant up to a BRST exact expression}:
-@equation{
+@e{
 \delta_{\xi} S_{\rm cl} = Q_{\rm BRST} \int \xi^{\alpha}\nabla^{\beta}b_{\alpha\beta}
 }
 To set up the basic BV machinery, we have to answer the following questions:
@@ -66,7 +66,7 @@ start with the term constant in antifields
 @slide["Structure of the action" #:tag "Action" #:showtitle #t]{
 The action consists of the matter term (a generic sigma-model) and some ghost terms.
 The ghost terms are of the form:
-@equation{
+@e{
 \int \langle w_L,\wedge\bar{\partial}\lambda^L \rangle + \langle w_R,\wedge \partial\lambda^R\rangle
 }
 with the following notations:
@@ -82,7 +82,7 @@ satisfy the pure spinor constraints}
 ]
 Strictly speaking, instead of @f{\partial} and @f{\bar{\partial}} one has to use the target space-covariant
 derivatives:
-@equation{
+@e{
 \partial + A(\partial Z)
 }
 where @f{A} is some connection in the target space spin bundle.
@@ -144,7 +144,7 @@ The BV Master Action is:
 ]
 ]
 Notice that both @f{w^{\star +}} and @f{w^{\star -}} are constrained:
-@equation[#:label "anti-w-is-pure"]{
+@e[#:label "anti-w-is-pure"]{
 (\lambda_L\Gamma^m w^{\star +}) = (\lambda_R\Gamma^m w^{\star -}) = 0
 }
 The Hamiltonian generating the action of @bold{left conformal} transformations on the @bold{left} fields is easy to write:
@@ -156,7 +156,7 @@ The Hamiltonian generating the action of @bold{left conformal} transformations o
 ]
 ]
 It must be true that it is BV-exact:
-@equation[#:label "left-conformal-generator-via-phi"]{
+@e[#:label "left-conformal-generator-via-phi"]{
 {\cal H}\langle\xi\rangle \;=\; \{S_{\rm BV},\Phi\langle\xi\rangle\}
 }
 where @f{\Phi\langle\xi\rangle} is the BV Hamiltonian generating the holomorphic symmetry corresponding to
@@ -166,7 +166,7 @@ of the @f{b}-ghost.
 
 In any case, in order to construct the base @f{\Omega}, we need to solve 
 @hyperlink["../omega/Equivariant_Form.html#(elem._.Equation.For.Log.For.Equivariant)"]{the equation for} @f{a(\xi)}: 
-@equation[#:label "EquationForAInLeftSector"]{
+@e[#:label "EquationForAInLeftSector"]{
 \Delta e^{a(\xi)} = {\cal H}\langle\xi\rangle e^{a(\xi)}
 }
 }
@@ -198,7 +198,7 @@ The leading term of the @f{b}-ghost is:
 
 @slide[@elem{Structure of the @f{b}-ghost in @f{AdS_5\times S^5}} #:tag "B Ghost AdS" #:showtitle #t]{
 From @cite{Berkovits:2010zz}:
-@equation{
+@e{
 b_{++} = {\mbox{Tr}\left(\{J_1(\partial_+),\lambda_R\}J_2(\partial_+)\right)\over 2\,\mbox{Str}(\lambda_R\lambda_L)} - 
 \mbox{Str}(w_1(\partial_+)(1-K)J_3(\partial_+))
 }
@@ -217,12 +217,12 @@ Here we will discuss the
 @section{BRST analysis}
 It was shown in @cite{Berkovits:2010zz} that this composite @f{b}-ghost is holomorphic on-shell modulo
 BRST exact terms; in other words:
-@equation[#:label "HolomorphicityOfBGhost"]{
+@e[#:label "HolomorphicityOfBGhost"]{
 \int \partial^{\alpha}\xi^{\beta} b_{\alpha\beta} = {\cal X}_{\xi} S_{\rm cl} + Q_{\rm BRST} A_{\xi}
 }
 where @f{A_{\xi}} is some functional and @f{{\cal X}_{\xi}} is some field transformation. 
 Eq. (@ref{HolomorphicityOfBGhost}) defines @f{{\cal X}_{\xi}} up to:
-@equation[#:label "AmbiguityInX"]{
+@e[#:label "AmbiguityInX"]{
 {\cal X}_{\xi} \;\mapsto\; {\cal X}_{\xi} + {\partial S\over\partial \phi^i}\sigma^{ij}(\phi){\partial\over\partial \phi^i}
 } 
 with some antisymmetric @f{\sigma^{ij}}. 
@@ -237,12 +237,12 @@ In some sense, @f{{\cal X}_{\xi}} is the analogue of @f{\xi^{\alpha}{\partial\ov
 
 @bold{Tentative Definition @defn-num{IdentificationOfFieldTransformation}:} we will tentatively define 
 @spn[attn]{the action of diffeomorphisms} on the worldsheet sigma-model as follows:
-@equation[#:label "NaiveDefinitionOfDiff"]{
+@e[#:label "NaiveDefinitionOfDiff"]{
 {\bf Diff}_{\xi} = [Q_{\rm BRST}, {\cal X}_{\xi}]
 }
 --- the anticommutators of two field transformations. 
 This definition automatically implies:
-@equation[#:label "DiffScl"]{
+@e[#:label "DiffScl"]{
 {\bf Diff}_{\xi}S_{\rm cl} = \int \partial^{\alpha}\xi^{\beta} Qb_{\alpha\beta}
 }
 There are @spn[attn]{two problems} here:
@@ -276,13 +276,13 @@ as follows:
 ]
 Here @f{\ldots} stands for the terms quadratic and higher order in the antifields. 
 We can change:
-@equation{
+@e{
 \Phi_{\xi} \mapsto \Phi_{\xi} + \{S_{\rm BV}\,,\,\Psi_{\xi}\}
 }
 (If @f{\Psi_{\xi}} starts with the terms quadratic in the antifields, this corresponds to Eq. (@ref{AmbiguityInX})). 
 We @spn[attn]{should be able} to fix this ambiguity so that the resulting @f{{\cal V_{\xi}}} satisfy
 the algebra of vector fields on the worldsheet:
-@equation{
+@e{
 \{{\cal V}_{\xi}\,,\,{\cal V}_{\eta}\} = {\cal V}_{[\xi,\eta]}
 }
 @spn[attn]{Open problem:} how do we see that such a choice of @f{{\cal V}_{\xi}} exists?

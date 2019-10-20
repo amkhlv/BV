@@ -69,7 +69,7 @@ construct @hyperlink["../omega/index.html"]{the form @f{\Omega}}
 (and its @hyperlink["omega/Base_Form.html"]{base analogue}) in the same way as we did 
 on the closed Riemann surface. In this case the form @f{\Omega} is not
 closed:
-@equation[#:label "DOmegaPsi"]{
+@e[#:label "DOmegaPsi"]{
 d\Omega^{\tt base}_{\Psi} = \Omega^{\tt base}_{Q_{\rm BRST}\Psi}
 }
 If we restrict ourselves with the insertions of only physical operators @f{\Psi},
@@ -116,7 +116,7 @@ Let us assume that @f{\Xi} is such that @f{{\cal L}_{\Xi} \rho_{1\over 2}} is we
 and 
 @hyperlink["../BV-formalism/Infinite_dimensional_case.html"]{here}).
 Then we have:
-@equation[#:label "VariationOfPsiGeneral"]{
+@e[#:label "VariationOfPsiGeneral"]{
  \Psi_{Q_{\rm BRST} \Xi_0}(q) \;=\; - \int_L {\cal L}_{\Xi} \rho_{1\over 2}
 }
 where @f{\Xi_0} is the restriction of @f{\Xi} to @f{L} and @f{{\cal L}_{\Xi}} is the Lie derivative
@@ -126,7 +126,7 @@ of the half-density @f{\rho_{1\over 2}} along the Hamiltonian vector field @f{\{
 @bold{Proof:}  Let us introduce some Darboux coordinates near @f{L}, so that @f{L} is given by the
 equation @f{\phi^{\star}  = 0}. Let us expand @f{\Xi} in powers of @f{\phi^{\star}}. Let us first 
 assume that only a constant in antifields term is present:
-@equation{
+@e{
 \Xi = \Xi_0(\phi)
 }
 In this case the Lie derivative is equivalent to inserting @f{Q_{\rm BRST}\Xi_0} into the path integral,
@@ -136,7 +136,7 @@ If @f{\Xi} also depends on antifields, then we have to be careful restricting ou
 to such @f{\Xi} that the Lie derivative @f{{\cal L}_{\Xi} \rho_{1\over 2}} is well-defined, because
 otherwise Eq. (@ref{VariationOfPsiGeneral}) does not make sense. This assumption must include
 the vanishing of the integration by parts:
-@equation{
+@e{
 \int_L {\partial\over\partial\phi}{\partial\over\partial\phi^{\star}} \left(\Xi_1\phi^{\star} \rho_{1\over 2}\right) = 0
 }
 This is equivalent to the linear term not contributing to the RHS of Eq. (@ref{VariationOfPsiGeneral}).
@@ -154,7 +154,7 @@ Suppose that @f{\rho_{1\over 2}} satisfies the Master Equation sufficiently clos
 Then @f{Q_{\rm BRST}} defined as in @th-ref{th:OddLaplacianWithBoundaryWithoutMasterEq}
 becomes a symmetry of @f{S_{\rm BV}|_L} sufficiently close to the boundary.
 Let us define @f{\widehat{Q}_{\rm BRST}\Psi_{{\cal O}}} @italic{via} the insertion of the BRST current near the boundary:
-@equation[#:label "insert-brst-current"]{
+@e[#:label "insert-brst-current"]{
 \widehat{Q}_{\rm BRST}\Psi_{{\cal O}} = 
 \int_{\rm\scriptstyle {path\atop integral}} [d\phi] \; 
 \left(\oint_{\rm\scriptstyle {near\phantom{n}the\atop boundary}} j_{\rm BRST}\right) {\cal O} \left.\rho_{1\over 2}\right|_L
@@ -221,7 +221,7 @@ We interpret the path integral in the theory on @f{\Sigma\backslash D}, with a b
 state, as the path integral over the whole @f{\Sigma} with insertions @f{{\cal O}_1,{\cal O}_2,\ldots} (inside @f{D})
 determining this boundary state. Then our form @f{\Omega} is defined by the path integral 
 in the theory on the @bold{whole} compact Riemann surface @f{\Sigma}:
-@equation{
+@e{
 \Omega_{{\cal O}_1{\cal O}_2\cdots} = \int_{gL} e^{d\widehat{g}\widehat{g}^{-1}} {\cal O}_1{\cal O}_2\cdots e^a \rho_{1\over 2}
 }
 But we only allow the variations of @f{L} which do not change the theory inside the disk @f{D}.
@@ -229,7 +229,7 @@ In other words, we restrict to @f{d\widehat{g}\widehat{g}^{-1}} of compact suppo
 @f{\Sigma\backslash D}. We also assume that @f{a} also has compact support localized inside @f{\Sigma\backslash D}. 
 
 @hyperlink["../omega/As_Intertwiner.html"]{As we explained}, @f{\Omega} intertwines @f{d} with @f{\Delta}:
-@equation{
+@e{
 d\Omega_{{\cal O}_1{\cal O}_2\cdots} = - \int_{gL}  e^{d\widehat{g}\widehat{g}^{-1}} \Delta_{\rho_{1\over 2}}({\cal O}_1{\cal O}_2\cdots e^a)\; \rho_{1\over 2}
 }
 Since the support of @f{{\cal O}_1{\cal O}_2\cdots} is in @f{D}, and the support of @f{a} is 
@@ -241,11 +241,11 @@ in @f{\Sigma\backslash D}, we have:
 ]]
 The first term should be interpreted as a nilpotent operator @f{Q_{\rm BRST}} acting on the inserted
 state:
-@equation{
+@e{
 \Delta_{\rho_{1\over 2}}({\cal O}_1{\cal O}_2\cdots) = Q_{\rm BRST}({\cal O}_1{\cal O}_2\cdots)
 }
 Therefore we have:
-@equation[#:label "d-omega-Cartan-with-boundary"]{
+@e[#:label "d-omega-Cartan-with-boundary"]{
 d\Omega_{{\cal O}_1{\cal O}_2\cdots}\langle e^a\rangle \;=\; 
 - \Omega_{Q_{\rm BRST}({\cal O}_1{\cal O}_2\cdots)}\langle e^a\rangle 
 - \Omega_{{\cal O}_1{\cal O}_2\cdots}\langle \Delta_{\rho_{1\over 2}} e^a\rangle 
@@ -283,7 +283,7 @@ In our case @f{K} is the Hilbert space of states on the boundary, with @f{d_K = 
 Returning to the base form, in the presence of a boundary Eq. (@ref{d-omega-Cartan-with-boundary}) implies that 
 @hyperlink["../omega/Equivariant_Form.html#(elem._summary-of-equivariant-omega)"]{our construction of the base form}
 does @bold{not} give a closed form:
-@equation{
+@e{
 d\Psi^{\tt base} = Q_{\rm BRST}\Psi^{\tt base}
 }
 At the same time, @f{\Psi^{\tt base}} is still horizontal and invariant.

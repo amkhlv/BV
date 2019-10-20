@@ -38,16 +38,16 @@
 
 Suppose that we infinitesimally deformed the solution of the Master Equation by adding to it
 some integrated vertex operator @f{U}:
-@equation[#:label "DeformationOfSBV"]{
+@e[#:label "DeformationOfSBV"]{
 S_{\rm BV}(\varepsilon)  = S_{\rm BV} +  \varepsilon U
 }
 In order for this to satisfy the Master Equation to the first order in @f{\varepsilon} we require:
-@equation[#:label "ClMEforU"]{
+@e[#:label "ClMEforU"]{
 \{S_{\rm BV}\,,\,U\, \} = 0
 }
 @centered[@spn[redbox]{as we deform @f{S_{\rm BV}}, what should we do with @f{\cal F}?}]
 The answer is simple if @f{U} satisfies the @bold{Siegel gauge}:
-@equation[#:label "Siegel-gauge"]{
+@e[#:label "Siegel-gauge"]{
 \forall \Phi \in {\cal F}\;:\;\{\Phi,U\} = 0 
 }
 In this case @f{\cal F} remains undeformed. 
@@ -60,18 +60,18 @@ when Eq. (@ref{Siegel-gauge}) is not satisfied.
 @slide[@elem{What happens to @f{\cal F}?} #:tag "Deformation Of F" #:showtitle #t]{
 In this section, we assume  that the integrated vertex @f{U} satisfies the full
 Master Equation:
-@equation[#:label "MEforU"]{
+@e[#:label "MEforU"]{
 \Delta U = 0
 }
 (rather than Eq. (@ref{ClMEforU})).
 Here @f{\Delta U = \rho^{-1}_{1\over 2}\Delta_{\rm can} \left(\rho_{1\over 2} U\right)}
 with @f{\rho_{1\over 2} = e^{S_{\rm BV}}}. We will also @spn[attn]{postulate} that @f{U} is diffeomorphism
 invariant, which means @hyperlink["../omega/Subalgebra_F.html"]{in our formalism} that:
-@equation[#:label "UisDiffInv"]{
+@e[#:label "UisDiffInv"]{
 \{\Delta \Phi,\,U\} =0
 }
 Eqs. (@ref{MEforU}) and (@ref{UisDiffInv}) imply that @f{\{U,\Phi\}} is @f{\Delta}-closed:
-@equation[#:label "UFIsClosed"]{\Delta\{U,\Phi\}=0}
+@e[#:label "UFIsClosed"]{\Delta\{U,\Phi\}=0}
 but we will also @spn[attn]{assume} (or just postulate) that it is @f{\Delta}-exact:
 @align[r.l.l.n @list[
  @f{\exists\; a_U\;:\;{\cal F}\to \mbox{Fun}(M)} @f{:} "" ""
@@ -105,28 +105,28 @@ the action of diffeomorphisms on this space remains the same (Eq. (@ref{ActionOf
 Is it true that the deformed @f{\Phi} remain @hyperlink["../omega/Subalgebra_F.html#(elem._.Def.Q)"]{in involution modulo @f{\Delta}-exact}?
 Notice that the deformed @f{\{\Phi,\Phi\}} is automatically @f{\Delta + \varepsilon\{U\,,\,\_\}}-closed 
 under already taken assumptions:
-@equation{
+@e{
 (\Delta + \varepsilon\{U\,,\,\_\})\{\Phi + \varepsilon a_U(\Phi)\,,\,\Phi + \varepsilon a_U(\Phi)\}
 \;=\;
 2\{\Delta\Phi\,,\, \Phi + \varepsilon a_U(\Phi)\} = 0
 }
 Opening the parentheses, we derive that the expression @f{2 \{\Phi\,,\,a_U(\Phi)\} - \{U\,,\,q(\Phi)\}} is @f{\Delta}-closed:
-@equation{
+@e{
 \Delta\left(2 \{\Phi\,,\,a_U(\Phi)\} - \{U\,,\,q(\Phi)\}\right) = 0
 }
 Let us @spn[attn]{assume} that it is also @f{\Delta}-exact:
-@equation{
+@e{
 2 \{\Phi\,,\,a_U(\Phi)\} - \{U\,,\,q(\Phi)\}\;=\;\Delta q'(\Phi)
 }
 (the validity of this assumption depends on the cohomology of @f{\Delta}). 
 Therefore, to the first order in the bosonic infinitesimal parameter @f{\varepsilon}:
-@equation{
+@e{
 \{\Phi + \varepsilon a(\Phi) \;,\; \Phi + \varepsilon a(\Phi) \} = 
 (\Delta + \varepsilon\{U,\_\})(q(\Phi) + \varepsilon q'(\Phi))
 }
 Therefore the @hyperlink["../omega/Subalgebra_F.html#(elem._.Def.Q)"]{condition of being in involution} persists, but
 with deformed @f{q}:
-@equation{
+@e{
 q \mapsto q + \varepsilon q'
 }
 
@@ -135,7 +135,7 @@ q \mapsto q + \varepsilon q'
 @slide["Physical interpretation" #:tag "Physical Interpretation" #:showtitle #t]{
 The BRST-nontrivial deformations of the action are called @bold{integrated vertices}
 because they are integrals over the worldsheet of a dimension-(1,1) operator:
-@equation{
+@e{
 U = \int_{\Sigma} d^2z \;u(z,\bar{z})
 }
 
@@ -144,7 +144,7 @@ vertex operator with the @f{b}-ghost be BRST-exact up to a total derivative.
 
 @comment{
 This is a vague statement, which requires proof. For bosonic string:
-@equation{
+@e{
 \Phi_{\xi} = \int_{\Sigma} d^2z \; c^{\star}_{\alpha}\xi^{\alpha}(z,\bar{z})
 }
 Let us consder a special case when @f{\xi} is holomorphic  (only depends on @f{z}).

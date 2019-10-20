@@ -35,18 +35,18 @@ A @bold{superdomain} @f{\cal U} of dimension @f{m|n} is a pair @f{(U, A)} where 
 @f{A = C^{\infty}(U)\otimes \Lambda(\theta_1,\ldots,\theta_n)} a supercommutative algebra. 
 
 We will call @f{U} the @bold{body} of @f{\cal U}. We will also abbreviate:
-@equation{
+@e{
 C^{\infty}({\cal U}) = C^{\infty}(U)\otimes \Lambda(\theta_1,\ldots,\theta_n)
 }
 For any @f{x\in U} and @f{F = F^0 + F^1_A \theta^A + F^2_{AB}\theta^A\theta^B + \ldots \;\in\; C^{\infty}({\cal U})} we define:
-@equation{
+@e{
 \mbox{ev}_x F = F^0(x)
 }
 
 @section{Morphisms of superdomains}
 A @bold{morphism} of superdomains @f{\phi\;:\; {\cal U}\rightarrow {\cal V}} is a pair @f{(\phi^0, \phi^*)} where @f{\phi^0} is
 a smooth map from the body of @f{\cal U} to the body of @f{\cal V} such that:
-@equation{\mbox{ev}_{\phi^0(x)} F = \mbox{ev}_x \phi^*F}
+@e{\mbox{ev}_{\phi^0(x)} F = \mbox{ev}_x \phi^*F}
 
 @section{Sub-superdomain}
 Let @f{{\cal U} = (U, C^{\infty}(U)\otimes \Lambda(\theta_1,\ldots))} be a superdomain and @f{\tilde{U}\subset U} an open
@@ -55,14 +55,14 @@ subset of @f{\cal U}.
 For any open subset @f{\tilde{U}\subset U} we consider a sub-superdomain
 @f{{\cal U}|_{\tilde{U}} = (\tilde{U}, C^{\infty}(\tilde{U})\otimes \Lambda(\theta_1,\ldots))}. Any  @f{F\in C^{\infty}({\cal U})} has a restriction
 to @f{{\cal U}_{\tilde{U}}}: just restrict @f{F^0}, @f{F^1}, @f{F^2}, ... to @f{\tilde{U}}. We will call the restriction @f{r^U_{\tilde{U}}}:
-@equation{
+@e{
 r^U_{\tilde{U}}\;:\; C^{\infty}({\cal U}) \rightarrow C^{\infty}({\cal U}|_{\tilde{U}})
 }
 
 Let @f{\phi\;:\; {\cal U}_1\rightarrow {\cal U}_2} be a morphism of superdomains. 
 Suppose that @f{\tilde{U}_1\subset U_1} is an open subset of @f{U_1}. Every morphism @f{\phi\;:\;{\cal U}_1\rightarrow {\cal U}_2}
 can be restricted to @f{{\cal U}_1|_{\tilde{U}_1}}:
-@equation{
+@e{
 \left.\left(\phi^0\,,\, \phi^* \right)\right|_{{\cal U}_1|_{\tilde{U}_1}} \;=\; \left(\phi^0|_{\tilde{U}_1}\,,\; r^{U_1}_{\tilde{U}_1}\circ\phi^*\right)
 }
 
@@ -138,7 +138,7 @@ on a superdomain @f{\cal V} of dimension @f{m|n}.
 @table-of-contents[]
 @section{Definition}
 A supermanifold @f{M} can be characterized by the following contravariant functor:
-@equation[#:label "functor-of-points"]{
+@e[#:label "functor-of-points"]{
 {\cal F}_M(S) \;=\; \mbox{Mor}(S,M)
 }
 
@@ -146,13 +146,13 @@ A supermanifold @f{M} can be characterized by the following contravariant functo
 
 @subsection{Supervector space as a supermanifold}
 For any supervector space @f{V = V_{\bar 0} \oplus V_{\bar 1}} we define:
-@equation{
+@e{
 {\cal F}_V(S) = (C^{\infty}(S))_{\bar 0} \otimes V_{\bar 0} \;\;\oplus\;\; (C^{\infty}(S))_{\bar 1} \otimes V_{\bar 1}
 }
 
 @subsection{Odd tangent bundle}
 Suppose that @f{M} is a supermanifold. Then @f{\Pi TM} can be defined as follows:
-@equation[#:label "odd-tangent-bundle-functor-of-points"]{
+@e[#:label "odd-tangent-bundle-functor-of-points"]{
 {\cal F}_{\Pi TM}(S) = {\cal F}_M ({\bf R}^{0|1}\times S)
 }
 

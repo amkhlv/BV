@@ -46,7 +46,7 @@ equivalence transformation. Important question is:
 @spn[redbox]{how can we obtain such invariants?}
 ]
 Naively it would seem that the only way to obtain an invariant is to take the path integral:
-@equation{
+@e{
 \int_{\rm\scriptstyle {path\atop integral}} [d\phi] \;{\cal O}_1\cdots{\cal O}_n\; e^{{1\over \hbar}S[\phi]}
 }
 where @f{{\cal O}_j} are some BRST-closed operators.
@@ -60,7 +60,7 @@ because there @f{S\simeq S + Q\Psi} where @f{\Psi} could be more or less arbitra
 There are infinitely many possible @f{\Psi}. 
 
 Let us choose a basis @f{\{\Psi_a\}}; the @bold{space of BRST trivial deformations} is parametrized by the coordinates @f{x^a}:
-@equation[#:label "DeformedS"]{
+@e[#:label "DeformedS"]{
 S(x) = S + \sum_a x^a Q\Psi_a
 }
 Let us call this equivalence class @f{\cal M}. It turns out that the following differential form on @f{\cal M} is closed:
@@ -140,12 +140,12 @@ so we can integrate a half-density on @f{M} over a Lagrangian submanifold; we ju
 @f{\Delta} acting on half-densities on @f{M} which has the following characteristic
 property. For any function @f{H\in \mbox{Fun}(M)}, when a Lagrangian submanifold @f{L} is carried by the Hamiltonian flux of
 @f{H}, the velocity of change of @f{\int_L\rho_{1\over 2}} is:
-@equation[#:label "definition-of-canonical-delta"]{
+@e[#:label "definition-of-canonical-delta"]{
 \left[{d\over dt}\right]_{{\tt flux\phantom{.}of\phantom{.}}H}\;\int_L\rho_{1\over 2} \;=\; - \int_L H\Delta\rho_{1\over 2}
 }
 
 @bold{Definition @defn-num{def:master-equation}:} The Quantum Master Equation is the following equation on a half-density @f{\rho_{1\over 2}}:
-@equation[#:label "master-equation"]{
+@e[#:label "master-equation"]{
 \Delta\rho_{1\over 2} = 0
 }
 It follows from the defining Eq. (@ref{definition-of-canonical-delta}) that when @f{\rho_{1\over 2}} satisfies the Master Equation,
@@ -156,7 +156,7 @@ It follows from the defining Eq. (@ref{definition-of-canonical-delta}) that when
 @slide[@elem{Form @f{\Omega} in BV language} #:tag "Ω in BV formalism" #:showtitle #t]{
 We will define form  @f{\Omega} in BV formalism as a pseudo-differential form on the space
 @f{\rm LAG} of all Lagrangian submanifolds:
-@equation{
+@e{
 \Omega\;\in\; \mbox{Fun}(\Pi\;T\;\;{\rm LAG})
 }
 To define @f{\Omega}, we need to explain how to calculate it on a point @f{p \in \Pi\;T\;\;{\rm LAG}}.
@@ -209,7 +209,7 @@ An @bold{even} vector field on @f{M} is a symmetry if:
 @item{It preserves @f{\omega}, @italic{i.e.} is of the form @f{\{H\,,\,\_\}}, @f{H\in \mbox{Fun}(M)}}
 @item{Lie derivative of @f{\rho_{1\over 2}} along it is zero:}
 ]
-@equation{
+@e{
 {\cal L}_{\{H\,,\,\_\}} \rho_{1\over 2} \;=\; (-)^{\bar{H}} \Delta\left(H\rho_{1\over 2}\right) - H\Delta\rho_{1\over 2} \;=\; 0
 }
 Since we assume that @f{\rho_{1\over 2}} satisfies the Master Equation, this condition reduces to:
@@ -226,7 +226,7 @@ a deformation of the action.
 
 @section{Construction of symmetries}
 It is important that @f{\Delta_{\rho_{1/2}}} is nilpotent:
-@equation{
+@e{
 (\Delta_{\rho_{1/2}})^2 = 0
 }
 This allows us to construct the symmetries very easily:
@@ -325,7 +325,7 @@ we can solve the following equation for @f{a(\xi)}:
 
 @slide[@elem{Base analogue of @f{\Omega}} #:tag "Base Ω" #:showtitle #t]{
 From the equivariant form: 
-@equation{
+@e{
 \Omega^{\tt C}(L,\Psi,\xi) = \int_L \exp\left(\Psi + a(\xi) \right) \rho_{1\over 2}
 }
 the base form can be obtained by a standard procedure:
@@ -335,7 +335,7 @@ the base form can be obtained by a standard procedure:
 @item{Substitute for @f{\xi} the curvature @f{F} of this choosen connection}
 ]
 Schematically:
-@equation{
+@e{
 \Omega^{\tt base}(L,\Psi,\xi) = \int_L \exp\left(\Psi_{\rm hor} + a(F) \right) \rho_{1\over 2}
 }
 This only works under assumption that the action of @f{\bf h} on @f{\rm LAG} is free. 
@@ -370,20 +370,20 @@ so that:
   @label{DarbouxCoordinates}
 ]@list[
   @elem[#:style 'no-break]{Half-density:@hspace[8]}
-  @equation{
+  @e{
   \rho_{1\over 2} \;=\; \exp\left({1\over \hbar}S_{\rm BV}\right)\times\mbox{\small\tt[constant half-density]}
   }
   @label{rho-is-exp-S}
 ]@list[
   @elem[#:style 'no-break]{Canonical operator:@hspace[8]}
-  @equation{
+  @e{
     \Delta\;=\;
     (-1)^{\bar{A}+1}{\partial\over\partial\phi^{\star}_A}{\partial\over\partial\phi^A}
   }
   @label{delta-in-Darboux-coordinates}
 ]@list[
   @elem[#:style 'no-break]{Expansion of @f{S_{\rm BV}}:@hspace[8]}
-  @equation{
+  @e{
     S_{\rm BV} \;=\; S_{\rm cl}(\phi) + Q^A(\phi)\phi^{\star}_A + \sigma^{AB}\phi^{\star}_A\phi^{\star}_B + \ldots
   }
   ""
@@ -391,7 +391,7 @@ so that:
 ]
 To the leading order in the expansion in @f{\hbar} we get the Master Equation:
 @fsize+[7]
-@equation{
+@e{
 \{S_{\rm BV},S_{\rm BV}\} = 0
 }
 @fsize=[]
@@ -436,7 +436,7 @@ To construct the @seclink["Base Ω"]{base form}, we have to first identify @f{\b
 that we can choose @f{\bf h} to coincide, as Lie algebra, with the underlying gauge symmetry of the BRST data.
 This corresponds to the following @f{a(\xi)}:
 @fsize+[7]
-@equation[#:label "a-in-BRST-formalism"]{
+@e[#:label "a-in-BRST-formalism"]{
 a(\xi) \;=\; \xi^A c^{\star}_A
 }
 @fsize=[]
@@ -451,7 +451,7 @@ by adding to it BRST-exact terms.
 }
 
 The base form @f{\Omega^{\tt base}} corresponding to this choice of @f{\bf h} is:
-@equation{
+@e{
 \Omega^{\tt base} \;=\; \int_L \exp\left(S_{\rm BV} + \Psi_{\rm hor} + F^A c^{\star}_A\right)
 }
 where @f{\Psi_{\rm hor}} is the horizonthal projection of @f{\Psi}, using some connection, 
@@ -477,11 +477,11 @@ The fundamental fields of the worldsheet theory are: matter fields @f{x^m},
 complex structure @f{I^{\alpha}_{\beta}} satisfying 
 @f{I^{\alpha}_{\beta}I^{\beta}_{\gamma}= -\delta^{\alpha}_{\gamma}} and the diffeomorphism ghosts @f{c^{\alpha}}.
 The matter part of the action depends on matter fields and complex structure:
-@equation{
+@e{
     S_{\rm mat}[I,x] = {1\over 2}\int \partial x^m \wedge \bar{\partial} x^m
 }
 The Master Action follows the general scheme for BV structures coming from BRST procedure:
-@equation[#:label "BosonicMasterAction"]{
+@e[#:label "BosonicMasterAction"]{
     S_{\rm BV} = S_{\rm mat} \;+\; \int \;
            \langle I^{\star}, {\cal L}_c I \rangle + \langle x^{\star}, {\cal L}_c x\rangle + {1\over 2}\langle c^{\star} [c,c]\rangle
 }
@@ -489,7 +489,7 @@ The Master Action follows the general scheme for BV structures coming from BRST 
 @section[#:tag "form-omega-for-bosonic string"]{Form @f{\Omega}}
 We have a family of Lagrangian submanifolds parametrized by @f{I}. The variation @f{d I}
 is generated by @f{\langle dI,I^{\star}\rangle}. Therefore we have:
-@equation{
+@e{
    \Omega(I,dI) = 
    \int_L \exp\left(
       S_{\rm BV} + \int \langle I^{\star}, dI\, \rangle  
@@ -498,7 +498,7 @@ is generated by @f{\langle dI,I^{\star}\rangle}. Therefore we have:
 We will see in a moment that this is the standard bosonic string measure. 
 
 The base analogue is:
-@equation{
+@e{
 \Omega(I,dI) = \int_L \exp\left(
    S_{\rm BV} + \int \langle I^{\star}, (dI)_{\rm hor}\, \rangle  + \int F^{\alpha}c^{\star}_{\alpha}
 \right)
@@ -559,7 +559,7 @@ Symmetries are generated by Hamiltonians of the form:
 for arbitrary @f{\Phi}. 
 @centered[@spn[redbox]{We want to @bold{restrict the possible @f{\Phi}} to belong to some subspace @f{{\cal F}\subset \mbox{Fun}(M)}}]
 Let us introduce on functions on @f{M} the operation @f{[\_,\_]} as follows:
-@equation{
+@e{
 [\Phi_1,\Phi_2] = \{\Phi_1,\Delta_{\rho_{1/2}}\Phi_2\}
 }
 
@@ -569,7 +569,7 @@ Let us say that a subspace @f{{\cal F}\subset \mbox{Fun}(M)} is @bold{admissible
 @item{@f{\cal F} is closed under @f{[\_,\_]}. This implies that @f{\Delta_{\rho_{1/2}} {\cal F}} is closed under @f{\{\_,\_\}}}
 @item{
 For any @f{\Phi\in {\cal F}} exists @f{a\in \mbox{Fun}(M)} such that:
-@equation[#:label "equation-for-a"]{
+@e[#:label "equation-for-a"]{
 \Delta_{\rho_{1/2}} a + {1\over 2} \{a,a\} \;=\; \Delta_{\rho_{1/2}} \Phi
 }
 }
@@ -656,7 +656,7 @@ We observe that this map is an intertwiner between:
 ]
 This is true even when @f{\Delta\rho_{1/2}\neq 0}. In particular, applying this intertwiner to the product @f{e^{a(\xi)}\rho_{1/2}}
 in Eq. (@ref{equivariant-omega}):
-@equation{
+@e{
 d \int_L e^{\Psi}e^{a(\xi)} \rho_{1\over 2} \;=\; \int_L e^{\Psi} \left( - \Delta\left(e^{a(\xi)}\rho_{1/2}\right)\right)\;=\; 
 \int_L e^{\Psi} \left(- \Delta\Phi\langle\xi\rangle\right)e^{a(\xi)}\rho_{1/2}\;=\; 
 -\iota_{\xi} \int_L e^{\Psi}e^{a(\xi)} \rho_{1\over 2}
@@ -693,11 +693,11 @@ Let us solve it perturbatively as a series in @f{\Phi}. We have:
 ]
 We can proceed similarly to higher orders. An immediate consistency check on Eq. (@ref{defining-equation-for-a}) is
 that @f{\{a,a\}} is @f{\Delta_{\rho_{1/2}}}-closed:
-@equation[#:label "aa-is-delta-closed"]{\Delta_{\rho_{1/2}}\{a,a\} = 0}
+@e[#:label "aa-is-delta-closed"]{\Delta_{\rho_{1/2}}\{a,a\} = 0}
 This should be checked order by order. And then we should prove order by order that @f{\{a,a\}} is @f{\Delta_{\rho_{1/2}}}-exact.
 
 The validity of Eq. (@ref{aa-is-delta-closed}) can be proven by induction order by order as follows:
-@equation{
+@e{
 \Delta_{\rho_{1/2}} \{a,a\} = 2\{\Delta_{\rho_{1/2}} a,a\} = -\{\{a,a\},a\} + 2\{\Delta_{\rho_{1/2}}\Phi,a\}
 }
 The first term @f{\{\{a,a\},a\}} is zero by Jacobi identity. That the second term
@@ -769,7 +769,7 @@ In string theory, such deformations correspond to @bold{integrated vertex operat
 ]
 ]
 In order for this new @f{\rho} to satisfy the Master Equation to the first order in @f{\varepsilon} we require:
-@equation[#:label "ClMEforU"]{
+@e[#:label "ClMEforU"]{
 \Delta_{\rho_{1/2}}U = 0
 }
 Such deformations correspond to deforming the target space. A natural question is:
@@ -793,12 +793,12 @@ It turns out that we also @bold{have to deform @f{\cal F}}. For every @f{\Phi\in
 ]
 Moreover, the quadratic function @f{q(\Phi)} defined by the equation @f{\{\Phi,\Phi\} = \Delta q(\Phi)} also
 deforms:
-@equation{
+@e{
 \{\Phi + \varepsilon a(\Phi) \;,\; \Phi + \varepsilon a(\Phi) \} = 
 (\Delta + \varepsilon\{U,\_\})(q(\Phi) + \varepsilon q'_U(\Phi))
 }
 Remember that the construction of equivariant form @f{\Omega^{\tt C}} requires solving the equation:
-@equation{
+@e{
 \Delta_{\rho_{1/2}} a(\xi) + {1\over 2} \{a(\xi),a(\xi)\} \;=\;\xi \quad (\;=\;\Delta\Phi\langle\xi\rangle\;)
 }
 @align[r.c.c.c.c.c @list[
@@ -872,7 +872,7 @@ dependence of @f{\int_L\exp\left({1\over\hbar}S_{\rm BV}\right)} on the choice o
 effect of anomaly; it @bold{must be absent} in any consistent theory.
 
 Moreover, when @f{\Psi} describes the deformation of @f{L} (the ``gauge fermion'') we can still use:
-@equation[#:label "integral-of-regularized-Lie-derivative"]{
+@e[#:label "integral-of-regularized-Lie-derivative"]{
 \int_L {\cal L}_{\{\Psi,\_\}} e^{S_{\rm BV}} = 
 \int_L - \Delta^{(0)}\left({\Psi}\exp\left({1\over \hbar}S_{\rm BV}\right)\right) - \Psi \Delta^{(0)}\exp\left({1\over \hbar}S_{\rm BV}\right) = 0 
 }
