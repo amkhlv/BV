@@ -39,8 +39,11 @@ submanifold which we denote @f{I(b)}. Moreover, we require:
 \mbox{ker} \,\omega|_{E} = TI
 }
 (@italic{i.e.} the degenerate subspace of the restriction of @f{\omega} to @f{E} is the tangent space of the 
-fiber). Since @f{d\omega = 0}, this condition implies that the Lie derivative of @f{\omega|_E} along the fiber vanishes,
+        fiber).
+@(marg #:scale 0.5 #:dir "svgs" #:filter (λ (p) (cons? (regexp-match #rx"fibration\\.svg" (path->string p)))))
+Since @f{d\omega = 0}, this condition implies that the Lie derivative of @f{\omega|_E} along the fiber vanishes,
 and therefore @f{\omega} defines an odd symplectic form on the base which we will denote @f{\omega_B}.
+
 
 Finally, we require certain @bold{maximality} property: 
 @align[l.n @list[

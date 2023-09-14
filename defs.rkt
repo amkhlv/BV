@@ -2,7 +2,7 @@
 
   (require (for-syntax racket/base bystroTeX/slides_for-syntax racket/syntax))
   (require racket scribble/core scribble/base scribble/html-properties)
-  (require bystroTeX/common bystroTeX/slides)
+  (require bystroTeX/common bystroTeX/slides truques/truques)
   (require (only-in scribble/html/html nbsp))
   ;; Here the basic syntax can be adjusted:
   (provide bystro-def-formula)
@@ -116,6 +116,31 @@
       (make-element 
        (style "citation" '()) 
        (add-between (map (λ (u) (hash-ref h u)) xs) ","))))
-              
-
+  (provide bystro-margin-note)
+  (define bystro-margin-note margin-note)              
+  (provide marg)
+  (define
+    (marg #:scale s #:dir d #:filter f #:build-for-local [build-for-local #t])
+    (bystro-margin-note
+     (if build-for-local
+         (autolist-svgs
+          #:scale s
+          #:dir d
+          #:ncols 1
+          #:showdir #f
+          #:filter f
+          )
+         (autolist
+          #:exts '(svg)
+          #:dir d
+          #:filter f
+          #:output (lambda (x)
+                     `(,(hyperlink
+                         (path->string x)
+                         (image
+                          #:scale s
+                          (find-relative-path
+                           (current-directory)
+                           (path->complete-path (build-path d x))))
+                         )))))))
   )

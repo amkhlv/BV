@@ -180,8 +180,8 @@ This is the @bold{Cartan model} of equivariant cohomology.
 @section{Weyl model}
 To pass to the Weyl model, we act on cochains by @f{e^{A^a\iota_{v_a}}}. This does not change the condition of invariance,
 but changes the condition of horizonthality:
-@align[r.c.l @list[
-@f{{\partial\over\partial A^a}\psi = 0\quad} @elem{becomes} @f{\quad\left({\partial\over\partial A^a} + \iota_{v_a}\right)\psi = 0}
+@align[r.c.l.n @list[
+@f{{\partial\over\partial A^a}\psi = 0\quad} @elem{becomes} @f{\quad\left({\partial\over\partial A^a} + \iota_{v_a}\right)\psi = 0} @label{NewHorizonthality}
 ]
 ]
 and @f{d_{\tt C}} gets replaced with:
@@ -305,7 +305,7 @@ This is easier to see using the Weyl model. They Weyl complex is @f{(W_G\otimes 
 The existence of the homotopy operator @f{(A^a + \theta^a){\partial\over\partial F^a}} (@italic{cp.} Eq. (@ref{HomotopyOperator})) implies that this complex has the same
 cohomology as @f{(\Omega^{\bullet}(M\,))^{\widetilde{\bf g}}}. 
 @comment{
-Notice that we need the connection @f{\theta}, in order to build the @bold{horizonthal combination} @f{A^a + \theta^a}.
+Notice that we need the connection @f{\theta}, in order to build the @bold{horizonthal combination} @f{A^a + \theta^a}, see Eq. (@ref{NewHorizonthality}).
 }
 More explicitly:
 @align[r.l.n @list[
@@ -330,8 +330,12 @@ Introduce new variables:
   @f{\widetilde{F}^a\;=\;} @v-[5 @f{F^a - {1\over 2}f^a{}_{bc}\widetilde{A}^b\widetilde{A}^c + d\theta^a + {1\over 2}f^a{}_{bc}\theta^b\theta^c}] ""
 ]
 ]
+@centered[@div[redbox]{
 Eq. (@ref{homotopy-in-Weyl-complex}) implies that we can remove @f{A^a} and @f{F^a} from the cocycle, by adding a @f{d_W + d_M}-exact expression,
-effectively replacing @f{A^a} with @f{-\theta^a} and @f{F^a} with @f{-d\theta^a - {1\over 2}f^a{}_{bc}\theta^b\theta^c}.
+effectively replacing
+@linebreak[]
+@f{A^a} with @f{-\theta^a} @hspace[3] and @hspace[3] @f{F^a} with @f{-d\theta^a - {1\over 2}f^a{}_{bc}\theta^b\theta^c}.
+}]
 
 Because of the @f{\bf g}-invariance, replacement of @f{A^a} with @f{-\theta^a} corresponds to the @bold{horizonthal projection}.
 

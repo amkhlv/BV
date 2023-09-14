@@ -3,12 +3,23 @@
 /* ----------------------------------------------- */
 /* The ones below modify the default scribble.css: */
 
-.main {
-  font-family: "Arial, Helvetica, sans-serif";
-  font-size: 14pt; 
+body {
+
+    background-color: #ffe4e1;
+
 }
 
+.main {
+  font-family: "Arial, Helvetica, sans-serif";
+  font-size: 14pt;
+  line-height: 1.6;
+}
+
+
+
+
 .main > h3,h4,h5 {
+
    color: maroon;
 }
 
@@ -27,14 +38,26 @@
 
 .pagetitle-1 {
     font-size: 20pt;
-    color: navy;
-    background-color: papayawhip;
+    color: black;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: #97ffff;
 }
 
 .pagetitle-2 {
     font-size: 16pt;
+    color: black;
+    border-radius: 8px;
+    padding: 4px;
+    background-color: #97ffff;
+}
+
+.pagetitle-3 {
+    font-size: 13pt;
     color: navy;
-    background-color: papayawhip;
+    border-radius: 8px;
+    padding: 2px;
+    background-color: #97ffff;
 }
 
 .local-toc-1 {
@@ -140,4 +163,26 @@ table, th, td
 .bystro-bib-value-cell {
     text-align: left;
     padding: 5px;
+}
+
+.bystro-summary {
+    background-color: white;
+    line-height: 1.5;
+    margin-left: 0;
+    padding-left: 5pt;
+    padding-right: 5pt;
+}
+
+talk {
+    font-size: 18pt;
+    font-family: Courier;
+    background-color: red;
+    color: white;
+}
+
+doubt {
+    background-color: peru;
+    color: darkblue;
+    padding: 3px;
+    border-radius: 5px;
 }
