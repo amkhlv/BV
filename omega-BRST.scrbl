@@ -36,7 +36,7 @@
 @bystro-ribbon[]
 
 @slide[@elem{Ordinary @f{\Omega}} #:tag "Form Ω" #:showtitle #t]{
-@section{Definition of @f{\Omega}}
+@subpage[1 @elem{Definition of @f{\Omega}} #:tag "sec-Definition-of-f-Omega"]
 Remember that the set of fields @f{\phi} consists of the ``classical'' fields @f{\varphi},
 plus ghosts @f{c}, plus BRST quartets.
 @align[r.l.n @list[
@@ -50,7 +50,7 @@ plus ghosts @f{c}, plus BRST quartets.
 ]
 ]
 
-@section{Symmetries}
+@subpage[1 @elem{Symmetries} #:tag "sec-Symmetries"]
 Symmetries correspond to those @f{\Psi} which are BRST exact plus equations of motion.
 In other words, for any vector field @f{\zeta} on the field space and any functional
 @f{F} the following @f{\delta\Psi} should correspond to a symmetry:
@@ -63,7 +63,7 @@ the term @f{{\cal L}_{\zeta}(S_{\rm cl} + Q_{\rm BRST}\Psi)} which vanish on-she
 combines with the first term @f{Q_{\rm BRST}F}.
 }
 
-@section{No horizontality}
+@subpage[1 @elem{No horizontality} #:tag "sec-No-horizontality"]
 The form @f{\Omega} given by Eq. (@ref{def-omega}) is not horizontal, but the contraction is an exact form:
 @align[r.l.n @list[
   @f{\iota_{\delta_{\zeta,F}}\Omega\;=\;}

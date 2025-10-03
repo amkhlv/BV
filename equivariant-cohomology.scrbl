@@ -36,7 +36,7 @@
 
 @slide["Wavy Lie algebra and its Koszul dual" #:tag "Wavy Lie Algebra" #:showtitle #t]{
 @table-of-contents[]
-@section{Wavy Lie algebra}
+@subpage[1 @elem{Wavy Lie algebra} #:tag "sec-Wavy-Lie-algebra"]
 
 Let @f{G} be a Lie group. It is possible to introduce the structure of a Lie group on @f{\Pi TG}.
 In fact:
@@ -57,7 +57,7 @@ commutation relations:
 }
 We will call this extended algebra @f{\widetilde{\bf g}'}. 
 
-@section[#:tag "sectionKoszulDualToWavy"]{Koszul dual to wavy Lie algebra}
+@subpage[1 @elem{Koszul dual to wavy Lie algebra} #:tag "sectionKoszulDualToWavy"]
 Let us consider the universal enveloping @f{U\,\widetilde{\bf g}} and look at it as a quadratic-linear
 algebra. The dual algebra is a differential algebra; it has a nonzero differential because the
 original algebra was quadratic-linear; the differential corresponds to the commutator. 
@@ -124,7 +124,7 @@ h = A^a {\partial\over\partial F^a}
 @slide["Equivariant cohomology" #:tag "Equivariant Cohomology" #:showtitle #t]{
 @table-of-contents[]
 
-@section{Equivariant cohomology as a relative Lie algebra cohomology}
+@subpage[1 @elem{Equivariant cohomology as a relative Lie algebra cohomology} #:tag "sec-Equivariant-cohomology-as-a-relative-Lie-algebra-cohomology"]
 To define the equivariant cohomology, we need to remember that @f{\widetilde{\bf g}} is actually a @bold{differential} Lie algebra. 
 It has a differentiation @f{\partial_{\theta}}. In our definition of the cohomology, we have not yet used @f{\partial_{\theta}}.
 The way to use it is to consider a larger algebra @f{\widetilde{\bf g}'}, which is obtained from @f{\widetilde{\bf g}} by
@@ -177,7 +177,7 @@ d_{\tt C} = d_M + F^a\rho(\theta e_a) \;=\; d_M + F^a\iota_{v_a}
 }
 This is the @bold{Cartan model} of equivariant cohomology.
 
-@section{Weyl model}
+@subpage[1 @elem{Weyl model} #:tag "sec-Weyl-model"]
 To pass to the Weyl model, we act on cochains by @f{e^{A^a\iota_{v_a}}}. This does not change the condition of invariance,
 but changes the condition of horizonthality:
 @align[r.c.l.n @list[
@@ -195,7 +195,7 @@ d_M + d_{W_G}
 
 @table-of-contents[]
 
-@section{What is De Rham differential?}
+@subpage[1 @elem{What is De Rham differential?} #:tag "sec-What-is-De-Rham-differential"]
 A PDF on @f{M} is a function on @f{\Pi TM = {\rm Map}({\bf R}^{0|1},M)}.
 Therefore a vector field @f{\partial_{\theta}} on @f{{\rm Map}({\bf R}^{0|1},M)}
 induces a differentiation of PDFs. This is the De Rham differential:
@@ -204,18 +204,18 @@ induces a differentiation of PDFs. This is the De Rham differential:
 }
 
 
-@section{Action of wavy Lie algebra on PDF}
+@subpage[1 @elem{Action of wavy Lie algebra on PDF} #:tag "sec-Action-of-wavy-Lie-algebra-on-PDF"]
 Suppose that @f{G} acts on a manifold @f{M}. Then, naturally, 
 @f{\Pi TG = {\rm Map}({\bf R}^{0|1},G)} acts on @f{\Pi TM = {\rm Map}({\bf R}^{0|1},M)}.
 This implies that @f{\tilde{\bf g}'} acts on PDF on @f{M}. 
 
 
-@section{Definition of connection}
-@subsection{Algebraic interpretation}
+@subpage[1 @elem{Definition of connection} #:tag "sec-Definition-of-connection"]
+@subpage[2 @elem{Algebraic interpretation} #:tag "sec-Algebraic-interpretation"]
 Connection on a @f{G}-bundle @f{P} is the same as homomorphism of @f{\widetilde{\bf g}'}-modules: 
 @e{W_G \rightarrow {\rm PDF}(P\,)}
 
-@subsection{Geometrical interpretation as a lift}
+@subpage[2 @elem{Geometrical interpretation as a lift} #:tag "sec-Geometrical-interpretation-as-a-lift"]
 A @bold{connection} @f{\theta} on @f{P}:
 @align[r.l.n @list[
 @f{}@f{\theta:\; TP\to TP/M}""
@@ -512,7 +512,7 @@ and satisfies:
 ]
 ]
 
-@section[#:tag "sec:CartanComplexOfG"]{The Cartan complex of @f{G}}
+@subpage[1 @elem{The Cartan complex of @f{G}} #:tag "sec:CartanComplexOfG"]
 Consider @f{dgg^{-1}} --- the the right-invariant @f{{\bf g}}-valued 1-form on @f{G} with values
 in @f{{\bf g}}. Notice that the contraction with @f{T\in {\bf h}} acts as follows:
 @e{
@@ -533,10 +533,10 @@ In order for @f{d_{\cal C}} to be nilpotent, we require the @f{{\bf h}}-invarian
    \right) = 0\quad\mbox{\tt\small for }\; \eta\in {\bf h}
 }
 
-@section{Connection in the principle bundle @f{H\backslash G}}
+@subpage[1 @elem{Connection in the principle bundle @f{H\backslash G}} #:tag "sec-Connection-in-the-principle-bundle-f-H-backslash-G"]
 
 
-@subsection{Definition of a connection}
+@subpage[2 @elem{Definition of a connection} #:tag "sec-Definition-of-a-connection"]
 We can construct a connection in @f{H\backslash G} in the following way. Let us consider
 horizonthal those vectors @f{v\in T_gG} which are orthogonal to the fibers:
 @e{
@@ -553,7 +553,7 @@ It computes for every vector its vertical component:
  ""
 ]]
 
-@subsection{Computation of curvature}
+@subpage[2 @elem{Computation of curvature} #:tag "sec-Computation-of-curvature"]
 Since the curvature is a tensor, it is enough to compute it on left-invariant
 vector fields. For @f{\xi_1\in {\bf g}} and @f{\xi_2\in {\bf g}} we have the corresponding left-invariant
 vector fields @f{L_{\xi_1}} and @f{L_{\xi_2}}, which are defined as follows:
@@ -633,7 +633,7 @@ In other words:
 }
 where @f{R} is defined in Eq. (@ref{DefRightInvariant}).
 
-@section{From Cartan model to base forms}
+@subpage[1 @elem{From Cartan model to base forms} #:tag "sec-From-Cartan-model-to-base-forms"]
 Let us consider a class of the Cartan model represented by @f{\phi\left(
       g,\;dg g^{-1},\;T
    \right)} 

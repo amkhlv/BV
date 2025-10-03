@@ -34,7 +34,7 @@
 
 @slide["Construction" #:tag "Construction" #:showtitle #t]{
 @table-of-contents[]
-@section{Ghosts}
+@subpage[1 @elem{Ghosts} #:tag "sec-Ghosts"]
 One starts with the ``classical action'' @f{S_{\rm cl}} which is invariant under some @bold{gauge symmetry}.
 Let @f{X} be the ``classical'' space of fields, @italic{e.g.} for Yang-Mills theory the fields are @f{A_{\mu}(x)}.
 Suppose the gauge symmetry is @f{H}, with the Lie algebra @f{{\bf h} = \mbox{Lie}(H)}.
@@ -74,7 +74,7 @@ Functions on @f{\Pi TH\times X\over H} satisfy:
 
 }
 
-@section[#:tag "sec:integration-measure"]{Integration measure}
+@subpage[1 @elem{Integration measure} #:tag "sec:integration-measure"]
 We assume that @f{X/H} comes with some integration measure:
 @e{\mu = e^{S_{\rm cl}(x)}}
 This should be understood as an integration measure, @italic{i.e.} a density of weight @f{1} (rather than a function of @f{x}).
@@ -88,7 +88,7 @@ because @f{Q_{\rm BRST}} comes from the canonical odd vector field on @f{\Pi TH}
 
 
 
-@section[#:tag "sec:lift-of-symmetry-to-BRST"]{Lift of symmetries to BRST configuration space}
+@subpage[1 @elem{Lift of symmetries to BRST configuration space} #:tag "sec:lift-of-symmetry-to-BRST"]
 Original gauge symmetries can be lifted to the BRST field space as @bold{left shifts} on @f{H}:
 @align[r.l.n @list[
   @f{h_0.(dh,h,x) \;=\;} @f{(h_0dh,\, h_0h,\, x)} @label{lift-of-symmetry}
@@ -106,7 +106,7 @@ Indeed, they come from infinitesimal left shifts on @f{H}, and @f{Q_{\rm BRST}} 
 @slide["BV from BRST" #:tag "BV from BRST" #:showtitle #t]{
 @table-of-contents[]
 
-@section[#:tag "sec:bv-phase-space"]{Definition of the BV phase space}
+@subpage[1 @elem{Definition of the BV phase space} #:tag "sec:bv-phase-space"]
 The BV phase space is:
 @e{
 M = \Pi T^* \left({\Pi TH\times X\over H}\right)
@@ -126,7 +126,7 @@ into @f{c^A} and @f{x^i}.
 }
 
 
-@section{Lifting the symmetries to BV phase space}
+@subpage[1 @elem{Lifting the symmetries to BV phase space} #:tag "sec-Lifting-the-symmetries-to-BV-phase-space"]
 We have realized @seclink["sec:lift-of-symmetry-to-BRST"]{the gauge algebra @f{\bf h} as symmetries of the BRST configuration space}
 as left shifts on @f{\Pi TH}.
 Since the BV phase space is the odd cotangent bundle, we can further lift them to the BV phase space.
@@ -148,7 +148,7 @@ the construction used in @hyperlink["../bosonic-string/index.html"]{bosonic stri
 
 @table-of-contents[]
 
-@section{Conormal bundle}
+@subpage[1 @elem{Conormal bundle} #:tag "sec-Conormal-bundle"]
 
 Let @f{\cal Y} be some family of submanifolds @f{Y\subset X} closed under the action of the gauge symmetry
 @comment{
@@ -165,7 +165,7 @@ Lagrangian submanifold is the odd conormal bundle of @f{Y}, times the space of @
 L(Y) \;=\; \Pi(TY)^{\perp}\times \mbox{[$c$-ghosts]}\;=\; \Pi(TY)^{\perp}\times \Pi {\bf h}
 }
 
-@section{Non-degeneracy}
+@subpage[1 @elem{Non-degeneracy} #:tag "sec-Non-degeneracy"]
 
 Let us ask the following question: under what conditions 
 the restriction of @f{S_{\rm BV}} to each @f{L(Y\,)} is non-degenerate? 

@@ -48,7 +48,7 @@
 
 @table-of-contents[]
 
-@section{Excision of disk}
+@subpage[1 @elem{Excision of disk} #:tag "sec-Excision-of-disk"]
 
 We use the fact that the odd symplectic form  is given by a single integral 
 over the worldsheet: @f{\int d^2z\; \delta \phi\wedge\delta \phi^{\star}}.
@@ -78,7 +78,7 @@ then the form @f{\Omega^{\tt base}_{\Psi}} @bold{is} closed.
 We will prove  Eq. (@ref{DOmegaPsi}) in @seclink{sec:ProofOfDOmegaPsi}.
 
 
-@section{Variation of wave function}
+@subpage[1 @elem{Variation of wave function} #:tag "sec-Variation-of-wave-function"]
 
 Let us study the quantum theory on a region @f{D} with the boundary @f{\partial D}.
 @comment{
@@ -161,8 +161,8 @@ Let us define @f{\widehat{Q}_{\rm BRST}\Psi_{{\cal O}}} @italic{via} the inserti
 }
 
 
-@section[#:tag "sec:ProofOfDOmegaPsi"]{Proof of Eq. (@ref{DOmegaPsi})}
-@subsection{Old form @f{\Omega}}
+@subpage[1 @elem{Proof of Eq. (@ref{DOmegaPsi})} #:tag "sec:ProofOfDOmegaPsi"]
+@subpage[2 @elem{Old form @f{\Omega}} #:tag "sec-Old-form-f-Omega"]
 Now we are ready to prove Eq. (@ref{DOmegaPsi}). Let us first study the usual ``old'' (not equivariant) form @f{\Omega} with the boundary.
 The derivation parallels the 
 @hyperlink["../omega/Definition.html"]{case with no boundary}; we denote @f{{\cal H} = d\widehat{g}\widehat{g}^{-1}}:
@@ -208,7 +208,7 @@ The derivation parallels the
 ]
 We should choose @f{{\cal M}({\cal H}) = \exp({\cal H})}; in this case @f{\int d{\cal H}{\cal M}({\cal H}) = {\cal M}({\cal H}) = e^{\cal H}}.
 
-@subsection{Interpretation of @f{\Omega} as an intertwiner in the presence of a boundary}
+@subpage[2 @elem{Interpretation of @f{\Omega} as an intertwiner in the presence of a boundary} #:tag "sec-Interpretation-of-f-Omega-as-an-intertwiner-in-the-presence-of-a-boundary"]
 
 The equivariant @f{\Omega^{\tt C}} is 
 @hyperlink["../omega/Equivariant_Form.html"]{a particular case of @f{\Omega\langle e^a \rangle} when @f{a} solves}:
@@ -279,7 +279,7 @@ of @f{\widetilde{\bf g}'}:
 ]
 In our case @f{K} is the Hilbert space of states on the boundary, with @f{d_K = Q_{\rm BRST}}.
 
-@section{Base form}
+@subpage[1 @elem{Base form} #:tag "sec-Base-form"]
 Returning to the base form, in the presence of a boundary Eq. (@ref{d-omega-Cartan-with-boundary}) implies that 
 @hyperlink["../omega/Equivariant_Form.html#(elem._summary-of-equivariant-omega)"]{our construction of the base form}
 does @bold{not} give a closed form:

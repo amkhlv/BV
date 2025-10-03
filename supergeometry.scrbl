@@ -30,7 +30,7 @@
 @slide["Superdomain" #:tag "Superdomain" #:showtitle #t]{
 See @hyperlink["https://www.math.ias.edu/QFT/fall/bernstein2.ps"]{lectures of J. Bernstein}
 
-@section{Definition of superdomain}
+@subpage[1 @elem{Definition of superdomain} #:tag "sec-Definition-of-superdomain"]
 A @bold{superdomain} @f{\cal U} of dimension @f{m|n} is a pair @f{(U, A)} where @f{U\subset {\bf R}^m} is an open set and
 @f{A = C^{\infty}(U)\otimes \Lambda(\theta_1,\ldots,\theta_n)} a supercommutative algebra. 
 
@@ -43,12 +43,12 @@ For any @f{x\in U} and @f{F = F^0 + F^1_A \theta^A + F^2_{AB}\theta^A\theta^B + 
 \mbox{ev}_x F = F^0(x)
 }
 
-@section{Morphisms of superdomains}
+@subpage[1 @elem{Morphisms of superdomains} #:tag "sec-Morphisms-of-superdomains"]
 A @bold{morphism} of superdomains @f{\phi\;:\; {\cal U}\rightarrow {\cal V}} is a pair @f{(\phi^0, \phi^*)} where @f{\phi^0} is
 a smooth map from the body of @f{\cal U} to the body of @f{\cal V} such that:
 @e{\mbox{ev}_{\phi^0(x)} F = \mbox{ev}_x \phi^*F}
 
-@section{Sub-superdomain}
+@subpage[1 @elem{Sub-superdomain} #:tag "sec-Sub-superdomain"]
 Let @f{{\cal U} = (U, C^{\infty}(U)\otimes \Lambda(\theta_1,\ldots))} be a superdomain and @f{\tilde{U}\subset U} an open
 subset of @f{\cal U}.
 
@@ -73,7 +73,7 @@ can be restricted to @f{{\cal U}_1|_{\tilde{U}_1}}:
 
 @table-of-contents[]
 
-@section{Classical manifold}
+@subpage[1 @elem{Classical manifold} #:tag "sec-Classical-manifold"]
 Ordinary manifold @f{M} of dimension @f{m} is a topological space with a sheaf of commutative algebras called @f{C^{\infty}}, satisfying the following
 property. Every point has a neighborhood @f{U} such that @f{C^{\infty}(U)} is the algebra of functions
 on some open subset @f{V\subset {\bf R}^m}.
@@ -89,7 +89,7 @@ associated to @f{U_2}, then @f{(\phi_2^{-1}(U_1)\,,\, \phi_2|_{\phi_2^{-1}(U_1)}
 }]]]
 
 
-@section[#:tag "sec:SuperManifold"]{Supermanifold}
+@subpage[1 @elem{Supermanifold} #:tag "sec:SuperManifold"]
 @tbl[@list[@list[@nested{@bold{A supermanifold structure} on a topological space @f{M_{\rm rd}} is a rule which to every @bold{small enough} open set @f{U\subset M_{\rm rd}} associates:
 @tbl[@list[@list[@nested{an equivalence class of pairs @f{({\cal V}, \phi^0)} where @f{\cal V} is a
 @seclink["Superdomain"]{superdomain} of dimension @f{m|n} and @f{\phi^0} is a homeomorphism
@@ -136,21 +136,21 @@ on a superdomain @f{\cal V} of dimension @f{m|n}.
 
 @slide["Functor of points" #:tag "Functor of points" #:showtitle #t]{
 @table-of-contents[]
-@section{Definition}
+@subpage[1 @elem{Definition} #:tag "sec-Definition-2"]
 A supermanifold @f{M} can be characterized by the following contravariant functor:
 @e[#:label "functor-of-points"]{
 {\cal F}_M(S) \;=\; \mbox{Mor}(S,M)
 }
 
-@section{Examples}
+@subpage[1 @elem{Examples} #:tag "sec-Examples"]
 
-@subsection{Supervector space as a supermanifold}
+@subpage[2 @elem{Supervector space as a supermanifold} #:tag "sec-Supervector-space-as-a-supermanifold"]
 For any supervector space @f{V = V_{\bar 0} \oplus V_{\bar 1}} we define:
 @e{
 {\cal F}_V(S) = (C^{\infty}(S))_{\bar 0} \otimes V_{\bar 0} \;\;\oplus\;\; (C^{\infty}(S))_{\bar 1} \otimes V_{\bar 1}
 }
 
-@subsection{Odd tangent bundle}
+@subpage[2 @elem{Odd tangent bundle} #:tag "sec-Odd-tangent-bundle"]
 Suppose that @f{M} is a supermanifold. Then @f{\Pi TM} can be defined as follows:
 @e[#:label "odd-tangent-bundle-functor-of-points"]{
 {\cal F}_{\Pi TM}(S) = {\cal F}_M ({\bf R}^{0|1}\times S)
@@ -161,8 +161,8 @@ Suppose that @f{M} is a supermanifold. Then @f{\Pi TM} can be defined as follows
 @slide["Properties of odd tangent bundle" #:tag "Odd tangent bundle" #:showtitle #t]{
 @table-of-contents[]
 
-@section{Canonical odd vector field}
-@subsection{General definition of @f{{\bf R}^{0|1}}-parameter families of diffeomorphisms}
+@subpage[1 @elem{Canonical odd vector field} #:tag "sec-Canonical-odd-vector-field"]
+@subpage[2 @elem{General definition of @f{{\bf R}^{0|1}}-parameter families of diffeomorphisms} #:tag "sec-General-definition-of-f-bf-R-0-1-parameter-families-of-diffeomorphisms"]
 In the language of functors of points, a @f{0|1}-parameter group of diffeomorphisms of a supermanifold @f{X} is
 defined as a map, for any supermanifold @f{S}:
 @align[c.c.l.n @list[
@@ -182,7 +182,7 @@ defined as a map, for any supermanifold @f{S}:
 ]
 consistent with morphisms between different @f{S}'s.
 
-@subsection{Case of odd tangent bundle}
+@subpage[2 @elem{Case of odd tangent bundle} #:tag "sec-Case-of-odd-tangent-bundle"]
 For any supermanifold @f{M}, the @f{\Pi TM} has a canonically defined @f{{\bf R}^{0|1}}-parameter group of
 diffeomorphisms. It is defined as follows. For any @f{\psi \in (C^{\infty}(S))_{\bar 1}} define a ``shift'':
 @align[r.l.l.n @list[
@@ -216,7 +216,7 @@ Then define the map:
 ]
 ]
 
-@section{Odd tangent bundle of a group}
+@subpage[1 @elem{Odd tangent bundle of a group} #:tag "sec-Odd-tangent-bundle-of-a-group"]
 If @f{G} is a supergroup, then @f{\Pi TG} is again a supergroup. 
 
 

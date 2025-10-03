@@ -36,7 +36,7 @@
 @slide["Type II Structure" #:tag "Type II Structure" #:showtitle #t]{
 @table-of-contents[]
 
-@section{Definition and local flatness}
+@subpage[1 @elem{Definition and local flatness} #:tag "sec-Definition-and-local-flatness"]
 
 This is mostly analogous to the @hyperlink["Heterotic-RNS/Heterotic_Structure.html"]{Heterotic Structure}:
 @itemlist[
@@ -61,7 +61,7 @@ The proof is similar to
 @hyperlink["../Heterotic-RNS/Heterotic_Structure.html#(part._.Any_heterotic_structure_is_locally_flat)"]{heterotic}.
 
 
-@section{Worldsheet action}
+@subpage[1 @elem{Worldsheet action} #:tag "sec-Worldsheet-action"]
 This is, again, analogous to @hyperlink["../Heterotic-RNS/Heterotic_Structure.html#(part._section.Worldsheet.Action.S.Mat)"]{heterotic}:
 @e{
    S_{\rm mat}[D,\overline{D},X] = \int \mbox{vol}^{D,\overline{D}}_{\Sigma^{2|2}}\; 

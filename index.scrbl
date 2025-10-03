@@ -38,7 +38,7 @@ My notes on BV formalism
 @larger-2{@hyperlink["notations/notations.html"]{Notations}}
 
 
-@section{Brief reviews}
+@subpage[1 @elem{Brief reviews} #:tag "sec-Brief-reviews"]
 
 @hyperlink["supergeometry/index.html"]{Supergeometry}
 
@@ -52,7 +52,7 @@ My notes on BV formalism
 
 @hyperlink["N2Superconformal/index.html"]{N=2 superconformal symmetry}
 
-@section{Integration over the moduli space of Lagrangian submanifolds}
+@subpage[1 @elem{Integration over the moduli space of Lagrangian submanifolds} #:tag "sec-Integration-over-the-moduli-space-of-Lagrangian-submanifolds"]
 
 @hyperlink["omega/index.html"]{Form @f{\Omega} in BV formalism}
 
@@ -62,7 +62,7 @@ My notes on BV formalism
 
 @hyperlink["transfer/index.html"]{Homotopy transfer}
 
-@section{Applications to string theory}
+@subpage[1 @elem{Applications to string theory} #:tag "sec-Applications-to-string-theory"]
 
 @hyperlink["bosonic-string/index.html"]{Bosonic string}
 
@@ -82,7 +82,7 @@ My notes on BV formalism
 
 @hyperlink["pure-spinor/index.html"]{Pure spinor formalism}
 
-@section{Open problems}
+@subpage[1 @elem{Open problems} #:tag "sec-Open-problems"]
 
 @hyperlink["open-problems/index.html"]{Open problems}
 
