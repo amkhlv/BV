@@ -17,6 +17,9 @@
 @(define singlepage-mode #f)
 @(bystro-def-formula "formula-enormula-humongula!")
 
+
+
+
 @(bystro-dump-LaTeX #f)
 @title[#:style '(no-toc no-sidebar)]{Pure spinor superstring}
 
@@ -311,5 +314,4 @@ topologically twisted @f{N=2} theories}.
 @; ---------------------------------------------------------------------------------------------------
 @(bystro-close-connection bystro-conf)
 
-@(bystro-close-connection bystro-conf)
 @disconnect[formula-database]

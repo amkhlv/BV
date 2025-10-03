@@ -206,5 +206,4 @@ Now suppose that  @f{\xi} is a  @seclink["sec:left-deforming-vector-fields"]{lef
 @; ---------------------------------------------------------------------------------------------------
 @(bystro-close-connection bystro-conf)
 
-@(bystro-close-connection bystro-conf)
 @disconnect[formula-database]

@@ -128,5 +128,4 @@ BRST-exact expressions modulo those BRST-exact expressions which are zero on-she
 @; ---------------------------------------------------------------------------------------------------
 @(bystro-close-connection bystro-conf)
 
-@(bystro-close-connection bystro-conf)
 @disconnect[formula-database]

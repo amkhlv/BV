@@ -51,7 +51,7 @@ model for the path integral in a gauge theory.
 @slide["Odd symplectic manifolds" #:tag "Odd symplectic manifolds" #:showtitle #t]{
 @table-of-contents[]
 
-@section[#:tag "sec:contraction-and-Lie-derivative"]{Contraction and Lie derivative}
+@subpage[1 @elem{Contraction and Lie derivative} #:tag "sec:contraction-and-Lie-derivative"]
 We define @f{\iota_V} for a vector field @f{V} as follows. If @f{V} is even, we pick
 a Grassmann odd parameter @f{\epsilon} and define:
 @e{
@@ -69,7 +69,7 @@ The relation to Lie derivative:
 [\iota_V,d] = {\cal L}_V
 }
 
-@section[#:tag "sec:symplectic-and-Poisson"]{Symplectic structure and Poisson structure}
+@subpage[1 @elem{Symplectic structure and Poisson structure} #:tag "sec:symplectic-and-Poisson"]
 
 Consider a supermanifold @f{M}, with local coordinates @f{Z^A}, equipped with an @bold{odd} Poisson bracket 
 of the form:
@@ -86,7 +86,7 @@ The odd symplectic form @f{\omega} can be @bold{defined} from the following equa
 dF = (-)^{\bar{F} + 1}\iota_{\{F,\_\}} \omega
 }
 
-@section{Darboux coordinates}
+@subpage[1 @elem{Darboux coordinates} #:tag "sec:DarbouxCoordinates"]
 
 In Darboux coordinates:
 @align[r.l.n @list[
@@ -116,7 +116,8 @@ Here we will give a brief self-contained presentation of the ``canonical'' odd L
 Odd Laplace operator is closely related to the notion of Lie derivative; we will start by
 discussing some properties of Lie derivative. 
 
-@section{Properties of Lie derivative of half-density}
+@subpage[1 @elem{Properties of Lie derivative of half-density} #:tag "sec:LieDerivativeOfHalfDensity"]
+
 Consider a vector field @f{v} on @f{M}, and the corresponding 1-parameter group of diffeomorphisms @f{g^t}. 
 
 Let us think of a half-density @f{\rho_{1\over 2}} as a function of @f{x} and @f{\bf E}, where @f{x} is a point of
@@ -155,7 +156,8 @@ In particular:
 ]
 
 
-@section{Definition of @f{\Delta_{\rm can}}}
+@subpage[1 @elem{Definition of @f{\Delta_{\rm can}}} #:tag "sec:DefinitionOfDeltaCan"]
+
 Let @f{M} denote the BV phase space.
 A @f{P}-structure (@italic{i.e.} an odd Poisson bracket on @f{M})  defines a canonical 
 second order differential operator on @bold{half-densities}, which we will call 
@@ -313,7 +315,8 @@ vanishes. This proves that the variation with respect to @f{L} of the LHS of Eq.
 therefore @f{\sigma_{1\over 2}[L,\rho_{1\over 2}]} does not depend on @f{L}.
 
 
-@section{Lie derivative in terms of @f{\Delta_{\rm can}}}
+@subpage[1 @elem{Lie derivative in terms of @f{\Delta_{\rm can}}} #:tag "sec:LieDerivativeViaDeltaCan"]
+
 @short-intro{
 The purpose of this Section is to prove Eq. (@ref{ViaLieDerivative}) ``geometrically''. (In fact Eq. (@ref{ViaLieDerivative})
 can be proven by a direct local computation in coordinates.)
@@ -394,7 +397,8 @@ The formula which works for both even and odd @f{H} is:
 }
 
 
-@section{The canonical operator is nilpotent}
+@subpage[1 @elem{The canonical operator is nilpotent} #:tag "sec:CanonicalOperatorIsNilpotent"]
+
 Indeed, since the definition of @f{\Delta_{\rm can}} is geometrically natural, it automatically commutes with canonical
 transformations and therefore for any @f{H\in \mbox{Fun}(M)}:
 @e{
@@ -405,7 +409,8 @@ Comparing this with Eq. (@ref{ViaLieDerivative}) we derive:
 \Delta_{\rm can}^2 = 0
 }
     
-@section{Relation to odd Poisson bracket}
+@subpage[1 @elem{Relation to odd Poisson bracket} #:tag "sec:RelationToOddPB"]
+
 We will define the operator @f{\Delta_{\rho_{1\over 2}}} @bold{on functions} as follows:
 @e[#:label "OperatorDelta"]{
    (\Delta_{\rho_{1\over 2}} F\,) \rho_{1\over 2} \;=\; \Delta_{\rm can}(F\,\rho_{1\over 2} )- (-)^{\bar{F}}F\Delta_{\rm can}\rho_{1\over 2} \;=\;
@@ -421,8 +426,10 @@ Eqs. (@ref{ViaLieDerivative}) and (@ref{Lie-derivative-along-FH}) imply:
 }
 
 
-@section{In coordinates}
-@subsection{Leading symbol}
+@subpage[1 @elem{In coordinates} #:tag "sec:DeltaInCoordinates"]
+
+@subpage[2 @elem{Leading symbol} #:tag "sec:LeadingSymbolOfDelta"]
+
 The @bold{leading symbol} of @f{\Delta} does not depend on @f{\rho_{1\over 2}}:
 @e{
 \Delta =\;(-)^A{\;}  {1\over 2}{\partial\over\partial Z^A}\;^A\pi^B {\partial\over\partial Z^B} +\ldots
@@ -460,7 +467,8 @@ This cancels with Eq. (@ref{difference-of-deltas})  @spn[attn]{TODO:} check sign
 }
 
 
-@subsection[#:tag "sec:QuantumPartOfDelta"]{The ``quantum part'' @f{\Delta^{(0)}}}
+@subpage[2 @elem{The ``quantum part'' @f{\Delta^{(0)}}} #:tag "sec:QuantumPartOfDelta"]
+
 Consider the case when @f{M} is an odd cotangent bundle: @f{M=\Pi T^*N}. Let us introduce
 the coordinates @f{(x^1,\ldots,\theta^1,\ldots)} on @f{N}. Let @f{x_1^{\star},\ldots,\theta_1^{\star},\ldots}
 be the corresponding dual coordinates in the fiber of @f{\Pi T^*N\longrightarrow N}.
@@ -499,7 +507,8 @@ We will introduce the following notation:
 Obviously, this notation only makes sense with a choice of coordinates.
 
 
-@section{Example: purely even @f{N}}
+@subpage[1 @elem{Example: purely even @f{N}} #:tag "sec:PurelyEvenN"]
+
 As an example, consider the case when @f{N} has dimension @f{1|0}. A sufficiently generic 
 Lagrangian submanifold is given by the equation:
 @e[#:label "ExampleOfLagrangianSubmanifoldCaseEvenN"]{
@@ -539,6 +548,7 @@ This is in agreement with Eqs. (@ref{DeltaCanonical}) and (@ref{BVStructure}). (
 }
 
 @slide["Master Equation" #:tag "MasterEquation" #:showtitle #t]{
+
 We will always assume that @f{\rho_{1\over 2}} satisfies the Master Equation:
 @e{
    \Delta_{\rm can}\rho_{1\over 2} = 0
@@ -554,7 +564,8 @@ while @f{\Delta_{\rm can}} is always nilpotent.
 
 @table-of-contents[]
 
-@section{Problem}
+@subpage[1 @elem{Problem} #:tag "sec:ProblemDeltaInfiniteDiml"]
+
 We want to apply the BV formalism for a field-theoretic system (the string worldsheet theory).
 Unfortunately, we do not know how to rigorously define @f{\Delta_{\rm can}} in this case.
 The main problem is the appearence of ill-defined expressions when acting by the ``quantum part'' @f{\Delta^{(0)}}
@@ -578,7 +589,8 @@ nonzero results, for example:
 \Delta^{(0)}\left(\int \phi_1(x)\phi_2^{\star}(x) \int \phi_2(y)\phi_1^{\star}(y) \right) \;=\; \int \phi_1(x)\phi_1^{\star}(x) + (-)^{\bar{\phi_1} + \bar{\phi_2} + 1} \phi_2(x)\phi_2^{\star}(x)
 }
 
-@section{Potentially unsafe operations}
+@subpage[1 @elem{Potentially unsafe operations} #:tag "sec:PotentiallyUnsafe"]
+
 Operators @f{\Delta_{\rm can}} and @f{\Delta} are, generally speaking, unsafe, because they
 contain @f{\Delta^{(0)}}.
 
@@ -595,7 +607,7 @@ We will give an @hyperlink["../omega/Unsafe_operations.html"]{example of a compu
 @slide["Classical BV formalism" #:tag "Classical BV" #:showtitle #t]{
 @table-of-contents[]
 
-@section{Expansion in Planck constant}
+@subpage[1 @elem{Expansion in Planck constant} #:tag "sec:ExpansionInH"]
 
 Let us substitute the following ansatz for @f{\rho_{1\over 2}}:
 @e{
@@ -637,7 +649,8 @@ Notice that:
 when acting on expressions with single integration. When acting on the multilocal expression @f{\Delta^{(0)}} is essential.}
 ]
 
-@section{Generalization and algebraic interpretation}
+@subpage[1 @elem{Generalization and algebraic interpretation} #:tag "sec:GeneralizationAndAlgebraic"]
+
 We might need a small generalization (basically, a completion) of the space of expressions of the form (@ref{ClassicalExpression}):
 @e{
 {1\over\hbar^n}\int d^2z_1\cdots \int d^2z_n\;G(z_1,\bar{z}_1,\ldots,z_n,\bar{z}_n)\;{\cal O}_1(z_1,\bar{z}_1)\cdots {\cal O}_n(z_n,\bar{z}_n)
@@ -687,7 +700,8 @@ this is actually even enough for our purposes.
 @slide["Moment map" #:tag "MomentMap" #:showtitle #t]{
 
 @table-of-contents[]
-@section{Notations}
+
+@subpage[1 @elem{Notations} #:tag "sec:MomentMapNotations"]
 
 Let @f{G} denote the group of canonical transformations of @f{M}. 
 Let us denote @f{G_L} 
@@ -695,7 +709,8 @@ and @f{G_R} the group of left and right shifts on @f{G} (both @f{G_L} and @f{G_R
 naturally isomorphic to @f{G}). Both left and right shifts naturally lift to 
 @f{\Pi TG}. Let @f{\bf g} be the Lie algebra corresponding to @f{G}. 
 
-@section[#:tag "CentralExtension"]{Central extension}
+@subpage[1 @elem{Central extension} #:tag "sec:CentralExtension"]
+
 Let @f{C^{\infty}M} denote the space of functions on @f{M}. Notice that @f{\Pi C^{\infty}M} is a 
 Lie superalgebra under the Poisson bracket. It is a central extension of @f{\bf g}:
 @e[#:label "DefHatG"]{
@@ -703,7 +718,8 @@ Lie superalgebra under the Poisson bracket. It is a central extension of @f{\bf 
 }
 Let @f{\widehat{G}} denote the corresponding Lie group. 
 
-@section{Moment map}
+@subpage[1 @elem{Moment map} #:tag "sec:MomentMap"]
+
 As usual, we consider the right-invariant differential form on @f{\widehat{G}} with values 
 in @f{\widehat{\bf g}}, which is denoted @f{d\hat{g}\hat{g}^{-1}}. Because of (@ref{DefHatG}), we can consider it as a
 differential 1-form with values in @f{\Pi C^{\infty}M}. There is some invariance under
@@ -810,5 +826,4 @@ which preserve the connection defined in Eq. (@ref{ConnectionAsLift}).
 @; ---------------------------------------------------------------------------------------------------
 @(bystro-close-connection bystro-conf)
 
-@(bystro-close-connection bystro-conf)
 @disconnect[formula-database]

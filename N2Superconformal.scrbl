@@ -276,5 +276,4 @@ For sufficiently high genus, we have:
 @; ---------------------------------------------------------------------------------------------------
 @(bystro-close-connection bystro-conf)
 
-@(bystro-close-connection bystro-conf)
 @disconnect[formula-database]

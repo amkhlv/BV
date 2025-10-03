@@ -346,5 +346,4 @@ This requires factoring out large diffeomorphisms.
 @; ---------------------------------------------------------------------------------------------------
 @(bystro-close-connection bystro-conf)
 
-@(bystro-close-connection bystro-conf)
 @disconnect[formula-database]

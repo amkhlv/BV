@@ -908,5 +908,4 @@ The case of pure spinor string is work in progress with R. Lipinski.
 @; ---------------------------------------------------------------------------------------------------
 @(bystro-close-connection bystro-conf)
 
-@(bystro-close-connection bystro-conf)
 @disconnect[formula-database]

@@ -567,5 +567,4 @@ plus @f{F}-shifts. This is probably related to adding additional fields.
 @; ---------------------------------------------------------------------------------------------------
 @(bystro-close-connection bystro-conf)
 
-@(bystro-close-connection bystro-conf)
 @disconnect[formula-database]

@@ -621,5 +621,4 @@ This result is the standard expression for the string amplitude.
 @; ---------------------------------------------------------------------------------------------------
 @(bystro-close-connection bystro-conf)
 
-@(bystro-close-connection bystro-conf)
 @disconnect[formula-database]

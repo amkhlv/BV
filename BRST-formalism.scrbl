@@ -353,6 +353,5 @@ Don't forget to insert @f{\delta(F\,)} --- see Eq. (@ref{integrate-over-pi-v-dua
 
 
 @; ---------------------------------------------------------------------------------------------------
-
 @(bystro-close-connection bystro-conf)
 @disconnect[formula-database]

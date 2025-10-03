@@ -318,5 +318,4 @@ is  the required term @f{- ({\cal L}_{([w,v]_L - [w,v]_R)}\overline{x^a})\varthe
 @; ---------------------------------------------------------------------------------------------------
 @(bystro-close-connection bystro-conf)
 
-@(bystro-close-connection bystro-conf)
 @disconnect[formula-database]

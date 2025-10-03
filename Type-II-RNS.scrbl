@@ -73,5 +73,4 @@ This is, again, analogous to @hyperlink["../Heterotic-RNS/Heterotic_Structure.ht
 @; ---------------------------------------------------------------------------------------------------
 @(bystro-close-connection bystro-conf)
 
-@(bystro-close-connection bystro-conf)
 @disconnect[formula-database]

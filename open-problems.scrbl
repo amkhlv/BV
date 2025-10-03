@@ -131,7 +131,6 @@ Are there other construction leading to different equivariant (and base) forms?
 }
 
 @; ---------------------------------------------------------------------------------------------------
-@(bystro-close-connection bystro-conf)
 
 @(bystro-close-connection bystro-conf)
 @disconnect[formula-database]

@@ -155,5 +155,4 @@ This may create a complication when dealing with those Lagrangian submanifolds w
 @; ---------------------------------------------------------------------------------------------------
 @(bystro-close-connection bystro-conf)
 
-@(bystro-close-connection bystro-conf)
 @disconnect[formula-database]

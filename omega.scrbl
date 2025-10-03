@@ -31,20 +31,22 @@
 
 @hyperlink["../index.html"]{Return to index}
 
-@table-of-contents[]
+@bystro-toc[]
 
 @hyperlink["../index.html"]{Return to index}
 
 @bystro-ribbon[]
 
 @slide["Summary" #:tag "Summary" #:showtitle #t]{
+
 We want to define some pseudo-differential form @f{\Omega} which can serve as @bold{string measure}.
 
 There are several closely related definitions:
 
 @table-of-contents[]
 
-@section{PDF on the group of canonical transformations}
+@subpage[1 @elem{PDF on the group of canonical transformations} #:tag "sec:PDFOnGroup"]
+
 Let @f{\widehat{\bf g}} denote the 
 @hyperlink["../BV-formalism/MomentMap.html"]{central extension}
 of the algebra of Hamiltonian vector fields by constant Hamiltonians,
@@ -64,7 +66,8 @@ can characterize @f{\Omega} as a map of the following type:
 (which associates a PDF on @f{\widehat{G}} to every Lagrangian submanifold).
 
 
-@section{PDF on the space of Lagrangian submanifolds}
+@subpage[1 @elem{PDF on the space of Lagrangian submanifolds} #:tag "sec:PDFonLAG"]
+
 There is a natural map:
 @e{
 \widehat{G}\times {\rm LAG}\;\rightarrow\;{\rm LAG}
@@ -79,7 +82,8 @@ However, @f{\rm LAG} does not have interesting integration cycles. In order to g
 integration cycles, we have to also descend to 
 @seclink["Descent To Double Coset"]{the factorspace of @f{\rm LAG} over some symmetries}.
 
-@section{PDF on an equivalence class of actions}
+@subpage[1 @elem{PDF on an equivalence class of actions} #:tag "sec:PDFonActions"]
+
 In BV formalism the choice of a Lagrangian submanifold @f{L\subset M} is closely related to the
 choice of a quantization scheme. In other words, it is essentially the choice of a representative in
 a @hyperlink["../introduction/Equivalence_Classes_of_Theories.html"]{class of physically equivalent theories}.
@@ -96,9 +100,11 @@ the factorspace over the symmetries of @f{S_{\rm BV}}. Generally speaking, @f{\O
 }
 
 @slide[@elem{Definition and main property of @f{\Omega}} #:tag "Definition" #:showtitle #t]{
+
 @table-of-contents[]
 
-@section{Definition of @f{\Omega}}
+@subpage[1 @elem{Definition of @f{\Omega}} #:tag "sec:DefinitionOfOmega"]
+           
 For any function @f{E\;:\;{\bf C}\to {\bf C}}, consider the following pseudo-differential form on @f{\widehat{G}}:
 @align[r.l.n @list[
  @f{\Omega^{\{E\}} \in\;}
@@ -118,10 +124,12 @@ d_{(g)}(F\circ g) = \{d\widehat{g}\widehat{g}^{-1},F\,\}\circ  g
 }
 @centered{@spn[redbox]{we will actually use just @f{E(z) = e^z}}}
 
-@section{@f{\Omega} is closed}
+@subpage[1 @elem{@f{\Omega} is closed} #:tag "sec:OmegaIsClosed"]
+
 Under the assumption that @f{\Delta_{\rm can}\rho_{1\over 2}=0} the form @f{\Omega} is closed.
 
-@subsection{Preparation for the proof of closedness}
+@subpage[2 @elem{Preparation for the proof of closedness} #:tag "sec:PreparationForTheProof"]
+
 Notice that for any @bold{even} @f{{\cal H}\in C^{\infty}(M)}:
 @align[r.l.n @list[
   @f{{\cal H} \Delta_{\rm can}(E({\cal H})\rho_{1\over 2}) - 
@@ -149,7 +157,8 @@ but we prefer to work with @f{E({\cal H})} instead of @f{f({\cal H})},
 because it is @f{E({\cal H})} that enters in Eq. (@ref{OmegaM})
 }
 
-@subsection{Proof of closedness}
+@subpage[2 @elem{Proof of closedness} #:tag "sec:ProofOfClosedness"]
+
 Taking @f{\cal H} to be the @hyperlink["../BV-formalism/MomentMap.html#(elem._moment-map-type)"]{moment map} 
 @f{{\cal H} = d\widehat{g}\widehat{g}^{-1}}, we get:
 @align[r.l.l.n @list[
@@ -192,7 +201,7 @@ where we have taken into account the
 @hyperlink["../BV-formalism/OddLaplace.html#(elem._.Delta.Canonical)"]{definition of the canonical odd Laplace operator}
 and the fact that @f{\int_{gL}\Delta_{\rm can}(\ldots)=0}.
 
-@subsection{Maurer-Cartan equation}
+@subpage[2 @elem{Maurer-Cartan equation} #:tag "sec:MaurerCartan"]
 
 We used the equation:
 @e[#:label "MaurerCartanEquation"]{d(d\widehat{g}\widehat{g}^{-1}) = - {1\over 2}\{d\widehat{g}\widehat{g}^{-1},d\widehat{g}\widehat{g}^{-1}\}}
@@ -200,7 +209,8 @@ The strange minus sign can be explained as follows. The Lie algebra of the group
 is actually the opposite with the Lie algebra of Hamiltonian vector fields.
 
 
-@section{Infinite-dimensional case}
+@subpage[1 @elem{Infinite-dimensional case} #:tag "sec:InfiniteDimensionalCase"]
+
 Our proof is rigorous for finite-dimensional odd supermanifolds. But in field theory models there is a complication:
 @centered[
 @spn[redbox]{@f{\Delta_{\rm can}} is ill-defined}
@@ -293,8 +303,11 @@ Also note the following equation for @f{H\in \widehat{\bf g}}:
 
 
 @slide["Algebraic Interpretation" #:tag "As Intertwiner" #:showtitle #t]{
+
 @table-of-contents[]
-@section{Wavy superalgebra and BV algebra}
+
+@subpage[1 @elem{Wavy superalgebra and BV algebra} #:tag "sec:WavySuperalgebra"]
+
 Let us consider a BV algebra @f{\cal G} with the generator @f{\Delta}. Let @f{{\bf g}} be the Lie
 superalgebra which is obtained from @f{\cal G} by forgetting the associative
 algebra structure and flipping parity, and @f{\widetilde{\bf g}'} the corresponding
@@ -333,7 +346,8 @@ Indeed, we have:
 @fsize=[]
 }
 
-@section{Form @f{\Omega\langle\ldots\rangle} as an intertwiner}
+@subpage[1 @elem{Form @f{\Omega\langle\ldots\rangle} as an intertwiner} #:tag "sec:FormOmegaAsIntertwiner"]
+
 Let us consider the particular case when @f{\cal G} is the algebra of functions
 on the odd symplectic manifold @f{M}. 
 
@@ -392,12 +406,14 @@ We will now outline  @bold{possible ways of resolving this problem:}
 
 @table-of-contents[]
 
-@section{Use @f{\rm LEG} instead of @f{\rm LAG}}
+@subpage[1 @elem{Use @f{\rm LEG} instead of @f{\rm LAG}} #:tag "sec:UseLEG"]
+
 @f{\Omega} is naturally well-defined on the space of 
 @hyperlink["../contact-structure/Quantomorphisms.html"]{Legendrian submanifolds in some contact submanifold @f{\widehat{M}} which is a 
 bundle over @f{M}}
 
-@section[#:tag "GhostNumberInvariance"]{Use ghost number symmetry}
+@subpage[1 @elem{Use ghost number symmetry} #:tag "GhostNumberInvariance"]
+
 There is usually a @f{U(1)} symmetry called @italic{ghost number}. Let us do the following:
 @itemlist[#:style 'ordered
 @item{Restrict ourselves to only considering those Lagrangian submanifolds which are invariant
@@ -409,7 +425,8 @@ renders @f{(d\widehat{g}\widehat{g}^{-1})_L} unambigously defined from the varia
 @f{\Omega} is now horizonthal, and descends from @f{G} to @f{\rm LAG}.
 
 
-@section[#:tag "TransverseLagrangian"]{Use transverse Lagrangian submanifold}
+@subpage[1 @elem{Use transverse Lagrangian submanifold} #:tag "TransverseLagrangian"]
+
 Suppose that we can find  a Lagrangian submanifold @f{L^{\vee}\subset M} which is transverse to all
 Lagrangian submanifolds from our family:
 @align[r.c.n @list[
@@ -467,7 +484,8 @@ Then we just have to change:
 }
 As @f{\Omega} is invariant, this would not change the result of the integration.
 
-@section{Upgrade @f{\rm LAG} to @f{{\rm LAG}_+}}
+@subpage[1 @elem{Upgrade @f{\rm LAG} to @f{{\rm LAG}_+}} #:tag "sec:UpgradeLAG"]
+
 The most elegant solution is to use, instead of the space of Lagrangian submanifolds @f{\rm LAG},
 the space @f{{\rm LAG}_+} of Lagrangian submanifolds with marked point. A point of @f{\rm LAG_+} 
 is a pair @f{(L,p)} where @f{L\in \rm LAG} and @f{p\in L}. This defines the double fibration:
@@ -560,14 +578,15 @@ But we also have to evaluate the exterior derivative of the prefactor:
 ]]
 This concludes the proof of Eq. (@ref{SeveraDifferential}).
 
-@section{Classifying the possible ambiguities}
+@subpage[1 @elem{Classifying the possible ambiguities} #:tag "sec:ClassifyingAmbiguities"]
 
 Constant @bold{local or multilocal} functionals are somewhat rare. As an example of such a functional,  
 consider @f{\int \mbox{tr}(F\wedge F)} in the Yang-Mills theory on a compact four-manifold.
 In the context of string theory, there are no local constant functionals if the target space
 has sufficiently trivial topology.
 
-@section{Conclusion}
+@subpage[1 @elem{Conclusion} #:tag "sec:ConclusionOnPossibleAnomalies"]
+
 @div[redbox]{
 Possible anomalies which could  prevent the descent of @f{\Omega} from 
 @f{(\Pi T \widehat{G})\times_{\widehat{G}}{\rm LAG}} to @f{\Pi T{\rm LAG}}
@@ -577,6 +596,7 @@ should be analized on the case-by-case basis.
 
 
 @slide["Descent to double coset" #:tag "Descent To Double Coset" #:showtitle #t]{
+                                                                                 
 @short-intro{The form @f{\Omega} does @bold{not} descend from @f{\rm LAG} to 
 @f{S\widehat{G}\backslash {\rm LAG}};
 but we will prove that for some subgroups @f{H\subset S\widehat{G}}, 
@@ -586,6 +606,7 @@ it can be modified in a natural way, so that the modified form
 @table-of-contents[]
 
 @section{Straightforward descent does not work}
+
 We are identifying @f{{\cal M}_{\rm BRST}} with the 
 @hyperlink["../tangent-space-of-double-coset/index.html"]{double coset} @f{SG\backslash G/{\rm St}(L)}.
 Let @f{\hat{h}} be a special
@@ -603,6 +624,7 @@ Therefore:
 }}
 
 @section{Modified PDF}
+
 However, we identify a class of subalgebras @f{{\bf h}\subset {\bf sg}} for which we can construct
 the base form @f{\Omega_{\bf h}^{\tt base}}. Being a base form, it descends to @f{H\backslash {\rm LAG}},
 where @f{H} is the Lie group generated by the flows of elements of @f{\bf h}.
@@ -658,7 +680,7 @@ more or less unambiguously determined by the choice of @f{H}; even @f{\rho_{1\ov
 already unambigously determined. Indeed, we will now see that the constraints arizing from
 Eqs. (@ref{RhoEquivariant}) and (@ref{RhoEquivariantlyClosed}) are very tight.
 
-@section[#:tag "sec:expansion-of-omega"]{Expansion of @f{\Omega(L,dL,\xi)} in powers of @f{\xi}}
+@subpage[1 @elem{Expansion of @f{\Omega(L,dL,\xi)} in powers of @f{\xi}} #:tag "sec:expansion-of-omega"]
 
 Let us expand @f{\rho^{\tt C}_{1\over 2}(\xi)} in powers of @f{\xi}:
 @align[l @list[
@@ -897,7 +919,7 @@ is @f{\bf h}-invariant.
 ]
 is a cocycle of the Cartan model of the @f{\bf h}-equivariant cohomology of @f{G}. 
 
-@section[#:tag "sectionDeformationsOfEquivariantOmega"]{Deformations of equivariant @f{\Omega}}
+@subpage[1 @elem{Deformations of equivariant @f{\Omega}} #:tag "sectionDeformationsOfEquivariantOmega"]
 @short-intro{
 @centered{
 Now let us study the moduli space of solutions @f{a} of Eq. (@ref{EquationForLogForEquivariant})
@@ -1261,7 +1283,7 @@ choice for @f{\cal F}.
 
 
 
-@section[#:tag "BriefReviewOfStandardBRST"]{Brief review of the ``standard'' BRST formalism}
+@subpage[1 @elem{Brief review of the ``standard'' BRST formalism} #:tag "BriefReviewOfStandardBRST"]
 
 @hyperlink["../BRST-formalism/index.html"]{The usual translation of the BRST formalism into the BV language} leads to the following Master Action:
 @e{
@@ -1285,7 +1307,7 @@ the gauge symmetries:
 \{\,S_{\rm BV}\,,\,\int  \xi^Ac^{\star}_A\,\} = (\delta_{\xi}\phi^i) \phi_i^{\star} + [\xi,c]c^{\star}
 }
 
-@section[#:tag "sec:equivariant-omega-in-brst-case"]{Equivariant @f{\Omega} in BRST case}
+@subpage[1 @elem{Equivariant @f{\Omega} in BRST case} #:tag "sec:equivariant-omega-in-brst-case"]
 @subsection{General formula}
 @align[r.l.n @list[
   @f{\Omega\left(L\,,\,\sigma=d\Psi\,,\,\xi\right)\;=\;}
@@ -1320,7 +1342,7 @@ S_{\rm BV} = S_{\rm cl}(\phi) + (Q_{\rm BRST} \phi^i)\phi_i^{\star} + \ldots
 
 @table-of-contents[]
 
-@section[#:tag "SymmetryModuloBRST"]{Symmetry modulo BRST-exact expression}
+@subpage[1 @elem{Symmetry modulo BRST-exact expression} #:tag "SymmetryModuloBRST"]
 
 Suppose that the leading term is invariant under some Lie algebra @f{\bf h} of infinitesimal transformations,
 parametrized by @f{\xi}:
@@ -1355,7 +1377,7 @@ The class (@ref{ClassH2Lie}) is an obstacle to choosing @f{{\cal V}_{\xi}} in su
 \{{\cal V}_{\xi}\,,\,{\cal V}_{\eta}\} \;=\; {\cal V}_{[\xi,\eta]}
 }
 
-@section[#:tag "EntersF"]{Enters @f{\cal F}}
+@subpage[1 @elem{Enters @f{\cal F}} #:tag "EntersF"]
 For our applications, we need a special case when @f{{\cal V}_{\xi}} is BRST-exact:
 @e{
 {\cal V}_{\xi} = \{S_{\rm BV},\Phi_{\xi}\}

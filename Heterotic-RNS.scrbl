@@ -377,8 +377,43 @@ where @f{S_{\rm mat}} @seclink["sectionWorldsheetActionSMat"]{was defined previo
   @smaller{super-diffeomorphism ghost}
 ]
 ]]
-@comment{It would seem to be natural to use @f{D^{\star}}, instead of @f{V^{\star}}, to denote the antifield of @f{D}. 
-But in practice such a notation turns out to be absolutely disastrous.}
+@comment{
+         It would seem to be natural to use @f{D^{\star}}, instead of @f{V^{\star}}, to denote the antifield of @f{D}. 
+         But in practice such a notation would likely be visually confusing.
+
+         With these notations,
+         the evaluation of the odd 1-form @f{\phi^{\star}\delta \phi} corresponding to and infinitesimal variation of @f{\delta D} is:
+         @equation{
+                   \int_{\Sigma^{2|1}}
+                   \left(
+                         V^{\star}_z\left\langle\,
+                         (dz + \theta d\theta)\,,\,
+                         \delta \left({\partial\over\partial\theta} + \theta {\partial\over\partial z}\right)
+                         \right\rangle
+                         +
+                         V^{\star}_{\bar{z}}\left\langle
+                         d\tilde{z}\,,\,
+                         \delta \left({\partial\over\partial\theta} + \theta {\partial\over\partial z}\right)
+                         \right\rangle
+                         \right)
+                   }
+         In particular, the term @f{\int \left\langle V^{\star},[C,D\,]\right\rangle} in Eq. (@ref{BVForHeteroticRNS})
+         reads:
+         @equation{
+                   \int_{\Sigma^{2|1}}
+                   \left(
+                         V^{\star}_z\left\langle\,
+                         (dz + \theta d\theta)\,,\,
+                         \left[\;C\,,\, \left({\partial\over\partial\theta} + \theta {\partial\over\partial z}\right)\;\right]
+                         \right\rangle
+                         +
+                         V^{\star}_{\bar{z}}\left\langle
+                         d\tilde{z}\,,\,
+                         \left[\;C\,,\, \left({\partial\over\partial\theta} + \theta {\partial\over\partial z}\right)\;\right]
+                         \right\rangle
+                         \right)
+                   }
+         }
 
 The @seclink["sectionWorldsheetActionSMat"]{previously discussed} local rescaling symmetries of 
 @f{S_{\rm mat}} are extended to the BV action:
@@ -404,14 +439,15 @@ and @f{V^{\star}_{\tilde{z}}d\tilde{z}\otimes D} is called  @f{\tilde{B}_{\tilde
 we agree with their Equation (3.20). 
 
 @section{BV Hamiltonian vector in flat point}
+
 @tbl[#:orient 'hor @list[
  @list[
  @smaller{BV Hamiltonian @hspace[2]} @smaller{generates}
 ]@list[
- @f{\int_{\Sigma^{2|1}}  \bar{E}^{\star}_z \,\dot\bar{E}^z }
+ @f{\int_{\Sigma^{2|1}}  \bar{E}^{\star}_z \,\dot{\bar{E}}^z}
  @f{{d\over d t} \left[\begin{array}{c} \bar{E}\cr D \end{array}\right] = 
-    \left[\begin{array}{c} \dot\bar{E}^z {\partial\over\partial z}\cr 
-                           \left(\left({\partial\over\partial\tilde{z}}\right)^{-1} D \dot\bar{E}^z\right) {\partial\over\partial z}
+    \left[\begin{array}{c} \dot{\bar{E}}^z {\partial\over\partial z}\cr 
+                           \left(\left({\partial\over\partial\tilde{z}}\right)^{-1} D \dot{\bar{E}}^z\right) {\partial\over\partial z}
           \end{array}\right]}
 ]@list[
  @f{\int_{\Sigma^{2|1}}  V^{\star}_{\tilde{z}}\; \dot{D}^{\tilde{z}}}
@@ -769,7 +805,6 @@ because it guarantees the action of the  mapping class group on our cycle.
 
 
 @; ---------------------------------------------------------------------------------------------------
-@(bystro-close-connection bystro-conf)
 
 @(bystro-close-connection bystro-conf)
 @disconnect[formula-database]
