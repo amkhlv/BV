@@ -4,6 +4,7 @@
   (require racket scribble/core scribble/base scribble/html-properties)
   (require bystroTeX/common bystroTeX/slides)
   (require scribble/decode)
+  (require truques/truques)
   (require (only-in scribble/html/html nbsp))
   ;; Here the basic syntax can be adjusted:
   (provide bystro-def-formula)
@@ -117,7 +118,6 @@
       (make-element 
        (style "citation" '()) 
        (add-between (map (λ (u) (hash-ref h u)) xs) ","))))
-<<<<<<< HEAD
   (provide bystro-margin-note)
   (define bystro-margin-note margin-note)              
   (provide marg)
@@ -145,7 +145,6 @@
                            (current-directory)
                            (path->complete-path (build-path d x))))
                          )))))))
-=======
   (provide slide)
   (define-syntax slide
     (syntax-rules ()
@@ -154,5 +153,4 @@
       )
     )
 
->>>>>>> 813acd1 (changes in defs and style)
   )

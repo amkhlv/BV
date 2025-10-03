@@ -383,7 +383,7 @@ where @f{S_{\rm mat}} @seclink["sectionWorldsheetActionSMat"]{was defined previo
 
          With these notations,
          the evaluation of the odd 1-form @f{\phi^{\star}\delta \phi} corresponding to and infinitesimal variation of @f{\delta D} is:
-         @equation{
+         @e{
                    \int_{\Sigma^{2|1}}
                    \left(
                          V^{\star}_z\left\langle\,
@@ -399,7 +399,7 @@ where @f{S_{\rm mat}} @seclink["sectionWorldsheetActionSMat"]{was defined previo
                    }
          In particular, the term @f{\int \left\langle V^{\star},[C,D\,]\right\rangle} in Eq. (@ref{BVForHeteroticRNS})
          reads:
-         @equation{
+         @e{
                    \int_{\Sigma^{2|1}}
                    \left(
                          V^{\star}_z\left\langle\,
