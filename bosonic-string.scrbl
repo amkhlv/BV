@@ -59,7 +59,7 @@ The coupling to @f{\delta I} is defined as follows:
 
 @slide["Lagrangian submanifold" #:tag "LagrangianSubmanifold" #:showtitle #t]{
 @table-of-contents[]
-@section{Motivation for changing polarization}
+@subpage[1 @elem{Motivation for changing polarization} #:tag "sec-Motivation-for-changing-polarization"]
 Notice that the dependence of @f{S_{\rm BV}} on the antifields (letters with @f{\star}) 
 is at most 
 linear. Indeed, this @f{S_{\rm BV}} corresponds to ``just the usual BRST operator''
@@ -74,7 +74,7 @@ bosonic string is to switch to a different Lagrangian submanifold so that the re
 to this new Lagrangian submanifold is quadratic. However there is some price to pay: 
 BRST operator is only nilpotent on-shell, resulting in a complicated @f{L_{\infty}} structure.
 
-@section{Proceed with changing polarization}
+@subpage[1 @elem{Proceed with changing polarization} #:tag "sec-Proceed-with-changing-polarization"]
 Let us choose some reference complex structure  @f{I^{(0)}} parametrize the nearby complex structures
 by their corresponding Dolbeault cocycles, which we denote @f{b^{\star}}. Locally it is possible
 to choose @f{I = \left(\begin{array}{cc} i & 0 \cr 0 & -i \end{array}\right)}.
@@ -113,7 +113,7 @@ The action can be written in the new coordinates:
  @label{BVBosonic}
 ]]
 
-@section[#:tag "sectionStandardLagrangianSubmanifold"]{Lagrangian submanifold}
+@subpage[1 @elem{Lagrangian submanifold} #:tag "sectionStandardLagrangianSubmanifold"]
 We now choose the Lagrangian submanifold in the following way:
 @align[r.n @list[
 @f{b^{\star} = x^{\star} = c^{\star} = 0}@label{LagrangianAlongB}
@@ -122,7 +122,7 @@ On this Lagrangian submanifold the action is quadratic.
 In particular:
 @e{\int \langle b,{\cal L}_c(I(b^{\star}))\rangle\quad\mbox{\tt\small becomes}\quad \int (b_{++}\partial_-c^+ + c.c)}
 
-@section{BRST structure}
+@subpage[1 @elem{BRST structure} #:tag "sec-BRST-structure"]
 The BRST operator @f{Q_{\rm BRST}} of the bosonic string can be understood as follows.
 We expand @f{S_{\rm BV}} in powers of the antifields @f{x^{\star}, c^{\star}, b^{\star}} and consider only the 
 linear term. The corresponding Hamiltonian vector field preserves the 
@@ -143,7 +143,7 @@ read from Eq. (@ref{BVBosonic}):
 
 
 
-@section{Ghost numbers}
+@subpage[1 @elem{Ghost numbers} #:tag "sec-Ghost-numbers"]
 @tbl[#:orient 'vert @list[
  @list[
    @f{x}  @f{x^{\star}}   @f{I}  @f{b}   @f{c}  @f{c^{\star}} 
@@ -164,7 +164,7 @@ to construct a closed form on @f{(\exp(\Pi\Delta {\cal F}))\backslash {\rm LAG}}
 
 @table-of-contents[]
 
-@section[#:tag "ChoiceOfF"]{Choice of @f{\cal F}}
+@subpage[1 @elem{Choice of @f{\cal F}} #:tag "ChoiceOfF"]
 We will here make use of @hyperlink["../omega/Case_Of_Standard_BRST.html"]{the standard choice of @f{\cal F} always applicable in the BRST case}.
 
 We will choose @f{\cal F} so that @f{\Pi\Delta {\cal F}} is 
@@ -174,7 +174,7 @@ We will choose @f{\cal F} so that @f{\Pi\Delta {\cal F}} is
 }
 where @f{\xi^{\alpha} = \xi^{\alpha}(z,\bar{z})} is a vector field on the worldsheet.
 
-@section{Equivariant form @f{\Omega^{\cal C}_{{\rm Vect}(\Sigma)\oplus{\rm Weyl}}}}
+@subpage[1 @elem{Equivariant form @f{\Omega^{\cal C}_{{\rm Vect}(\Sigma)\oplus{\rm Weyl}}}} #:tag "sec-Equivariant-form-f-Omega-cal-C-rm-Vect-Sigma-oplus-rm-Weyl"]
 The resulting equivariant form is:
 @e{
    \Omega^{\tt C}_{{\rm Vect}(\Sigma)\oplus {\rm Weyl}}({\bf t}) = 
@@ -187,7 +187,7 @@ where the term @f{\int \langle dI\,,\, b \rangle} comes from @f{dg g^{-1}} and
 The pairing @f{\langle dI\,,\,b\rangle} is as in Eq.@~(@ref{PairingI}).
 
 
-@section{Recovery of the standard approach}
+@subpage[1 @elem{Recovery of the standard approach} #:tag "sec-Recovery-of-the-standard-approach"]
 Usually in the literature, the integration cycle is chosen so that @f{c^{\star}=0}, and
 therefore the term  @f{\int c^{\star}_{\alpha}{\bf t}^{\alpha}} vanishes. Moreover, we do not even need to 
 do the horizonthal projection of @f{dgg^{-1}}. This is a consequence of the following
@@ -226,7 +226,7 @@ Notice that we can use @f{\Omega} instead of @f{\Omega_{\cal B}} because Eq. (@r
 is satisfied in this case. Indeed, @f{\Phi\langle\xi\rangle = \int \xi^{\alpha}c^{\star}_{\alpha}} and we choose the Lagrangian
 submanifolds so that @f{c_{\cdot}^*=0}; this proves Eq. (@ref{PhiIsZero}).
 
-@section{What is ``base integral form''?}
+@subpage[1 @elem{What is ``base integral form''?} #:tag "sec-What-is-base-integral-form"]
 When some part of @f{\widehat{\cal N}_S} contains a gauge-trivial direction @f{\dot{g}_{\alpha\beta} = 2\nabla_{(\alpha}\xi_{\beta)}}, then
 the integral of @f{e^{S_{\rm BV}}} over that part is automatically zero. Indeed, in this
 case all the  @f{b^{\cdot\cdot}\in\Pi T^*_s{\rm MET}} orthogonal to the tangent space to @f{S} satisfy in
@@ -234,7 +234,7 @@ particular @f{b^{\alpha\beta}\nabla_{\alpha}\xi_{\beta}=0} and therefore the int
 zero (because of the zero mode @f{c^{\alpha}\simeq \xi^{\alpha}}). In this sense, @f{e^{S_{\rm BV}}} is a ``base integral form''.
 
 
-@section[#:tag "sectionStandardIntegrationCycle"]{Standard integration cycle}
+@subpage[1 @elem{Standard integration cycle} #:tag "sectionStandardIntegrationCycle"]
 We will now discuss the ``usual'' (in the bosonic string theory) integration cycle on the moduli space of Lagrangian submanifolds.
 Remember that our @seclink{ChoiceOfF} is such that @f{\Pi\Delta{\cal F}} is the algebra of diffeomorphisms of the worldsheet.
 @bold{This allows us} to construct the base form on the space of Lagrangian submanifolds modulo diffeomorphisms.
@@ -260,7 +260,7 @@ This requires Weyl invariance. We will just list the formulas here.
 
 @table-of-contents[]
 
-@section{Solution of Master Equation}
+@subpage[1 @elem{Solution of Master Equation} #:tag "sec-Solution-of-Master-Equation"]
 
 @e{
    S_{\rm mat}[g,x] = {1\over 2}\int 
@@ -285,7 +285,7 @@ It follows from the @hyperlink["../omega/Case_Of_Standard_BRST.html"]{general th
 ]]
 where @f{\zeta} is the ghost for the Weyl transformations. 
 
-@section{Changing polarization}
+@subpage[1 @elem{Changing polarization} #:tag "sec-Changing-polarization"]
 Let us choose some reference metric @f{g^{(0)}} and change the coordinates in the following way:
 @align[r.l @list[
 @f{g_{\alpha\beta} \;=}@v+[6 @f{\; g^{(0)}_{\alpha\beta} + b^{\star}_{\alpha\beta}}]
@@ -309,7 +309,7 @@ With these new notations, the action becomes:
 ]]
 (Notice that in the computation of @f{\nabla_{\alpha}c_{\beta}} we have to use the metric @f{g_{\alpha\beta}^{(0)} + b^{\star}_{\alpha\beta}}.)
 
-@section[#:tag "sec:standard-lagr-using-metric"]{Lagrangian submanifold}
+@subpage[1 @elem{Lagrangian submanifold} #:tag "sec:standard-lagr-using-metric"]
 We now choose the Lagrangian submanifold in the following way:
 @align[r.n @list[
 @f{b^{\star} = x^{\star} = c^{\star} = \zeta^{\star} = 0}@label{LagrangianAlongBUsingMetric}
@@ -319,7 +319,7 @@ the integral over @f{\zeta} makes @f{b^{\alpha\beta}} traceless with respect to 
 Then in the last line of Eq. (@ref{BVBosonicUsingMetric}) 
 only the first term survives and becomes @f{\int (b_{++}\partial_-c^+ + c.c)}
 
-@section{Singularities of correlation functions}
+@subpage[1 @elem{Singularities of correlation functions} #:tag "sec-Singularities-of-correlation-functions"]
 @e{
 \langle \partial X(z) \;X(0) \rangle =  {1\over 2z} + \mbox{\tt\small regular }
 }
@@ -344,8 +344,8 @@ This follows from the variation of the action under the infinitesimal shift @f{\
 ]
 ]
 }
-@section{Insertions of unintegrated vertices}
-@subsection{Massless states}
+@subpage[1 @elem{Insertions of unintegrated vertices} #:tag "sec-Insertions-of-unintegrated-vertices"]
+@subpage[2 @elem{Massless states} #:tag "sec-Massless-states"]
 The case of massless states is special, because the corresponding vertex operators are free of divergencies
 and do not require regularization. Consider the scattering of @f{N} gravitons, which are parametrized
 by their momenta @f{k^{(i)}} and polarizations @f{E^{(i)}_{\mu\nu}}. The corresponding insertion is:
@@ -372,7 +372,7 @@ explicitly Weyl-invariant.
 
 Now we will proceed to tachyons, which are the simples example of massive state.
 
-@subsection{Tachyons}
+@subpage[2 @elem{Tachyons} #:tag "sec-Tachyons"]
 Let us regularize @f{e^{(k\cdot X)}} by a point-splitting procedure,
 splitting by a small @f{\epsilon} @bold{as measured with the worldsheet metric}.
 In other words, let us define the insertion of @f{N} tachyon vertices as the  @f{\epsilon\to 0} limit of the following expression:
@@ -446,7 +446,7 @@ are measured using @f{g}. Notice that:
 
 @table-of-contents[]
 
-@section{Introducing additional fields}
+@subpage[1 @elem{Introducing additional fields} #:tag "sec-Introducing-additional-fields"]
 Let us return to our solution of Master Equation given by Eq. (@ref{BosonicMasterAction}).
 Let us add the ``BRST quartet'' @f{\bar{c}^{\alpha}_{\beta},\pi^{\alpha}_{\beta},\bar{c}^{\star}_{\alpha}^{\beta}\pi^{\star}_{\alpha}^{\beta}}
 and modify  Eq. (@ref{BosonicMasterAction}) by adding @f{\int \pi^{\alpha}_{\beta}\bar{c}^{\star}_{\alpha}^{\beta}}:
@@ -473,7 +473,7 @@ This gives the family of Lagrangian submanifolds:
 ]
 ]
 
-@section{BRST operator is nilpotent off-shell}
+@subpage[1 @elem{BRST operator is nilpotent off-shell} #:tag "sec-BRST-operator-is-nilpotent-off-shell"]
 It is straightforward to construct the new Darboux coordinates compatible with the new Lagrangian submanifold;
 all we need to do is to shift:
 @align[r.l.n @list[
@@ -516,12 +516,12 @@ Therefore, the BRST operator is nilpotent:
 ]
 ]
 
-@section{Form @f{\Omega}}
+@subpage[1 @elem{Form @f{\Omega}} #:tag "sec-Form-f-Omega"]
 
 
 Since @f{Q_{\rm BRST}} is nilpotent off-shell, we can use @hyperlink["../omega-BRST/Form__.html"]{our procedure for constructing @f{\Omega} in BRST formalism}.
 
-@subsection{For standard family of Lagrangian submanifolds}
+@subpage[2 @elem{For standard family of Lagrangian submanifolds} #:tag "sec-For-standard-family-of-Lagrangian-submanifolds"]
 For the standard family, generated by the family of gauge fermions @f{\Psi} parametrized by @f{I^{(0)}} as in Eq. (@ref{gauge-fermion-for-string-quartet}),
 @hyperlink["../omega-BRST/Form__.html#(elem._def-omega)"]{our formula} gives:
 @e[#:label "quartet-omega-for-standard-family"]{
@@ -529,11 +529,11 @@ For the standard family, generated by the family of gauge fermions @f{\Psi} para
 }
 where @f{S_{\rm cl}^{\{I^{(0)}\}}} is the first line of Eq. (@ref{master-action-shifted}).
 
-@subsection{Generic family of Lagrangian submanifolds}
+@subpage[2 @elem{Generic family of Lagrangian submanifolds} #:tag "sec-Generic-family-of-Lagrangian-submanifolds"]
 For the general family we have to use @hyperlink["../omega-BRST/Form__.html#(elem._def-omega)"]{our general formula};
 there is no further simplification.
 
-@subsection{Equivariant @f{\Omega}}
+@subpage[2 @elem{Equivariant @f{\Omega}} #:tag "sec-Equivariant-f-Omega"]
 We will define diffeomorphisms in the usual way:
 @e{
 {\cal D}_{\xi} = \left[Q_{\rm BRST}\,,\,\xi^{\alpha}{\partial\over\partial c^{\alpha}}\right]

@@ -133,7 +133,7 @@ these formulas are zero.
 @slide["B model" #:tag "B Model" #:showtitle #t]{
 @table-of-contents[]
 
-@section{Definitions}
+@subpage[1 @elem{Definitions} #:tag "sec-Definitions"]
 We declare that @f{\overline{\psi_@(L)^a}} and @f{\overline{\psi_@(R)^a}} be scalars:
 @e{
 \overline{\psi_@(L)^a} + \overline{\psi_@(R)^a} = \overline{\eta^{a}}\;,\quad
@@ -154,7 +154,7 @@ The BV action is:
 S_{\rm BV} \;=\; S_{\rm cl} \,+\,\int_{\Sigma}\; \overline{\eta^a}\overline{x}_{\overline{a}}^{\star} \,-\,{1\over 2} \langle dx^a,\rho^{\star}_a\rangle
 }
 
-@section{Action of diffeomorphisms}
+@subpage[1 @elem{Action of diffeomorphisms} #:tag "sec-Action-of-diffeomorphisms"]
 
 Let us consider the infinitesimal diffeomorphism (= vector field) of the worldsheet:
 @e{
@@ -259,7 +259,7 @@ Explicitly:
 ]
 @fsize=[]
 
-@section{Closedness of @f{\Pi\Delta{\cal F}}}
+@subpage[1 @elem{Closedness of @f{\Pi\Delta{\cal F}}} #:tag "sec-Closedness-of-f-Pi-Delta-cal-F"]
 We need to prove:
 @e{
 \{\{S_{\rm BV},\Phi\langle w\rangle\},\Phi\langle v\rangle\} = \Phi\langle [w,v]\rangle

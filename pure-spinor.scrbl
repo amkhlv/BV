@@ -217,7 +217,7 @@ Here we will discuss the
 }
 
 @table-of-contents[]
-@section{BRST analysis}
+@subpage[1 @elem{BRST analysis} #:tag "sec-BRST-analysis"]
 It was shown in @cite{Berkovits:2010zz} that this composite @f{b}-ghost is holomorphic on-shell modulo
 BRST exact terms; in other words:
 @e[#:label "HolomorphicityOfBGhost"]{
@@ -263,7 +263,7 @@ but @f{Qb_{\alpha\beta}=T_{\alpha\beta}} therefore @f{b_{\alpha\beta}} generates
 generates diffeomorphisms.
 }
 
-@section{BV analysis}
+@subpage[1 @elem{BV analysis} #:tag "sec-BV-analysis"]
 We are tempted to define the
 @hyperlink["../omega/Expansion_In_Antifields.html#(elem._.Ghost.Number.Minus.One.Expression)"]{BV Hamiltonian of a diffeomorphism}
 as follows:

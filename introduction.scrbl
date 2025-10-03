@@ -193,7 +193,7 @@ then @f{\Psi} @bold{must have ghost number} @f{-1} and cannot be constant.
 
 
 @slide["Role of symmetries" #:tag "Role of symmetries" #:showtitle #t]{
-@section{Why symmetries are necessary?}
+@subpage[1 @elem{Why symmetries are necessary?} #:tag "sec-Why-symmetries-are-necessary"]
 The problem is:
 @centered[@spn[redbox]{
 @f{\rm LAG} does not have nontrivial integration cycles
@@ -203,7 +203,7 @@ In order to get nontrivial integration cycles:
  we have to consider the @bold{factorspace of} @f{\rm LAG} over some symmetry of @f{\rho_{1/2}}
 }]
 
-@section{What is symmetry?}
+@subpage[1 @elem{What is symmetry?} #:tag "sec-What-is-symmetry"]
 An @bold{even} vector field on @f{M} is a symmetry if:
 @itemlist[#:style 'ordered 
 @item{It preserves @f{\omega}, @italic{i.e.} is of the form @f{\{H\,,\,\_\}}, @f{H\in \mbox{Fun}(M)}}
@@ -224,7 +224,7 @@ This equation describes both symmetries and @seclink["Deformations"]{deformation
 When @f{H} is odd, it corresponds to a symmetry; when @f{H} is even, it corresponds to
 a deformation of the action.
 
-@section{Construction of symmetries}
+@subpage[1 @elem{Construction of symmetries} #:tag "sec-Construction-of-symmetries"]
 It is important that @f{\Delta_{\rho_{1/2}}} is nilpotent:
 @e{
 (\Delta_{\rho_{1/2}})^2 = 0
@@ -241,7 +241,7 @@ We will restrict ourselves to only considering symmetries of this form.
 }
 
 @slide[@elem{@f{\Omega} is not a base form} #:tag "Ω is not a base form" #:showtitle #t]{
-@section{Form @f{\Omega} and symmetries}
+@subpage[1 @elem{Form @f{\Omega} and symmetries} #:tag "sec-Form-f-Omega-and-symmetries"]
 Notice that symmetries form a Lie superalgebra:
 @align[l.l @list[
   @v+[5 @elem[#:style 'no-break]{if@hspace[1]} ]
@@ -266,7 +266,7 @@ Therefore we cannot integrate over cycles in the base:
 
 
 
-@section{Our solution}
+@subpage[1 @elem{Our solution} #:tag "sec-Our-solution"]
 We factorize @f{\rm LAG} over symmetries, but @bold{not over all symmetries}. 
 We will identify a subgroup @f{H} in the group of symmeties, which has the properties:
 @itemlist[
@@ -282,7 +282,7 @@ We can now construct the equivariant analogue of @f{\Omega} using the Cartan mod
 It will be equivariant with respect to some subalgebra  @f{\bf h} of symmetries
 which we  @seclink["sec:restriction-of-symmetries"]{will describe shortly}.
 
-@section{Cartan model of equivariant cohomology}
+@subpage[1 @elem{Cartan model of equivariant cohomology} #:tag "sec-Cartan-model-of-equivariant-cohomology"]
 @align[r.l.n @list[
   @v+[2 @elem[#:style 'no-break]{complex as a linear space:@hspace[1]}]
   @f{\mbox{Fun}\left(\;(\Pi\; T\;{\rm LAG})\times {\bf h}\;\right)}
@@ -309,7 +309,7 @@ we can solve the following equation for @f{a(\xi)}:
   ""
 ]
 ]
-@section{Equivariant analogue of @f{\Omega}}
+@subpage[1 @elem{Equivariant analogue of @f{\Omega}} #:tag "sec-Equivariant-analogue-of-f-Omega"]
 @align[r.l.n @list[
   @f{\Omega^{\tt C}(L,\Psi,\xi) \;=\;} 
   @f{\int_L \exp\left(\Psi + a(\xi) \right) \rho_{1\over 2}}
@@ -398,7 +398,7 @@ To the leading order in the expansion in @f{\hbar} we get the Master Equation:
 }
 
 @slide["Special case: BV structures coming from BRST" #:tag "BV from BRST" #:showtitle #t]{
-@section{BRST formalism}
+@subpage[1 @elem{BRST formalism} #:tag "sec-BRST-formalism"]
 This is a special case. We start from the @f{S_{\rm cl}(\varphi)} which is invariant under some
 symmetry @f{T_A} which we refer to as @bold{gauge symmetry}. 
 Then one introduces the additional ``ghost'' field @f{c}.
@@ -414,7 +414,7 @@ The nilpotent symmetry @f{Q_{\rm BRST}} is defined in the following way:
 ]
 ]
 
-@section{Master Action}
+@subpage[1 @elem{Master Action} #:tag "sec-Master-Action"]
 Given this BRST data, we can construct @f{S_{\rm BV}}:
 @align[r.l.n @list[
   @f{S_{\rm BV} \;=\;} @f{S_{\rm cl}(\varphi) + Q^a(\phi)\phi^{\star}_a} ""
@@ -431,7 +431,7 @@ Given this BRST data, we can construct @f{S_{\rm BV}}:
 This solves the Master Equation @spn[redbox]{@f{\{S_{\rm BV},S_{\rm BV}\} = 0}}.
 
 
-@section[#:tag "omega-base-for-BRST"]{Base form @f{\Omega^{\tt base}}}
+@subpage[1 @elem{Base form @f{\Omega^{\tt base}}} #:tag "omega-base-for-BRST"]
 To construct the @seclink["Base Ω"]{base form}, we have to first identify @f{\bf h}. It turns out
 that we can choose @f{\bf h} to coincide, as Lie algebra, with the underlying gauge symmetry of the BRST data.
 This corresponds to the following @f{a(\xi)}:
@@ -472,7 +472,7 @@ but the dependence is be BRST trivial.
 In other words we have a family of physically equivalent action functionals labelled by metric.
 }
 
-@section{Master Action}
+@subpage[1 @elem{Master Action} #:tag "sec-Master-Action-2"]
 The fundamental fields of the worldsheet theory are: matter fields @f{x^m}, 
 complex structure @f{I^{\alpha}_{\beta}} satisfying 
 @f{I^{\alpha}_{\beta}I^{\beta}_{\gamma}= -\delta^{\alpha}_{\gamma}} and the diffeomorphism ghosts @f{c^{\alpha}}.
@@ -486,7 +486,7 @@ The Master Action follows the general scheme for BV structures coming from BRST 
            \langle I^{\star}, {\cal L}_c I \rangle + \langle x^{\star}, {\cal L}_c x\rangle + {1\over 2}\langle c^{\star} [c,c]\rangle
 }
 
-@section[#:tag "form-omega-for-bosonic string"]{Form @f{\Omega}}
+@subpage[1 @elem{Form @f{\Omega}} #:tag "form-omega-for-bosonic string"]
 We have a family of Lagrangian submanifolds parametrized by @f{I}. The variation @f{d I}
 is generated by @f{\langle dI,I^{\star}\rangle}. Therefore we have:
 @e{
@@ -506,7 +506,7 @@ The base analogue is:
 
 
 
-@section{Choice of Lagrangian submanifold}
+@subpage[1 @elem{Choice of Lagrangian submanifold} #:tag "sec-Choice-of-Lagrangian-submanifold"]
 It would seem to be natural to choose the Lagrangian submanifold setting all the antifields to zero. 
 
 But the restriction of @f{S_{\rm BV}} to this Lagrangian submanifold (@italic{i.e.} @f{S_{\rm cl}}) 
@@ -530,7 +530,7 @@ The action can be written in the new coordinates:
 ]
 ]
 
-@section{BRST operator}
+@subpage[1 @elem{BRST operator} #:tag "sec-BRST-operator"]
 We expand @f{S_{\rm BV}} in powers of the antifields @f{x^{\star}, c^{\star}, b^{\star}} and consider only the 
 linear term. The corresponding Hamiltonian vector field preserves the 
 Lagrangian submanifold and is the symmetry of the restriction of @f{S_{\rm BV}} on the 
@@ -552,8 +552,8 @@ order terms; this negligence leads to @f{Q_{\rm BRST}} being nilpotent only on-s
 
 @slide["Proof of equivariance" #:tag "Proof of equivariance" #:showtitle #t]{
 @table-of-contents[]
-@section[#:tag "sec:restriction-of-symmetries"]{Restriction of symmetries}
-@subsection{New operation @f{[\_,\_]}}
+@subpage[1 @elem{Restriction of symmetries} #:tag "sec:restriction-of-symmetries"]
+@subpage[2 @elem{New operation @f{[\_,\_]}} #:tag "sec-New-operation-f"]
 Symmetries are generated by Hamiltonians of the form:
 @f{\xi = \Delta_{\rho_{1/2}}\Phi}
 for arbitrary @f{\Phi}. 
@@ -563,7 +563,7 @@ Let us introduce on functions on @f{M} the operation @f{[\_,\_]} as follows:
 [\Phi_1,\Phi_2] = \{\Phi_1,\Delta_{\rho_{1/2}}\Phi_2\}
 }
 
-@subsection[#:tag "sec:definition-of-f"]{Definition of @f{\cal F}}
+@subpage[2 @elem{Definition of @f{\cal F}} #:tag "sec:definition-of-f"]
 Let us say that a subspace @f{{\cal F}\subset \mbox{Fun}(M)} is @bold{admissible} if:
 @itemlist[#:style 'ordered
 @item{@f{\cal F} is closed under @f{[\_,\_]}. This implies that @f{\Delta_{\rho_{1/2}} {\cal F}} is closed under @f{\{\_,\_\}}}
@@ -592,7 +592,7 @@ We will call @f{\Phi\langle\xi\rangle} the element of @f{\cal F} corresponding t
 }
 
 
-@subsection{Abelian @f{\cal F}}
+@subpage[2 @elem{Abelian @f{\cal F}} #:tag "sec-Abelian-f-cal-F"]
 The simplest case is when @f{\cal F} is abelian, @italic{i.e.} when @f{\{\Phi_1,\Phi_2\}=0} 
 for any @f{\Phi_1\in {\cal F}} and @f{\Phi_2\in {\cal F}}. 
 In particular, this is the case for theories @seclink["BV from BRST"]{coming from BRST formalism}.
@@ -606,7 +606,7 @@ In this case it is very easy to solve Eq. (@ref{equation-for-a}):
 However, @bold{not all abelian @f{\cal F} are admissible}; we also have to check closedness under @f{[\_,\_]}.
 
 
-@section{Proof of @f{d_{\tt C}\Omega^{\tt C}=0}}
+@subpage[1 @elem{Proof of @f{d_{\tt C}\Omega^{\tt C}=0}} #:tag "sec-Proof-of-f-d-tt-C-Omega-tt-C-0"]
 The proof is based on the following algebraic interpretation of @f{\Omega}. 
 
 Consider the linear map:

@@ -129,7 +129,7 @@ are called @bold{antichiral}.
 
 @table-of-contents[]
 
-@section{Matter fields}
+@subpage[1 @elem{Matter fields} #:tag "sec-Matter-fields"]
 
 The @bold{matter fields} are five chiral and five antichiral:
 @align[r.l @list[
@@ -139,7 +139,7 @@ The @bold{matter fields} are five chiral and five antichiral:
 ]]
 Here the index @f{a} runs in @f{\{1,2,3,4,5\}}; we assume that the target space is a complex five-dimensional manifold.
 
-@section{Action for matter fields}
+@subpage[1 @elem{Action for matter fields} #:tag "sec-Action-for-matter-fields"]
 Let us concentrate on the heterotic case. In this case, we have to remember about the right
 (``antiholomorphic'') coordinate @f{\tilde{z}}. @th-ref{th:BerN2} tells us that the holomorphic
 part of the Berezinian is trivial; therefore we can just integrate @f{\overline{X^a}\partial_{\tilde{z}}X^a}:
@@ -147,7 +147,7 @@ part of the Berezinian is trivial; therefore we can just integrate @f{\overline{
 S_{\rm mat}  \;=\; \int_{\Sigma_{N=2}} \overline{X^a}\,\partial_{\tilde{z}} X^a d\tilde{z}
 }
 
-@section{@f{N=2} superconformal transformations of superfields}
+@subpage[1 @elem{@f{N=2} superconformal transformations of superfields} #:tag "sec-f-N-2-superconformal-transformations-of-superfields"]
 By definition, the action (@ref{MatterActionN2Superspace}) is invariant finite @f{N=2} transformations:
 @align[r.n @list[
 @f{X^a(z_{\rm ch},\theta^+) \mapsto X^a(g(z_{\rm ch},\theta^+))}@label{TransformXa}
@@ -182,7 +182,7 @@ and for antichirals:
 @slide[@elem{@f{N=1} structure} #:tag "N=1 Structure" #:showtitle #t]{
 @table-of-contents[]
 
-@section{Definition}
+@subpage[1 @elem{Definition} #:tag "sec-Definition-3"]
 In the @f{N=2} language, we will define the @f{N=1} superconformal structure as a 
 distribution @f{{\cal D}_{\rm ch}\subset T\Sigma_{\rm ch}}. Such a distribution defines a map:
 @e[#:label "MapFromSigmaToSigmaDualType"]{
@@ -196,7 +196,7 @@ The map @f{F^{\{{\cal D}_{\rm ch}\}}} is defined as follows: it brings a point @
 the @f{0|1}-dimensional submanifold of @f{\Sigma_{\rm ch}} which is the trajectory of a superparticle 
 passing through the point @f{(z_{\rm ch},\theta^+)} with the velocity @f{D_{\rm ch}}. 
 
-@section{Normal form of @f{N=1} structure}
+@subpage[1 @elem{Normal form of @f{N=1} structure} #:tag "sec-Normal-form-of-f-N-1-structure"]
 @align[r.l.n @list[
 @f{F^{{\{\cal D}_{\rm ch}\}} (z_{\rm ch},\theta^+) =\;}@f{(z_{\rm ach},\theta^-)}@label{MapFromSigmaToSigmaDual}
 ]@list[
@@ -212,7 +212,7 @@ This can be seen by solving:
 ]]
 @spn[attn]{TODO:} clarify
 
-@section{Categorical interpretation of @f{N=1} structure}
+@subpage[1 @elem{Categorical interpretation of @f{N=1} structure} #:tag "sec-Categorical-interpretation-of-f-N-1-structure"]
 To define an @f{N=1} structure is to define a natural transformation from the identity
 functor to @f{\tt Dual}. In other words the correspondence @f{\Sigma_{\rm ch}\mapsto \Sigma_{\rm ach}} comes with an actual
 map from @f{\Sigma_{\rm ch}} to its dual @f{\Sigma_{\rm ach}} given by Eqs. (@ref{MapFromSigmaToSigmaDualType}), (@ref{MapFromSigmaToSigmaDual}). 

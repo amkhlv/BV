@@ -25,7 +25,7 @@
 @bystro-ribbon[]
 @table-of-contents[]
 
-@section{Odd symplectic manifold}
+@subpage[1 @elem{Odd symplectic manifold} #:tag "sec-Odd-symplectic-manifold"]
 
 @tbl[#:orient 'vert @list[
  @list[ 
@@ -60,7 +60,7 @@
 
 @hyperlink["../BV-formalism/OddLaplace.html"]{Explanations}
 
-@section{Moment map}
+@subpage[1 @elem{Moment map} #:tag "sec-Moment-map"]
 @tbl[#:orient 'vert @list[
  @list[
   @f{\widehat{\bf g}}
@@ -74,7 +74,7 @@
 ]]    
 @hyperlink["../BV-formalism/MomentMap.html"]{Explanations}
 
-@section{Integration over families of Lagrangian submanifolds}
+@subpage[1 @elem{Integration over families of Lagrangian submanifolds} #:tag "sec-Integration-over-families-of-Lagrangian-submanifolds"]
 @tbl[#:orient 'vert @list[
  @list[
   @elem{@f{\Omega} and @f{\Omega\langle F\,\rangle}}
@@ -91,7 +91,7 @@
 ]
 ]]
 
-@section{Equivariant cohomology}
+@subpage[1 @elem{Equivariant cohomology} #:tag "sec-Equivariant-cohomology"]
 @tbl[#:orient 'vert @list[
  @list[
   @smaller{@f{\widetilde{\bf g}} and @f{\widetilde{\bf g}'} (for any Lie superalgebra @f{\bf g})}

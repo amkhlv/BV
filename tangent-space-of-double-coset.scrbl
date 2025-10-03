@@ -68,7 +68,7 @@ taking the equivalence class modulo @f{SG}}
 @slide["Tangent space to the double coset" #:tag "Tangent Space To BRST" #:showtitle #t]{
 
 @table-of-contents[]
-@section{Identification of the tangent space}
+@subpage[1 @elem{Identification of the tangent space} #:tag "sec-Identification-of-the-tangent-space"]
 The tangent space to @f{T_{[L]}{\cal M}_{\rm BRST}} at the point @f{[L]\in {\cal M}_{\rm BRST}} can be 
 identified as the space of all functions @f{h_{\rm cl}} on @f{L} modulo those functions 
 which can be extended to the first infinitesimal  neighborhood of @f{L} 
@@ -82,7 +82,7 @@ even just restrict ourselves to those @f{L} which can be obtained from the
 Then, without loss of generality, we can say that the @f{[L]} is @f{x^{\star}=0} and
 the problem is parametrized just by @f{\rho_{1\over 2}}. 
 
-@section{Quantum limit}
+@subpage[1 @elem{Quantum limit} #:tag "sec-Quantum-limit"]
 Let us choose the half-density: 
 @e[#:label "RhoIsOne"]{
 \rho_{1\over 2} = 1
@@ -93,7 +93,7 @@ for any @f{h_{\rm cl}(x)}. Indeed, we can simply choose @f{\hat{h}} to be indepe
    h(x,x^{\star}) = h_{\rm cl}(x)
 }
 
-@section{Classical limit}
+@subpage[1 @elem{Classical limit} #:tag "sec-Classical-limit"]
 In the classical limit we have:
 @e{
    \rho_{1\over 2} = \exp\left({1\over \hbar}S_{\rm BV}\right),\quad\hbar\to 0
@@ -113,7 +113,7 @@ is BRST-closed on-shell.
 Notice that @f{h} @bold{can not} be interpreted as a deformation of the BV action, because 
 it has ghost number @f{-1}; the action should have ghost number zero.
 }
-@section{Conclusion}
+@subpage[1 @elem{Conclusion} #:tag "sec-Conclusion"]
 @itemlist[
 @item{In the quantum theory the BRST structure is locally rigid. However, as the quantum BV
 theory is poorly defined anyway, we probably need the expansion around the classical
