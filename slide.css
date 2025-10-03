@@ -173,6 +173,21 @@ table, th, td
     padding-right: 5pt;
 }
 
+.bystro-indent-1 {
+    margin-left: 10%;
+}
+
+.bystro-indent-2 {
+    margin-left: 20%;
+}
+
+.bystro-formula {
+  filter: invert(.1) sepia() saturate(1000) hue-rotate(240deg);
+}
+.bystro-equation {
+  filter: invert(.1) sepia() saturate(1000) hue-rotate(240deg);
+}
+
 talk {
     font-size: 18pt;
     font-family: Courier;

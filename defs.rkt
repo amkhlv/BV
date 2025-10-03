@@ -2,7 +2,8 @@
 
   (require (for-syntax racket/base bystroTeX/slides_for-syntax racket/syntax))
   (require racket scribble/core scribble/base scribble/html-properties)
-  (require bystroTeX/common bystroTeX/slides truques/truques)
+  (require bystroTeX/common bystroTeX/slides)
+  (require scribble/decode)
   (require (only-in scribble/html/html nbsp))
   ;; Here the basic syntax can be adjusted:
   (provide bystro-def-formula)
@@ -21,7 +22,7 @@
 
   ;; Here we define new functions:
   (provide label)
-  (define (label s) (if (bystro-dump-LaTeX?) s (elemtag s (number-for-formula s))))
+  (define (label s) (elemtag s (number-for-formula s)))
   (provide ref)
   (define (ref s) (elemref s (ref-formula s)))
   (provide red)
@@ -116,6 +117,7 @@
       (make-element 
        (style "citation" '()) 
        (add-between (map (λ (u) (hash-ref h u)) xs) ","))))
+<<<<<<< HEAD
   (provide bystro-margin-note)
   (define bystro-margin-note margin-note)              
   (provide marg)
@@ -143,4 +145,14 @@
                            (current-directory)
                            (path->complete-path (build-path d x))))
                          )))))))
+=======
+  (provide slide)
+  (define-syntax slide
+    (syntax-rules ()
+      [(slide ttl #:tag t #:showtitle b contents ...)
+       (decode (list (page ttl #:tag t #:showtitle b) contents ...))]
+      )
+    )
+
+>>>>>>> 813acd1 (changes in defs and style)
   )

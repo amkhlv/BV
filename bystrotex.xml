@@ -3,6 +3,7 @@
   <scribblings>
     <scribbling>
       <name>index</name>
+      <dest>index</dest>
     </scribbling>
     <scribbling>
       <name>introduction</name>
