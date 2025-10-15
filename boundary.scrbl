@@ -14,7 +14,7 @@
            2   ; automatic alignment adjustment
            0   ; manual alignment adjustment
            ))
-@(define singlepage-mode #t)
+@(define singlepage-mode #f)
 @(bystro-def-formula "formula-enormula-humongula!")
 
 @(bystro-dump-LaTeX #f)

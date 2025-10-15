@@ -14,7 +14,7 @@
            2   ; automatic alignment adjustment
            0   ; manual alignment adjustment
            ))
-@(define singlepage-mode #t)
+@(define singlepage-mode #f)
 @(bystro-def-formula "formula-enormula-humongula!")
 
 @(bystro-dump-LaTeX #f)
@@ -34,6 +34,7 @@
 @bystro-ribbon[]
 
 @slide["Solution of Master Equation" #:tag "SolutionOfMasterEqn" #:showtitle #t]{
+
 The fundamental fields of the worldsheet theory are: matter fields @f{x^m}, 
 @hyperlink["../worldsheet-complex-structure/worldsheet-complex-structure.html"]{complex structure} @f{I^{\alpha}_{\beta}}
 and the diffeomorphism ghosts @f{c^{\alpha}}.
@@ -58,7 +59,9 @@ The coupling to @f{\delta I} is defined as follows:
 
 
 @slide["Lagrangian submanifold" #:tag "LagrangianSubmanifold" #:showtitle #t]{
+
 @bystro-local-toc[]
+
 @subpage[1 @elem{Motivation for changing polarization} #:tag "sec-Motivation-for-changing-polarization"]
 Notice that the dependence of @f{S_{\rm BV}} on the antifields (letters with @f{\star}) 
 is at most 
