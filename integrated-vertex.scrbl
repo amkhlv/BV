@@ -34,7 +34,7 @@
 @bystro-ribbon[]
 
 
-@slide["Integrated vertex = deformation of the action" #:tag "Deformations Of Action" #:showtitle #t]{
+@page["Integrated vertex = deformation of the action" #:tag "Deformations Of Action" #:showtitle #t]
 
 Suppose that we infinitesimally deformed the solution of the Master Equation by adding to it
 some integrated vertex operator @f{U}:
@@ -54,10 +54,11 @@ In this case @f{\cal F} remains undeformed.
 
 On the @seclink["Deformation Of F"]{next page} we will explain what happens 
 when Eq. (@ref{Siegel-gauge}) is not satisfied.
-}
 
 
-@slide[@elem{What happens to @f{\cal F}?} #:tag "Deformation Of F" #:showtitle #t]{
+
+@page[@elem{What happens to @f{\cal F}?} #:tag "Deformation Of F" #:showtitle #t]
+
 In this section, we assume  that the integrated vertex @f{U} satisfies the full
 Master Equation:
 @e[#:label "MEforU"]{
@@ -130,9 +131,10 @@ with deformed @f{q}:
 q \mapsto q + \varepsilon q'
 }
 
-}
 
-@slide["Physical interpretation" #:tag "Physical Interpretation" #:showtitle #t]{
+
+@page["Physical interpretation" #:tag "Physical Interpretation" #:showtitle #t]
+
 The BRST-nontrivial deformations of the action are called @bold{integrated vertices}
 because they are integrals over the worldsheet of a dimension-(1,1) operator:
 @e{
@@ -161,7 +163,7 @@ This is because, in order to define the integration over the moduli space, we do
 actually need the integration form to be completely horizonthal. 
 There is some partial canonical gauge fixing.
 
-}
+
 
 
 @; ---------------------------------------------------------------------------------------------------

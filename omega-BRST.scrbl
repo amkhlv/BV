@@ -35,7 +35,8 @@
 
 @bystro-ribbon[]
 
-@slide[@elem{Ordinary @f{\Omega}} #:tag "Form Ω" #:showtitle #t]{
+@page[@elem{Ordinary @f{\Omega}} #:tag "Form Ω" #:showtitle #t]
+
 @subpage[1 @elem{Definition of @f{\Omega}} #:tag "sec-Definition-of-f-Omega"]
 Remember that the set of fields @f{\phi} consists of the ``classical'' fields @f{\varphi},
 plus ghosts @f{c}, plus BRST quartets.
@@ -77,9 +78,10 @@ The form @f{\Omega} given by Eq. (@ref{def-omega}) is not horizontal, but the co
 ]
 ]
 On the @seclink["Equivariant Ω"]{next page} we will discuss the equivariant form.
-}
 
-@slide[@elem{Equivariant @f{\Omega}} #:tag "Equivariant Ω" #:showtitle #t]{
+
+@page[@elem{Equivariant @f{\Omega}} #:tag "Equivariant Ω" #:showtitle #t]
+
 Let us @spn[attn]{assume} that the symmetries defined in Eq. (@ref{symmetries}) form a closed algebra. 
 It is parametrized by @f{F} and @f{\zeta}.
 
@@ -124,7 +126,7 @@ In passing from (@ref{differential-of-equivariant-form}) to (@ref{differential-e
 The last line coincides with Eq. (@ref{iota}).
 }
 
-}
+
 
 @; ---------------------------------------------------------------------------------------------------
 @(bystro-close-connection bystro-conf)

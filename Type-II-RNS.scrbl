@@ -33,7 +33,8 @@
 @bystro-ribbon[]
 
 
-@slide["Type II Structure" #:tag "Type II Structure" #:showtitle #t]{
+@page["Type II Structure" #:tag "Type II Structure" #:showtitle #t]
+
 @bystro-local-toc[]
 
 @subpage[1 @elem{Definition and local flatness} #:tag "sec-Definition-and-local-flatness"]
@@ -68,7 +69,7 @@ This is, again, analogous to @hyperlink["../Heterotic-RNS/Heterotic_Structure.ht
    (DX^m) (\overline{D} X_m)
 }
 
-}
+
 
 @; ---------------------------------------------------------------------------------------------------
 @(bystro-close-connection bystro-conf)

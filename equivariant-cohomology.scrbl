@@ -34,7 +34,8 @@
 
 @bystro-ribbon[]
 
-@slide["Wavy Lie algebra and its Koszul dual" #:tag "Wavy Lie Algebra" #:showtitle #t]{
+@page["Wavy Lie algebra and its Koszul dual" #:tag "Wavy Lie Algebra" #:showtitle #t]
+
 @bystro-local-toc[]
 @subpage[1 @elem{Wavy Lie algebra} #:tag "sec-Wavy-Lie-algebra"]
 
@@ -117,11 +118,12 @@ The cohomology of @f{d_W} is @f{\bf C}; this can be proven using the homotopy op
 @e[#:label "HomotopyOperator"]{
 h = A^a {\partial\over\partial F^a}
 }
-}
 
 
 
-@slide["Equivariant cohomology" #:tag "Equivariant Cohomology" #:showtitle #t]{
+
+@page["Equivariant cohomology" #:tag "Equivariant Cohomology" #:showtitle #t]
+
 @bystro-local-toc[]
 
 @subpage[1 @elem{Equivariant cohomology as a relative Lie algebra cohomology} #:tag "sec-Equivariant-cohomology-as-a-relative-Lie-algebra-cohomology"]
@@ -189,9 +191,9 @@ and @f{d_{\tt C}} gets replaced with:
 d_M + d_{W_G}
 }
 
-}
 
-@slide["Theory of connections" #:tag "Theory Of Connections" #:showtitle #t]{
+
+@page["Theory of connections" #:tag "Theory Of Connections" #:showtitle #t]
 
 @bystro-local-toc[]
 
@@ -280,9 +282,10 @@ where the commutator is the commutator of the vector fields in @f{TP/M}. This
 concludes our short review of the connections in the principal bundle.
 
 
-}
 
-@slide["Cartan form plus exact is base" #:tag "Base is Cartan plus exact" #:showtitle #t]{
+
+@page["Cartan form plus exact is base" #:tag "Base is Cartan plus exact" #:showtitle #t]
+
 Suppose that @f{\alpha} represents a cohomology class in the Cartan model:
 @align[r.l.n @list[
  "" @f{d_{\tt C} \,\alpha = 0} ""
@@ -341,11 +344,11 @@ Because of the @f{\bf g}-invariance, replacement of @f{A^a} with @f{-\theta^a} c
 
 On the @seclink["From Cartan To Base"]{next page} we will give the explicit formula for passing to the base form.
 
-}
 
 
 
-@slide["From Cartan to base forms" #:tag "From Cartan To Base" #:showtitle #t]{
+
+@page["From Cartan to base forms" #:tag "From Cartan To Base" #:showtitle #t]
 
 Consider a principal @f{G}-bundle @f{ P \stackrel{\pi}{\rightarrow} B}. A differential form on @f{B} of rank @f{n} can be 
 described as a @bold{local} map:
@@ -440,9 +443,10 @@ The first term vanishes because we assumed that @f{\omega^{\tt C}} is a Cartan c
 term cancels with the second line of Eq. (@ref{IntermediateDOmegaBase}) using Eq. (@ref{JacobiIdentity}). This completes the proof 
 of @f{\omega^{\tt base}} being a closed form.  
 
-}
 
-@slide[@elem{Straightforward proof of closedness} #:tag "Direct Computation" #:showtitle #t]{
+
+@page[@elem{Straightforward proof of closedness} #:tag "Direct Computation" #:showtitle #t]
+
 The formula for the basic form @f{\underline{\alpha}} is:  
 @align[r.n @list[
 @f{\underline{\alpha} = (\exp(\iota_{v(\theta)})\;\alpha)(f)}@label{DefUnderlineAlpha}
@@ -491,9 +495,9 @@ where the following notations are assumed:
 ]
 @comment{in particular, it acts on @f{f}, giving @f{[\theta,f]}, which cancels with the second line}
 
-}
 
-@slide[@elem{Case of coset space @f{H\backslash G}} #:tag "Coset Space" #:showtitle #t]{
+
+@page[@elem{Case of coset space @f{H\backslash G}} #:tag "Coset Space" #:showtitle #t]
 
 @short-intro{Here we will consider the case of a coset space as an example}
 
@@ -690,7 +694,7 @@ This substitution has the effect of turning
 into @f{\zeta{1\over 2}[(dgg^{-1})^{\perp},(dgg^{-1})^{\perp}]^{\perp}} 
 and therefore @f{d\underline{\phi}=0}.
 
-}
+
 
 
 

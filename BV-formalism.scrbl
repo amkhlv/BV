@@ -32,7 +32,7 @@
 
 @bystro-ribbon[]
 
-@slide["Introduction"  #:tag "Introduction" #:showtitle #t]{
+@page["Introduction"  #:tag "Introduction" #:showtitle #t]
 
 From mathematical point of view the BV formalism may be defined as the theory of odd symplectic supermanifolds.
 
@@ -47,9 +47,9 @@ Instead, it defines
 A half-density defines a measure on every Lagrangian submanifold @f{L\subset M}.
 The volume of the Lagrangian submanifold with respect to this measure is a mathematical
 model for the path integral in a gauge theory.
-}
 
-@slide["Odd symplectic manifolds" #:tag "Odd symplectic manifolds" #:showtitle #t]{
+
+@page["Odd symplectic manifolds" #:tag "Odd symplectic manifolds" #:showtitle #t]
 
 @bystro-local-toc[]
 
@@ -105,9 +105,9 @@ In Darboux coordinates:
 ]
 ]
 
-}
 
-@slide["Odd Laplace operator" #:tag "OddLaplace" #:showtitle #t]{
+
+@page["Odd Laplace operator" #:tag "OddLaplace" #:showtitle #t]
 
 @short-intro{
 Here we will give a brief self-contained presentation of the ``canonical'' odd Laplace operator @f{\Delta_{\rm can}}.
@@ -547,9 +547,9 @@ Therefore, we have:
 This is in agreement with Eqs. (@ref{DeltaCanonical}) and (@ref{BVStructure}). (Remember that in this case @f{(-)^{\overline{H}} = -1} , see Eq. (@ref{VariationOfPsi}).)
 
 
-}
 
-@slide["Master Equation" #:tag "MasterEquation" #:showtitle #t]{
+
+@page["Master Equation" #:tag "MasterEquation" #:showtitle #t]
 
 We will always assume that @f{\rho_{1\over 2}} satisfies the Master Equation:
 @e{
@@ -560,9 +560,9 @@ Under this assumption, the operator @f{\Delta} defined in Eq. (@ref{OperatorDelt
    \Delta^2 = 0
 }
 while @f{\Delta_{\rm can}} is always nilpotent.
-}
 
-@slide["Inifinite-dimensional case" #:tag "Infinite dimensional case" #:showtitle #t]{
+
+@page["Inifinite-dimensional case" #:tag "Infinite dimensional case" #:showtitle #t]
 
 @bystro-local-toc[]
 
@@ -601,12 +601,12 @@ is safe as a function of @f{\rho_{1\over 2}}, but unsafe in @f{H}.
 
 We will give an @hyperlink["../omega/Unsafe_operations.html"]{example of a computation where this is important}.
 
-}
 
 
 
 
-@slide["Classical BV formalism" #:tag "Classical BV" #:showtitle #t]{
+
+@page["Classical BV formalism" #:tag "Classical BV" #:showtitle #t]
 
 @bystro-local-toc[]
 
@@ -698,9 +698,9 @@ leads to finite sums of products of functions of @f{(z_1,\bar{z}_1)}, … ,@f{(z
 this is actually even enough for our purposes.
 }
 
-}
 
-@slide["Moment map" #:tag "MomentMap" #:showtitle #t]{
+
+@page["Moment map" #:tag "MomentMap" #:showtitle #t]
 
 @bystro-local-toc[]
 
@@ -758,9 +758,10 @@ where:
 ]
 
 
-}
 
-@slide["Quantomorphisms" #:tag "Quantomorphisms" #:showtitle #t]{
+
+@page["Quantomorphisms" #:tag "Quantomorphisms" #:showtitle #t]
+
 Let us promote the BV phase space @f{M}
 to the @f{{\bf R}^{0|1}}-bundle over @f{M}, which we will call @f{\widehat{M}}:
 @e{
@@ -822,7 +823,7 @@ this is @f{\Pi\mbox{Fun}(M)}. It integrates to the group of automorphisms of the
 which preserve the connection defined in Eq. (@ref{ConnectionAsLift}). 
 
 
-}
+
 
 
 
