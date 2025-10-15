@@ -21,11 +21,13 @@
 @title[#:style '(no-toc no-sidebar)]{Equivariant effective action}
 
 @bystro-ribbon[]
+
 @bystro-toc[]
 
 @bystro-ribbon[]
 
-@slide["Partial integration of half-density" #:tag "Partial Integration" #:showtitle #t]{
+@page["Partial integration of half-density" #:tag "Partial Integration" #:showtitle #t]
+
 @short-intro{
 When some fields are integrated out, we get an ``effective action'' for the remaining fields.
 }
@@ -127,9 +129,10 @@ When @f{\rho_{1\over 2}} satisfies the QME on @f{M}, considering Eq. (@ref{QME-v
 @f{\Psi} and @f{F} constant along the fiber of @f{E\rightarrow B} and using Eq. (@ref{push-forward-of-Lie-derivative})
 proves that @f{\pi_*\rho_{1\over 2}} also satisfies the QME.
 
-}
 
-@slide["Partial integration of equivariant half-density" #:tag "Equivariant transfer" #:showtitle #t]{
+
+@page["Partial integration of equivariant half-density" #:tag "Equivariant transfer" #:showtitle #t]
+
 @short-intro{
 Now we will consider partial integration when the half-density satisfies the 
 @hyperlink["../omega/Equivariant_half-densities.html#%28part._.Definitions%29"]{equivariant Master Equation}. 
@@ -172,7 +175,7 @@ Indeed, Eq. (@ref{equivariant-QME}) is equivalent to the statement that for any 
 Eq. (@ref{equivariant-QME-on-base}) follows from  Eqs. (@ref{push-forward-of-Lie-derivative}) 
 and (@ref{equivariant-QME-via-Lie-derivative}) considering the case when both @f{\Psi} 
 and @f{F} are constant along the fiber of @f{E\rightarrow B}.
-}
+
 
 @; ---------------------------------------------------------------------------------------------------
 @(bystro-close-connection bystro-conf)
