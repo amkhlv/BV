@@ -27,7 +27,7 @@
 
 @hyperlink["../index.html"]{Return to index}
 
-@table-of-contents[]
+@bystro-toc[]
 
 @hyperlink["../index.html"]{Return to index}
 
@@ -45,7 +45,7 @@ We will also consider some naturally defined subalgebras:
 }
 }
 
-@table-of-contents[]
+@bystro-local-toc[]
 
 @subpage[1 @elem{Complexification} #:tag "sec-Complexification"]
 In order to consider the left sector from separately from the right sector, we have to
@@ -167,7 +167,7 @@ Left vector fields are automatically left-deforming. They are conformal when @f{
 
 
 @slide["Left BV formalism" #:tag "Left BV" #:showtitle #t]{
-@table-of-contents[]
+@bystro-local-toc[]
 
 @subpage[1 @elem{Problem} #:tag "sec-Problem"]
 Let us consider the left deformation of the pure spinor action, analogous to Eq. (@ref{BosonicStringLeftDeformation}):

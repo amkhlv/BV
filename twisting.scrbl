@@ -45,7 +45,7 @@ twisted @hyperlink["../N2Superconformal/index.html"]{@f{N=2} superconformal} the
 
 @hyperlink["../index.html"]{Return to index}
 
-@table-of-contents[]
+@bystro-toc[]
 
 @hyperlink["../index.html"]{Return to index}
 
@@ -131,7 +131,7 @@ these formulas are zero.
 }
 
 @slide["B model" #:tag "B Model" #:showtitle #t]{
-@table-of-contents[]
+@bystro-local-toc[]
 
 @subpage[1 @elem{Definitions} #:tag "sec-Definitions"]
 We declare that @f{\overline{\psi_@(L)^a}} and @f{\overline{\psi_@(R)^a}} be scalars:

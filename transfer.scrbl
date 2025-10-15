@@ -21,7 +21,7 @@
 @title[#:style '(no-toc no-sidebar)]{Equivariant effective action}
 
 @bystro-ribbon[]
-@table-of-contents[]
+@bystro-toc[]
 
 @bystro-ribbon[]
 

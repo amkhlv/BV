@@ -31,7 +31,7 @@ My notes on BV formalism
 }
 
 
-@table-of-contents[]
+@bystro-toc[]
 
 @larger-2{@hyperlink["introduction/index.html"]{Introduction}}
 

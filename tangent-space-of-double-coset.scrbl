@@ -26,7 +26,7 @@
 
 @hyperlink["../index.html"]{Return to index}
 
-@table-of-contents[]
+@bystro-toc[]
 
 @hyperlink["../index.html"]{Return to index}
 
@@ -67,7 +67,7 @@ taking the equivalence class modulo @f{SG}}
 
 @slide["Tangent space to the double coset" #:tag "Tangent Space To BRST" #:showtitle #t]{
 
-@table-of-contents[]
+@bystro-local-toc[]
 @subpage[1 @elem{Identification of the tangent space} #:tag "sec-Identification-of-the-tangent-space"]
 The tangent space to @f{T_{[L]}{\cal M}_{\rm BRST}} at the point @f{[L]\in {\cal M}_{\rm BRST}} can be 
 identified as the space of all functions @f{h_{\rm cl}} on @f{L} modulo those functions 

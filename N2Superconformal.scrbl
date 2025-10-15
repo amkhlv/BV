@@ -31,7 +31,7 @@ We will for now only consider the @bold{left sector}. The worldsheet coordinates
 the ``usual'' @f{N=1} worldsheet, which we will denote just @f{\Sigma^{1|1}}. 
 }
 
-@table-of-contents[]
+@bystro-toc[]
 
 
 @hyperlink["../index.html"]{Return to index}
@@ -127,7 +127,7 @@ We think of the superfields as functions on @f{\Sigma^{1|2}_{N=2}}. In particula
 @f{\Sigma^{1|1}_{\rm ch}} are called @bold{chiral} and those which lift from @f{\Sigma^{1|1}_{\rm ach}}
 are called @bold{antichiral}.
 
-@table-of-contents[]
+@bystro-local-toc[]
 
 @subpage[1 @elem{Matter fields} #:tag "sec-Matter-fields"]
 
@@ -180,7 +180,7 @@ and for antichirals:
 }
 
 @slide[@elem{@f{N=1} structure} #:tag "N=1 Structure" #:showtitle #t]{
-@table-of-contents[]
+@bystro-local-toc[]
 
 @subpage[1 @elem{Definition} #:tag "sec-Definition-3"]
 In the @f{N=2} language, we will define the @f{N=1} superconformal structure as a 

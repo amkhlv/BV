@@ -27,7 +27,7 @@
 
 @hyperlink["../index.html"]{Return to index}
 
-@table-of-contents[]
+@bystro-toc[]
 
 @hyperlink["../index.html"]{Return to index}
 
@@ -35,7 +35,7 @@
 
 @slide["Heterotic Structure" #:tag "Heterotic Structure" #:showtitle #t]{
 
-@table-of-contents[]
+@bystro-local-toc[]
 
 @subpage[1 @elem{Definition of worldsheet heterotic structure} #:tag "sec-Definition-of-worldsheet-heterotic-structure"]
 We will consider super-worldsheet parametrized
@@ -147,7 +147,7 @@ leaves the action invariant. (This follows from everything being geometrically d
 
 @slide["Deformations of the heterotic structure" #:tag "Deformations Of Heterotic Structure" #:showtitle #t]{
 
-@table-of-contents[]
+@bystro-local-toc[]
 
 @subpage[1 @elem{Notations: @f{{\cal D}^{\perp}}, @f{\bar{\cal E}^{\perp}}, @f{\cal Z}} #:tag "sec-Notations-f-cal-D-perp-f-bar-cal-E-perp-f-cal-Z"]
 
@@ -328,7 +328,7 @@ instead of Eq. (@ref{TstarHET}).
 
 @slide["BV formalism" #:tag "Heterotic BV" #:showtitle #t]{
 
-@table-of-contents[]
+@bystro-local-toc[]
 
 @subpage[1 @elem{The BV action} #:tag "sectionBVAction"]
 @align[r.l.n @list[
@@ -459,7 +459,7 @@ we agree with their Equation (3.20).
 }
 
 @slide["The case of flat worldsheet" #:tag "Flat Worldsheet" #:showtitle #t]{
-@table-of-contents[]
+@bystro-local-toc[]
 @subpage[1 @elem{Tangent space at the flat worldsheet} #:tag "TangentSpaceAtFlat"]
 Fields:
 @align[r.l @list[
@@ -501,7 +501,7 @@ The ghost part of the action becomes:
 
 @slide["Lagrangian submanifolds" #:tag "Lagrangian Submanifolds" #:showtitle #t]{
 
-@table-of-contents[]
+@bystro-local-toc[]
 
 @subpage[1 @elem{A gauge slice in @f{{\rm HET}/{\rm Diff}}} #:tag "sectionGaugeSliceInHET"]
 Let @f{{\cal M}\subset {\rm HET}} denote the @f{3g-3|2g-2}-dimensional submanifold of @f{\rm HET}.
@@ -695,7 +695,7 @@ We get:
 
 @slide["Familty of Lagrangian submanifolds" #:tag "Family Of Lagrangian Submanifolds" #:showtitle #t]{
 
-@table-of-contents[]
+@bystro-local-toc[]
 
 @subpage[1 @elem{Families with the structure of vector bundle} #:tag "sec-Families-with-the-structure-of-vector-bundle"]
 

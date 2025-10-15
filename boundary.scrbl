@@ -28,7 +28,7 @@
 
 @hyperlink["../index.html"]{Return to index}
 
-@table-of-contents[]
+@bystro-toc[]
 
 @hyperlink["../index.html"]{Return to index}
 
@@ -46,7 +46,7 @@
 
 @slide["Variation of Lagrangian submanifold" #:tag "Variation of Lagrangian submanifold" #:showtitle #t]{
 
-@table-of-contents[]
+@bystro-local-toc[]
 
 @subpage[1 @elem{Excision of disk} #:tag "sec-Excision-of-disk"]
 

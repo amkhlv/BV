@@ -26,14 +26,14 @@
 
 @hyperlink["../index.html"]{Return to index}
 
-@table-of-contents[]
+@bystro-toc[]
 
 @hyperlink["../index.html"]{Return to index}
 
 @bystro-ribbon[]
 
 @slide["Construction" #:tag "Construction" #:showtitle #t]{
-@table-of-contents[]
+@bystro-local-toc[]
 @subpage[1 @elem{Ghosts} #:tag "sec-Ghosts"]
 One starts with the ``classical action'' @f{S_{\rm cl}} which is invariant under some @bold{gauge symmetry}.
 Let @f{X} be the ``classical'' space of fields, @italic{e.g.} for Yang-Mills theory the fields are @f{A_{\mu}(x)}.
@@ -104,7 +104,7 @@ Indeed, they come from infinitesimal left shifts on @f{H}, and @f{Q_{\rm BRST}} 
 }
 
 @slide["BV from BRST" #:tag "BV from BRST" #:showtitle #t]{
-@table-of-contents[]
+@bystro-local-toc[]
 
 @subpage[1 @elem{Definition of the BV phase space} #:tag "sec:bv-phase-space"]
 The BV phase space is:
@@ -146,7 +146,7 @@ Here we will describe a family of Lagrangian submanifolds which is a generalizat
 the construction used in @hyperlink["../bosonic-string/index.html"]{bosonic string theory}
 }
 
-@table-of-contents[]
+@bystro-local-toc[]
 
 @subpage[1 @elem{Conormal bundle} #:tag "sec-Conormal-bundle"]
 
