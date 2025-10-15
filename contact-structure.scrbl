@@ -56,7 +56,8 @@ construct the connection satisfying:
 [\underline{\rm lift}(v_1),\underline{\rm lift}(v_2)]\;=\; \underline{\rm lift}([v_1,v_2]) + \omega(v_1,v_2) \partial_{\vartheta}
 }
 where @f{\partial_{\vartheta}} is the vector field arizing from the action of @f{{\bf R}^{0|1}} on @f{\widehat{M}}. (We can think of @f{\vartheta} as a coordinate 
-in the fiber; it is only defined locally, but @f{\partial_{\vartheta}} is globally well-defined.) Explicitly:
+                                                                                                                        in the fiber;
+                                                                                                                        it is only defined locally, but @f{\partial_{\vartheta}} is globally well-defined.) Explicitly:
 @e[#:label "ConnectionAsLift"]{
 \underline{\rm lift}(v) = v + (\iota_v\alpha)\partial_{\vartheta}
 }
@@ -82,7 +83,7 @@ As a Lie algebra this is @f{\Pi\mbox{Fun}(M)}. It integrates to the group of aut
 fiber bundle @f{\hat{M}\to M} which preserve the connection defined in Eq. (@ref{ConnectionAsLift}).
 }
 
-@slide[@elem{Form @f{\Omega} as a form on the space of Legendrian submanifolds @f{\rm LEG}"} #:tag "Form on LEG"]{
+@slide[@elem{Form @f{\Omega} as a form on the space of Legendrian submanifolds @f{\rm LEG}} #:tag "Form on LEG" #:showtitle #t]{
 A Legendrian submanifold in @f{\widehat{M}} projects to a Lagrangian submanifold in @f{M}: 
 @e{
 \pi(\widehat{L}) = L

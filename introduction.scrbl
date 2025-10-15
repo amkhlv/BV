@@ -348,9 +348,7 @@ This only works under assumption that the action of @f{\bf h} on @f{\rm LAG} is 
 @short-intro{
 We will now proceed to examples. We must start with describing the Darboux coordinates, which allow for concrete calculations.
 }
-}
 
-@after-pause{
 At least locally, it is always possible to choose the coordinates @f{\phi^A\,,\,\phi^{\star}_A} on @f{M}
 so that:
 @align[r.l.n @list[
