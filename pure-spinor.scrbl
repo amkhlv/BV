@@ -29,7 +29,7 @@
 
 @hyperlink["../index.html"]{Return to index}
 
-@table-of-contents[]
+@bystro-toc[]
 
 @hyperlink["../index.html"]{Return to index}
 
@@ -216,7 +216,7 @@ Here we will discuss the
 @f{{\cal V}_{\xi}} corresponding to diffeomorphisms.
 }
 
-@table-of-contents[]
+@bystro-local-toc[]
 @subpage[1 @elem{BRST analysis} #:tag "sec-BRST-analysis"]
 It was shown in @cite{Berkovits:2010zz} that this composite @f{b}-ghost is holomorphic on-shell modulo
 BRST exact terms; in other words:

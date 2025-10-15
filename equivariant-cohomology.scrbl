@@ -28,14 +28,14 @@
 
 @hyperlink["../index.html"]{Return to index}
 
-@table-of-contents[]
+@bystro-toc[]
 
 @hyperlink["../index.html"]{Return to index}
 
 @bystro-ribbon[]
 
 @slide["Wavy Lie algebra and its Koszul dual" #:tag "Wavy Lie Algebra" #:showtitle #t]{
-@table-of-contents[]
+@bystro-local-toc[]
 @subpage[1 @elem{Wavy Lie algebra} #:tag "sec-Wavy-Lie-algebra"]
 
 Let @f{G} be a Lie group. It is possible to introduce the structure of a Lie group on @f{\Pi TG}.
@@ -122,7 +122,7 @@ h = A^a {\partial\over\partial F^a}
 
 
 @slide["Equivariant cohomology" #:tag "Equivariant Cohomology" #:showtitle #t]{
-@table-of-contents[]
+@bystro-local-toc[]
 
 @subpage[1 @elem{Equivariant cohomology as a relative Lie algebra cohomology} #:tag "sec-Equivariant-cohomology-as-a-relative-Lie-algebra-cohomology"]
 To define the equivariant cohomology, we need to remember that @f{\widetilde{\bf g}} is actually a @bold{differential} Lie algebra. 
@@ -193,7 +193,7 @@ d_M + d_{W_G}
 
 @slide["Theory of connections" #:tag "Theory Of Connections" #:showtitle #t]{
 
-@table-of-contents[]
+@bystro-local-toc[]
 
 @subpage[1 @elem{What is De Rham differential?} #:tag "sec-What-is-De-Rham-differential"]
 A PDF on @f{M} is a function on @f{\Pi TM = {\rm Map}({\bf R}^{0|1},M)}.
@@ -497,7 +497,7 @@ where the following notations are assumed:
 
 @short-intro{Here we will consider the case of a coset space as an example}
 
-@table-of-contents[]
+@bystro-local-toc[]
 
 Remember that @f{H\backslash G} means that we identify @f{g} and @f{hg} for @f{h\in H}.
 

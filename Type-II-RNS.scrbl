@@ -26,7 +26,7 @@
 
 @hyperlink["../index.html"]{Return to index}
 
-@table-of-contents[]
+@bystro-toc[]
 
 @hyperlink["../index.html"]{Return to index}
 
@@ -34,7 +34,7 @@
 
 
 @slide["Type II Structure" #:tag "Type II Structure" #:showtitle #t]{
-@table-of-contents[]
+@bystro-local-toc[]
 
 @subpage[1 @elem{Definition and local flatness} #:tag "sec-Definition-and-local-flatness"]
 

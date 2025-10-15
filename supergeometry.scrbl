@@ -21,7 +21,7 @@
 @title[#:style '(no-toc no-sidebar)]{Supergeometry}
 
 @bystro-ribbon[]
-@table-of-contents[]
+@bystro-toc[]
 
 @bystro-ribbon[]
 
@@ -71,7 +71,7 @@ can be restricted to @f{{\cal U}_1|_{\tilde{U}_1}}:
 
 @slide["Supermanifold" #:tag "Supermanifold" #:showtitle #t]{
 
-@table-of-contents[]
+@bystro-local-toc[]
 
 @subpage[1 @elem{Classical manifold} #:tag "sec-Classical-manifold"]
 Ordinary manifold @f{M} of dimension @f{m} is a topological space with a sheaf of commutative algebras called @f{C^{\infty}}, satisfying the following
@@ -135,7 +135,7 @@ on a superdomain @f{\cal V} of dimension @f{m|n}.
 @; }
 
 @slide["Functor of points" #:tag "Functor of points" #:showtitle #t]{
-@table-of-contents[]
+@bystro-local-toc[]
 @subpage[1 @elem{Definition} #:tag "sec-Definition-2"]
 A supermanifold @f{M} can be characterized by the following contravariant functor:
 @e[#:label "functor-of-points"]{
@@ -159,7 +159,7 @@ Suppose that @f{M} is a supermanifold. Then @f{\Pi TM} can be defined as follows
 }
 
 @slide["Properties of odd tangent bundle" #:tag "Odd tangent bundle" #:showtitle #t]{
-@table-of-contents[]
+@bystro-local-toc[]
 
 @subpage[1 @elem{Canonical odd vector field} #:tag "sec-Canonical-odd-vector-field"]
 @subpage[2 @elem{General definition of @f{{\bf R}^{0|1}}-parameter families of diffeomorphisms} #:tag "sec-General-definition-of-f-bf-R-0-1-parameter-families-of-diffeomorphisms"]

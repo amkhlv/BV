@@ -27,7 +27,7 @@
 
 @hyperlink["../index.html"]{Return to index}
 
-@table-of-contents[]
+@bystro-toc[]
 
 @hyperlink["../index.html"]{Return to index}
 
@@ -58,7 +58,7 @@ The coupling to @f{\delta I} is defined as follows:
 
 
 @slide["Lagrangian submanifold" #:tag "LagrangianSubmanifold" #:showtitle #t]{
-@table-of-contents[]
+@bystro-local-toc[]
 @subpage[1 @elem{Motivation for changing polarization} #:tag "sec-Motivation-for-changing-polarization"]
 Notice that the dependence of @f{S_{\rm BV}} on the antifields (letters with @f{\star}) 
 is at most 
@@ -162,7 +162,7 @@ We will then implement @hyperlink["../equivariant-cohomology/From_Cartan_To_Base
 to construct a closed form on @f{(\exp(\Pi\Delta {\cal F}))\backslash {\rm LAG}} with some @f{\cal F}.  
 }
 
-@table-of-contents[]
+@bystro-local-toc[]
 
 @subpage[1 @elem{Choice of @f{\cal F}} #:tag "ChoiceOfF"]
 We will here make use of @hyperlink["../omega/Case_Of_Standard_BRST.html"]{the standard choice of @f{\cal F} always applicable in the BRST case}.
@@ -258,7 +258,7 @@ It is also possible to use the worldsheet metric, instead of complex structure, 
 This requires Weyl invariance. We will just list the formulas here.
 }
 
-@table-of-contents[]
+@bystro-local-toc[]
 
 @subpage[1 @elem{Solution of Master Equation} #:tag "sec-Solution-of-Master-Equation"]
 
@@ -444,7 +444,7 @@ are measured using @f{g}. Notice that:
 @slide["Bosonic string quartet" #:tag "BRST quartet" #:showtitle #t]{
 @short-intro{We will now show how to integrate over metrics keeping the BRST operator nilpotent off-shell}
 
-@table-of-contents[]
+@bystro-local-toc[]
 
 @subpage[1 @elem{Introducing additional fields} #:tag "sec-Introducing-additional-fields"]
 Let us return to our solution of Master Equation given by Eq. (@ref{BosonicMasterAction}).

@@ -23,7 +23,7 @@
 
 
 @bystro-ribbon[]
-@table-of-contents[]
+@bystro-toc[]
 
 
 Eigenvectors of @f{I} on @f{T\Sigma}:

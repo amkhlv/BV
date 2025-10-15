@@ -29,7 +29,7 @@
 While reading this part, it is useful to keep in mind that
 for bosonic string @f{\Phi\langle \xi\rangle = \int dz d\bar{z} \; \xi^{\alpha}c^{\star}_{\alpha}}.
 
-@table-of-contents[]
+@bystro-toc[]
 
 @hyperlink["../index.html"]{Return to index}
 
@@ -80,7 +80,7 @@ procedure of integration over those insertion points.
 }
 
 @slide["Integration over the location of insertion points" #:tag "Integration Over Positions" #:showtitle #t]{
-@table-of-contents[]
+@bystro-local-toc[]
 
 @subpage[1 @elem{Fixing the Lagrangian submanifold} #:tag "sec-Fixing-the-Lagrangian-submanifold"]
 Therefore we have to study the restriction of @f{\Omega} to 
@@ -254,7 +254,7 @@ In this Section we will show that the @seclink{TwistedDeRham}
 is the same as the Lie algebra cohomology complex of @f{\bf h} with coefficients in @f{\mbox{Fun}(M)}.
 }
 
-@table-of-contents[]
+@bystro-local-toc[]
 
 
 @subpage[1 @elem{Definition of the Lie algebra cohomology @f{H^{\bullet}({\bf h}, \mbox{Fun}(M))}} #:tag "sec-Definition-of-the-Lie-algebra-cohomology-f-H-bullet-bf-h-mbox-Fun-M"]
@@ -365,7 +365,7 @@ Here we will show that the intertwining operator of Eq. (@ref{ConjugationWithPsi
 the generalization of the string theory descent procedure, which relates unintegrated and integrated vertex operators.
 }
 
-@table-of-contents[]
+@bystro-local-toc[]
 @subpage[1 @elem{Interpretation as a descent procedure} #:tag "sec-Interpretation-as-a-descent-procedure"]
 Consider an unintegrated vertex opearator @f{U}.
 We interpret it as an element of the cohomology of @f{\Delta} with some ghost number @f{n}:
@@ -457,7 +457,7 @@ we get a cocycle of the Virasoro algebra. Again, we should go on-shell and take 
   
 
 @slide["Craps-Skenderis trick" #:tag "Craps-Skenderis trick" #:showtitle #t]{
-@table-of-contents[]
+@bystro-local-toc[]
 
 @subpage[1 @elem{Dynamical punctures} #:tag "sec-Dynamical-punctures"]
 The idea of @cite{Craps:2005wk} 

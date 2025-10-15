@@ -23,7 +23,7 @@
 
 
 @bystro-ribbon[]
-@table-of-contents[]
+@bystro-toc[]
 
 @subpage[1 @elem{Odd symplectic manifold} #:tag "sec-Odd-symplectic-manifold"]
 

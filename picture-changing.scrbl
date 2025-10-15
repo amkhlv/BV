@@ -26,7 +26,7 @@
 
 @hyperlink["../index.html"]{Return to index}
 
-@table-of-contents[]
+@bystro-toc[]
 
 @hyperlink["../index.html"]{Return to index}
 
