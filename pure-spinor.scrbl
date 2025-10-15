@@ -41,7 +41,8 @@
   }
 }
 
-@slide["Action of diffeomorphisms" #:tag "Diffeomorphisms" #:showtitle #t]{
+@page["Action of diffeomorphisms" #:tag "Diffeomorphisms" #:showtitle #t]
+
 The worldsheet theory of the pure spinor superstring does not contain the
 worldsheet metric. This means that the action of the sigma-model is @bold{not invariant}
 under diffeomorphisms. However, it is 
@@ -64,9 +65,10 @@ up to @f{Q_{\rm BRST}} of something.
 start with the term constant in antifields 
 (unlike @hyperlink["../bosonic-string/IntegrationOverFamily.html#(part._.Choice.Of.F)"]{bosonic string}).
 
-}
 
-@slide["Structure of the action" #:tag "Action" #:showtitle #t]{
+
+@page["Structure of the action" #:tag "Action" #:showtitle #t]
+
 The action consists of the matter term (a generic sigma-model) and some ghost terms.
 The ghost terms are of the form:
 @e{
@@ -91,9 +93,10 @@ derivatives:
 where @f{A} is some connection in the target space spin bundle.
 
 There is also some quartic term  @f{w^L w^R\lambda_L\lambda_R}.
-}
 
-@slide["Master Action in flat space" #:tag "Master Action in flat space" #:showtitle #t]{
+
+@page["Master Action in flat space" #:tag "Master Action in flat space" #:showtitle #t]
+
 The case of flat space in pure spinor formalism is actually a somewhat singular limit of the general
 curved background. The coefficient in front of @f{\bar{\partial}\theta_L\partial\theta_R} goes to
 infinity; one needs to pass to the first order formalism @f{p_L\bar{\partial}\theta_L + p_R\partial\theta_R}.
@@ -172,9 +175,10 @@ In any case, in order to construct the base @f{\Omega}, we need to solve
 @e[#:label "EquationForAInLeftSector"]{
 \Delta e^{a(\xi)} = {\cal H}\langle\xi\rangle e^{a(\xi)}
 }
-}
 
-@slide[@elem{Structure of the @f{b}-ghost in flat space} #:tag "B Ghost Flat Space" #:showtitle #t]{
+
+@page[@elem{Structure of the @f{b}-ghost in flat space} #:tag "B Ghost Flat Space" #:showtitle #t]
+
 It depends on the worldsheet complex structure, in the following way. The worldsheet complex structure
 defines operators @f{\partial} and @f{\overline{\partial}} which act from @f{(p,q)}-forms to
 @f{(p+1,q)}- and @f{(p,q+1)}-forms, respectively. 
@@ -197,9 +201,10 @@ The leading term of the @f{b}-ghost is:
 ]
 ]
 
-}
 
-@slide[@elem{Structure of the @f{b}-ghost in @f{AdS_5\times S^5}} #:tag "B Ghost AdS" #:showtitle #t]{
+
+@page[@elem{Structure of the @f{b}-ghost in @f{AdS_5\times S^5}} #:tag "B Ghost AdS" #:showtitle #t]
+
 From @cite{Berkovits:2010zz}:
 @e{
 b_{++} = {\mbox{Tr}\left(\{J_1(\partial_+),\lambda_R\}J_2(\partial_+)\right)\over 2\,\mbox{Str}(\lambda_R\lambda_L)} - 
@@ -207,9 +212,10 @@ b_{++} = {\mbox{Tr}\left(\{J_1(\partial_+),\lambda_R\}J_2(\partial_+)\right)\ove
 }
 The notations @f{\omega(\partial_+)} are @hyperlink["../worldsheet-complex-structure/worldsheet-complex-structure.html"]{explained here},
 and @f{K} is some projector. 
-}
 
-@slide[@elem{BV Hamiltonian Of Diffeomorphisms} #:tag "Diffeomorphism Hamiltonian" #:showtitle #t]{
+
+@page[@elem{BV Hamiltonian Of Diffeomorphisms} #:tag "Diffeomorphism Hamiltonian" #:showtitle #t]
+
 @short-intro{
 Here we will discuss the 
 @hyperlink["../omega/Expansion_In_Antifields.html#(elem._.Ghost.Number.Minus.One.Expression)"]{BV Hamiltonian}
@@ -308,7 +314,7 @@ Eqs. (@ref{VisExact})  and (@ref{NaiveDefinitionOfDiff}) suggest that the first 
 @hyperlink["../twisting/B_Model.html#(elem._.Generator.Of.Diffeomorphisms)"]{generator of diffeomorphisms for 
 topologically twisted @f{N=2} theories}.
 
-}
+
 
 
 @; ---------------------------------------------------------------------------------------------------

@@ -38,7 +38,8 @@ the ``usual'' @f{N=1} worldsheet, which we will denote just @f{\Sigma^{1|1}}.
 
 @bystro-ribbon[]
 
-@slide["Duality Functor" #:tag "Duality Functor" #:showtitle #t]{
+@page["Duality Functor" #:tag "Duality Functor" #:showtitle #t]
+
 Consider the @f{1|1} dimensional supermanifold @f{\Sigma^{1|1}}. We will slightly change the notations
 and instead of @f{z,\theta} denote the coordinates as follows:
 @e{
@@ -56,9 +57,10 @@ supermanifolds. To every supermanifold @f{\Sigma^{1|1}} it associates a dual sup
 \Sigma^{1|1}_{\rm ach} \;=\; {\tt Dual}\, \Sigma^{1|1}_{\rm ch}
 }
 
-}
 
-@slide[@elem{@f{N=2} superspace} #:tag "N=2 Superspace" #:showtitle #t]{
+
+@page[@elem{@f{N=2} superspace} #:tag "N=2 Superspace" #:showtitle #t]
+
 The @f{N=2} superspace @f{\Sigma^{1|2}_{N=2}} is somewhat similar to the Flag manifold in twistor theory.
 It is the moduli space of all @f{0|1}-dimensional submanifolds in 
 @f{\Sigma^{1|1}_{\rm ch}} with a marked point. Therefore there are projections:
@@ -73,9 +75,10 @@ trivial:
 
 @bold{Proof} @spn[attn]{TODO} 
 
-}
 
-@slide["Duality in coordinates" #:tag "Duality In Coordinates" #:showtitle #t]{
+
+@page["Duality in coordinates" #:tag "Duality In Coordinates" #:showtitle #t]
+
 Let us introduce some coordinates @f{z_{\rm ch}, \theta^+} on @f{\Sigma_{\rm ch}}.
 
 A generic @f{0|1}-dimensional submanifold can be defined by the following equation,
@@ -120,9 +123,10 @@ u^+_+ + u^-_- + \partial v = 0
 
 
 
-}
 
-@slide["Superfields and their components" #:tag "Superfields" #:showtitle #t]{
+
+@page["Superfields and their components" #:tag "Superfields" #:showtitle #t]
+
 We think of the superfields as functions on @f{\Sigma^{1|2}_{N=2}}. In particular, those which lift from 
 @f{\Sigma^{1|1}_{\rm ch}} are called @bold{chiral} and those which lift from @f{\Sigma^{1|1}_{\rm ach}}
 are called @bold{antichiral}.
@@ -177,9 +181,10 @@ and for antichirals:
 ]]
 
 
-}
 
-@slide[@elem{@f{N=1} structure} #:tag "N=1 Structure" #:showtitle #t]{
+
+@page[@elem{@f{N=1} structure} #:tag "N=1 Structure" #:showtitle #t]
+
 @bystro-local-toc[]
 
 @subpage[1 @elem{Definition} #:tag "sec-Definition-3"]
@@ -217,9 +222,10 @@ To define an @f{N=1} structure is to define a natural transformation from the id
 functor to @f{\tt Dual}. In other words the correspondence @f{\Sigma_{\rm ch}\mapsto \Sigma_{\rm ach}} comes with an actual
 map from @f{\Sigma_{\rm ch}} to its dual @f{\Sigma_{\rm ach}} given by Eqs. (@ref{MapFromSigmaToSigmaDualType}), (@ref{MapFromSigmaToSigmaDual}). 
 
-}
 
-@slide["Breaking of the Lorentz symmetry" #:tag "Lorentz Symmetry" #:showtitle #t]{
+
+@page["Breaking of the Lorentz symmetry" #:tag "Lorentz Symmetry" #:showtitle #t]
+
 @f{N=2} superconformal transformations @bold{break} the Lorentz symmetry @f{SO(10)} down to @f{U(5)}. 
 But @f{N=1} superconformal transformations @bold{preserve} the full Lorentz symmetry.
 
@@ -242,10 +248,11 @@ A characteristic property of @f{N=1} superconformal transformations (as a subgro
 they commute with the standard action of the Lorentz group on @f{{\bf X}^{\mu}}.
 
 
-}
 
 
-@slide[@elem{Moduli space of @f{N=2} structures} #:tag "Moduli Space Of N=2" #:showtitle #t]{
+
+@page[@elem{Moduli space of @f{N=2} structures} #:tag "Moduli Space Of N=2" #:showtitle #t]
+
 The tangent space to the moduli space of @f{N=2} superconformal structures is the first cohomology
 of the tangent sheaf @f{\cal T} (= the sheaf of holomorphic vector fields):
 @e{
@@ -270,7 +277,7 @@ For sufficiently high genus, we have:
 @label{TermsOfLongExactSequence}
 ]
 ]
-}
+
 
 
 @; ---------------------------------------------------------------------------------------------------

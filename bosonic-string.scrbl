@@ -33,7 +33,7 @@
 
 @bystro-ribbon[]
 
-@slide["Solution of Master Equation" #:tag "SolutionOfMasterEqn" #:showtitle #t]{
+@page["Solution of Master Equation" #:tag "SolutionOfMasterEqn" #:showtitle #t]
 
 The fundamental fields of the worldsheet theory are: matter fields @f{x^m}, 
 @hyperlink["../worldsheet-complex-structure/worldsheet-complex-structure.html"]{complex structure} @f{I^{\alpha}_{\beta}}
@@ -55,10 +55,10 @@ The coupling to @f{\delta I} is defined as follows:
     \int \langle I^{\star}, \delta I\,\rangle \;=\; \int \, dz^{\alpha}\wedge dz^{\beta}\;I^{\star}_{\alpha\gamma}\delta I^{\gamma}_{\beta}
 }
 
-}
 
 
-@slide["Lagrangian submanifold" #:tag "LagrangianSubmanifold" #:showtitle #t]{
+
+@page["Lagrangian submanifold" #:tag "LagrangianSubmanifold" #:showtitle #t]
 
 @bystro-local-toc[]
 
@@ -154,10 +154,11 @@ read from Eq. (@ref{BVBosonic}):
    @f{0}  @f{-1}  @f{0}   @f{-1}  @f{1}  @f{-2} 
 ]
 ]]
-}
 
 
-@slide["Integration over family of Lagrangian submanifolds" #:tag "IntegrationOverFamily" #:showtitle #t]{
+
+@page["Integration over family of Lagrangian submanifolds" #:tag "IntegrationOverFamily" #:showtitle #t]
+
 @short-intro{
 Here we will first use @hyperlink["omega/Equivariant_Form.html#(part._.The_equivariant_version_of_)"]{our prescription}
 to construct the equivariant analogue of @f{\Omega}, depending on some motivated choice of the subspace @f{{\cal F}\subset \mbox{Fun}(M)}.
@@ -252,10 +253,11 @@ metric @f{g_{\alpha\beta}} (same thing as @f{b^{\star\alpha\beta}}) is fixed, an
 This picture explains why we can identify metric with its pullback by a diffeomorphism:
 
 @image{graphics/two-Lagrangean-submanifolds.svg}
-}
 
 
-@slide["Using metric instead of complex structure" #:tag "UsingMetric" #:showtitle #t]{
+
+@page["Using metric instead of complex structure" #:tag "UsingMetric" #:showtitle #t]
+
 @short-intro{
 It is also possible to use the worldsheet metric, instead of complex structure, as a dynamical variable. 
 This requires Weyl invariance. We will just list the formulas here.
@@ -442,9 +444,10 @@ are measured using @f{g}. Notice that:
 \lim_{\epsilon\to 0} \left(f[e^{\varphi}g] - f[g]\right) = \varphi
 }
 
-}
 
-@slide["Bosonic string quartet" #:tag "BRST quartet" #:showtitle #t]{
+
+@page["Bosonic string quartet" #:tag "BRST quartet" #:showtitle #t]
+
 @short-intro{We will now show how to integrate over metrics keeping the BRST operator nilpotent off-shell}
 
 @bystro-local-toc[]
@@ -562,7 +565,7 @@ by arbitrary @f{c}-independent functionals @f{F=F(x,\bar{c},I,\pi)}.
 It seems that we now have a larger symmetry group: instead of just diffeomorphisms we have diffeomorphisms
 plus @f{F}-shifts. This is probably related to adding additional fields.
 
-}
+
 
 
 

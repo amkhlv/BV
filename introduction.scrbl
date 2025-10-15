@@ -34,7 +34,8 @@
 @bystro-ribbon[]
 
 
-@slide["Equivalence classes of theories" #:tag "Equivalence Classes of Theories" #:showtitle #t]{
+@page["Equivalence classes of theories" #:tag "Equivalence Classes of Theories" #:showtitle #t]
+
 Many physical theories have BRST-like structure. This means that there is a nilpotent fermionic
 symmetry @f{Q}, and the space of physical states is the cohomology of @f{Q}.
 
@@ -52,9 +53,10 @@ Naively it would seem that the only way to obtain an invariant is to take the pa
 where @f{{\cal O}_j} are some BRST-closed operators.
 
 But actually there are other possibilities, which we will now describe.
-}
 
-@slide[@elem{Form @f{\Omega}} #:tag "Form Ω" #:showtitle #t]{
+
+@page[@elem{Form @f{\Omega}} #:tag "Form Ω" #:showtitle #t]
+
 Let us study the @bold{whole equivalence class} of theories. It is infinite-dimensional,
 because there @f{S\simeq S + Q\Psi} where @f{\Psi} could be more or less arbitrary functional.
 There are infinitely many possible @f{\Psi}. 
@@ -86,9 +88,10 @@ the action, and yet the form is nonzero}
 We should use the BV formalism.
 
 @centered[@spn[redbox]{We will now switch to BV language}]
-}
 
-@slide["Lightning review of BV formalism" #:tag "Summary of BV" #:showtitle #t]{
+
+@page["Lightning review of BV formalism" #:tag "Summary of BV" #:showtitle #t]
+
 The basic object is: 
 @centered[
 @spn[redbox]{
@@ -151,9 +154,10 @@ property. For any function @f{H\in \mbox{Fun}(M)}, when a Lagrangian submanifold
 It follows from the defining Eq. (@ref{definition-of-canonical-delta}) that when @f{\rho_{1\over 2}} satisfies the Master Equation,
 @f{\int_L\rho_{1\over 2}} does not change under a small deformation of @f{L}.
 
-}
 
-@slide[@elem{Form @f{\Omega} in BV language} #:tag "Ω in BV formalism" #:showtitle #t]{
+
+@page[@elem{Form @f{\Omega} in BV language} #:tag "Ω in BV formalism" #:showtitle #t]
+
 We will define form  @f{\Omega} in BV formalism as a pseudo-differential form on the space
 @f{\rm LAG} of all Lagrangian submanifolds:
 @e{
@@ -189,10 +193,11 @@ Another possibility is to use @bold{ghost number symmetry}, which is a @f{U(1)} 
 typically present in string theory. If we require Lagrangian submanifolds to be @f{U(1)}-invariant,
 then @f{\Psi} @bold{must have ghost number} @f{-1} and cannot be constant.
 
-}
 
 
-@slide["Role of symmetries" #:tag "Role of symmetries" #:showtitle #t]{
+
+@page["Role of symmetries" #:tag "Role of symmetries" #:showtitle #t]
+
 @subpage[1 @elem{Why symmetries are necessary?} #:tag "sec-Why-symmetries-are-necessary"]
 The problem is:
 @centered[@spn[redbox]{
@@ -238,9 +243,10 @@ This allows us to construct the symmetries very easily:
 ]
 We will restrict ourselves to only considering symmetries of this form. 
 
-}
 
-@slide[@elem{@f{\Omega} is not a base form} #:tag "Ω is not a base form" #:showtitle #t]{
+
+@page[@elem{@f{\Omega} is not a base form} #:tag "Ω is not a base form" #:showtitle #t]
+
 @subpage[1 @elem{Form @f{\Omega} and symmetries} #:tag "sec-Form-f-Omega-and-symmetries"]
 Notice that symmetries form a Lie superalgebra:
 @align[l.l @list[
@@ -273,10 +279,11 @@ We will identify a subgroup @f{H} in the group of symmeties, which has the prope
 @item{It is large enough for the factorspace @f{H\backslash {\rm LAG}} to have interesting integration cycles.}
 @item{It is small enough to allow us to define a closed base PDF which we will call @f{\Omega^{\tt base}}.}
 ]
-}
 
 
-@slide[@elem{Equivariant analogue of @f{\Omega}} #:tag "Equivariant Ω" #:showtitle #t]{
+
+@page[@elem{Equivariant analogue of @f{\Omega}} #:tag "Equivariant Ω" #:showtitle #t]
+
 We can now construct the equivariant analogue of @f{\Omega} using the Cartan model of equivariant cohomology.
 
 It will be equivariant with respect to some subalgebra  @f{\bf h} of symmetries
@@ -321,9 +328,10 @@ we can solve the following equation for @f{a(\xi)}:
 ]
 ]
 
-}
 
-@slide[@elem{Base analogue of @f{\Omega}} #:tag "Base Ω" #:showtitle #t]{
+
+@page[@elem{Base analogue of @f{\Omega}} #:tag "Base Ω" #:showtitle #t]
+
 From the equivariant form: 
 @e{
 \Omega^{\tt C}(L,\Psi,\xi) = \int_L \exp\left(\Psi + a(\xi) \right) \rho_{1\over 2}
@@ -340,11 +348,12 @@ Schematically:
 }
 This only works under assumption that the action of @f{\bf h} on @f{\rm LAG} is free. 
 
-}
 
 
 
-@slide["Darboux coordinates" #:tag "Darboux coordinates" #:showtitle #t]{
+
+@page["Darboux coordinates" #:tag "Darboux coordinates" #:showtitle #t]
+
 @short-intro{
 We will now proceed to examples. We must start with describing the Darboux coordinates, which allow for concrete calculations.
 }
@@ -393,9 +402,10 @@ To the leading order in the expansion in @f{\hbar} we get the Master Equation:
 \{S_{\rm BV},S_{\rm BV}\} = 0
 }
 @fsize=[]
-}
 
-@slide["Special case: BV structures coming from BRST" #:tag "BV from BRST" #:showtitle #t]{
+
+@page["Special case: BV structures coming from BRST" #:tag "BV from BRST" #:showtitle #t]
+
 @subpage[1 @elem{BRST formalism} #:tag "sec-BRST-formalism"]
 This is a special case. We start from the @f{S_{\rm cl}(\varphi)} which is invariant under some
 symmetry @f{T_A} which we refer to as @bold{gauge symmetry}. 
@@ -459,10 +469,11 @@ and @f{F^A} is the curvature of this connection.
 This can be applied to both bosonic string and NSR superstring. Indeed, as we now explain, 
 they fall into this class of ``theories obtained from BRST''. 
 }
-}
 
 
-@slide["Bosonic string" #:tag "Bosonic string" #:showtitle #t]{
+
+@page["Bosonic string" #:tag "Bosonic string" #:showtitle #t]
+
 @short-intro{
 Bosonic string belongs to the class of topological quantum field theories of Witten type. 
 By definition such theories are specified by an action functional which does depend on metric, 
@@ -546,9 +557,10 @@ order terms; this negligence leads to @f{Q_{\rm BRST}} being nilpotent only on-s
 
 
 
-}
 
-@slide["Proof of equivariance" #:tag "Proof of equivariance" #:showtitle #t]{
+
+@page["Proof of equivariance" #:tag "Proof of equivariance" #:showtitle #t]
+
 @bystro-local-toc[]
 @subpage[1 @elem{Restriction of symmetries} #:tag "sec:restriction-of-symmetries"]
 @subpage[2 @elem{New operation @f{[\_,\_]}} #:tag "sec-New-operation-f"]
@@ -660,9 +672,10 @@ d \int_L e^{\Psi}e^{a(\xi)} \rho_{1\over 2} \;=\; \int_L e^{\Psi} \left( - \Delt
 -\iota_{\xi} \int_L e^{\Psi}e^{a(\xi)} \rho_{1\over 2}
 }
 
-}
 
-@slide[@elem{Solving the equation for @f{a(\xi)}} #:tag "Solving equation for a" #:showtitle #t]{
+
+@page[@elem{Solving the equation for @f{a(\xi)}} #:tag "Solving equation for a" #:showtitle #t]
+
 Let us investigate the equation for @f{a(\xi)}:
 @align[r.c.n @list[
   @f{\Delta_{\rho_{1/2}} a + {1\over 2} \{a,a\} \;=\;} 
@@ -736,12 +749,11 @@ Suppose that all these assumptions are true. Then we have a ``formal solution'':
 ]
 ]
 
-}
 
 
 
-@slide["Integrated vertex operators" #:tag "Deformations" #:showtitle #t]{
 
+@page["Integrated vertex operators" #:tag "Deformations" #:showtitle #t]
 
 It is interesting to follow what happens when we deform @f{\rho_{1\over 2}}. 
 
@@ -838,9 +850,10 @@ In the base form @f{\Omega^{\tt base}} we substitute for @f{\xi} the curvature o
 Therefore:
 @div[redbox]{when we turn on the vertex operator, we should also deform the 2-form part of the measure}
 If the theory has ghost number, then @f{U} has ghost number zero and @f{a(\xi)} has ghost number @f{-2}.
-}
 
-@slide["Anomalies" #:tag "Anomalies"  #:showtitle #t]{
+
+@page["Anomalies" #:tag "Anomalies"  #:showtitle #t]
+
 Let us look again at the @seclink["Darboux coordinates"]{Darboux coordinates}. We have,
 for any @f{F\in\mbox{Fun}(M)}:
 @align[r.l.n @list[
@@ -897,7 +910,7 @@ symmetry generated by the @f{b}-ghost. This is needed for the construction of th
 The case of pure spinor string is work in progress with R. Lipinski.
 
 
-}
+
 
 
 

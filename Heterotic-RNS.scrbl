@@ -33,7 +33,7 @@
 
 @bystro-ribbon[]
 
-@slide["Heterotic Structure" #:tag "Heterotic Structure" #:showtitle #t]{
+@page["Heterotic Structure" #:tag "Heterotic Structure" #:showtitle #t]
 
 @bystro-local-toc[]
 
@@ -142,10 +142,10 @@ It is also invariant under the super-diffeomorphisms; for any vector field @f{v\
    \delta_v X = v X\;,\;\delta_v D = [v,D]\;,\; \delta_v\bar{E} = [v,\bar{E}]
 }
 leaves the action invariant. (This follows from everything being geometrically defined.)
-}
 
 
-@slide["Deformations of the heterotic structure" #:tag "Deformations Of Heterotic Structure" #:showtitle #t]{
+
+@page["Deformations of the heterotic structure" #:tag "Deformations Of Heterotic Structure" #:showtitle #t]
 
 @bystro-local-toc[]
 
@@ -323,10 +323,10 @@ Now we have:
 }
 instead of Eq. (@ref{TstarHET}).
 
-}
 
 
-@slide["BV formalism" #:tag "Heterotic BV" #:showtitle #t]{
+
+@page["BV formalism" #:tag "Heterotic BV" #:showtitle #t]
 
 @bystro-local-toc[]
 
@@ -456,9 +456,10 @@ we agree with their Equation (3.20).
 ]
 ]]
 
-}
 
-@slide["The case of flat worldsheet" #:tag "Flat Worldsheet" #:showtitle #t]{
+
+@page["The case of flat worldsheet" #:tag "Flat Worldsheet" #:showtitle #t]
+
 @bystro-local-toc[]
 @subpage[1 @elem{Tangent space at the flat worldsheet} #:tag "TangentSpaceAtFlat"]
 Fields:
@@ -496,10 +497,10 @@ The ghost part of the action becomes:
 ]]
 
 
-}
 
 
-@slide["Lagrangian submanifolds" #:tag "Lagrangian Submanifolds" #:showtitle #t]{
+
+@page["Lagrangian submanifolds" #:tag "Lagrangian Submanifolds" #:showtitle #t]
 
 @bystro-local-toc[]
 
@@ -648,10 +649,10 @@ The BRST transformation of @f{c^{\tilde{z}}} is easy to read from Eq. (@ref{QCtz
    + c^{\tilde{z}}\partial_{\tilde{z}}\psi^m}
 ]]
 
-}
 
 
-@slide["Geometry of ghost fields" #:tag "Ghost Fields" #:showtitle #t]{
+
+@page["Geometry of ghost fields" #:tag "Ghost Fields" #:showtitle #t]
 
 A superconformal vector field can be parametrized by the superfield @f{v} in 
 the following way:
@@ -691,9 +692,9 @@ We get:
 ]
 ]]
 
-}
 
-@slide["Familty of Lagrangian submanifolds" #:tag "Family Of Lagrangian Submanifolds" #:showtitle #t]{
+
+@page["Familty of Lagrangian submanifolds" #:tag "Family Of Lagrangian Submanifolds" #:showtitle #t]
 
 @bystro-local-toc[]
 
@@ -800,7 +801,7 @@ because it guarantees the action of the  mapping class group on our cycle.
 }
 
 
-}
+
 
 
 

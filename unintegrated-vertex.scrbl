@@ -35,7 +35,8 @@ for bosonic string @f{\Phi\langle \xi\rangle = \int dz d\bar{z} \; \xi^{\alpha}c
 
 @bystro-ribbon[]
 
-@slide["Definition of unintegrated vertex" #:tag "Definition Of Unintegrated" #:showtitle #t]{
+@page["Definition of unintegrated vertex" #:tag "Definition Of Unintegrated" #:showtitle #t]
+
 We will use the notations:
 @align[r.l @list[
 @f{{\bf h} =} @f{\Pi\Delta{\cal F}} 
@@ -77,9 +78,10 @@ the integration cycle should include the variations of the positions of the inse
 On the @seclink["Integration Over Positions"]{next page} we will start the investigation of the
 procedure of integration over those insertion points.
 
-}
 
-@slide["Integration over the location of insertion points" #:tag "Integration Over Positions" #:showtitle #t]{
+
+@page["Integration over the location of insertion points" #:tag "Integration Over Positions" #:showtitle #t]
+
 @bystro-local-toc[]
 
 @subpage[1 @elem{Fixing the Lagrangian submanifold} #:tag "sec-Fixing-the-Lagrangian-submanifold"]
@@ -246,9 +248,10 @@ After we integrate over the Lagrangian submanifold, @f{\Delta - d_{(h)}} becomes
 ]
 ]
 @spn[attn]{TODO:} continue to higher powers of @f{\Psi}.
-}
 
-@slide[@elem{Cohomology of @f{\Delta} vs Lie algebra cohomology} #:tag "Lie Algebra Cohomology" #:showtitle #t]{
+
+@page[@elem{Cohomology of @f{\Delta} vs Lie algebra cohomology} #:tag "Lie Algebra Cohomology" #:showtitle #t]
+
 @short-intro{
 In this Section we will show that the @seclink{TwistedDeRham}
 is the same as the Lie algebra cohomology complex of @f{\bf h} with coefficients in @f{\mbox{Fun}(M)}.
@@ -329,9 +332,10 @@ consists of functions of @f{\widetilde{\Psi}} and @f{\widetilde{U}}. To obtain t
 of @f{C^{\bullet}({\bf h},\mbox{Fun}(M))}, we replace @f{\widetilde{\Psi}} with @f{\Psi} 
 with @f{(dgg^{-1})^A\mapsto {\bf c}^A} (as in Eq. (@ref{DLieDeltaPsi})), and @f{\widetilde{U}} with @f{U}.
 Under this identification @f{d_{(h)}} becomes @f{-d_{\rm Lie}}.
-}
 
-@slide[@elem{Another intertwiner between @f{d_{\rm Lie} + \Delta} and @f{\Delta}} #:tag "Local Intertwiner" #:showtitle #t]{
+
+@page[@elem{Another intertwiner between @f{d_{\rm Lie} + \Delta} and @f{\Delta}} #:tag "Local Intertwiner" #:showtitle #t]
+
 @short-intro{
 One intertwiner between @f{d_{\rm Lie} + \Delta} and @f{\Delta} is already provided by Eq. (@ref{DeltaPsiIsIntertwiner}), but
 it is nonlocal (because each @f{\Delta \Psi} contains one integration).
@@ -356,9 +360,9 @@ This operation has the following property:
 (d_{\rm Lie} + \Delta) e^{\{\Psi,\_\}} = e^{\{\Psi,\_\}} \Delta
 }
 The action of @f{\Delta} on the left hand side is only on @f{\mbox{Fun}(M)} (it does not touch the @f{\bf c}-ghosts)
-}
 
-@slide["Descent Procedure" #:tag "Descent Procedure" #:showtitle #t]{
+
+@page["Descent Procedure" #:tag "Descent Procedure" #:showtitle #t]
 
 @short-intro{
 Here we will show that the intertwining operator of Eq. (@ref{ConjugationWithPsi}) can be interpreted as
@@ -451,12 +455,13 @@ we get a cocycle of the Virasoro algebra. Again, we should go on-shell and take 
 @item{Cohomology of @f{{\bf R}^2} which @seclink["sectionIndegratedVsUnintegrated"]{computes} the integrated vertex operators}
 ]
 @spn[attn]{TODO}: work out the @bold{precise} relation between these objects. 
-}
+
 
 
   
 
-@slide["Craps-Skenderis trick" #:tag "Craps-Skenderis trick" #:showtitle #t]{
+@page["Craps-Skenderis trick" #:tag "Craps-Skenderis trick" #:showtitle #t]
+
 @bystro-local-toc[]
 
 @subpage[1 @elem{Dynamical punctures} #:tag "sec-Dynamical-punctures"]
@@ -615,7 +620,7 @@ After integration over @f{d\xi^{\star}} (and omitting indices @f{{}^{(0)}} for b
 where @f{b^{\alpha\beta}} stands for the traceless part of @f{g^{\star\alpha\beta}}.
 This result is the standard expression for the string amplitude. 
 
-}
+
 
 
 @; ---------------------------------------------------------------------------------------------------

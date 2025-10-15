@@ -32,7 +32,8 @@
 
 @bystro-ribbon[]
 
-@slide["Construction" #:tag "Construction" #:showtitle #t]{
+@page["Construction" #:tag "Construction" #:showtitle #t]
+
 @bystro-local-toc[]
 @subpage[1 @elem{Ghosts} #:tag "sec-Ghosts"]
 One starts with the ``classical action'' @f{S_{\rm cl}} which is invariant under some @bold{gauge symmetry}.
@@ -101,9 +102,10 @@ Notice the following properties of left shifts:
 Indeed, they come from infinitesimal left shifts on @f{H}, and @f{Q_{\rm BRST}} comes from the de Rham differential.}
 @item{The measure on @f{\Pi TH\times X\over H} is invariant.}
 ]
-}
 
-@slide["BV from BRST" #:tag "BV from BRST" #:showtitle #t]{
+
+@page["BV from BRST" #:tag "BV from BRST" #:showtitle #t]
+
 @bystro-local-toc[]
 
 @subpage[1 @elem{Definition of the BV phase space} #:tag "sec:bv-phase-space"]
@@ -137,10 +139,11 @@ The symmetry corresponding to the infinitesimal @bold{left} shift (@ref{lift-of-
 ]
 Notice that in the BRST case @f{\Delta} coincides with @f{\{S_{\rm BV},\_\}}.
 
-}
 
 
-@slide["Family of Lagrangian submanifolds" #:tag "Family of Lagrangian submanifolds" #:showtitle #t]{
+
+@page["Family of Lagrangian submanifolds" #:tag "Family of Lagrangian submanifolds" #:showtitle #t]
+
 @short-intro{
 Here we will describe a family of Lagrangian submanifolds which is a generalization of
 the construction used in @hyperlink["../bosonic-string/index.html"]{bosonic string theory}
@@ -253,9 +256,10 @@ In
 and @f{e^{d\widehat{g}\widehat{g}^{-1}}} contributes
 @f{\prod_{i=1}^{3g-3} b^{\alpha\beta}\delta g_{\alpha\beta}^{(0)}}
 
-}
 
-@slide["Faddeev-Popov integration" #:tag "Faddeev-Popov integration" #:showtitle #t]{
+
+@page["Faddeev-Popov integration" #:tag "Faddeev-Popov integration" #:showtitle #t]
+
 @short-intro{
 Now we will consider a special case when tangent vectors to orbits of @f{H} generate
 the entire @f{TX/T\,Y}, or, @hyperlink["Family_of_Lagrangian_submanifolds.html#(elem._factor-tau)"]{with our notations},
@@ -325,9 +329,10 @@ S_{\rm cl} +  c^A T^i_A\partial_iF^a\bar{c}_a
 This integral is @italic{a priori} divergent, because we integrate over the noncompact space @f{\Pi V^*}.
 Sometimes, it can be made convergent by a special choice of the integration contour --- see 
 @seclink["Yang-Mills"]{the example of the Yang-Mills theory}.
-}
 
-@slide["Yang-Mills theory" #:tag "Yang-Mills" #:showtitle #t]{
+
+@page["Yang-Mills theory" #:tag "Yang-Mills" #:showtitle #t]
+
 @align[r.l.n @list[
  @f{S_{\rm cl} \;=\;} @f{\int d^4x\,\mbox{tr}\, (\partial_{\mu}A_{\nu} - \partial_{\nu}A_{\mu} + [A_{\mu},A_{\nu}])^2} ""
 ]@list[
@@ -349,7 +354,7 @@ The integration contour is @f{\bar{c}} complex conjugate to @f{c}.
 Don't forget to insert @f{\delta(F\,)} --- see Eq. (@ref{integrate-over-pi-v-dual}) !
 (This is usually done by means of a Lagrange multiplier.)
 
-}
+
 
 
 @; ---------------------------------------------------------------------------------------------------

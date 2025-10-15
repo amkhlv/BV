@@ -51,7 +51,8 @@ twisted @hyperlink["../N2Superconformal/index.html"]{@f{N=2} superconformal} the
 
 @bystro-ribbon[]
 
-@slide["Left and right sectors" #:tag "Left and right sectors" #:showtitle #t]{
+@page["Left and right sectors" #:tag "Left and right sectors" #:showtitle #t]
+
 In order to discuss twisting, we have to consider the full sigma-model, with left and right sectors.
 
 @align[r.l @list[
@@ -79,9 +80,10 @@ S \;=\; \int d z^@(L) dz^@(R)\left(
 \right)
 }
 @spn[attn]{TODO:} signs and coefficients could be wrong.
-}
 
-@slide[@elem{@f{N=2} superconformal symmetries} #:tag "N=2 superconformal symmetries" #:showtitle #t]{
+
+@page[@elem{@f{N=2} superconformal symmetries} #:tag "N=2 superconformal symmetries" #:showtitle #t]
+
 Equations for  @hyperlink["../N2Superconformal/Duality_In_Coordinates.html#(elem._.Chiral.N2)"]{@f{N=2} superconformal vector field}
 and  @hyperlink["../N2Superconformal/Duality_In_Coordinates.html#(elem._.Anti.Chiral.N2)"]{its dual} define the
 following symmetries:
@@ -128,9 +130,10 @@ following symmetries:
 and the same formulas with L replaced with R. The variations of those fields which are omitted from
 these formulas are zero.
 
-}
 
-@slide["B model" #:tag "B Model" #:showtitle #t]{
+
+@page["B model" #:tag "B Model" #:showtitle #t]
+
 @bystro-local-toc[]
 
 @subpage[1 @elem{Definitions} #:tag "sec-Definitions"]
@@ -313,7 +316,7 @@ and the bracket of the term @f{- ({\cal L}_{(v_L - v_R)}\overline{x^a}) \varthet
 Eqs. (@ref{CommutatorA}) and (@ref{CommutatorB}) combine into @f{\int_{\Sigma} *d\overline{x^a}\wedge \iota_{[w,v]}\vartheta^{\star a}} which
 is  the required term @f{- ({\cal L}_{([w,v]_L - [w,v]_R)}\overline{x^a})\vartheta^{\star a}} in @f{\Phi\langle [w,v]\rangle}
 
-}
+
 
 @; ---------------------------------------------------------------------------------------------------
 @(bystro-close-connection bystro-conf)

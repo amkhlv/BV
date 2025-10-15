@@ -33,7 +33,8 @@
 @bystro-ribbon[]
 
 
-@slide["Expansion around Lagrangian submanifold" #:tag "Expansion in antifields" #:showtitle #t]{
+@page["Expansion around Lagrangian submanifold" #:tag "Expansion in antifields" #:showtitle #t]
+
 For a given Lagrangian submanifold @f{L}, let us choose the Darboux coordinates so that
 @f{L} is given by the equations @f{x^{\star}_a=0}. We use the ansatz for @f{\rho_{1\over 2}}:
 @e{
@@ -46,10 +47,10 @@ The constructio of @f{S_{\rm BV}} involves @f{x^{\star}}-expansion and @f{\hbar}
 @f{S^{(0)}_{\rm BV}(x,x^{\star}) =\;}@f{S_{\rm cl}(x) + x^{\star}_AQ^A(x) + \ldots}
 ]]
 
-}
 
 
-@slide["Double coset" #:tag "Double Coset" #:showtitle #t]{
+
+@page["Double coset" #:tag "Double Coset" #:showtitle #t]
 
 Let @f{SG\subset G} be the subgroup  preserving a fixed @f{\rho_{1\over 2}}.
 Given a fixed Lagrangian submanifold @f{L\subset M}, we can also consider
@@ -63,9 +64,9 @@ A point of @f{{\cal M}_{\rm BRST}} could be denoted @f{[L]}
 @comment{this notation is very natural: @f{L} denotes the
 lagrangian submanifold, {\it i.e.} a point of @f{G/{\rm St}(L)}, and @f{[\ldots]}  means
 taking the equivalence class modulo @f{SG}}
-}
 
-@slide["Tangent space to the double coset" #:tag "Tangent Space To BRST" #:showtitle #t]{
+
+@page["Tangent space to the double coset" #:tag "Tangent Space To BRST" #:showtitle #t]
 
 @bystro-local-toc[]
 @subpage[1 @elem{Identification of the tangent space} #:tag "sec-Identification-of-the-tangent-space"]
@@ -121,7 +122,7 @@ limit.}
 @item{In the classical limit the tangent space to @f{{\cal M}_{\rm BRST}} is parametrized by
 BRST-exact expressions modulo those BRST-exact expressions which are zero on-shell.}
 ]
-}
+
 
 
 

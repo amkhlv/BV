@@ -33,7 +33,7 @@
 
 @bystro-ribbon[]
 
-@slide["Complexification of the worldsheet" #:tag "Worldsheet complexification" #:showtitle #t]{
+@page["Complexification of the worldsheet" #:tag "Worldsheet complexification" #:showtitle #t]
 
 @short-intro{
 We want to define some class of BRST-exact deformations of the theory, which may be
@@ -163,10 +163,11 @@ parallel to the left-moving characteristic. In coordinates they are of the form:
 }
 Left vector fields are automatically left-deforming. They are conformal when @f{\xi^+} only depends on @f{\tau^+} (and not on @f{\tau^-}).
 
-}
 
 
-@slide["Left BV formalism" #:tag "Left BV" #:showtitle #t]{
+
+@page["Left BV formalism" #:tag "Left BV" #:showtitle #t]
+
 @bystro-local-toc[]
 
 @subpage[1 @elem{Problem} #:tag "sec-Problem"]
@@ -200,7 +201,7 @@ Now suppose that  @f{\xi} is a  @seclink["sec:left-deforming-vector-fields"]{lef
 
 @spn[attn]{TODO}, this could be harder.
 
-}
+
 
 
 @; ---------------------------------------------------------------------------------------------------

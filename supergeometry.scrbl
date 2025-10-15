@@ -27,7 +27,8 @@
 
 
 
-@slide["Superdomain" #:tag "Superdomain" #:showtitle #t]{
+@page["Superdomain" #:tag "Superdomain" #:showtitle #t]
+
 See @hyperlink["https://www.math.ias.edu/QFT/fall/bernstein2.ps"]{lectures of J. Bernstein}
 
 @subpage[1 @elem{Definition of superdomain} #:tag "sec-Definition-of-superdomain"]
@@ -66,10 +67,10 @@ can be restricted to @f{{\cal U}_1|_{\tilde{U}_1}}:
 \left.\left(\phi^0\,,\, \phi^* \right)\right|_{{\cal U}_1|_{\tilde{U}_1}} \;=\; \left(\phi^0|_{\tilde{U}_1}\,,\; r^{U_1}_{\tilde{U}_1}\circ\phi^*\right)
 }
 
-}
 
 
-@slide["Supermanifold" #:tag "Supermanifold" #:showtitle #t]{
+
+@page["Supermanifold" #:tag "Supermanifold" #:showtitle #t]
 
 @bystro-local-toc[]
 
@@ -108,10 +109,11 @@ of @f{M_{\rm rd}} has a neighborhood @f{U} such that @f{C^{\infty}(U)} is an alg
 on a superdomain @f{\cal V} of dimension @f{m|n}.
 }
 
-}
 
 
-@; @slide["Atlas" #:tag "Atlas" #:showtitle #t]{
+
+@; @page["Atlas" #:tag "Atlas" #:showtitle #t]
+
 @; Given a structure sheaf, we can construct @bold{atlases}.
 
 @; Pick a fine enough open cover @f{\{U_i|i\in{\cal I}\}} of @f{M_{\rm rd}}.  @f{C^{\infty}(U_i) = C^{\infty}({\cal V}_i)}.
@@ -132,9 +134,10 @@ on a superdomain @f{\cal V} of dimension @f{m|n}.
 @; @image[#:scale 0.75]{supergeometry/graphics/atlas-from-sheaf.svg}
 
 
-@; }
+@; 
 
-@slide["Functor of points" #:tag "Functor of points" #:showtitle #t]{
+@page["Functor of points" #:tag "Functor of points" #:showtitle #t]
+
 @bystro-local-toc[]
 @subpage[1 @elem{Definition} #:tag "sec-Definition-2"]
 A supermanifold @f{M} can be characterized by the following contravariant functor:
@@ -156,9 +159,10 @@ Suppose that @f{M} is a supermanifold. Then @f{\Pi TM} can be defined as follows
 {\cal F}_{\Pi TM}(S) = {\cal F}_M ({\bf R}^{0|1}\times S)
 }
 
-}
 
-@slide["Properties of odd tangent bundle" #:tag "Odd tangent bundle" #:showtitle #t]{
+
+@page["Properties of odd tangent bundle" #:tag "Odd tangent bundle" #:showtitle #t]
+
 @bystro-local-toc[]
 
 @subpage[1 @elem{Canonical odd vector field} #:tag "sec-Canonical-odd-vector-field"]
@@ -220,14 +224,10 @@ Then define the map:
 If @f{G} is a supergroup, then @f{\Pi TG} is again a supergroup. 
 
 
-}
 
 
-@slide["Berezinian of a vector space" #:tag "Berezinian of a vector space" #:showtitle #t]{
 
-
-}
-
+@page["Berezinian of a vector space" #:tag "Berezinian of a vector space" #:showtitle #t]
 
 @; ---------------------------------------------------------------------------------------------------
 @(bystro-close-connection bystro-conf)

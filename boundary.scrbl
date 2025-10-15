@@ -35,16 +35,16 @@
 @bystro-ribbon[]
 
 
-@slide["Inserting states on a Riemann surface" #:tag "Space of states" #:showtitle #t]{
+@page["Inserting states on a Riemann surface" #:tag "Space of states" #:showtitle #t]
 
 @image{boundary/graphics/insertion-of-operators-inside-disk.svg}
 @image{boundary/graphics/state-on-the-boundary.svg}
 
 @image{boundary/graphics/Riemann-surface-with-a-boundary.svg}
 @image{boundary/graphics/Riemann-surface-with-state.svg}
-}
 
-@slide["Variation of Lagrangian submanifold" #:tag "Variation of Lagrangian submanifold" #:showtitle #t]{
+
+@page["Variation of Lagrangian submanifold" #:tag "Variation of Lagrangian submanifold" #:showtitle #t]
 
 @bystro-local-toc[]
 
@@ -296,9 +296,10 @@ those variations of the complex structure which are zero at the boundary. Otherw
 would change the Hilbert space of states. In such case it would be nontrivial to even
 define @f{d\Psi}, as we would need a connection on the bundle of Hilbert spaces.
 
-}
 
-@slide["Relation to the approach of Sen" #:tag "Approach of Sen" #:showtitle #t]{
+
+@page["Relation to the approach of Sen" #:tag "Approach of Sen" #:showtitle #t]
+
 In @hyperlink["../bosonic-string/index.html"]{approach to bosonic string}, we integrate over
 worldsheet complex structures.
 
@@ -339,7 +340,7 @@ This raizes a question:
 ]
 This requires factoring out large diffeomorphisms. 
 
-}
+
 
 
 

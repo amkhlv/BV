@@ -31,7 +31,7 @@
 @bystro-ribbon[]
 
 
-@slide["Quantomorphisms" #:tag "Quantomorphisms" #:showtitle #t]{
+@page["Quantomorphisms" #:tag "Quantomorphisms" #:showtitle #t]
 
 Suppose that exists an  @f{{\bf R}^{0|1}}-bundle over @f{M}:
 @e{
@@ -81,9 +81,10 @@ directly, using the formula:
 ]]
 As a Lie algebra this is @f{\Pi\mbox{Fun}(M)}. It integrates to the group of automorphisms of the 
 fiber bundle @f{\hat{M}\to M} which preserve the connection defined in Eq. (@ref{ConnectionAsLift}).
-}
 
-@slide[@elem{Form @f{\Omega} as a form on the space of Legendrian submanifolds @f{\rm LEG}} #:tag "Form on LEG" #:showtitle #t]{
+
+@page[@elem{Form @f{\Omega} as a form on the space of Legendrian submanifolds @f{\rm LEG}} #:tag "Form on LEG" #:showtitle #t]
+
 A Legendrian submanifold in @f{\widehat{M}} projects to a Lagrangian submanifold in @f{M}: 
 @e{
 \pi(\widehat{L}) = L
@@ -98,7 +99,7 @@ as integration over the projection:
 This descends to a closed PDF on the space of Legendrian submanifolds @f{\rm LEG}.
 
 
-}
+
 
 
 @; ---------------------------------------------------------------------------------------------------

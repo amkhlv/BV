@@ -32,7 +32,8 @@
 
 @bystro-ribbon[]
 
-@slide["Integration in two steps" #:tag "Double Integration" #:showtitle #t]{
+@page["Integration in two steps" #:tag "Double Integration" #:showtitle #t]
+
 In our approach we integrate some closed form @f{\Omega} over a cycle in the moduli space of 
 Lagrangian submanifolds modulo gauge symmetries.  The form @f{\Omega} itself is defined in terms
 of the integration of @f{e^{S_{\rm BV}}} over the Lagrangian submanifold (@bold{path integral}).
@@ -57,9 +58,10 @@ It turns out that in the BV formalism, this (at least in some cases) corresponds
 Lagrangian submanifolds in the family into a different Lagrangian submanifold. 
 This is a topologically nontrivial change, essentially a change in polarization.
 
-}
 
-@slide[@elem{Partial Baranov-Schwarz transform of @f{\Omega}} #:tag "Baranov-Schwarz" #:showtitle #t]{
+
+@page[@elem{Partial Baranov-Schwarz transform of @f{\Omega}} #:tag "Baranov-Schwarz" #:showtitle #t]
+
 As usual, let @f{G} be the group of canonical transformations. Consider a submanifold @f{U\subset G}
 satisfying the following condition: 
 @e[#:label "ConditionOnU"]{
@@ -140,17 +142,18 @@ We therefore lowered the dimension of the moduli space of the integration cycle:
 \mbox{dim}\,\{\widetilde{L}(x)|x\in X\} = \mbox{dim}\,\{gL_0\;|\;g\in U\} - \mbox{dim}\,U
 }
 This means that our procedure should be identified as a @bold{reverse picture changing operator}.
-}
 
 
-@slide["Open question" #:tag "Open Question" #:showtitle #t]{
+
+@page["Open question" #:tag "Open Question" #:showtitle #t]
+
 In our discussion of the Baranov-Schwarz transform we used the ``naive'' 
 instead of the @hyperlink["../omega/Descent_To_Double_Coset.html#(part._.Modified_.P.D.F)"]{equivariant} @f{\Omega} 
 The equivariant @f{\Omega} is the exponential of the @bold{linear-quadratic} function of @f{dg g^{-1}}.
 Therefore its Baranov-Schwarz transform does @bold{not} result in a delta-function.
 This may create a complication when dealing with those Lagrangian submanifolds which have @f{c^{\star}\neq 0}.
 
-} 
+ 
 
 @; ---------------------------------------------------------------------------------------------------
 @(bystro-close-connection bystro-conf)
