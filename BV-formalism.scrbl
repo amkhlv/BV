@@ -26,13 +26,14 @@
 
 @hyperlink["../index.html"]{Return to index}
 
-@table-of-contents[]
+@bystro-toc[]
 
 @hyperlink["../index.html"]{Return to index}
 
 @bystro-ribbon[]
 
 @slide["Introduction"  #:tag "Introduction" #:showtitle #t]{
+
 From mathematical point of view the BV formalism may be defined as the theory of odd symplectic supermanifolds.
 
 Consider a supermanifold @f{M} with an odd 2-form @f{\omega} satisfying @f{d\omega=0}.
@@ -49,7 +50,8 @@ model for the path integral in a gauge theory.
 }
 
 @slide["Odd symplectic manifolds" #:tag "Odd symplectic manifolds" #:showtitle #t]{
-@table-of-contents[]
+
+@bystro-local-toc[]
 
 @subpage[1 @elem{Contraction and Lie derivative} #:tag "sec:contraction-and-Lie-derivative"]
 We define @f{\iota_V} for a vector field @f{V} as follows. If @f{V} is even, we pick
@@ -111,7 +113,7 @@ In Darboux coordinates:
 Here we will give a brief self-contained presentation of the ``canonical'' odd Laplace operator @f{\Delta_{\rm can}}.
 }
 
-@table-of-contents[]
+@bystro-local-toc[]
 
 Odd Laplace operator is closely related to the notion of Lie derivative; we will start by
 discussing some properties of Lie derivative. 
@@ -562,7 +564,7 @@ while @f{\Delta_{\rm can}} is always nilpotent.
 
 @slide["Inifinite-dimensional case" #:tag "Infinite dimensional case" #:showtitle #t]{
 
-@table-of-contents[]
+@bystro-local-toc[]
 
 @subpage[1 @elem{Problem} #:tag "sec:ProblemDeltaInfiniteDiml"]
 
@@ -605,7 +607,8 @@ We will give an @hyperlink["../omega/Unsafe_operations.html"]{example of a compu
 
 
 @slide["Classical BV formalism" #:tag "Classical BV" #:showtitle #t]{
-@table-of-contents[]
+
+@bystro-local-toc[]
 
 @subpage[1 @elem{Expansion in Planck constant} #:tag "sec:ExpansionInH"]
 
@@ -699,7 +702,7 @@ this is actually even enough for our purposes.
 
 @slide["Moment map" #:tag "MomentMap" #:showtitle #t]{
 
-@table-of-contents[]
+@bystro-local-toc[]
 
 @subpage[1 @elem{Notations} #:tag "sec:MomentMapNotations"]
 
