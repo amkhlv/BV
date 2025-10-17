@@ -4,16 +4,6 @@
 @; ---------------------------------------------------------------------------------------------------
 @; User definitions:
 @(bystro-set-css-dir (build-path (find-system-path 'home-dir) "a" "git" "amkhlv" "profiles" "writeup"))
-@(define bystro-conf   
-   (bystro (bystro-connect-to-server (build-path (find-system-path 'home-dir) ".config" "amkhlv" "latex2svg.xml"))
-           "supergeometry/formulas.sqlite"  ; name for the database
-           "supergeometry" ; directory where to store image files of formulas
-           25  ; formula size
-           (list 255 255 255) ; formula background color
-           (list 0 0 0) ; formula foreground color
-           2   ; automatic alignment adjustment
-           0   ; manual alignment adjustment
-           ))
 @(define singlepage-mode #f)
 @(bystro-def-formula "formula-enormula-humongula!")
 
@@ -230,7 +220,7 @@ If @f{G} is a supergroup, then @f{\Pi TG} is again a supergroup.
 @page["Berezinian of a vector space" #:tag "Berezinian of a vector space" #:showtitle #t]
 
 @; ---------------------------------------------------------------------------------------------------
-@(bystro-close-connection bystro-conf)
+@(bystro-close-connection)
 @disconnect[formula-database]
 
   

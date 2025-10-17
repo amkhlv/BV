@@ -4,20 +4,10 @@
 @; ---------------------------------------------------------------------------------------------------
 @; User definitions:
 @(bystro-set-css-dir (build-path (find-system-path 'home-dir) "a" "git" "amkhlv" "profiles" "writeup"))
-@(define bystro-conf   
-   (bystro (bystro-connect-to-server (build-path (find-system-path 'home-dir) ".config" "amkhlv" "latex2svg.xml"))
-           "transfer/formulas.sqlite"  ; name for the database
-           "transfer" ; directory where to store image files of formulas
-           25  ; formula size
-           (list 255 255 255) ; formula background color
-           (list 0 0 0) ; formula foreground color
-           2   ; automatic alignment adjustment
-           0   ; manual alignment adjustment
-           ))
 @(define singlepage-mode #f)
 @(bystro-def-formula "formula-enormula-humongula!")
 
-@(bystro-dump-LaTeX #f)
+
 @title[#:style '(no-toc no-sidebar)]{Equivariant effective action}
 
 @bystro-ribbon[]
@@ -178,7 +168,7 @@ and @f{F} are constant along the fiber of @f{E\rightarrow B}.
 
 
 @; ---------------------------------------------------------------------------------------------------
-@(bystro-close-connection bystro-conf)
+@(bystro-close-connection)
 @disconnect[formula-database]
 
   

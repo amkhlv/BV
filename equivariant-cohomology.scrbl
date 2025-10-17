@@ -4,21 +4,11 @@
 @; ---------------------------------------------------------------------------------------------------
 @; User definitions:
 @(bystro-set-css-dir (build-path (find-system-path 'home-dir) "a" "git" "amkhlv" "profiles" "writeup"))
-@(define bystro-conf   
-   (bystro (bystro-connect-to-server (build-path (find-system-path 'home-dir) ".config" "amkhlv" "latex2svg.xml"))
-           "equivariant-cohomology/formulas.sqlite"  ; name for the database
-           "equivariant-cohomology" ; directory where to store image files of formulas
-           25  ; formula size
-           (list 255 255 255) ; formula background color
-           (list 0 0 0) ; formula foreground color
-           2   ; automatic alignment adjustment
-           0   ; manual alignment adjustment
-           ))
 @(define singlepage-mode #f)
 @(bystro-def-formula "formula-enormula-humongula!")
 
 
-@(bystro-dump-LaTeX #f)
+
 
 @title[#:style '(no-toc no-sidebar)]{Equivariant Cohomology}
 
@@ -700,5 +690,5 @@ and therefore @f{d\underline{\phi}=0}.
 
 @; ---------------------------------------------------------------------------------------------------
 
-@(bystro-close-connection bystro-conf)
+@(bystro-close-connection)
 @disconnect[formula-database]

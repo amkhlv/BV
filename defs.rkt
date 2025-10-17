@@ -75,15 +75,11 @@
   (define-syntax (comment stx)
     (syntax-case stx ()
       [(_ x ...)
-       (with-syntax ([bc (format-id stx "bystro-conf")])
-         #'(let ([a (bystro-bg 240 240 255)]
-                 [s1 (set-bystro-formula-size! bc (- (bystro-formula-size bc) 3))]
-                 [b (nested 
-                     #:style (style "comment" 
-                               (list (make-attributes '((style . "background-color:rgb(240,240,255);")))))
-                     x ...)]
-                 [s2 (set-bystro-formula-size! bc (+ (bystro-formula-size bc) 3))]
-                 [c (bystro-bg 255 255 255)])
+       (with-syntax ()
+         #'(let* ([b (nested 
+                      #:style (style "comment" 
+                                     (list (make-attributes '((style . "background-color:rgb(240,240,255);")))))
+                      x ...)])
              b))]))
   (provide short-intro)
   (define-syntax (short-intro stx)
